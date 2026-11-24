@@ -43,7 +43,8 @@ export interface Settings {
   /** Which of the two names this device belongs to. */
   me: 0 | 1
   region: string
-  sync: { owner: string; repo: string; branch: string; token: string }
+  /** Id of the shared list document that every visitor reads and writes. */
+  shared: { bin: string }
   lastSync?: number
 }
 

@@ -38,15 +38,18 @@ Her grupta 12 kayıt tutulur; uygulama her gün bu havuzdan 4 etkinlik, 3 film, 
 
 TMDB kullanmak için (isteğe bağlı, ücretsiz): themoviedb.org'dan bir API anahtarı alın ve depoda **Settings → Secrets and variables → Actions** altına `TMDB_API_KEY` adıyla ekleyin.
 
-## İki telefonda ortak liste
+## Ortak liste
 
-Ayrı bir sunucu yok. Liste bu deponun `data` dalındaki `list.json` dosyasında durur; uygulama onu GitHub API'siyle okur ve yazar.
+Şimdilik kişiye özel liste yok: siteyi açan herkes aynı listeyi görür ve değiştirebilir. Liste, anahtar gerektirmeyen herkese açık bir JSON deposunda (extendsclass.com) tek dosya olarak durur; uygulama açılışta, sekmeye dönüldüğünde ve her değişiklikten hemen sonra okuyup birleştirir ve geri yazar.
 
-- **Okumak** için bir şey gerekmez (depo herkese açık olduğu sürece). Bu aynı zamanda listenin herkese açık olduğu anlamına gelir.
-- **Yazmak** için her telefonda bir kez, uygulamanın Ayarlar ekranına bir anahtar girilir:
-  GitHub → Settings → Developer settings → **Fine-grained tokens** → yalnızca bu depo seçili, **Contents: Read and write**. Anahtar yalnızca o telefonun tarayıcısında saklanır.
+Bilinmesi gerekenler:
 
-Anahtar girilmezse uygulama yine çalışır; eklenenler yalnızca o cihazda kalır. İki telefon aynı anda değişiklik yaparsa kayıtlar tek tek birleştirilir (her kayıtta son değişiklik geçerlidir, silmeler dahil).
+- Bağlantıyı bilen herkes listeye ekleyebilir ve silebilir. Kişisel bir şey yazmayın.
+- Depo üçüncü bir tarafa ait ve garanti vermiyor; yanıt vermezse kayıtlar o cihazda kalır ve bağlantı gelince eşitlenir.
+- Dosya yaklaşık 85 kB ile sınırlı (birkaç yüz kayıt).
+- İki kişi aynı saniyede yazarsa biri diğerinin üzerine yazar; kaybeden cihaz kayıtlarını bir sonraki eşitlemede geri koyar.
+
+Kalıcı bir çözüme (hesaplı bir veritabanı, kişiye ya da çifte özel listeler) geçmek için değişecek tek yer `src/lib/sync.ts` içindeki `pull` ve `push`.
 
 ## Yakındaki mekanlar
 
@@ -57,8 +60,8 @@ Kazanan ekranındaki "Yakınımdaki mekanları adıyla göster" düğmesi konum 
 ```
 scripts/fetch-trending.mjs   haftalık revaçta listesi
 src/lib/tournament.ts        eleme (o mu, bu mu) mantığı
-src/lib/merge.ts             iki telefonun listesini birleştirme
-src/lib/sync.ts              GitHub deposuyla eşitleme
+src/lib/merge.ts             cihazdaki listeyle ortak listeyi birleştirme
+src/lib/sync.ts              ortak listeyle eşitleme
 src/lib/venues.ts            mekan önerileri ve harita bağlantıları
 src/components/PixelField.tsx açılıştaki nokta alanı ve piksel ikonlar
 src/components/Dock.tsx      buzlu cam gezinme çubuğu

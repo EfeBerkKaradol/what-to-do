@@ -1,16 +1,19 @@
 import { emptyDoc, fingerprint, mergeDocs, normalizeDoc } from './merge'
 import { getState, onLocalChange, replaceDoc, updateSettings } from './store'
-import type { Doc, Settings } from './types'
+import type { Doc } from './types'
 
-// The list lives in the GitHub repository itself: one JSON file on a separate branch,
-// read and written through the Contents API. No other backend.
-const FILE = 'list.json'
+// One shared list for everyone who opens the site: a single JSON document in an
+// anonymous, keyless store. Anyone with the link reads and writes the same list.
+// The store is a stop-gap; swapping it means replacing pull() and push() below.
+const STORE = 'https://extendsclass.com/api/json-storage/bin'
+/** The store refuses documents a little under 95 kB. */
+const MAX_BYTES = 85_000
+const TOMBSTONE_DAYS = 30
 
 export type SyncStatus =
   | { state: 'off' }
   | { state: 'idle'; at?: number }
   | { state: 'syncing' }
-  | { state: 'readonly'; at?: number }
   | { state: 'error'; message: string }
 
 let status: SyncStatus = { state: 'off' }
@@ -30,71 +33,43 @@ function setStatus(next: SyncStatus) {
   for (const l of listeners) l()
 }
 
-function toBase64(text: string): string {
-  const bytes = new TextEncoder().encode(text)
-  let bin = ''
-  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000))
-  return btoa(bin)
-}
-
-function fromBase64(b64: string): string {
-  const bin = atob(b64.replace(/\s/g, ''))
-  return new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)))
-}
-
-function endpoint(s: Settings['sync']) {
-  return `https://api.github.com/repos/${encodeURIComponent(s.owner)}/${encodeURIComponent(s.repo)}/contents/${FILE}`
-}
-
-function headers(s: Settings['sync']): Record<string, string> {
-  const h: Record<string, string> = { Accept: 'application/vnd.github+json' }
-  if (s.token) h.Authorization = `Bearer ${s.token}`
-  return h
-}
-
 class SyncError extends Error {}
 
-async function pull(s: Settings['sync']): Promise<{ doc: Doc; sha?: string }> {
-  const res = await fetch(`${endpoint(s)}?ref=${encodeURIComponent(s.branch)}&t=${Date.now()}`, {
-    headers: headers(s),
-    cache: 'no-store',
-  })
-  if (res.status === 404) return { doc: emptyDoc() }
-  if (res.status === 401) throw new SyncError('Anahtar geçersiz ya da süresi dolmuş.')
-  if (res.status === 403) throw new SyncError('GitHub şu an isteği reddetti (saatlik sınır). Biraz sonra yeniden deneyin.')
-  if (!res.ok) throw new SyncError(`Liste okunamadı (${res.status}).`)
-  const body = (await res.json()) as { content?: string; sha?: string }
+function endpoint(bin: string) {
+  return `${STORE}/${encodeURIComponent(bin)}`
+}
+
+async function pull(bin: string): Promise<Doc> {
+  const res = await fetch(`${endpoint(bin)}?t=${Date.now()}`, { cache: 'no-store' })
+  if (res.status === 404) return emptyDoc()
+  if (!res.ok) throw new SyncError(`Ortak liste okunamadı (${res.status}).`)
+  // The store appends a page of its own markup after the JSON; keep only the document.
+  const text = await res.text()
+  const cut = text.search(/<!doctype|<html/i)
   try {
-    return { doc: normalizeDoc(JSON.parse(fromBase64(body.content ?? ''))), sha: body.sha }
+    return normalizeDoc(JSON.parse(cut >= 0 ? text.slice(0, cut) : text))
   } catch {
-    throw new SyncError('Depodaki liste dosyası okunamıyor.')
+    throw new SyncError('Ortak liste dosyası okunamıyor.')
   }
 }
 
-async function push(s: Settings['sync'], doc: Doc, sha?: string): Promise<'ok' | 'conflict'> {
-  const res = await fetch(endpoint(s), {
-    method: 'PUT',
-    headers: { ...headers(s), 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      message: 'Liste güncellendi',
-      branch: s.branch,
-      content: toBase64(JSON.stringify(doc, null, 1) + '\n'),
-      ...(sha ? { sha } : {}),
-    }),
-  })
-  if (res.status === 409 || res.status === 422) return 'conflict'
-  if (res.status === 401) throw new SyncError('Anahtar geçersiz ya da süresi dolmuş.')
-  if (res.status === 403 || res.status === 404) throw new SyncError('Anahtarın bu depoya yazma izni yok.')
-  if (!res.ok) throw new SyncError(`Liste kaydedilemedi (${res.status}).`)
-  return 'ok'
+async function push(bin: string, doc: Doc): Promise<void> {
+  const body = JSON.stringify(doc)
+  if (new Blob([body]).size > MAX_BYTES) {
+    throw new SyncError('Ortak liste doldu. Yapılanları ya da eski kayıtları silin.')
+  }
+  const res = await fetch(endpoint(bin), { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body })
+  if (!res.ok) throw new SyncError(`Ortak liste kaydedilemedi (${res.status}).`)
+}
+
+/** Deletes are kept as markers so they reach every device; after a month they are dropped. */
+function compact(doc: Doc): Doc {
+  const cutoff = Date.now() - TOMBSTONE_DAYS * 86400000
+  return { ...doc, items: doc.items.filter((i) => !i.deleted || i.updatedAt > cutoff), history: doc.history.slice(0, 20) }
 }
 
 let running: Promise<void> | null = null
 let queued = false
-
-export function syncConfigured(s: Settings['sync'] = getState().settings.sync): boolean {
-  return Boolean(s.owner && s.repo && s.branch)
-}
 
 export function syncNow(): Promise<void> {
   if (running) {
@@ -112,29 +87,23 @@ export function syncNow(): Promise<void> {
 }
 
 async function run(): Promise<void> {
-  const s = getState().settings.sync
-  if (!syncConfigured(s)) {
+  const bin = getState().settings.shared.bin
+  if (!bin) {
     setStatus({ state: 'off' })
     return
   }
   setStatus({ state: 'syncing' })
   try {
-    // Two attempts: if the other phone wrote between our read and our write, read again and merge.
-    for (let attempt = 0; attempt < 3; attempt++) {
-      const remote = await pull(s)
-      const merged = mergeDocs(getState().doc, remote.doc)
-      if (fingerprint(merged) !== fingerprint(getState().doc)) replaceDoc(merged)
-      if (fingerprint(merged) === fingerprint(remote.doc)) break
-      if (!s.token) {
-        setStatus({ state: 'readonly', at: Date.now() })
-        return
-      }
-      if ((await push(s, merged, remote.sha)) === 'ok') break
-      if (attempt === 2) throw new SyncError('Liste aynı anda başka cihazda değişti. Yeniden deneyin.')
-    }
+    // Read, merge item by item, write back. The store has no version check, so if two
+    // people write in the same second one write wins; the loser still holds its items
+    // and puts them back on its next sync.
+    const remote = await pull(bin)
+    const merged = compact(mergeDocs(getState().doc, remote))
+    if (fingerprint(merged) !== fingerprint(getState().doc)) replaceDoc(merged)
+    if (fingerprint(merged) !== fingerprint(remote)) await push(bin, merged)
     const at = Date.now()
     updateSettings({ lastSync: at })
-    setStatus(s.token ? { state: 'idle', at } : { state: 'readonly', at })
+    setStatus({ state: 'idle', at })
   } catch (err) {
     setStatus({
       state: 'error',

@@ -16,9 +16,7 @@ export function syncLine(status: ReturnType<typeof useSyncStatus>): string {
     case 'syncing':
       return 'Eşitleniyor'
     case 'idle':
-      return `İki telefonda ortak · eşitlendi ${stamp(status.at)}`
-    case 'readonly':
-      return 'Eklediğiniz fikirler yalnızca bu telefonda. Ortak liste için Ayarlar’dan anahtar girin.'
+      return `Herkesle ortak liste · eşitlendi ${stamp(status.at)}`
     case 'error':
       return status.message
     default:

@@ -9,7 +9,7 @@ export const DEFAULT_SETTINGS: Settings = {
   names: ['', ''],
   me: 0,
   region: 'ISTANBUL',
-  sync: { owner: 'EfeBerkKaradol', repo: 'what-to-do', branch: 'data', token: '' },
+  shared: { bin: 'aefacfc' },
 }
 
 function read<T>(key: string, fallback: T): T {
@@ -34,13 +34,14 @@ interface State {
   settings: Settings
 }
 
-const storedSettings = read<Partial<Settings>>(SETTINGS_KEY, {})
+// Only the fields this version knows are taken over; an older build kept a GitHub token here.
+const { names, me, region, lastSync } = read<Partial<Settings>>(SETTINGS_KEY, {})
+const storedSettings: Partial<Settings> = JSON.parse(JSON.stringify({ names, me, region, lastSync }))
 let state: State = {
   doc: normalizeDoc(read<unknown>(DOC_KEY, emptyDoc())),
   settings: {
     ...DEFAULT_SETTINGS,
     ...storedSettings,
-    sync: { ...DEFAULT_SETTINGS.sync, ...(storedSettings.sync ?? {}) },
   },
 }
 

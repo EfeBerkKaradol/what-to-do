@@ -158,7 +158,7 @@ function ReadyStage({ pool, onBegin, onClose }: { pool: Item[]; onBegin: (deck: 
   return (
     <div className="session__body session__body--center ready">
       <div className="ready__text">
-        <h1 className="ready__title">Hazır mısın?</h1>
+        <h1 className="ready__title">Hazır mısınız?</h1>
         <p className="ready__sub">
           {pool.length === 0
             ? 'Destede henüz seçenek yok. Önce bir şeyler ekleyin ya da beğenin.'
@@ -177,7 +177,7 @@ function ReadyStage({ pool, onBegin, onClose }: { pool: Item[]; onBegin: (deck: 
         </div>
       )}
       <div className="stack">
-        <button className="btn btn--primary btn--big" disabled={deck.length === 0} onClick={() => onBegin(deck)}>Hazırım</button>
+        <button className="btn btn--primary btn--big" disabled={deck.length === 0} onClick={() => onBegin(deck)}>Hazırız</button>
         <button className="btn btn--text" onClick={onClose}>Şimdi değil</button>
       </div>
     </div>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { useSyncStatus, type TrendingState } from '../App'
 import { stamp } from '../lib/format'
 import { updateSettings, useStore } from '../lib/store'
@@ -8,7 +7,6 @@ import { syncLine } from './AddedScreen'
 export function SettingsScreen({ trending }: { trending: TrendingState }) {
   const { settings } = useStore()
   const status = useSyncStatus()
-  const [token, setToken] = useState(settings.sync.token)
   const names = settings.names
 
   const setName = (i: 0 | 1, value: string) => {
@@ -16,8 +14,6 @@ export function SettingsScreen({ trending }: { trending: TrendingState }) {
     next[i] = value
     updateSettings({ names: next })
   }
-  const setSync = (patch: Partial<typeof settings.sync>) => updateSettings({ sync: { ...settings.sync, ...patch } })
-  const tokenDirty = token !== settings.sync.token
 
   return (
     <div className="page page--narrow">
@@ -75,45 +71,13 @@ export function SettingsScreen({ trending }: { trending: TrendingState }) {
       </section>
 
       <section className="panel form">
-        <h2>İki telefonda ortak liste</h2>
+        <h2>Ortak liste</h2>
         <p className="form__lead">
-          Liste, GitHub deponuzun <b>{settings.sync.branch}</b> dalındaki list.json dosyasında durur. Okumak için anahtar gerekmez; eklemek için her telefona bir kez yazma anahtarı girilir.
+          Bu siteyi açan herkes aynı listeyi görür ve değiştirebilir; kişiye özel liste yok. Kayıtlar, sitenin dışındaki herkese açık bir depoda (extendsclass.com) tek dosya olarak durur.
         </p>
-        <div className="form__pair">
-          <label className="field">
-            <span className="field__label">Depo sahibi</span>
-            <input className="input" value={settings.sync.owner} autoCapitalize="off" autoCorrect="off" spellCheck={false} onChange={(e) => setSync({ owner: e.target.value.trim() })} />
-          </label>
-          <label className="field">
-            <span className="field__label">Depo adı</span>
-            <input className="input" value={settings.sync.repo} autoCapitalize="off" autoCorrect="off" spellCheck={false} onChange={(e) => setSync({ repo: e.target.value.trim() })} />
-          </label>
-        </div>
-        <label className="field">
-          <span className="field__label">Yazma anahtarı</span>
-          <input
-            className="input"
-            type="password"
-            value={token}
-            placeholder="github_pat_…"
-            autoComplete="off"
-            aria-describedby="token-help"
-            onChange={(e) => setToken(e.target.value.trim())}
-          />
-          <span className="field__help" id="token-help">
-            Yalnızca bu depoya, "Contents: Read and write" izniyle açılmış ince ayarlı (fine-grained) bir anahtar. Bu telefonda saklanır, başka yere gönderilmez.
-          </span>
-        </label>
         <div className="form__row">
-          <button
-            className="btn btn--primary"
-            onClick={() => {
-              setSync({ token })
-              void syncNow()
-            }}
-            disabled={status.state === 'syncing'}
-          >
-            {tokenDirty ? 'Anahtarı kaydet ve eşitle' : 'Şimdi eşitle'}
+          <button className="btn btn--primary" onClick={() => void syncNow()} disabled={status.state === 'syncing'}>
+            Şimdi eşitle
           </button>
           <span className={`form__status${status.state === 'error' ? ' form__status--bad' : ''}`} role="status">{syncLine(status)}</span>
         </div>
