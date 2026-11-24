@@ -2,7 +2,7 @@
 
 İki kişi için "bugün ne yapsak?" uygulaması. Yapmak istediğiniz aktiviteleri, gitmek istediğiniz mekanları, izleyeceğiniz film ve dizileri kaydedersiniz; karar günü geldiğinde uygulama desteyi önünüze koyar:
 
-Açılışta nokta nokta bir alan ve ortasında, macOS Dock'u gibi buzlu camdan bir gezinme çubuğu karşılar; bir sayfaya girildiğinde aynı çubuk üste çıkar.
+Açılışta nokta nokta bir alan, üzerinde sol üstten sağ alta durmadan akan büyük piksel ikonlar ve ortada, macOS Dock'u gibi buzlu camdan bir gezinme çubuğu karşılar; bir sayfaya girildiğinde aynı çubuk üste çıkar.
 
 - **Eklediklerim.** Kendi yazdıklarınız. `+` ile önce kategori (aktivite, mekan, film, dizi), sonra ne olduğu.
 - **Kaydettiklerim.** O hafta revaçta olan 10 şey kart kart gelir; kalbe bastıklarınız beğenilenlere eklenir.

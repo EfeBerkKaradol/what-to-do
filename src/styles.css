@@ -155,10 +155,10 @@ button {
   top: 50%;
   transform: translate(-50%, -50%);
   flex-direction: column;
-  gap: 26px;
-  width: min(calc(100% - 32px), 460px);
-  padding: 34px 14px 14px;
-  border-radius: 36px;
+  gap: 18px;
+  width: min(calc(100% - 48px), 340px);
+  padding: 22px 12px 10px;
+  border-radius: 30px;
 }
 
 .dock--top {
@@ -178,26 +178,20 @@ button {
   border-radius: 12px;
 }
 
-.dock--center .dock__brand {
-  flex-direction: column;
-  gap: 12px;
-  text-align: center;
-}
-
-.dock__headline {
-  display: grid;
-  gap: 6px;
-}
-
-.dock__headline h1 {
-  font-size: clamp(38px, 10.5vw, 54px);
+.dock__brand h1 {
+  font-size: clamp(28px, 8vw, 34px);
   line-height: 1;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.03em;
 }
 
-.dock__tag {
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 15px;
+/* On a phone the bar has no room for the name; a house stands in for the way back. */
+.dock__home {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 21px;
+  border-radius: 12px;
 }
 
 .dock__name {
@@ -216,7 +210,7 @@ button {
 }
 
 .dock--center .dock__items {
-  gap: 12px;
+  gap: 6px;
   width: 100%;
 }
 
@@ -236,17 +230,17 @@ button {
 .dock--center .dock__item {
   flex: 1 1 0;
   min-width: 0;
-  gap: 8px;
-  font-size: 13px;
+  gap: 7px;
+  font-size: 12px;
   line-height: 16px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 /* In the middle the three destinations get the whole row; settings moves to the corner. */
 .dock--center .dock__item--small {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 8px;
+  right: 8px;
   flex: none;
   padding: 0;
 }
@@ -273,14 +267,14 @@ button {
 }
 
 .dock--center .dock__tile {
-  width: 64px;
-  height: 64px;
-  border-radius: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
 }
 
 .dock--center .dock__tile svg {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
 }
 
 .dock--center .dock__item--small .dock__tile {
@@ -362,6 +356,11 @@ button {
 @media (min-width: 600px) {
   .dock__name {
     display: block;
+    padding-left: 4px;
+  }
+
+  .dock__home {
+    display: none;
   }
 
   .dock--top {

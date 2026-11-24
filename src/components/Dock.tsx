@@ -1,4 +1,4 @@
-import { IconHeart, IconPen, IconSettings, IconToday, Mark } from './Icons'
+import { IconHeart, IconHome, IconPen, IconSettings, IconToday } from './Icons'
 
 export type Route = 'home' | 'added' | 'liked' | 'settings'
 
@@ -17,15 +17,14 @@ export function Dock({ route, onPlay }: { route: Route; onPlay: () => void }) {
   const home = route === 'home'
   return (
     <nav className={`dock dock--${home ? 'center' : 'top'}`} aria-label="Ne Yapsak">
-      <a className="dock__brand" href={ROUTES.home} aria-label="Ne Yapsak, ana ekran">
-        <Mark size={home ? 44 : 30} />
+      <a className="dock__brand" href={ROUTES.home} aria-label={home ? undefined : 'Ne Yapsak, ana ekran'}>
         {home ? (
-          <span className="dock__headline">
-            <h1>Ne Yapsak</h1>
-            <span className="dock__tag">İkiniz için bugünün planı</span>
-          </span>
+          <h1>Ne Yapsak</h1>
         ) : (
-          <span className="dock__name">Ne Yapsak</span>
+          <>
+            <span className="dock__home"><IconHome /></span>
+            <span className="dock__name">Ne Yapsak</span>
+          </>
         )}
       </a>
 

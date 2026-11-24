@@ -45,16 +45,9 @@ export const IconHeart = ({ filled = false }: { filled?: boolean }) => (
     <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />
   </svg>
 )
+export const IconHome = () => (
+  <svg {...base}><path d="M4 11l8-6.5 8 6.5" /><path d="M6.5 10v9h11v-9" /></svg>
+)
 export const IconBack = () => (
   <svg {...base}><path d="M14 6l-6 6 6 6" /></svg>
 )
-
-export function Mark({ size = 28 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="8 15 48 34" aria-hidden>
-      <circle cx="25" cy="32" r="15" fill="none" stroke="currentColor" strokeWidth="2.5" />
-      <circle cx="39" cy="32" r="15" fill="none" stroke="currentColor" strokeWidth="2.5" />
-      <path d="M32 18.7a15 15 0 0 1 0 26.6 15 15 0 0 1 0-26.6z" fill="var(--accent)" />
-    </svg>
-  )
-}
