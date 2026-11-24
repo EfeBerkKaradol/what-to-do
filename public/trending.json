@@ -1,0 +1,907 @@
+{
+ "updatedAt": "2026-11-24T16:00:40.544Z",
+ "regions": {
+  "ISTANBUL": "İstanbul",
+  "ANKARA": "Ankara",
+  "IZMIR": "İzmir",
+  "ANTALYA": "Antalya",
+  "DIGER": "Diğer şehirler"
+ },
+ "sources": {
+  "events": "Biletix",
+  "movies": "iTunes Türkiye",
+  "series": "TVMaze"
+ },
+ "events": {
+  "ISTANBUL": [
+   {
+    "id": "event:5HO63",
+    "kind": "event",
+    "title": "Başar Keklik",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5HO16basar-26su.avif",
+    "venue": "The Keep",
+    "city": "Çanakkale",
+    "when": "2026-11-25T18:45:00Z",
+    "url": "https://www.biletix.com/etkinlik/5HO63/TURKIYE/tr",
+    "meta": "Konser · pop"
+   },
+   {
+    "id": "event:5R509",
+    "kind": "event",
+    "title": "Kürk Mantolu Madonna",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5PY46-kurkmantolu-new26bu.png",
+    "venue": "Taksim İstiklal Sahne",
+    "city": "İstanbul",
+    "when": "2026-11-24T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5R509/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5ZU56",
+    "kind": "event",
+    "title": "Buz Adası Serbest Seans",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/buzadasi-6-11-25su.jpg",
+    "venue": "Zeytinburnu Buz Adası Alt Pist",
+    "city": "İstanbul",
+    "when": "2026-11-25T08:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ZU56/TURKIYE/tr",
+    "meta": "Aile · attractioncenter"
+   },
+   {
+    "id": "event:5ASOB",
+    "kind": "event",
+    "title": "The Art Of Flow",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ASOB-26su.avif",
+    "venue": "The Cube",
+    "city": "İstanbul",
+    "when": "2026-11-28T07:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ASOB/TURKIYE/tr",
+    "meta": "Spor"
+   },
+   {
+    "id": "event:5FHE4",
+    "kind": "event",
+    "title": "İstanbul Tatları Tadım Sineması - Kasım Ayı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5BEM1-26su.avif",
+    "venue": "İstanbul Tatları",
+    "city": "İstanbul",
+    "when": "2026-11-25T07:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5FHE4/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5TX77",
+    "kind": "event",
+    "title": "Serdar Ortaç",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5TX77-bu26.avif",
+    "venue": "JJ Arena Ataşehir",
+    "city": "İstanbul",
+    "when": "2026-11-27T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5TX77/TURKIYE/tr",
+    "meta": "Konser · pop"
+   },
+   {
+    "id": "event:5R523",
+    "kind": "event",
+    "title": "Bir İdam Mahkumunun Son Günü",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/4ME92_biridam_2025bu.jpg",
+    "venue": "Taksim İstiklal Sahne",
+    "city": "İstanbul",
+    "when": "2026-11-25T13:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5R523/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5D233",
+    "kind": "event",
+    "title": "İstanbul Dolphinarium Yunus Gösterileri",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ISG0-dolphinarium3-1920.avif",
+    "venue": "İstanbul Dolphinarium",
+    "city": "İstanbul",
+    "when": "2026-11-25T11:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5D233/TURKIYE/tr",
+    "meta": "Aile · attractioncenter"
+   },
+   {
+    "id": "event:5MEBS",
+    "kind": "event",
+    "title": "Atatürk Arboretumu - Günübirlik Tur - Sarıyer",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5MEBS-4-11-26su.avif",
+    "venue": "Atatürk Arboretumu",
+    "city": "İstanbul",
+    "when": "2026-11-29T06:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5MEBS/TURKIYE/tr",
+    "meta": "Spor"
+   },
+   {
+    "id": "event:5Q635",
+    "kind": "event",
+    "title": "İstanbul Diyalog Müzesi | Karanlık Deneyimi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/tamamenkaranlik-26su.avif",
+    "venue": "İstanbul Diyalog Müzesi",
+    "city": "İstanbul",
+    "when": "2026-11-25T07:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5Q635/TURKIYE/tr",
+    "meta": "Etkinlik · muze"
+   },
+   {
+    "id": "event:5LND3",
+    "kind": "event",
+    "title": "Sena Şener - Yeni Dönem 2026 Turnesi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5LND3-27ksmbu26.avif",
+    "venue": "Hayal Kahvesi Bursa",
+    "city": "Bursa",
+    "when": "2026-11-27T19:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5LND3/TURKIYE/tr",
+    "meta": "Konser · pop"
+   },
+   {
+    "id": "event:5BBZB",
+    "kind": "event",
+    "title": "Bir Delinin Hatıra Defteri",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/4BB03-normal.png",
+    "venue": "Bakırköy Butik Sahne",
+    "city": "İstanbul",
+    "when": "2026-11-24T16:20:00Z",
+    "url": "https://www.biletix.com/etkinlik/5BBZB/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   }
+  ],
+  "ANKARA": [
+   {
+    "id": "event:5MY26",
+    "kind": "event",
+    "title": "Karsu",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5MY11-karsu-bu26.avif",
+    "venue": "Selçuklu Kongre Merkezi Anadolu Shn",
+    "city": "Konya",
+    "when": "2026-11-24T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5MY26/TURKIYE/tr",
+    "meta": "Konser · pop"
+   },
+   {
+    "id": "event:5R341",
+    "kind": "event",
+    "title": "İçimizdeki Şeytan",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/icimzdekisytan-28-8-26.avif",
+    "venue": "Adalar Sahne",
+    "city": "Eskişehir",
+    "when": "2026-11-27T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5R341/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5CHMD",
+    "kind": "event",
+    "title": "Pinokyo",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/3MMP0-pinokyo.jpg",
+    "venue": "Niğde Kültür Merkezi",
+    "city": "Niğde",
+    "when": "2026-11-28T12:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5CHMD/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:53196",
+    "kind": "event",
+    "title": "Heykel - Süveterli Kediler",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/53063bu26suveter.avif",
+    "venue": "Masterpiece Ankara",
+    "city": "Ankara",
+    "when": "2026-11-26T16:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/53196/TURKIYE/tr",
+    "meta": "Etkinlik · mebonayliegitim"
+   },
+   {
+    "id": "event:5BDGR",
+    "kind": "event",
+    "title": "90lar Türkçe Pop Partisi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/2K724-gorsel.jpg",
+    "venue": "IF Performance Hall Tepe Prime",
+    "city": "Ankara",
+    "when": "2026-11-27T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5BDGR/TURKIYE/tr",
+    "meta": "Konser · pop"
+   },
+   {
+    "id": "event:5T9OK",
+    "kind": "event",
+    "title": "Meksika Açmazı - İyi misin?",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5T679-meksikabu26.avif",
+    "venue": "Çankaya Sahne",
+    "city": "Ankara",
+    "when": "2026-11-28T14:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5T9OK/TURKIYE/tr",
+    "meta": "Sahne · gosteri"
+   },
+   {
+    "id": "event:5MS75",
+    "kind": "event",
+    "title": "Oz Büyücüsü",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5MS0K-ozbuyucu.avif",
+    "venue": "Çayyolu Sahne",
+    "city": "Ankara",
+    "when": "2026-11-28T10:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5MS75/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:53198",
+    "kind": "event",
+    "title": "Heykel - Küçük Prens ve Tilki",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/52652-kucukprensbu26.avif",
+    "venue": "Masterpiece Ankara",
+    "city": "Ankara",
+    "when": "2026-11-29T10:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/53198/TURKIYE/tr",
+    "meta": "Etkinlik · mebonayliegitim"
+   },
+   {
+    "id": "event:5YY03",
+    "kind": "event",
+    "title": "Kavak",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ELT0-bu26.avif",
+    "venue": "Holly Garden Eskişehir",
+    "city": "Eskişehir",
+    "when": "2026-11-27T18:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5YY03/TURKIYE/tr",
+    "meta": "Konser · rap_hiphop"
+   },
+   {
+    "id": "event:5R344",
+    "kind": "event",
+    "title": "Çalıkuşu",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/calikusu-28-8-26.avif",
+    "venue": "Kinesis Stage & Art Space",
+    "city": "Ankara",
+    "when": "2026-11-27T13:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5R344/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5FXDR",
+    "kind": "event",
+    "title": "Heidi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5FXCAheidi.avif",
+    "venue": "Muhsin Yazıcıoğlu Kültür Merkezi",
+    "city": "Sivas",
+    "when": "2026-11-28T10:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5FXDR/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:53205",
+    "kind": "event",
+    "title": "Resim - Klimt Modern Kiss",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/52278-klimtbu26.avif",
+    "venue": "Masterpiece Ümitköy",
+    "city": "Ankara",
+    "when": "2026-11-27T16:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/53205/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   }
+  ],
+  "IZMIR": [
+   {
+    "id": "event:5IYIM",
+    "kind": "event",
+    "title": "Ozbi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5IYIO-BU27.avif",
+    "venue": "Holly Stone Aydın",
+    "city": "Aydın",
+    "when": "2026-11-26T18:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5IYIM/TURKIYE/tr",
+    "meta": "Konser · alternatif"
+   },
+   {
+    "id": "event:5GMOI",
+    "kind": "event",
+    "title": "Ruh Salatası",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5GMOE-ruhS2-1920.avif",
+    "venue": "Bostanlı Suat Taşer Tiy.",
+    "city": "İzmir",
+    "when": "2026-11-24T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5GMOI/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:57Q9U",
+    "kind": "event",
+    "title": "Paw Patrol Görev Zamanı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/47QC1-pawpetrol.jpg",
+    "venue": "Fethiye Belediyesi Özer Olgun",
+    "city": "Muğla",
+    "when": "2026-11-29T10:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/57Q9U/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:6MGB0",
+    "kind": "event",
+    "title": "Yukatel Denizli Basket 2026-2027 Kombine",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/6MGB0-nrml-vk-04.09.avif",
+    "venue": "PAU Arena Spor Salonu",
+    "city": "Denizli",
+    "when": "2026-11-30T20:59:00Z",
+    "url": "https://www.biletix.com/etkinlik/6MGB0/TURKIYE/tr",
+    "meta": "Spor · basketbol"
+   },
+   {
+    "id": "event:5ES54",
+    "kind": "event",
+    "title": "Abajur Boyama",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ES17buu26.avif",
+    "venue": "People’s Social",
+    "city": "İzmir",
+    "when": "2026-11-28T10:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ES54/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5ERKE",
+    "kind": "event",
+    "title": "Yüksek Sadakat",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5SC13-26su.jpg",
+    "venue": "Holly Stone Aydın",
+    "city": "Aydın",
+    "when": "2026-11-27T19:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ERKE/TURKIYE/tr",
+    "meta": "Konser · rock"
+   },
+   {
+    "id": "event:5ZM16",
+    "kind": "event",
+    "title": "Kürkçü Dükkanı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ZM08-26su.avif",
+    "venue": "Sahne Tozu T. Fehmi İşgören Sah.",
+    "city": "İzmir",
+    "when": "2026-11-25T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ZM16/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5QF9G",
+    "kind": "event",
+    "title": "Oz Büyücüsü",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5QF37-26su.avif",
+    "venue": "Gazi Mustafa Kemal Atatürk K.M.",
+    "city": "Muğla",
+    "when": "2026-11-29T11:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5QF9G/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:5ES55",
+    "kind": "event",
+    "title": "Ayna Boyama",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ES17buu26.avif",
+    "venue": "People’s Social",
+    "city": "İzmir",
+    "when": "2026-11-28T10:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ES55/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5GRS1",
+    "kind": "event",
+    "title": "İlker Gürsan - Halk Konseri",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/ilkergursan-13-10-26-su.avif",
+    "venue": "Nâzım Hikmet Kültür Merkezi",
+    "city": "İzmir",
+    "when": "2026-11-24T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5GRS1/TURKIYE/tr",
+    "meta": "Konser · turksanat_halkmuzik"
+   },
+   {
+    "id": "event:5YD07",
+    "kind": "event",
+    "title": "Yusuf Bilal Altıntaş - Entel Maganda - Stand Up",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5YD00-BU27.avif",
+    "venue": "Babil Bira Bahçesi",
+    "city": "İzmir",
+    "when": "2026-11-25T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5YD07/TURKIYE/tr",
+    "meta": "Sahne · stand_up"
+   },
+   {
+    "id": "event:57Q9V",
+    "kind": "event",
+    "title": "Sonic Orman Macerası",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/47Q94-sonic.jpg",
+    "venue": "Fethiye Belediyesi Özer Olgun",
+    "city": "Muğla",
+    "when": "2026-11-29T11:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/57Q9V/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   }
+  ],
+  "ANTALYA": [
+   {
+    "id": "event:5HYTE",
+    "kind": "event",
+    "title": "Bülent Ortaçgil",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/bulentortacgil_2025su.jpg",
+    "venue": "6:45 Mersin",
+    "city": "Mersin",
+    "when": "2026-11-26T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5HYTE/TURKIYE/tr",
+    "meta": "Konser · alternatif"
+   },
+   {
+    "id": "event:5KZ30",
+    "kind": "event",
+    "title": "Anna Karenina",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5KZ30-26su.avif",
+    "venue": "Silifke Doğan Cüceloğlu KM",
+    "city": "Mersin",
+    "when": "2026-11-26T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5KZ30/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5GX09",
+    "kind": "event",
+    "title": "Uluslararası Hologram Sirki",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5GX25-BU26.avif",
+    "venue": "Alanya Kültür Merkezi",
+    "city": "Antalya",
+    "when": "2026-11-28T10:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5GX09/TURKIYE/tr",
+    "meta": "Aile · musical"
+   },
+   {
+    "id": "event:5ES33",
+    "kind": "event",
+    "title": "Mum Workshop",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/4EM01_914.jpg",
+    "venue": "Loba Coffee & Bakery",
+    "city": "Mersin",
+    "when": "2026-11-28T10:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ES33/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5ILS4",
+    "kind": "event",
+    "title": "Uzi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5OF80-uzibu26.avif",
+    "venue": "Konyaaltı Belediyesi Nazım Hikmet",
+    "city": "Antalya",
+    "when": "2026-11-25T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ILS4/TURKIYE/tr",
+    "meta": "Konser · rap_hiphop"
+   },
+   {
+    "id": "event:5D7AH",
+    "kind": "event",
+    "title": "Düş Payı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5D802-duspayibu26.avif",
+    "venue": "Türkan Şoray Kültür Merkezi",
+    "city": "Antalya",
+    "when": "2026-11-25T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5D7AH/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5YSNJ",
+    "kind": "event",
+    "title": "Elsa : Sihirli Macera",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/fantasiasirki-26su.avif",
+    "venue": "Toroslar Belediyesi",
+    "city": "Mersin",
+    "when": "2026-11-28T10:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5YSNJ/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:5ES30",
+    "kind": "event",
+    "title": "Ayna Boyama Workshop",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/4EM01_914.jpg",
+    "venue": "Loba Coffee & Bakery",
+    "city": "Mersin",
+    "when": "2026-11-29T12:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ES30/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5HO79",
+    "kind": "event",
+    "title": "Emre Nalbantoğlu",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/emrenlbntoglu5HO55.avif",
+    "venue": "Beygir Performance Hall",
+    "city": "Isparta",
+    "when": "2026-11-25T18:45:00Z",
+    "url": "https://www.biletix.com/etkinlik/5HO79/TURKIYE/tr",
+    "meta": "Konser · alternatif"
+   },
+   {
+    "id": "event:5D828",
+    "kind": "event",
+    "title": "Aşk Hikayen Düşmüş",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5D793-askhikayenbu26.avif",
+    "venue": "Konyaaltı Belediyesi Nazım Hikmet",
+    "city": "Antalya",
+    "when": "2026-11-27T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5D828/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5FI98",
+    "kind": "event",
+    "title": "Keloğlan Dürüstlük Ülkesinde",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5FI08-keloglan.avif",
+    "venue": "Özgün Sahne",
+    "city": "Antalya",
+    "when": "2026-11-25T15:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5FI98/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:5ES31",
+    "kind": "event",
+    "title": "Bez Çanta Boyama",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/4EM01_914.jpg",
+    "venue": "Loba Coffee & Bakery",
+    "city": "Mersin",
+    "when": "2026-11-29T12:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ES31/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   }
+  ],
+  "DIGER": [
+   {
+    "id": "event:5SO75",
+    "kind": "event",
+    "title": "Pinhani Akustik",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/pinhani-gorsel-bu.avif",
+    "venue": "Bingöl Belediyesi Konferans Salonu",
+    "city": "Bingöl",
+    "when": "2026-11-26T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5SO75/TURKIYE/tr",
+    "meta": "Konser · rock"
+   },
+   {
+    "id": "event:5KS11",
+    "kind": "event",
+    "title": "Şahane Pazar Sahnede",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/51937-yatay.avif",
+    "venue": "Necip Fazıl Kısakürek K.M.",
+    "city": "Erzurum",
+    "when": "2026-11-24T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5KS11/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5PTSA",
+    "kind": "event",
+    "title": "Ağustos Böceği ile Karınca",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5PST2-nrml.avif",
+    "venue": "Mehmet Akif İnan Konferans",
+    "city": "Şanlıurfa",
+    "when": "2026-11-27T16:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5PTSA/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:5GGC3",
+    "kind": "event",
+    "title": "İtalyan Tatlıları Atölyesi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/italyantatlilariatolyesi5GGC3.avif",
+    "venue": "Gaziantep Gastronomi Akademisi",
+    "city": "Gaziantep",
+    "when": "2026-11-28T07:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5GGC3/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5TO30",
+    "kind": "event",
+    "title": "Kalben",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5TO30-kalben-26su.avif",
+    "venue": "Holly Stone Diyarbakır",
+    "city": "Diyarbakır",
+    "when": "2026-11-27T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5TO30/TURKIYE/tr",
+    "meta": "Konser · pop"
+   },
+   {
+    "id": "event:56612",
+    "kind": "event",
+    "title": "Nilgün Belgün ile Aşk ve Komedi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/nilgunbelgun-12-10-26su-.avif",
+    "venue": "KTÜ AKM Salonu",
+    "city": "Trabzon",
+    "when": "2026-11-27T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/56612/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5AA17",
+    "kind": "event",
+    "title": "Royal Sirki",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5AA14-BU27.avif",
+    "venue": "R.Raif Denktaş KKM",
+    "city": "Gazimağusa",
+    "when": "2026-11-28T10:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5AA17/TURKIYE/tr",
+    "meta": "Aile · sirk"
+   },
+   {
+    "id": "event:5GB14",
+    "kind": "event",
+    "title": "Elmalı Dolgulu Kek",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5GB14-26su.avif",
+    "venue": "Musem Akademi - Millet Bahçesi",
+    "city": "Gaziantep",
+    "when": "2026-11-28T08:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5GB14/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   },
+   {
+    "id": "event:5OF4A",
+    "kind": "event",
+    "title": "Murda",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ONXW-GORSEL.avif",
+    "venue": "Akçaağaç Koru Lounge & Event",
+    "city": "Sinop",
+    "when": "2026-11-28T19:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5OF4A/TURKIYE/tr",
+    "meta": "Konser · rap_hiphop"
+   },
+   {
+    "id": "event:5PSU5",
+    "kind": "event",
+    "title": "Lady Macbeth",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/Ladymacbeth-30-9-26-su.avif",
+    "venue": "Mehmet Akif İnan Konferans",
+    "city": "Şanlıurfa",
+    "when": "2026-11-27T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5PSU5/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
+   },
+   {
+    "id": "event:5KY0L",
+    "kind": "event",
+    "title": "Alice Harikalar Diyarında",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5KY26-alice-26su.avif",
+    "venue": "Diyarbakır Sezai Karakoç KKM",
+    "city": "Diyarbakır",
+    "when": "2026-11-28T11:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5KY0L/TURKIYE/tr",
+    "meta": "Aile · tiyatro"
+   },
+   {
+    "id": "event:5GZDD",
+    "kind": "event",
+    "title": "İtalyan Mutfağı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5GZDD-26su.avif",
+    "venue": "Musem Akademi - Millet Bahçesi",
+    "city": "Gaziantep",
+    "when": "2026-11-28T08:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5GZDD/TURKIYE/tr",
+    "meta": "Etkinlik · atolye"
+   }
+  ]
+ },
+ "movies": [
+  {
+   "id": "movie:itunes-1896826363",
+   "kind": "movie",
+   "title": "Disclosure Day",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/ec/e8/92/ece89216-b01c-c728-6fb5-187724c8fa5b/UNI_DISCLOSURE_DAY_TH_ITUNES_TR_ARTWORK_TR_2000x3000_5F1LFI00002O03.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/disclosure-day/id1896826363",
+   "meta": "2026 · Sci-Fi & Fantasy",
+   "note": "If you found out we weren't alone, if someone showed you, proved it to you, would that frighten you? Now the truth belongs to seven billion people in an original event film created and directed by Steven Spielberg, from "
+  },
+  {
+   "id": "movie:itunes-1755675218",
+   "kind": "movie",
+   "title": "Açlık Oyunları: Kuşların ve Yılanların Şarkısı",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/90/df/94/90df944e-b9ed-b921-1e78-8de9f10f2018/LK_010741_tr-WW-artwork.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/a%C3%A7l%C4%B1k-oyunlar%C4%B1-ku%C5%9Flar%C4%B1n-ve-y%C4%B1lanlar%C4%B1n-%C5%9Fark%C4%B1s%C4%B1/id1755675218",
+   "meta": "2023 · Action & Adventure",
+   "note": "2012 yılından bu yana tüm dünyada büyük yankı uyandıran ve sinemasektörünün en başarılı filmlerinden Açlık Oyunları serisinin son filmi 17 Kasım ’da dünyayla aynı anda ülkemizde vizyona girecek. Tüm zamanların en çok sat"
+  },
+  {
+   "id": "movie:itunes-1895899231",
+   "kind": "movie",
+   "title": "Obsession",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/03/2e/66/032e6622-9c24-55a3-f7fc-dded8611dc31/OBS_Digital_Keyart_APP_2000x3000_TR_TUR_XYi.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/obsession/id1895899231",
+   "meta": "2026 · Horror",
+   "note": "After breaking the mysterious \"One Wish Willow\" to win his crush’s heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price."
+  },
+  {
+   "id": "movie:itunes-741296001",
+   "kind": "movie",
+   "title": "The Hunger Games: Catching Fire",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/b7/fa/b4/b7fab4fd-df09-ae6d-dd7e-5f09fb6449f1/9382463217168_TR.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/the-hunger-games-catching-fire/id741296001",
+   "meta": "2013 · Action & Adventure",
+   "note": "Academy Award® winner Jennifer Lawrence returns as Katniss Everdeen in this thrilling second adventure from THE HUNGER GAMES saga. Against all odds, Katniss and fellow tribute Peeta have returned home after surviving the"
+  },
+  {
+   "id": "movie:itunes-938538816",
+   "kind": "movie",
+   "title": "The Hunger Games: Mockingjay - Part 1",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/30/dc/02/30dc021b-ade0-739a-9558-139535469f6a/THG_Mockingjay-Pt1_iTunes_Transactional-Movies-Cover.png/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/the-hunger-games-mockingjay-part-1/id938538816",
+   "meta": "2014 · Action & Adventure",
+   "note": "Katniss Everdeen (Jennifer Lawrence), is rescued by the rebels and brought to District 13 after she shatters the Hunger Games forever. Under the leadership of President Coin (Julianne Moore) and Plutarch Heavensbee (Phil"
+  },
+  {
+   "id": "movie:itunes-1725365997",
+   "kind": "movie",
+   "title": "Dune: Part Two",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/a1/55/24/a15524ae-9cfe-1465-5782-83447cc248d3/780d6664-4c8a-4288-b33d-62e438b11792_DUNE_PART2_PVOD_V_DD_KA_TT_2000x3000_300dpi_TR-srgb.lsr/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/dune-part-two/id1725365997",
+   "meta": "2024 · Action & Adventure",
+   "note": "Dune: Part Two explores the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his "
+  },
+  {
+   "id": "movie:itunes-1093644583",
+   "kind": "movie",
+   "title": "Açlık Oyunları: Alaycı Kuş - Bölüm 2",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video69/v4/ad/21/8b/ad218b2f-5299-d183-41d9-703d4fc2680b/LK_001800_TR.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/a%C3%A7l%C4%B1k-oyunlar%C4%B1-alayc%C4%B1-ku%C5%9F-b%C3%B6l%C3%BCm-2/id1093644583",
+   "meta": "2015 · Action & Adventure",
+   "note": "Katniss Everdeen, Panem halkıyla tam donanımlı hazırlandıkları savaş içerisindeyken Başkan Snow ile karşı karşıya gelir. Panem halkının özgürlük mücadelesini kazanmasına yardımcı olmak için Katniss’ın yakın arkadaşları G"
+  },
+  {
+   "id": "movie:itunes-6792250839",
+   "kind": "movie",
+   "title": "Toy Story 5",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/08/b7/a7/08b7a70d-a50e-c2f4-2963-414d470f6bca/DIS_TOY_STORY_5_TH_ITUNES_TR_ARTWORK_TR_2000x3000_5H9HF800000X0I.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/toy-story-5/id6792250839",
+   "meta": "2026 · Action & Adventure",
+   "note": "The toys are back in Disney and Pixar’s “Toy Story 5,” and this time it’s Toy meets Tech. Woody, Buzz Lightyear, Jessie and the rest of the gang’s jobs are challenged when they come face-to-face with Lilypad, a brand-new"
+  },
+  {
+   "id": "movie:itunes-1896801524",
+   "kind": "movie",
+   "title": "The Devil Wears Prada 2",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/33/f3/ad/33f3ad70-a008-c28e-2d04-c8906892efbb/FOX_DEVIL_WEARS_PRADA_2_TH_ITUNES_TR_ARTWORK_TR_2000x3000_5EFE6T00000MAA.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/the-devil-wears-prada-2/id1896801524",
+   "meta": "2026 · Drama",
+   "note": "Almost 20 years after making their iconic turns as Miranda, Andy, Emily and Nigel — Meryl Streep, Anne Hathaway, Emily Blunt and Stanley Tucci return to the fashionable streets of New York City and the sleek offices of R"
+  },
+  {
+   "id": "movie:itunes-1893722349",
+   "kind": "movie",
+   "title": "Mortal Kombat II",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/4b/8c/c7/4b8cc730-707c-4482-fdba-200320d4b7fb/MortalKombat2_STD_PREM_V_KA_TT_2000x3000_300dpi_EN.jpg/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/mortal-kombat-ii/id1893722349",
+   "meta": "2026 · Sci-Fi & Fantasy",
+   "note": "New Line Cinema presents the highly anticipated new installment in the classic video game franchise, MORTAL KOMBAT II. This time, the fan-favorite champions—now backed by Johnny Cage himself—face off in a final, lawless "
+  },
+  {
+   "id": "movie:itunes-708338846",
+   "kind": "movie",
+   "title": "Waterworld",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/7c/b1/d9/7cb1d934-1cb6-f8ee-ce00-313ee6ce4a88/pr_source.lsr/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/waterworld/id708338846",
+   "meta": "1995 · Action & Adventure",
+   "note": "Kevin Costner, Dennis Hopper and Jeanne Tripplehorn star in a turbocharged action-adventure epic, unmatched in sheer excitement and heart-pounding suspense. In this futuristic thriller, Earth is covered with water and th"
+  },
+  {
+   "id": "movie:itunes-285832716",
+   "kind": "movie",
+   "title": "Harry Potter and the Goblet of Fire",
+   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/ca/e5/27/cae52731-9419-fe2d-7ef7-8f5961e6c171/pr_source.lsr/600x900bb.jpg",
+   "url": "https://itunes.apple.com/tr/movie/harry-potter-and-the-goblet-of-fire/id285832716",
+   "meta": "2005 · Kids & Family",
+   "note": "When Harry Potter's name emerges from the Goblet of Fire, he becomes a competitor in a grueling battle for glory among three wizarding schools - the Triwizard Tournament. But since Harry never submitted his name for the "
+  }
+ ],
+ "series": [
+  {
+   "id": "series:tvmaze-78665",
+   "kind": "series",
+   "title": "Dexter: Resurrection",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/649/1623432.jpg",
+   "url": "https://www.tvmaze.com/shows/78665/dexter-resurrection",
+   "meta": "Paramount+ · Drama",
+   "note": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to"
+  },
+  {
+   "id": "series:tvmaze-593",
+   "kind": "series",
+   "title": "Murdoch Mysteries",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610487.jpg",
+   "url": "https://www.tvmaze.com/shows/593/murdoch-mysteries",
+   "meta": "CBC Gem · Drama",
+   "note": "Set in Toronto at the dawn of the 20th century, Murdoch Mysteries is a one-hour drama series that explores the intriguing world of William Murdoch, a methodical and dashing detective who pioneers innovative forensic tech"
+  },
+  {
+   "id": "series:tvmaze-75026",
+   "kind": "series",
+   "title": "MobLand",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604671.jpg",
+   "url": "https://www.tvmaze.com/shows/75026/mobland",
+   "meta": "Paramount+ · Drama",
+   "note": "With the most powerful clients in Europe, MobLand will see family fortunes and reputations at risk, odd alliances unfold, and betrayal around every corner; and while the family might be London's most elite fixers today, "
+  },
+  {
+   "id": "series:tvmaze-59344",
+   "kind": "series",
+   "title": "Tulsa King",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615902.jpg",
+   "url": "https://www.tvmaze.com/shows/59344/tulsa-king",
+   "meta": "Paramount+ · Drama",
+   "note": "Tulsa King follows New York mafia capo Dwight \"The General\" Manfredi, just after he is released from prison after 25 years and unceremoniously exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob "
+  },
+  {
+   "id": "series:tvmaze-66811",
+   "kind": "series",
+   "title": "Nocturne",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609134.jpg",
+   "url": "https://www.tvmaze.com/shows/66811/nocturne",
+   "meta": "Apple TV · Drama",
+   "note": "Nocturne tells the story of Jonah Lynn, an ex-soldier turned homicide detective who, tired of working the tough streets of Philadelphia, moves to a small town in Western Pennsylvania for a quiet life. But, as the town an"
+  },
+  {
+   "id": "series:tvmaze-33352",
+   "kind": "series",
+   "title": "The Lord of the Rings: The Rings of Power",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/650/1627263.jpg",
+   "url": "https://www.tvmaze.com/shows/33352/the-lord-of-the-rings-the-rings-of-power",
+   "meta": "Prime Video · Action",
+   "note": "Set thousands of years before the events of The Lord of the Rings, this epic drama follows an ensemble cast of characters, both familiar and new, as they confront the long-feared re-emergence of evil to Middle-earth."
+  },
+  {
+   "id": "series:tvmaze-36672",
+   "kind": "series",
+   "title": "Yellowjackets",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/647/1619412.jpg",
+   "url": "https://www.tvmaze.com/shows/36672/yellowjackets",
+   "meta": "Paramount+ · Drama",
+   "note": "Yellowjackets follows a girls' high school soccer team. In 1975, the Dearborn High Yellowjackets became the first team in state history to qualify for the Girls' U.S. Soccer Championship Series in Manchester, NH. They ne"
+  },
+  {
+   "id": "series:tvmaze-48108",
+   "kind": "series",
+   "title": "Percy Jackson and the Olympians",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/651/1628736.jpg",
+   "url": "https://www.tvmaze.com/shows/48108/percy-jackson-and-the-olympians",
+   "meta": "Disney+ · Adventure",
+   "note": "12-year-old modern demigod Percy Jackson has just come to terms with his newfound supernatural powers when the sky god Zeus accuses him of stealing his master lightning bolt. Now Percy must trek across America to find it"
+  },
+  {
+   "id": "series:tvmaze-3164",
+   "kind": "series",
+   "title": "Heartland",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610561.jpg",
+   "url": "https://www.tvmaze.com/shows/3164/heartland",
+   "meta": "CBC Gem · Drama",
+   "note": "Life is hard on the Flemings' ranch in the Alberta foothills where abused or neglected horses find refuge with a kind, hard-working family. Debts abound and the bank is about to foreclose. Can they keep the ranch running"
+  },
+  {
+   "id": "series:tvmaze-89844",
+   "kind": "series",
+   "title": "Blue Skies",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/608/1521102.jpg",
+   "url": "https://www.tvmaze.com/shows/89844/blue-skies",
+   "meta": "UP Faith & Family · Drama",
+   "note": "Blue Skies is an all-new procedural series blending mystery, action, and emotional storytelling, centered on the powerful bond between a detective and her canine companion. Set in the stunning Crystal Ridge National Park"
+  },
+  {
+   "id": "series:tvmaze-82227",
+   "kind": "series",
+   "title": "Stick",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615054.jpg",
+   "url": "https://www.tvmaze.com/shows/82227/stick",
+   "meta": "Apple TV · Comedy",
+   "note": "Pryce Cahill is an over-the-hill, ex-pro golfer whose career was derailed prematurely 20 years ago. After the collapse of his marriage and getting fired from his job at an Indiana sporting goods store, Pryce hedges his b"
+  },
+  {
+   "id": "series:tvmaze-64087",
+   "kind": "series",
+   "title": "Rivals",
+   "image": "https://static.tvmaze.com/uploads/images/original_untouched/627/1567849.jpg",
+   "url": "https://www.tvmaze.com/shows/64087/rivals",
+   "meta": "Disney+ · Drama",
+   "note": "Rivals dives headfirst into the cut-throat world of independent television in 1986, where the shoulder pads are big and ambitions even bigger. In the fictional upper-class county of Rutshire, a long-standing rivalry betw"
+  }
+ ]
+}

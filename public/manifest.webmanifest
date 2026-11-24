@@ -1,0 +1,11 @@
+{
+  "name": "Ne Yapsak",
+  "short_name": "Ne Yapsak",
+  "description": "İkiniz için bugünün planı.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "tr",
+  "icons": [{ "src": "mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
