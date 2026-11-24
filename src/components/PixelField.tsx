@@ -135,28 +135,28 @@ const SPRITES: Sprite[] = ICONS.map((rows) => {
   return { w: Math.max(...rows.map((r) => r.length)), h: rows.length, cells }
 })
 
-// Stops along the diagonal from the top-left corner to the bottom-right one.
-// The middle is left to the navigator.
-const STOPS = [0.13, 0.31, 0.69, 0.87]
+/** Widest sprite, in cells. Every icon is scaled against this so they all share one size. */
+const SPRITE_SIDE = 16
 
-const ENTER = 700
+const ENTER = 900
 const HOLD = 2000
 const EXIT = 1000
 const GAP = 300
 const CYCLE = ENTER + HOLD + EXIT + GAP
-/** Cells an icon travels down-right while it arrives. */
-const TRAVEL = 9
+/** Sprite cells an icon travels down-right while it arrives. */
+const TRAVEL = 5
 
 const DIM = '#242424'
-const LIT: [number, number, number] = [240, 240, 240]
+const LIT: [number, number, number] = [226, 226, 226]
 const FLARE: [number, number, number] = [255, 106, 127]
 
 const easeOut = (t: number) => 1 - (1 - t) ** 3
 const mix = (a: number, b: number, t: number) => a + (b - a) * t
 
 /**
- * A field of dots over the whole screen. One after another, pixel icons slide in from the
- * top-left towards the bottom-right, rest for two seconds, then burn away in a sweep.
+ * A field of dots over the whole screen. One after another, pixel icons as large as the
+ * screen allows slide in from the top-left, rest for two seconds, then burn away in a
+ * sweep towards the bottom-right.
  */
 export function PixelField({ active }: { active: boolean }) {
   const ref = useRef<HTMLCanvasElement>(null)
@@ -170,6 +170,10 @@ export function PixelField({ active }: { active: boolean }) {
     let width = 0
     let height = 0
     let pitch = 14
+    /** Dots per sprite cell, each way: one sprite pixel is a k × k block of dots. */
+    let k = 1
+    /** Where an icon may rest, as the centre of its box in screen fractions. */
+    let stops: [number, number][] = [[0.5, 0.5]]
     let cols = 0
     let rows = 0
     let ox = 0
@@ -182,7 +186,19 @@ export function PixelField({ active }: { active: boolean }) {
       const dpr = Math.min(window.devicePixelRatio || 1, 2)
       width = canvas.clientWidth
       height = canvas.clientHeight
-      pitch = width < 600 ? 12 : 14
+      // An icon fills the screen's short side. On a wide screen it sits in the middle, behind
+      // the navigator; on a tall one that would hide it entirely, so it takes the full width
+      // and alternates between the top and the bottom of the screen.
+      const wide = width >= height * 1.1
+      // On a tall screen the icon may reach a little behind the navigator, not far: the free
+      // band above (or below) it sets the limit, so the icon's outline stays readable.
+      const dock = document.querySelector('.dock')?.getBoundingClientRect().height ?? 300
+      const band = Math.max(160, (height - dock) / 2)
+      const side = wide ? Math.min(height, width) * 0.94 : Math.min(width * 0.94, band * 1.2)
+      const cell = side / SPRITE_SIDE
+      k = Math.max(1, Math.round(cell / 12))
+      pitch = cell / k
+      stops = wide ? [[0.5, 0.5]] : [[0.5, 0], [0.5, 1]]
       cols = Math.floor(width / pitch)
       rows = Math.floor(height / pitch)
       ox = (width - (cols - 1) * pitch) / 2
@@ -216,10 +232,21 @@ export function PixelField({ active }: { active: boolean }) {
       ctx.fill()
     }
 
-    const origin = (sprite: Sprite, stop: number): [number, number] => {
-      const col = Math.round((stop * width - ox) / pitch - sprite.w / 2)
-      const row = Math.round((stop * height - oy) / pitch - sprite.h / 2)
-      return [Math.max(1, Math.min(cols - sprite.w - 1, col)), Math.max(1, Math.min(rows - sprite.h - 1, row))]
+    /** Top-left dot of the icon's box for a stop, kept a little inside the screen. */
+    const origin = (sprite: Sprite, [fx, fy]: [number, number]): [number, number] => {
+      const w = sprite.w * k
+      const h = sprite.h * k
+      const col = Math.round((fx * width - ox) / pitch - w / 2)
+      const row = Math.round((fy * height - oy) / pitch - h / 2)
+      const edge = Math.min(2, k)
+      return [Math.max(edge, Math.min(cols - w - edge, col)), Math.max(edge, Math.min(rows - h - edge, row))]
+    }
+
+    /** Calls draw for every dot of the icon, with the dot's offset inside the icon's box. */
+    const eachDot = (sprite: Sprite, draw: (dx: number, dy: number) => void) => {
+      for (const [x, y] of sprite.cells) {
+        for (let j = 0; j < k; j++) for (let i = 0; i < k; i++) draw(x * k + i, y * k + j)
+      }
     }
 
     const paint = (elapsed: number) => {
@@ -229,24 +256,24 @@ export function PixelField({ active }: { active: boolean }) {
       const turn = Math.floor(elapsed / CYCLE)
       const t = elapsed - turn * CYCLE
       const sprite = SPRITES[turn % SPRITES.length]
-      const [c0, r0] = origin(sprite, STOPS[turn % STOPS.length])
-      const r = pitch * 0.17
+      const [c0, r0] = origin(sprite, stops[turn % stops.length])
+      const r = pitch * 0.18
 
       if (t < ENTER) {
         // Arrives in whole-cell steps, like a sign scrolling its lamps.
         const p = t / ENTER
-        const back = Math.round((1 - easeOut(p)) * TRAVEL)
-        for (const [x, y] of sprite.cells) {
-          const cx = c0 + x - back
-          const cy = r0 + y - back
-          if (cx < 0 || cy < 0) continue
-          dot(ox + cx * pitch, oy + cy * pitch, r, LIT, Math.min(1, p * 1.6))
-        }
+        const back = Math.round((1 - easeOut(p)) * TRAVEL * k)
+        const alpha = Math.min(1, p * 1.6)
+        eachDot(sprite, (dx, dy) => {
+          const cx = c0 + dx - back
+          const cy = r0 + dy - back
+          if (cx >= 0 && cy >= 0) dot(ox + cx * pitch, oy + cy * pitch, r, LIT, alpha)
+        })
         return
       }
 
       if (t < ENTER + HOLD) {
-        for (const [x, y] of sprite.cells) dot(ox + (c0 + x) * pitch, oy + (r0 + y) * pitch, r, LIT, 1)
+        eachDot(sprite, (dx, dy) => dot(ox + (c0 + dx) * pitch, oy + (r0 + dy) * pitch, r, LIT, 1))
         return
       }
 
@@ -254,22 +281,22 @@ export function PixelField({ active }: { active: boolean }) {
         // A front crosses the icon from its top-left corner; each dot it reaches flares,
         // drifts a little the same way, and goes out.
         const p = (t - ENTER - HOLD) / EXIT
-        const span = sprite.w + sprite.h - 2
+        const span = (sprite.w + sprite.h) * k - 2
         const tail = 0.38
         const front = p * (1 + tail)
-        for (const [x, y] of sprite.cells) {
-          const phase = (front - (x + y) / span) / tail
-          const px = ox + (c0 + x) * pitch
-          const py = oy + (r0 + y) * pitch
+        eachDot(sprite, (dx, dy) => {
+          const phase = (front - (dx + dy) / span) / tail
+          const px = ox + (c0 + dx) * pitch
+          const py = oy + (r0 + dy) * pitch
           if (phase <= 0) {
             dot(px, py, r, LIT, 1)
           } else if (phase < 1) {
             const heat = Math.sin(Math.PI * Math.min(1, phase * 1.4))
-            const drift = phase * phase * pitch * 1.6
+            const drift = phase * phase * pitch * 2.4
             const rgb: [number, number, number] = [mix(LIT[0], FLARE[0], heat), mix(LIT[1], FLARE[1], heat), mix(LIT[2], FLARE[2], heat)]
             dot(px + drift, py + drift, r * (1 + heat * 0.9), rgb, 1 - phase * phase)
           }
-        }
+        })
       }
     }
 
