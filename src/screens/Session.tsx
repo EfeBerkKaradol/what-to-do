@@ -4,11 +4,13 @@ import { IconClose, IconOut, IconUndo } from '../components/Icons'
 import { ItemRow } from '../components/ItemRow'
 import { eventWhen } from '../lib/format'
 import { patchItem, recordWin, saveTrending, useStore } from '../lib/store'
-import { pick, remaining, startBracket, type Bracket } from '../lib/tournament'
-import { KIND_LABEL, type Item } from '../lib/types'
+import { pick, remaining, shuffle, startBracket, type Bracket } from '../lib/tournament'
+import { KIND_LABEL, type Item, type Kind } from '../lib/types'
 import { locate, mapsSearch, nearbyVenues, planFor, type Suggestion } from '../lib/venues'
 
-type Phase = 'swipe' | 'duel' | 'result' | 'none'
+type Phase = 'ready' | 'swipe' | 'duel' | 'result' | 'none'
+
+const KINDS: Kind[] = ['activity', 'place', 'movie', 'series', 'event']
 
 const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
@@ -26,11 +28,13 @@ function details(item: Item): string {
 
 function origin(item: Item): string {
   if (item.source === 'trending') return 'Bu hafta revaçta'
-  return item.addedBy ? `Listenizden · ${item.addedBy} ekledi` : 'Listenizden'
+  if (item.ref) return 'Beğendiklerinizden'
+  return item.addedBy ? `Eklediklerinizden · ${item.addedBy} ekledi` : 'Eklediklerinizden'
 }
 
-export function Session({ deck, onClose }: { deck: Item[]; onClose: () => void }) {
-  const [phase, setPhase] = useState<Phase>('swipe')
+export function Session({ pool, onClose }: { pool: Item[]; onClose: () => void }) {
+  const [phase, setPhase] = useState<Phase>('ready')
+  const [deck, setDeck] = useState<Item[]>([])
   const [decisions, setDecisions] = useState<boolean[]>([])
   const [bracket, setBracket] = useState<Bracket<Item> | null>(null)
   const [winner, setWinner] = useState<Item | null>(null)
@@ -70,6 +74,14 @@ export function Session({ deck, onClose }: { deck: Item[]; onClose: () => void }
     [bracket, crown],
   )
 
+  const begin = (chosen: Item[]) => {
+    setDeck(shuffle(chosen))
+    setDecisions([])
+    setBracket(null)
+    setWinner(null)
+    setPhase('swipe')
+  }
+
   const restart = () => {
     setDecisions([])
     setBracket(null)
@@ -78,7 +90,7 @@ export function Session({ deck, onClose }: { deck: Item[]; onClose: () => void }
   }
 
   const left = phase === 'swipe' ? deck.length - index : phase === 'duel' && bracket ? remaining(bracket) : phase === 'result' ? 1 : 0
-  const heading = { swipe: 'Deste', duel: 'O mu, bu mu?', result: 'Bugünün planı', none: 'Deste bitti' }[phase]
+  const heading = { ready: '', swipe: 'Deste', duel: 'O mu, bu mu?', result: 'Bugünün planı', none: 'Deste bitti' }[phase]
   const progress =
     phase === 'swipe' ? index / Math.max(1, deck.length) : phase === 'duel' && bracket ? bracket.played / Math.max(1, bracket.total) : 1
 
@@ -87,7 +99,7 @@ export function Session({ deck, onClose }: { deck: Item[]; onClose: () => void }
       <header className="session__head">
         <button className="icon-btn" aria-label="Kapat ve ana ekrana dön" onClick={onClose}><IconClose /></button>
         <div className="session__title">
-          <h1>{heading}</h1>
+          {phase !== 'ready' && <h1>{heading}</h1>}
           <p className="num" aria-live="polite">
             {phase === 'swipe' && `${Math.min(index + 1, deck.length)} / ${deck.length} · ${liked.length} olur`}
             {phase === 'duel' && bracket && `${bracket.round}. tur · ${left} seçenek kaldı`}
@@ -103,7 +115,9 @@ export function Session({ deck, onClose }: { deck: Item[]; onClose: () => void }
           <span className="icon-btn icon-btn--spacer" />
         )}
       </header>
-      <div className="track" aria-hidden><span style={{ transform: `scaleX(${progress})` }} /></div>
+      <div className="track" aria-hidden><span style={{ transform: `scaleX(${phase === 'ready' ? 0 : progress})` }} /></div>
+
+      {phase === 'ready' && <ReadyStage pool={pool} onBegin={begin} onClose={onClose} />}
 
       {phase === 'swipe' && index < deck.length && (
         <SwipeStage key={deck[index].id} item={deck[index]} next={deck[index + 1]} onDecide={decide} />
@@ -123,6 +137,49 @@ export function Session({ deck, onClose }: { deck: Item[]; onClose: () => void }
           </div>
         </div>
       )}
+    </div>
+  )
+}
+
+function ReadyStage({ pool, onBegin, onClose }: { pool: Item[]; onBegin: (deck: Item[]) => void; onClose: () => void }) {
+  const [off, setOff] = useState<Set<Kind>>(new Set())
+  const deck = pool.filter((i) => !off.has(i.kind))
+  const mine = deck.filter((i) => i.source === 'saved').length
+  const counts = KINDS.map((kind) => ({ kind, n: pool.filter((i) => i.kind === kind).length })).filter((c) => c.n > 0)
+
+  const toggle = (k: Kind) =>
+    setOff((prev) => {
+      const next = new Set(prev)
+      if (next.has(k)) next.delete(k)
+      else next.add(k)
+      return next
+    })
+
+  return (
+    <div className="session__body session__body--center ready">
+      <div className="ready__text">
+        <h1 className="ready__title">Hazır mısın?</h1>
+        <p className="ready__sub">
+          {pool.length === 0
+            ? 'Destede henüz seçenek yok. Önce bir şeyler ekleyin ya da beğenin.'
+            : deck.length === 0
+              ? 'Bütün türler kapalı. En az birini açın.'
+              : `${deck.length} seçenek bekliyor: ${mine} sizden, ${deck.length - mine} bu hafta revaçta. Sağa olur, sola geç; sonra kalanlar ikişer ikişer karşılaşır.`}
+        </p>
+      </div>
+      {counts.length > 0 && (
+        <div className="chips chips--center" role="group" aria-label="Desteye girecek türler">
+          {counts.map(({ kind, n }) => (
+            <button key={kind} className="chip" aria-pressed={!off.has(kind)} onClick={() => toggle(kind)}>
+              {KIND_LABEL[kind]} <span className="num chip__n">{n}</span>
+            </button>
+          ))}
+        </div>
+      )}
+      <div className="stack">
+        <button className="btn btn--primary btn--big" disabled={deck.length === 0} onClick={() => onBegin(deck)}>Hazırım</button>
+        <button className="btn btn--text" onClick={onClose}>Şimdi değil</button>
+      </div>
     </div>
   )
 }

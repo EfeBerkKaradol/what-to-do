@@ -2,9 +2,14 @@
 
 İki kişi için "bugün ne yapsak?" uygulaması. Yapmak istediğiniz aktiviteleri, gitmek istediğiniz mekanları, izleyeceğiniz film ve dizileri kaydedersiniz; karar günü geldiğinde uygulama desteyi önünüze koyar:
 
-1. **Kaydır.** Kayıtlı fikirleriniz ve o hafta revaçta olan 10 şey (etkinlik, film, dizi) tek destede gelir. Sağa "olur", sola "geç".
-2. **O mu, bu mu?** "Olur" dedikleriniz ikişer ikişer karşınıza çıkar; eleme usulü, sona kalan kazanır.
-3. **Kazanan ve nereye gidileceği.** Etkinlikse mekanı, kayıtlı bir yerse konumu, film ya da aktiviteyse yakındaki uygun mekanlar; hepsi Google Haritalar bağlantısıyla.
+Açılışta nokta nokta bir alan ve ortasında, macOS Dock'u gibi buzlu camdan bir gezinme çubuğu karşılar; bir sayfaya girildiğinde aynı çubuk üste çıkar.
+
+- **Eklediklerim.** Kendi yazdıklarınız. `+` ile önce kategori (aktivite, mekan, film, dizi), sonra ne olduğu.
+- **Kaydettiklerim.** O hafta revaçta olan 10 şey kart kart gelir; kalbe bastıklarınız beğenilenlere eklenir.
+- **Ne Yapsak.** Önce "Hazır mısın?" ekranı, "Hazırım" deyince:
+  1. **Kaydır.** Eklediklerinizle beğendikleriniz ve o günün revaçta olanları tek destede gelir. Sağa "olur", sola "geç".
+  2. **O mu, bu mu?** "Olur" dedikleriniz ikişer ikişer karşınıza çıkar; eleme usulü, sona kalan kazanır.
+  3. **Kazanan ve nereye gidileceği.** Etkinlikse mekanı, kayıtlı bir yerse konumu, film ya da aktiviteyse yakındaki uygun mekanlar; hepsi Google Haritalar bağlantısıyla.
 
 ## Çalıştırma
 
@@ -55,5 +60,7 @@ src/lib/tournament.ts        eleme (o mu, bu mu) mantığı
 src/lib/merge.ts             iki telefonun listesini birleştirme
 src/lib/sync.ts              GitHub deposuyla eşitleme
 src/lib/venues.ts            mekan önerileri ve harita bağlantıları
-src/screens/                 Bugün, Liste, Ayarlar ve seçim akışı
+src/components/PixelField.tsx açılıştaki nokta alanı ve piksel ikonlar
+src/components/Dock.tsx      buzlu cam gezinme çubuğu
+src/screens/                 Eklediklerim, Kaydettiklerim, Ayarlar ve seçim akışı
 ```

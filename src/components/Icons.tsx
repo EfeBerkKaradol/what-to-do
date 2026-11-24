@@ -37,6 +37,18 @@ export const IconChevron = ({ open }: { open: boolean }) => (
   <svg {...base} width={16} height={16} style={{ transform: open ? 'rotate(180deg)' : undefined }}><path d="M6 9l6 6 6-6" /></svg>
 )
 
+export const IconPen = () => (
+  <svg {...base}><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17z" /><path d="M14.5 7.5l3 3" /></svg>
+)
+export const IconHeart = ({ filled = false }: { filled?: boolean }) => (
+  <svg {...base} fill={filled ? 'currentColor' : 'none'}>
+    <path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z" />
+  </svg>
+)
+export const IconBack = () => (
+  <svg {...base}><path d="M14 6l-6 6 6 6" /></svg>
+)
+
 export function Mark({ size = 28 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="8 15 48 34" aria-hidden>

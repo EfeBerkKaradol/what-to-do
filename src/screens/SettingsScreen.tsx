@@ -3,7 +3,7 @@ import { useSyncStatus, type TrendingState } from '../App'
 import { stamp } from '../lib/format'
 import { updateSettings, useStore } from '../lib/store'
 import { syncNow } from '../lib/sync'
-import { syncLine } from './ListScreen'
+import { syncLine } from './AddedScreen'
 
 export function SettingsScreen({ trending }: { trending: TrendingState }) {
   const { settings } = useStore()

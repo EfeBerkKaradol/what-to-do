@@ -26,34 +26,33 @@ export function syncLine(status: ReturnType<typeof useSyncStatus>): string {
   }
 }
 
-export function ListScreen() {
+/** Everything the couple typed in themselves. Liked trending entries live on the other page. */
+export function AddedScreen() {
   const { doc } = useStore()
   const status = useSyncStatus()
   const [filter, setFilter] = useState<Filter>('all')
   const [open, setOpen] = useState<string | null>(null)
   const [adding, setAdding] = useState(false)
 
-  const items = useMemo(() => liveItems(doc), [doc])
+  const items = useMemo(() => liveItems(doc).filter((i) => !i.ref), [doc])
   const active = items.filter((i) => !i.doneAt)
   const done = items.filter((i) => i.doneAt)
 
   const tabs: { id: Filter; label: string; n: number }[] = [
     { id: 'all', label: 'Tümü', n: active.length },
     ...SAVABLE_KINDS.map((k) => ({ id: k as Filter, label: KIND_LABEL[k], n: active.filter((i) => i.kind === k).length })),
-    ...(active.some((i) => i.kind === 'event') ? [{ id: 'event' as Filter, label: KIND_LABEL.event, n: active.filter((i) => i.kind === 'event').length }] : []),
     { id: 'done', label: 'Yapıldı', n: done.length },
   ]
   const shown = filter === 'all' ? active : filter === 'done' ? done : active.filter((i) => i.kind === filter)
-  const addKind: Kind = SAVABLE_KINDS.includes(filter as Kind) ? (filter as Kind) : 'activity'
 
   return (
     <div className="page page--narrow">
       <header className="title">
         <div>
-          <h1>Liste</h1>
+          <h1>Eklediklerim</h1>
           <p className={`title__sub${status.state === 'error' ? ' title__sub--bad' : ''}`}>{syncLine(status)}</p>
         </div>
-        <button className="btn btn--primary" onClick={() => setAdding(true)}><IconPlus /> Ekle</button>
+        <button className="fab" aria-label="Yeni fikir ekle" onClick={() => setAdding(true)}><IconPlus /></button>
       </header>
 
       <div className="tabs" role="tablist" aria-label="Tür">
@@ -69,7 +68,7 @@ export function ListScreen() {
           {filter === 'done'
             ? 'Yaptıklarınız burada birikir.'
             : filter === 'all'
-              ? 'Liste boş. Yapmak istediğiniz bir şeyi, gitmek istediğiniz bir yeri, izleyeceğiniz bir filmi ekleyin.'
+              ? 'Henüz bir şey eklemediniz. Yapmak istediğiniz bir şeyi, gitmek istediğiniz bir yeri, izleyeceğiniz bir filmi ekleyin.'
               : `Bu türde kayıt yok.`}{' '}
           {filter !== 'done' && <button className="link" onClick={() => setAdding(true)}>Ekle</button>}
         </p>
@@ -81,7 +80,7 @@ export function ListScreen() {
         </ul>
       )}
 
-      {adding && <AddSheet initialKind={addKind} onClose={() => setAdding(false)} />}
+      {adding && <AddSheet onClose={() => setAdding(false)} />}
     </div>
   )
 }

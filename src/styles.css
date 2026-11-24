@@ -116,78 +116,262 @@ button {
   white-space: nowrap;
 }
 
-/* ---------- Shell ---------- */
+/* ---------- Welcome field ---------- */
 
-.shell {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+.pixels {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-out;
 }
 
-.side {
+.pixels--on {
+  opacity: 1;
+}
+
+/* ---------- Navigator ---------- */
+
+/* Frosted glass, after the macOS Dock: asked for by name, so the one place
+   on the product where a blur and a shadow are allowed. taste-skill-ignore */
+.dock {
+  position: fixed;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  background: rgba(96, 96, 104, 0.26);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 24px 60px rgba(0, 0, 0, 0.55); /* taste-skill-ignore */
+  transition: top 0.55s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.dock--center {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  gap: 26px;
+  width: min(calc(100% - 32px), 460px);
+  padding: 34px 14px 14px;
+  border-radius: 36px;
+}
+
+.dock--top {
+  top: calc(10px + env(safe-area-inset-top));
+  transform: translate(-50%, 0);
+  gap: 10px;
+  width: max-content;
+  max-width: calc(100% - 16px);
+  padding: 8px 10px 6px;
+  border-radius: 24px;
+}
+
+.dock__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+}
+
+.dock--center .dock__brand {
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.dock__headline {
+  display: grid;
+  gap: 6px;
+}
+
+.dock__headline h1 {
+  font-size: clamp(38px, 10.5vw, 54px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.dock__tag {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+}
+
+.dock__name {
+  display: none;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-right: 6px;
+}
+
+.dock__items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dock--center .dock__items {
+  gap: 12px;
+  width: 100%;
+}
+
+.dock__item {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding-bottom: 8px;
+  color: var(--text);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  border-radius: 14px;
+}
+
+.dock--center .dock__item {
+  flex: 1 1 0;
+  min-width: 0;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 16px;
+  padding-bottom: 12px;
+}
+
+/* In the middle the three destinations get the whole row; settings moves to the corner. */
+.dock--center .dock__item--small {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  flex: none;
+  padding: 0;
+}
+
+.dock--center .dock__item--small .dock__label,
+.dock--center .dock__sep {
   display: none;
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+.dock--center .dock__item--small[aria-current='page']::after {
+  display: none;
 }
 
-.brand__name {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+.dock__tile {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.15s;
+  transform-origin: center bottom;
 }
 
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  height: 52px;
-  padding: 0 var(--gutter);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--ground);
-  border-bottom: 1px solid var(--rule);
+.dock--center .dock__tile {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
 }
 
-.topbar__scope {
-  color: var(--muted);
-  font-size: 13px;
+.dock--center .dock__tile svg {
+  width: 26px;
+  height: 26px;
+}
+
+.dock--center .dock__item--small .dock__tile {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: transparent;
+  border-color: transparent;
+}
+
+.dock--center .dock__item--small .dock__tile svg {
+  width: 20px;
+  height: 20px;
+}
+
+.dock__item--play .dock__tile {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+}
+
+.dock__item:hover .dock__tile,
+.dock__item:focus-visible .dock__tile {
+  transform: translateY(-4px) scale(1.12);
+}
+
+.dock__item:active .dock__tile {
+  transform: scale(0.96);
+}
+
+.dock__item[aria-current='page'] .dock__tile {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+/* The Dock's "open" dot under the current page. */
+.dock__item[aria-current='page']::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: var(--text);
+}
+
+.dock__label {
+  white-space: nowrap;
+}
+
+.dock--top .dock__item--small .dock__label {
+  display: none;
+}
+
+.dock__sep {
+  flex: none;
+  align-self: flex-start;
+  width: 1px;
+  height: 32px;
+  margin: 4px 2px 0;
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .canvas {
-  flex: 1;
-  padding: 20px var(--gutter) calc(88px + env(safe-area-inset-bottom));
+  position: relative;
+  z-index: 1;
+  padding: calc(112px + env(safe-area-inset-top)) var(--gutter) calc(40px + env(safe-area-inset-bottom));
+  animation: rise 0.35s ease-out both;
 }
 
-.tabbar {
-  position: fixed;
-  inset: auto 0 0 0;
-  z-index: 5;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background: var(--ground);
-  border-top: 1px solid var(--rule);
-  padding-bottom: env(safe-area-inset-bottom);
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
 }
 
-.tabbar__item {
-  height: 56px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  font-size: var(--fs-small);
-  color: var(--faint);
-}
+@media (min-width: 600px) {
+  .dock__name {
+    display: block;
+  }
 
-.tabbar__item[aria-current='page'],
-.nav__item[aria-current='page'] {
-  color: var(--text);
+  .dock--top {
+    gap: 16px;
+    padding: 8px 14px 6px;
+  }
+
+  .dock--top .dock__items {
+    gap: 12px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -195,67 +379,20 @@ button {
     --gutter: 29px;
   }
 
-  .shell {
-    display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
-  }
-
-  .topbar,
-  .tabbar {
-    display: none;
-  }
-
-  .side {
-    display: block;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    padding: 22px 14px;
-    border-right: 1px solid var(--rule);
-  }
-
-  .side .brand {
-    padding: 0 8px;
-  }
-
-  .side__scope {
-    padding: 6px 8px 0 46px;
-    color: var(--faint);
-    font-size: 13px;
-  }
-
-  .nav {
-    margin-top: 28px;
-    display: grid;
-  }
-
-  .nav__item {
-    height: 34px;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--muted);
-    border-radius: 8px;
-  }
-
-  .nav__item:hover {
-    color: var(--text);
-  }
-
   .canvas {
-    padding: 28px var(--gutter) 48px;
+    padding-top: 124px;
   }
 }
 
 /* ---------- Page ---------- */
 
 .page {
-  max-width: 1180px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .page--narrow {
-  max-width: 760px;
+  max-width: 720px;
 }
 
 .title {
@@ -276,37 +413,6 @@ button {
   color: var(--negative);
 }
 
-.grid-today {
-  display: grid;
-  gap: 28px;
-}
-
-@media (min-width: 1100px) {
-  /* 2 columns, one gap: the start panel and the trending list share the left edge,
-     the list and history run down the right. */
-  .grid-today {
-    grid-template-columns: minmax(0, 1fr) 360px;
-    column-gap: 40px;
-    row-gap: 28px;
-    align-items: start;
-  }
-
-  .start,
-  .trend {
-    grid-column: 1;
-  }
-
-  .aside {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-  }
-}
-
-.aside {
-  display: grid;
-  gap: 28px;
-}
-
 .panel {
   background: var(--surface);
   border-radius: var(--radius-card);
@@ -319,40 +425,14 @@ button {
   }
 }
 
-.start {
-  display: grid;
-  gap: var(--gap);
-}
-
-.ladder {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--faint);
-  font-size: var(--fs-small);
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.ladder__step b {
-  font-weight: 600;
-}
-
-.ladder__step--on {
-  color: var(--text);
-}
-
-.ladder__bar {
-  flex: 1;
-  min-width: 6px;
-  height: 1px;
-  background: var(--raised);
-}
-
 .chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.chips--center {
+  justify-content: center;
 }
 
 .chip {
@@ -870,8 +950,51 @@ button {
 .sheet__head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: -6px -10px -6px 0;
+}
+
+.sheet__head h2 {
+  flex: 1;
+}
+
+.icon-btn--lead {
+  margin-left: -12px;
+}
+
+.kinds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.kind {
+  display: grid;
+  align-content: end;
+  gap: 2px;
+  min-height: 96px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--ground);
+  text-align: left;
+  transition: background-color 0.12s, transform 0.1s;
+}
+
+.kind:hover {
+  background: var(--raised);
+}
+
+.kind:active {
+  transform: scale(0.98);
+}
+
+.kind__name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.kind__hint {
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .sheet__foot {
@@ -920,6 +1043,7 @@ button {
 .session {
   position: fixed;
   inset: 0;
+  z-index: 20;
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr);
   background: var(--ground);
@@ -1331,5 +1455,182 @@ button {
   *::before,
   *::after {
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- Eklediklerim / Kaydettiklerim ---------- */
+
+.fab {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--text);
+  color: #000000;
+  transition: transform 0.1s, background-color 0.12s;
+}
+
+.fab svg {
+  width: 20px;
+  height: 20px;
+}
+
+.fab:hover {
+  background: #e6e6e6;
+}
+
+.fab:active {
+  transform: scale(0.94);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 599px) {
+  .toolbar .seg {
+    display: grid;
+    flex: 1 1 100%;
+  }
+
+  .toolbar .seg__opt {
+    padding: 0 8px;
+  }
+}
+
+.seg--onground {
+  background: var(--surface);
+}
+
+.seg__n {
+  margin-left: 3px;
+  color: var(--faint);
+  font-size: var(--fs-small);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(196px, 1fr));
+  }
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.tile--loading {
+  aspect-ratio: 4 / 6;
+}
+
+.tile__img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  font-size: 40px;
+}
+
+.tile__text {
+  display: grid;
+  gap: 3px;
+  padding: 12px 14px 14px;
+}
+
+.tile__title {
+  font-size: var(--fs-body);
+  line-height: 19px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tile__sub {
+  color: var(--faint);
+  font-size: var(--fs-small);
+  line-height: 17px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.like {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.74);
+  color: var(--text);
+  transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.12s;
+}
+
+.like svg {
+  width: 21px;
+  height: 21px;
+}
+
+.like:hover {
+  transform: scale(1.08);
+}
+
+.like:active {
+  transform: scale(0.88);
+}
+
+.like--on {
+  color: var(--accent);
+}
+
+/* ---------- Hazır mısın ---------- */
+
+.ready {
+  gap: 28px;
+}
+
+.ready__text {
+  display: grid;
+  gap: 14px;
+  justify-items: center;
+  text-align: center;
+}
+
+.ready__title {
+  font-size: clamp(40px, 12vw, 60px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.ready__sub {
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas {
+    animation: none;
   }
 }

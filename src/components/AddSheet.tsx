@@ -3,7 +3,7 @@ import { lookupTitle, type Match } from '../lib/lookup'
 import { addItem } from '../lib/store'
 import { KIND_LABEL, SAVABLE_KINDS, type Kind } from '../lib/types'
 import { Cover } from './Cover'
-import { IconClose } from './Icons'
+import { IconBack, IconClose } from './Icons'
 
 const TITLE_LABEL: Record<string, string> = {
   activity: 'Ne yapmak istiyorsunuz?',
@@ -18,10 +18,18 @@ const TITLE_PLACEHOLDER: Record<string, string> = {
   series: 'Dizi adı yazın',
 }
 
-export function AddSheet({ initialKind, onClose }: { initialKind: Kind; onClose: () => void }) {
+const KIND_HINT: Record<string, string> = {
+  activity: 'Birlikte yapılacak bir şey',
+  place: 'Gidilecek bir yer',
+  movie: 'İzlenecek bir film',
+  series: 'Başlanacak bir dizi',
+}
+
+/** Two steps: first the category, then what it is. */
+export function AddSheet({ onClose }: { onClose: () => void }) {
   const ref = useRef<HTMLDialogElement>(null)
   const titleRef = useRef<HTMLInputElement>(null)
-  const [kind, setKind] = useState<Kind>(initialKind)
+  const [kind, setKind] = useState<Kind | null>(null)
   const [title, setTitle] = useState('')
   const [venue, setVenue] = useState('')
   const [note, setNote] = useState('')
@@ -31,13 +39,16 @@ export function AddSheet({ initialKind, onClose }: { initialKind: Kind; onClose:
   useEffect(() => {
     const dialog = ref.current
     if (dialog && !dialog.open) dialog.showModal()
-    // showModal focuses the first control (the close button); the title is where typing starts.
-    titleRef.current?.focus()
   }, [])
+
+  // Once a category is chosen, typing starts in the title field.
+  useEffect(() => {
+    if (kind) titleRef.current?.focus()
+  }, [kind])
 
   const searchable = kind === 'movie' || kind === 'series'
   useEffect(() => {
-    if (!searchable || chosen?.title === title) {
+    if (!kind || !searchable || chosen?.title === title) {
       setMatches([])
       return
     }
@@ -52,7 +63,7 @@ export function AddSheet({ initialKind, onClose }: { initialKind: Kind; onClose:
   }, [kind, title, searchable, chosen])
 
   const save = () => {
-    if (!title.trim()) return
+    if (!kind || !title.trim()) return
     addItem({
       kind,
       title,
@@ -75,29 +86,28 @@ export function AddSheet({ initialKind, onClose }: { initialKind: Kind; onClose:
         }}
       >
         <header className="sheet__head">
-          <h2 id="add-title">Listeye ekle</h2>
+          {kind ? (
+            <button type="button" className="icon-btn icon-btn--lead" aria-label="Kategori seçimine dön" onClick={() => { setKind(null); setChosen(null); setMatches([]) }}>
+              <IconBack />
+            </button>
+          ) : null}
+          <h2 id="add-title">{kind ? `${KIND_LABEL[kind]} ekle` : 'Ne eklemek istiyorsunuz?'}</h2>
           <button type="button" className="icon-btn" aria-label="Kapat" onClick={onClose}><IconClose /></button>
         </header>
 
-        <div className="seg" role="radiogroup" aria-label="Tür">
-          {SAVABLE_KINDS.map((k) => (
-            <button
-              type="button"
-              key={k}
-              role="radio"
-              aria-checked={kind === k}
-              className="seg__opt"
-              onClick={() => {
-                setKind(k)
-                setChosen(null)
-                setMatches([])
-              }}
-            >
-              {KIND_LABEL[k]}
-            </button>
-          ))}
-        </div>
+        {!kind && (
+          <div className="kinds" role="group" aria-label="Kategori">
+            {SAVABLE_KINDS.map((k) => (
+              <button type="button" key={k} className="kind" onClick={() => setKind(k)}>
+                <span className="kind__name">{KIND_LABEL[k]}</span>
+                <span className="kind__hint">{KIND_HINT[k]}</span>
+              </button>
+            ))}
+          </div>
+        )}
 
+        {kind && (
+          <>
         <label className="field">
           <span className="field__label">{TITLE_LABEL[kind]}</span>
           <input
@@ -166,8 +176,10 @@ export function AddSheet({ initialKind, onClose }: { initialKind: Kind; onClose:
 
         <div className="sheet__foot">
           <button type="button" className="btn btn--ghost" onClick={onClose}>Vazgeç</button>
-          <button type="submit" className="btn btn--primary" disabled={!title.trim()}>Kaydet</button>
+          <button type="submit" className="btn btn--primary" disabled={!title.trim()}>Ekle</button>
         </div>
+          </>
+        )}
       </form>
     </dialog>
   )
