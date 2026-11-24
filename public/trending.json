@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T16:00:40.544Z",
+ "updatedAt": "2026-11-24T17:12:00.669Z",
  "regions": {
   "ISTANBUL": "İstanbul",
   "ANKARA": "Ankara",
@@ -9,8 +9,8 @@
  },
  "sources": {
   "events": "Biletix",
-  "movies": "iTunes Türkiye",
-  "series": "TVMaze"
+  "movies": "TMDB",
+  "series": "TMDB"
  },
  "events": {
   "ISTANBUL": [
@@ -136,14 +136,14 @@
     "meta": "Konser · pop"
    },
    {
-    "id": "event:5BBZB",
+    "id": "event:5EFAA",
     "kind": "event",
     "title": "Bir Delinin Hatıra Defteri",
     "image": "https://www.biletix.com/static/images/live/event/eventimages/4BB03-normal.png",
-    "venue": "Bakırköy Butik Sahne",
+    "venue": "Kadıköy BBS Sahne",
     "city": "İstanbul",
-    "when": "2026-11-24T16:20:00Z",
-    "url": "https://www.biletix.com/etkinlik/5BBZB/TURKIYE/tr",
+    "when": "2026-11-24T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5EFAA/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    }
   ],
@@ -382,15 +382,15 @@
     "meta": "Etkinlik · atolye"
    },
    {
-    "id": "event:5GRS1",
+    "id": "event:5NP1I",
     "kind": "event",
-    "title": "İlker Gürsan - Halk Konseri",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/ilkergursan-13-10-26-su.avif",
-    "venue": "Nâzım Hikmet Kültür Merkezi",
+    "title": "Can Gox",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/CAN GOX_BILETIX_4sch9.jpg",
+    "venue": "SoldOut Performance Hall",
     "city": "İzmir",
-    "when": "2026-11-24T17:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5GRS1/TURKIYE/tr",
-    "meta": "Konser · turksanat_halkmuzik"
+    "when": "2026-11-25T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5NP1I/TURKIYE/tr",
+    "meta": "Konser · rock"
    },
    {
     "id": "event:5YD07",
@@ -472,14 +472,14 @@
     "meta": "Konser · rap_hiphop"
    },
    {
-    "id": "event:5D7AH",
+    "id": "event:52739",
     "kind": "event",
-    "title": "Düş Payı",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5D802-duspayibu26.avif",
-    "venue": "Türkan Şoray Kültür Merkezi",
-    "city": "Antalya",
-    "when": "2026-11-25T17:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5D7AH/TURKIYE/tr",
+    "title": "Eşyanın Tabiatı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/esyanintabiati.png",
+    "venue": "İskenderun Teknik",
+    "city": "Hatay",
+    "when": "2026-11-29T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/52739/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
@@ -516,14 +516,14 @@
     "meta": "Konser · alternatif"
    },
    {
-    "id": "event:5D828",
+    "id": "event:5D7AH",
     "kind": "event",
-    "title": "Aşk Hikayen Düşmüş",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5D793-askhikayenbu26.avif",
-    "venue": "Konyaaltı Belediyesi Nazım Hikmet",
+    "title": "Düş Payı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5D802-duspayibu26.avif",
+    "venue": "Türkan Şoray Kültür Merkezi",
     "city": "Antalya",
-    "when": "2026-11-27T17:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5D828/TURKIYE/tr",
+    "when": "2026-11-25T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5D7AH/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
@@ -686,222 +686,221 @@
  },
  "movies": [
   {
-   "id": "movie:itunes-1896826363",
+   "id": "movie:tmdb-1003596",
    "kind": "movie",
-   "title": "Disclosure Day",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/ec/e8/92/ece89216-b01c-c728-6fb5-187724c8fa5b/UNI_DISCLOSURE_DAY_TH_ITUNES_TR_ARTWORK_TR_2000x3000_5F1LFI00002O03.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/disclosure-day/id1896826363",
-   "meta": "2026 · Sci-Fi & Fantasy",
-   "note": "If you found out we weren't alone, if someone showed you, proved it to you, would that frighten you? Now the truth belongs to seven billion people in an original event film created and directed by Steven Spielberg, from "
+   "title": "Avengers: Doomsday",
+   "image": "https://image.tmdb.org/t/p/w500/rjjW3loZDVY4a6uHzUHfoJrawH.jpg",
+   "url": "https://www.themoviedb.org/movie/1003596",
+   "meta": "2026",
+   "note": "Thunderbolts* (2025) filmindeki olaylardan 14 ay sonra; Avengers, Wakandalılar, Fantastic Four, New Avengers ve orijinal X-Men, 3 farklı evrenden gelen sevilen kahramanlar, ölümcül bir çarpışma rotasına girer ve şimdiye "
   },
   {
-   "id": "movie:itunes-1755675218",
+   "id": "movie:tmdb-1300968",
    "kind": "movie",
-   "title": "Açlık Oyunları: Kuşların ve Yılanların Şarkısı",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/90/df/94/90df944e-b9ed-b921-1e78-8de9f10f2018/LK_010741_tr-WW-artwork.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/a%C3%A7l%C4%B1k-oyunlar%C4%B1-ku%C5%9Flar%C4%B1n-ve-y%C4%B1lanlar%C4%B1n-%C5%9Fark%C4%B1s%C4%B1/id1755675218",
-   "meta": "2023 · Action & Adventure",
-   "note": "2012 yılından bu yana tüm dünyada büyük yankı uyandıran ve sinemasektörünün en başarılı filmlerinden Açlık Oyunları serisinin son filmi 17 Kasım ’da dünyayla aynı anda ülkemizde vizyona girecek. Tüm zamanların en çok sat"
+   "title": "Açlık Oyunları: Hasatta Gündoğumu",
+   "image": "https://image.tmdb.org/t/p/w500/6C1nypUUUUUdX4XTCG2LdZXXo4Y.jpg",
+   "url": "https://www.themoviedb.org/movie/1300968",
+   "meta": "2026 · 7.8 / 10",
+   "note": "Açlık Oyunları olaylarından 24 yıl öncesine, 50. Açlık Oyunları ya da diğer adıyla İkinci Çeyrek Kıyamet'in kura çekimi için Panem dünyasına geri dönün."
   },
   {
-   "id": "movie:itunes-1895899231",
+   "id": "movie:tmdb-1368337",
    "kind": "movie",
-   "title": "Obsession",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/03/2e/66/032e6622-9c24-55a3-f7fc-dded8611dc31/OBS_Digital_Keyart_APP_2000x3000_TR_TUR_XYi.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/obsession/id1895899231",
-   "meta": "2026 · Horror",
-   "note": "After breaking the mysterious \"One Wish Willow\" to win his crush’s heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price."
+   "title": "Odyssey",
+   "image": "https://image.tmdb.org/t/p/w500/edC4JzDHJUoQddhbHlBNSU3RHPR.jpg",
+   "url": "https://www.themoviedb.org/movie/1368337",
+   "meta": "2026 · 8.0 / 10",
+   "note": "Homeros'un yaklaşık 2700 yıl önce yazdığı Odysseia destanından uyarlanan Christopher Nolan imzalı film Truva Savaşı kazanıldıktan sonra evlerine dönmek üzere yolculuğa çıkan İthaka'nın efsanevi kralı Odysseus ve askerler"
   },
   {
-   "id": "movie:itunes-741296001",
+   "id": "movie:tmdb-1765072",
    "kind": "movie",
-   "title": "The Hunger Games: Catching Fire",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/b7/fa/b4/b7fab4fd-df09-ae6d-dd7e-5f09fb6449f1/9382463217168_TR.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/the-hunger-games-catching-fire/id741296001",
-   "meta": "2013 · Action & Adventure",
-   "note": "Academy Award® winner Jennifer Lawrence returns as Katniss Everdeen in this thrilling second adventure from THE HUNGER GAMES saga. Against all odds, Katniss and fellow tribute Peeta have returned home after surviving the"
+   "title": "Her Şey Ortada",
+   "image": "https://image.tmdb.org/t/p/w500/lsgXMiAd3r5rtCjzS09Aao8jXNJ.jpg",
+   "url": "https://www.themoviedb.org/movie/1765072",
+   "meta": "2026 · 8.7 / 10",
+   "note": "Hapishaneye gönderilmesine otuz dört gün kala, kötü şöhretli Theranos'un kurucusu Elizabeth Holmes, şüpheci bir film ekibini her hareketini belgelemeye davet eder. Samimi bir portre olarak başlayan bu süreç, akıl almaz ü"
   },
   {
-   "id": "movie:itunes-938538816",
+   "id": "movie:tmdb-1281331",
    "kind": "movie",
-   "title": "The Hunger Games: Mockingjay - Part 1",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/30/dc/02/30dc021b-ade0-739a-9558-139535469f6a/THG_Mockingjay-Pt1_iTunes_Transactional-Movies-Cover.png/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/the-hunger-games-mockingjay-part-1/id938538816",
-   "meta": "2014 · Action & Adventure",
-   "note": "Katniss Everdeen (Jennifer Lawrence), is rescued by the rebels and brought to District 13 after she shatters the Hunger Games forever. Under the leadership of President Coin (Julianne Moore) and Plutarch Heavensbee (Phil"
+   "title": "Sosyal Hesaplaşma",
+   "image": "https://image.tmdb.org/t/p/w500/3Kgw9b8EIexIw11qKiA9XhpfFMa.jpg",
+   "url": "https://www.themoviedb.org/movie/1281331",
+   "meta": "2026 · 7.0 / 10",
+   "note": "Facebook'ta çalışan genç bir mühendis olan Frances Haugen, Wall Street Journal muhabiri Jeff Horwitz'in yardımını alarak sosyal ağın en iyi korunan sırlarını ifşa edecek tehlikeli bir yolculuğa çıkar. (Türkiye gösterimi "
   },
   {
-   "id": "movie:itunes-1725365997",
+   "id": "movie:tmdb-1195803",
    "kind": "movie",
-   "title": "Dune: Part Two",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/a1/55/24/a15524ae-9cfe-1465-5782-83447cc248d3/780d6664-4c8a-4288-b33d-62e438b11792_DUNE_PART2_PVOD_V_DD_KA_TT_2000x3000_300dpi_TR-srgb.lsr/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/dune-part-two/id1725365997",
-   "meta": "2024 · Action & Adventure",
-   "note": "Dune: Part Two explores the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his "
+   "title": "İdeal Koca",
+   "image": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+   "url": "https://www.themoviedb.org/movie/1195803",
+   "meta": "2026 · 7.5 / 10",
+   "note": "Deniz kıyısındaki bir köyün dış çeperinde, kötü kokan, bekâr ve sürekli alay konusu olan bir balıkçı kadın yaşar. Bir gün, dar görüşlü ve boğucu komşularından bıkınca, kendine hasır malzemeden bir koca yaptırır. Oldukça "
   },
   {
-   "id": "movie:itunes-1093644583",
+   "id": "movie:tmdb-1595124",
    "kind": "movie",
-   "title": "Açlık Oyunları: Alaycı Kuş - Bölüm 2",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video69/v4/ad/21/8b/ad218b2f-5299-d183-41d9-703d4fc2680b/LK_001800_TR.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/a%C3%A7l%C4%B1k-oyunlar%C4%B1-alayc%C4%B1-ku%C5%9F-b%C3%B6l%C3%BCm-2/id1093644583",
-   "meta": "2015 · Action & Adventure",
-   "note": "Katniss Everdeen, Panem halkıyla tam donanımlı hazırlandıkları savaş içerisindeyken Başkan Snow ile karşı karşıya gelir. Panem halkının özgürlük mücadelesini kazanmasına yardımcı olmak için Katniss’ın yakın arkadaşları G"
+   "title": "Kardeş Kardeş",
+   "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+   "url": "https://www.themoviedb.org/movie/1595124",
+   "meta": "2026 · 7.1 / 10",
+   "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
   },
   {
-   "id": "movie:itunes-6792250839",
+   "id": "movie:tmdb-969681",
    "kind": "movie",
-   "title": "Toy Story 5",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/08/b7/a7/08b7a70d-a50e-c2f4-2963-414d470f6bca/DIS_TOY_STORY_5_TH_ITUNES_TR_ARTWORK_TR_2000x3000_5H9HF800000X0I.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/toy-story-5/id6792250839",
-   "meta": "2026 · Action & Adventure",
-   "note": "The toys are back in Disney and Pixar’s “Toy Story 5,” and this time it’s Toy meets Tech. Woody, Buzz Lightyear, Jessie and the rest of the gang’s jobs are challenged when they come face-to-face with Lilypad, a brand-new"
+   "title": "Örümcek-Adam: Yepyeni Bir Gün",
+   "image": "https://image.tmdb.org/t/p/w500/bVdxrH4BQc3YLT2heDo4g0I9oGa.jpg",
+   "url": "https://www.themoviedb.org/movie/969681",
+   "meta": "2026 · 8.5 / 10",
+   "note": "Artık onu hatırlamayan bir dünyada tam zamanlı olarak Örümcek Adamlık yapmak ve eski arkadaşlarının hayatlarına o olmadan devam ettiklerini görmenin yarattığı baskı, Peter Parker'da kontrol edemeyeceği bir değişimi tetik"
   },
   {
-   "id": "movie:itunes-1896801524",
+   "id": "movie:tmdb-1538497",
    "kind": "movie",
-   "title": "The Devil Wears Prada 2",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/33/f3/ad/33f3ad70-a008-c28e-2d04-c8906892efbb/FOX_DEVIL_WEARS_PRADA_2_TH_ITUNES_TR_ARTWORK_TR_2000x3000_5EFE6T00000MAA.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/the-devil-wears-prada-2/id1896801524",
-   "meta": "2026 · Drama",
-   "note": "Almost 20 years after making their iconic turns as Miranda, Andy, Emily and Nigel — Meryl Streep, Anne Hathaway, Emily Blunt and Stanley Tucci return to the fashionable streets of New York City and the sleek offices of R"
+   "title": "Hexe: Sihir Krallığı",
+   "image": "https://image.tmdb.org/t/p/w500/sFiKgO6BixQz3hSw3Gl9dvJA32L.jpg",
+   "url": "https://www.themoviedb.org/movie/1538497",
+   "meta": "2026 · 7.3 / 10",
+   "note": "Düşünmeden hareket eden ve kurallara uymayan Billie, gizli sihirli yeteneklerini keşfeder ve bu yetenekler onu Hexe adı verilen uçsuz bucaksız bir cadı diyarına doğru muhteşem bir yolculuğa çıkarır. Annesi Alice'le birli"
   },
   {
-   "id": "movie:itunes-1893722349",
+   "id": "movie:tmdb-1611767",
    "kind": "movie",
-   "title": "Mortal Kombat II",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/4b/8c/c7/4b8cc730-707c-4482-fdba-200320d4b7fb/MortalKombat2_STD_PREM_V_KA_TT_2000x3000_300dpi_EN.jpg/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/mortal-kombat-ii/id1893722349",
-   "meta": "2026 · Sci-Fi & Fantasy",
-   "note": "New Line Cinema presents the highly anticipated new installment in the classic video game franchise, MORTAL KOMBAT II. This time, the fan-favorite champions—now backed by Johnny Cage himself—face off in a final, lawless "
+   "title": "Karlar Düşerken Aşk",
+   "image": "https://image.tmdb.org/t/p/w500/i4uiZVLYhlmfvreLOdmR37MBZNk.jpg",
+   "url": "https://www.themoviedb.org/movie/1611767",
+   "meta": "2026 · 6.2 / 10",
+   "note": "Aynı yayınevinde çalışan rakip iki editör olan Ryan Mitchell ve Hannah Hendricks, Noel'de bir kar fırtınası yüzünden mahsur kalır. Kariyerlerini kurtaracak bir anlaşma için New York'a gitmek üzere kiralık bir arabayı pay"
   },
   {
-   "id": "movie:itunes-708338846",
+   "id": "movie:tmdb-1131943",
    "kind": "movie",
-   "title": "Waterworld",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video113/v4/7c/b1/d9/7cb1d934-1cb6-f8ee-ce00-313ee6ce4a88/pr_source.lsr/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/waterworld/id708338846",
-   "meta": "1995 · Action & Adventure",
-   "note": "Kevin Costner, Dennis Hopper and Jeanne Tripplehorn star in a turbocharged action-adventure epic, unmatched in sheer excitement and heart-pounding suspense. In this futuristic thriller, Earth is covered with water and th"
+   "title": "Madden",
+   "image": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
+   "url": "https://www.themoviedb.org/movie/1131943",
+   "meta": "2026 · 6.6 / 10",
+   "note": "Amerika'nın sevilen isimlerinden John Madden'ın hayatından esinlenen MADDEN, Al Davis ve Raiders'la kazandığı Super Bowl'dan, Amerikan futbolunun unutulmaz sesi oluşuna ve ünlü Madden NFL oyununu yaratmasına uzanan hikây"
   },
   {
-   "id": "movie:itunes-285832716",
+   "id": "movie:tmdb-1551025",
    "kind": "movie",
-   "title": "Harry Potter and the Goblet of Fire",
-   "image": "https://is1-ssl.mzstatic.com/image/thumb/Video116/v4/ca/e5/27/cae52731-9419-fe2d-7ef7-8f5961e6c171/pr_source.lsr/600x900bb.jpg",
-   "url": "https://itunes.apple.com/tr/movie/harry-potter-and-the-goblet-of-fire/id285832716",
-   "meta": "2005 · Kids & Family",
-   "note": "When Harry Potter's name emerges from the Goblet of Fire, he becomes a competitor in a grueling battle for glory among three wizarding schools - the Triwizard Tournament. But since Harry never submitted his name for the "
+   "title": "Çok Özel Bir Koruma",
+   "image": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+   "url": "https://www.themoviedb.org/movie/1551025",
+   "meta": "2026 · 6.9 / 10",
+   "note": "Profesyonel bir koruma görevlisi, koruduğu ünlü oyuncuyla Montana'daki bir çiftliğe gider. Ancak Noel için sevgili rolü yapan çiftin arasında gerçek bir aşk filizlenecektir."
   }
  ],
  "series": [
   {
-   "id": "series:tvmaze-78665",
-   "kind": "series",
-   "title": "Dexter: Resurrection",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/649/1623432.jpg",
-   "url": "https://www.tvmaze.com/shows/78665/dexter-resurrection",
-   "meta": "Paramount+ · Drama",
-   "note": "Dexter Morgan awakens from a coma and sets out for New York City, determined to find Harrison and make things right. But when Miami Metro's Angel Batista arrives with questions, Dexter realizes his past is catching up to"
-  },
-  {
-   "id": "series:tvmaze-593",
-   "kind": "series",
-   "title": "Murdoch Mysteries",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610487.jpg",
-   "url": "https://www.tvmaze.com/shows/593/murdoch-mysteries",
-   "meta": "CBC Gem · Drama",
-   "note": "Set in Toronto at the dawn of the 20th century, Murdoch Mysteries is a one-hour drama series that explores the intriguing world of William Murdoch, a methodical and dashing detective who pioneers innovative forensic tech"
-  },
-  {
-   "id": "series:tvmaze-75026",
+   "id": "series:tmdb-247718",
    "kind": "series",
    "title": "MobLand",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/641/1604671.jpg",
-   "url": "https://www.tvmaze.com/shows/75026/mobland",
-   "meta": "Paramount+ · Drama",
-   "note": "With the most powerful clients in Europe, MobLand will see family fortunes and reputations at risk, odd alliances unfold, and betrayal around every corner; and while the family might be London's most elite fixers today, "
+   "image": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+   "url": "https://www.themoviedb.org/tv/247718",
+   "meta": "2025 · 8.7 / 10",
+   "note": "İki düşman Londra suç ailesi olan Harrigan’lar ve Stevenson’lar arasında, imparatorlukları yıkma ve hayatları mahvetme tehdidi oluşturan öl ya da öldür savaşında güç ele geçirilmeyi bekliyor. Çatışmanın ortasında kalan v"
   },
   {
-   "id": "series:tvmaze-59344",
+   "id": "series:tmdb-84773",
    "kind": "series",
-   "title": "Tulsa King",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615902.jpg",
-   "url": "https://www.tvmaze.com/shows/59344/tulsa-king",
-   "meta": "Paramount+ · Drama",
-   "note": "Tulsa King follows New York mafia capo Dwight \"The General\" Manfredi, just after he is released from prison after 25 years and unceremoniously exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob "
+   "title": "Yüzüklerin Efendisi: Güç Yüzükleri",
+   "image": "https://image.tmdb.org/t/p/w500/7daMA65eFTxcTg58E0YoCMyAj63.jpg",
+   "url": "https://www.themoviedb.org/tv/84773",
+   "meta": "2022 · 7.2 / 10",
+   "note": "Göreceli bir barış döneminden başlayarak, Orta Dünya'ya geri dönen kötülükle yüzleşen bir dizi karakteri izleyeceğiz. Dumanlı Dağlar'ın en karanlık derinliklerinden Lindon'un görkemli ormanlarına, nefes kesen ada krallığ"
   },
   {
-   "id": "series:tvmaze-66811",
+   "id": "series:tmdb-300523",
    "kind": "series",
-   "title": "Nocturne",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/643/1609134.jpg",
-   "url": "https://www.tvmaze.com/shows/66811/nocturne",
-   "meta": "Apple TV · Drama",
-   "note": "Nocturne tells the story of Jonah Lynn, an ex-soldier turned homicide detective who, tired of working the tough streets of Philadelphia, moves to a small town in Western Pennsylvania for a quiet life. But, as the town an"
+   "title": "The Blue Road",
+   "image": "https://image.tmdb.org/t/p/w500/9mmOjx2bWuLd9NnVpC71OUEXBym.jpg",
+   "url": "https://www.themoviedb.org/tv/300523",
+   "meta": "2026 · 7.6 / 10",
+   "note": "Farklı ülkelerde yaşayan iki dedektif, vahşi cinayetler ve şifreli mesajlarla karşılaşınca iş birliği yapar. Ama ölümcül gerçek, her an tehlike yaratabilecek kadar yakındır."
   },
   {
-   "id": "series:tvmaze-33352",
+   "id": "series:tmdb-291507",
    "kind": "series",
-   "title": "The Lord of the Rings: The Rings of Power",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/650/1627263.jpg",
-   "url": "https://www.tvmaze.com/shows/33352/the-lord-of-the-rings-the-rings-of-power",
-   "meta": "Prime Video · Action",
-   "note": "Set thousands of years before the events of The Lord of the Rings, this epic drama follows an ensemble cast of characters, both familiar and new, as they confront the long-feared re-emergence of evil to Middle-earth."
+   "title": "The Body",
+   "image": "https://image.tmdb.org/t/p/w500/195kCuy2RqGaEAZDDpGTx7gBUBZ.jpg",
+   "url": "https://www.themoviedb.org/tv/291507",
+   "meta": "2026 · 8.0 / 10",
+   "note": "Cadılar Bayramı gecesinde bir kabul töreni kâbusa dönünce, kızlardan oluşan bir dans grubu manevi suçluluk duygusunun, şeytani arzuların ve tekinsiz hayallerin içine sürüklenir."
   },
   {
-   "id": "series:tvmaze-36672",
+   "id": "series:tmdb-290826",
    "kind": "series",
-   "title": "Yellowjackets",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/647/1619412.jpg",
-   "url": "https://www.tvmaze.com/shows/36672/yellowjackets",
-   "meta": "Paramount+ · Drama",
-   "note": "Yellowjackets follows a girls' high school soccer team. In 1975, the Dearborn High Yellowjackets became the first team in state history to qualify for the Girls' U.S. Soccer Championship Series in Manchester, NH. They ne"
+   "title": "Dig",
+   "image": "https://image.tmdb.org/t/p/w500/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
+   "url": "https://www.themoviedb.org/tv/290826",
+   "meta": "2026 · 5.7 / 10"
   },
   {
-   "id": "series:tvmaze-48108",
+   "id": "series:tmdb-213375",
+   "kind": "series",
+   "title": "VisionQuest",
+   "image": "https://image.tmdb.org/t/p/w500/vNAE76jPwWeIOl9UrbtuL3SssaW.jpg",
+   "url": "https://www.themoviedb.org/tv/213375",
+   "meta": "2026 · 8.2 / 10",
+   "note": "Başına konulan ödül yüzünden Vision, hayatta kalabilmek için kendi doğasıyla yüzleşmeli ve Ultron’un etkisine direnmelidir."
+  },
+  {
+   "id": "series:tmdb-103540",
    "kind": "series",
    "title": "Percy Jackson and the Olympians",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/651/1628736.jpg",
-   "url": "https://www.tvmaze.com/shows/48108/percy-jackson-and-the-olympians",
-   "meta": "Disney+ · Adventure",
-   "note": "12-year-old modern demigod Percy Jackson has just come to terms with his newfound supernatural powers when the sky god Zeus accuses him of stealing his master lightning bolt. Now Percy must trek across America to find it"
+   "image": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+   "url": "https://www.themoviedb.org/tv/103540",
+   "meta": "2023 · 7.3 / 10",
+   "note": "Percy Jackson tehlikeli bir maceraya atılır. Zeus'un İlk Şimşeğini geri getirmek ve topyekûn bir savaşı engellemek için Amerika'yı boydan boya kat etmesi, bu esnada da peşindeki canavarlardan kurtulması ve kurnazlığıyla "
   },
   {
-   "id": "series:tvmaze-3164",
+   "id": "series:tmdb-303745",
    "kind": "series",
-   "title": "Heartland",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/644/1610561.jpg",
-   "url": "https://www.tvmaze.com/shows/3164/heartland",
-   "meta": "CBC Gem · Drama",
-   "note": "Life is hard on the Flemings' ranch in the Alberta foothills where abused or neglected horses find refuge with a kind, hard-working family. Debts abound and the bank is about to foreclose. Can they keep the ranch running"
+   "title": "Kılık Değiştiren Aşk",
+   "image": "https://image.tmdb.org/t/p/w500/ekko8NFVeQdW9nBvcE9CAsvNxh0.jpg",
+   "url": "https://www.themoviedb.org/tv/303745",
+   "meta": "2026 · 9.0 / 10",
+   "note": "Taekang Grubunun veliahdı Yoon Yi-jun, sarsıcı bir cinayetin baş şüphelisidir. Kang Jae-hee, gerçeği ortaya çıkarmak ve Yi-jun'u gözetlemek için erkek kılığında sekreteri olarak yanına sızar. Gerçeğe yaklaştıkça birbirle"
   },
   {
-   "id": "series:tvmaze-89844",
+   "id": "series:tmdb-259909",
    "kind": "series",
-   "title": "Blue Skies",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/608/1521102.jpg",
-   "url": "https://www.tvmaze.com/shows/89844/blue-skies",
-   "meta": "UP Faith & Family · Drama",
-   "note": "Blue Skies is an all-new procedural series blending mystery, action, and emotional storytelling, centered on the powerful bond between a detective and her canine companion. Set in the stunning Crystal Ridge National Park"
+   "title": "Dexter: Resurrection",
+   "image": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
+   "url": "https://www.themoviedb.org/tv/259909",
+   "meta": "2025 · 8.5 / 10",
+   "note": "Dexter Morgan komadan uyandığında oğlu Harrison'ın iz bırakmadan kaybolduğunu görür. Oğluna yaşattıklarının ağırlığını anlayan Dexter, onu bulmaya ve her şeyi düzeltmeye kararlı bir şekilde New York'a gider. Ancak bunu s"
   },
   {
-   "id": "series:tvmaze-82227",
+   "id": "series:tmdb-171802",
    "kind": "series",
-   "title": "Stick",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/646/1615054.jpg",
-   "url": "https://www.tvmaze.com/shows/82227/stick",
-   "meta": "Apple TV · Comedy",
-   "note": "Pryce Cahill is an over-the-hill, ex-pro golfer whose career was derailed prematurely 20 years ago. After the collapse of his marriage and getting fired from his job at an Indiana sporting goods store, Pryce hedges his b"
+   "title": "Blade Runner 2099: Bıçak Sırtı",
+   "image": "https://image.tmdb.org/t/p/w500/4RDK98jiBn5HLEcRGGfBouciB2W.jpg",
+   "url": "https://www.themoviedb.org/tv/171802",
+   "meta": "2026",
+   "note": "Blade Runner 2049'daki olayların üzerinden elli yıl geçmiş, Los Angeles yeniden ayağa kalkmıştır; fakat bu kez insanlığın eseri olarak değil. Kaçmaktan yorulan ve buna son vermek için son hamlesini yapan kaçak Cora, alac"
   },
   {
-   "id": "series:tvmaze-64087",
+   "id": "series:tmdb-117488",
    "kind": "series",
-   "title": "Rivals",
-   "image": "https://static.tvmaze.com/uploads/images/original_untouched/627/1567849.jpg",
-   "url": "https://www.tvmaze.com/shows/64087/rivals",
-   "meta": "Disney+ · Drama",
-   "note": "Rivals dives headfirst into the cut-throat world of independent television in 1986, where the shoulder pads are big and ambitions even bigger. In the fictional upper-class county of Rutshire, a long-standing rivalry betw"
+   "title": "Yellowjackets",
+   "image": "https://image.tmdb.org/t/p/w500/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+   "url": "https://www.themoviedb.org/tv/117488",
+   "meta": "2021 · 7.4 / 10",
+   "note": "Dizi, kuzeyin derinliklerinde gerçekleşen bir uçak kazasından kurtulan bir lise kız futbol takımının hikayesini konu ediyor. Lise futbol takımında forma giyen yetenekli oyuncular, korkunç bir uçak kazasından sağ kurtulur"
+  },
+  {
+   "id": "series:tmdb-308007",
+   "kind": "series",
+   "title": "The Altruists",
+   "image": "https://image.tmdb.org/t/p/w500/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
+   "url": "https://www.themoviedb.org/tv/308007",
+   "meta": "2026 · 6.2 / 10",
+   "note": "Gerçek bir dolandırıcılık olayından esinlenen bu aşk öyküsünde iyi niyetle yola çıkan iki idealist genç, birbirlerinin kötü yanlarını tetikleyerek milyarlarca dolara sahip oluyor."
   }
  ]
 }
