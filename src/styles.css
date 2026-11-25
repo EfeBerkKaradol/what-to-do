@@ -749,7 +749,7 @@ button {
 }
 
 .icon-btn:hover:not(:disabled) {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .icon-btn:disabled {
@@ -1845,5 +1845,167 @@ button {
 
   .detail__img {
     max-height: none;
+  }
+}
+
+/* ---------- Pointer and hover ---------- */
+
+/* Everything that can be pressed says so with the cursor. */
+a,
+button,
+select,
+summary,
+label.select,
+[role='tab'],
+[role='radio'],
+[role='option'] {
+  cursor: pointer;
+}
+
+button:disabled,
+.btn:disabled,
+.icon-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* The top card of the deck is dragged, not pressed. */
+.card--top {
+  cursor: grab;
+}
+
+.card--top.card--dragging {
+  cursor: grabbing;
+}
+
+.tab,
+.chip,
+.seg__opt,
+.tile,
+.tile__img,
+.input,
+.select select,
+.dock__home,
+.place__go,
+.row__trail {
+  transition: color 0.14s, background-color 0.14s, border-color 0.14s, transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.18s;
+}
+
+/* Hover only where there is a pointer that can hover; on touch it would stick after a tap. */
+@media (hover: hover) {
+  .btn--primary:hover:not(:disabled) {
+    background: #dedede;
+    transform: translateY(-1px);
+  }
+
+  .btn--ghost:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: var(--text);
+  }
+
+  .btn--text:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--text);
+  }
+
+  .btn--danger:hover:not(:disabled) {
+    background: rgba(229, 86, 111, 0.14);
+    color: var(--negative);
+  }
+
+  .btn:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  .fab:hover {
+    transform: scale(1.07);
+  }
+
+  .tab:hover {
+    color: var(--text);
+  }
+
+  .tab:not([aria-selected='true']):hover {
+    border-bottom-color: var(--control);
+  }
+
+  .chip:hover {
+    border-color: var(--muted);
+    color: var(--text);
+  }
+
+  .chip[aria-pressed='true']:hover {
+    background: #383838;
+    border-color: #383838;
+  }
+
+  .chip--pick[aria-checked='true']:hover {
+    background: #dedede;
+    border-color: #dedede;
+    color: #000000;
+  }
+
+  .seg__opt:hover {
+    color: var(--text);
+  }
+
+  .seg__opt:not([aria-checked='true']):hover {
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  .seg__opt[aria-checked='true']:hover {
+    background: #383838;
+  }
+
+  .tile:hover {
+    background: #1a1a1a;
+    transform: translateY(-3px);
+  }
+
+  .tile:hover .tile__img {
+    filter: brightness(1.1);
+  }
+
+  .like:hover {
+    background: #000000;
+  }
+
+  .row--button:hover .row__title,
+  .match:hover .row__title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .row--button:hover .row__trail {
+    color: var(--text);
+  }
+
+  .place:hover .place__go {
+    color: var(--text);
+  }
+
+  .input:hover,
+  .select select:hover {
+    border-color: var(--muted);
+  }
+
+  .select--quiet select:hover {
+    color: var(--text);
+  }
+
+  .dock__home:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .dock__brand:hover .dock__name {
+    opacity: 0.8;
+  }
+
+  .card--choice:hover:not(.card--won):not(.card--lost) {
+    background: #1c1c1c;
+    transform: translateY(-3px);
+  }
+
+  .kind:hover {
+    transform: translateY(-2px);
   }
 }
