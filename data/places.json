@@ -1,0 +1,172 @@
+{
+ "ANKARA": [
+  {
+   "id": "yuruyus-parklari",
+   "name": "Yürüyüş parkları",
+   "items": [
+    {
+     "id": "place:ankara-eymir",
+     "kind": "place",
+     "title": "Eymir Gölü",
+     "venue": "Gölbaşı",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg/500px-Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Eymir_G%C3%B6l%C3%BC",
+     "note": "Göl çevresinde yürüyüş ve bisiklet yolu"
+    },
+    {
+     "id": "place:ankara-mogan",
+     "kind": "place",
+     "title": "Mogan Gölü",
+     "venue": "Gölbaşı",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg/500px-G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Mogan_G%C3%B6l%C3%BC",
+     "note": "Göl kıyısı boyunca yürüyüş yolu"
+    },
+    {
+     "id": "place:ankara-dikmen-vadisi",
+     "kind": "place",
+     "title": "Dikmen Vadisi",
+     "venue": "Çankaya",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikmen_Vadisi.jpg/500px-Dikmen_Vadisi.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Dikmen_Vadisi",
+     "note": "Vadi boyunca uzanan yürüyüş parkuru"
+    },
+    {
+     "id": "place:ankara-segmenler",
+     "kind": "place",
+     "title": "Seğmenler Parkı",
+     "venue": "Çankaya",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankara%2C_Turkey_-_panoramio_%2892%29.jpg/500px-Ankara%2C_Turkey_-_panoramio_%2892%29.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Se%C4%9Fmenler_Park%C4%B1",
+     "note": "Kavaklıdere’de yamaca yayılan çimlik park"
+    },
+    {
+     "id": "place:ankara-kugulu",
+     "kind": "place",
+     "title": "Kuğulu Park",
+     "venue": "Çankaya",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ankara_Ku%C4%9Fulu_Park.JPG/500px-Ankara_Ku%C4%9Fulu_Park.JPG",
+     "url": "https://tr.wikipedia.org/wiki/Ku%C4%9Fulu_Park",
+     "note": "Tunalı’nın ucunda göletli küçük park"
+    },
+    {
+     "id": "place:ankara-botanik",
+     "kind": "place",
+     "title": "Botanik Parkı",
+     "venue": "Çankaya",
+     "city": "Ankara"
+    },
+    {
+     "id": "place:ankara-kurtulus",
+     "kind": "place",
+     "title": "Kurtuluş Parkı",
+     "venue": "Çankaya",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg/500px-Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Kurtulu%C5%9F_Park%C4%B1",
+     "note": "Şehrin ortasında ağaçlık yürüyüş yolları"
+    },
+    {
+     "id": "place:ankara-50-yil",
+     "kind": "place",
+     "title": "50. Yıl Parkı",
+     "venue": "Çankaya",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/50._y%C4%B1l_park%C4%B1_-_panoramio.jpg/500px-50._y%C4%B1l_park%C4%B1_-_panoramio.jpg",
+     "url": "https://tr.wikipedia.org/wiki/50._Y%C4%B1l_Park%C4%B1"
+    },
+    {
+     "id": "place:ankara-genclik",
+     "kind": "place",
+     "title": "Gençlik Parkı",
+     "venue": "Altındağ",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg/500px-Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Gen%C3%A7lik_Park%C4%B1",
+     "note": "Ulus’ta havuzlu büyük şehir parkı"
+    },
+    {
+     "id": "place:ankara-baskent-millet-bahcesi",
+     "kind": "place",
+     "title": "Başkent Millet Bahçesi",
+     "venue": "Altındağ",
+     "city": "Ankara"
+    },
+    {
+     "id": "place:ankara-altinpark",
+     "kind": "place",
+     "title": "Altınpark",
+     "venue": "Altındağ",
+     "city": "Ankara",
+     "note": "Göletli, geniş yürüyüş alanı"
+    },
+    {
+     "id": "place:ankara-aoc",
+     "kind": "place",
+     "title": "Atatürk Orman Çiftliği",
+     "venue": "Yenimahalle",
+     "city": "Ankara",
+     "url": "https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Orman_%C3%87iftli%C4%9Fi",
+     "note": "Ağaçlıklı yollar, geniş açık alan"
+    },
+    {
+     "id": "place:ankara-kuzey-yildizi",
+     "kind": "place",
+     "title": "Kuzey Yıldızı Parkı",
+     "venue": "Keçiören",
+     "city": "Ankara"
+    },
+    {
+     "id": "place:ankara-goksu",
+     "kind": "place",
+     "title": "Göksu Parkı",
+     "venue": "Etimesgut",
+     "city": "Ankara",
+     "url": "https://tr.wikipedia.org/wiki/G%C3%B6ksu_Park%C4%B1",
+     "note": "Eryaman’da göl çevresinde yürüyüş"
+    },
+    {
+     "id": "place:ankara-harikalar-diyari",
+     "kind": "place",
+     "title": "Harikalar Diyarı",
+     "venue": "Sincan",
+     "city": "Ankara",
+     "note": "Sincan’da çok geniş bir park"
+    },
+    {
+     "id": "place:ankara-mavi-gol",
+     "kind": "place",
+     "title": "Mavi Göl",
+     "venue": "Mamak",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg/500px-T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg",
+     "url": "https://tr.wikipedia.org/wiki/Bay%C4%B1nd%C4%B1r_Baraj%C4%B1",
+     "note": "Bayındır Barajı kıyısında mesire alanı"
+    },
+    {
+     "id": "place:ankara-karagol",
+     "kind": "place",
+     "title": "Karagöl",
+     "venue": "Çubuk",
+     "city": "Ankara",
+     "note": "Orman içinde küçük bir göl; şehir dışı, günübirlik"
+    },
+    {
+     "id": "place:ankara-soguksu",
+     "kind": "place",
+     "title": "Soğuksu Millî Parkı",
+     "venue": "Kızılcahamam",
+     "city": "Ankara",
+     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/So%C4%9Fuksu_National_Park.jpg/500px-So%C4%9Fuksu_National_Park.jpg",
+     "url": "https://tr.wikipedia.org/wiki/So%C4%9Fuksu_Mill%C3%AE_Park%C4%B1",
+     "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik"
+    }
+   ]
+  }
+ ]
+}

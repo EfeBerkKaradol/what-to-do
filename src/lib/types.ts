@@ -84,6 +84,8 @@ export interface Catalog {
   movies: Genre[]
   series: Genre[]
   events: Record<string, Genre[]>
+  /** Hand-picked places by region, e.g. walking parks. */
+  places?: Record<string, Genre[]>
 }
 
 export const KIND_LABEL: Record<Kind, string> = {

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T18:41:54.500Z",
+ "updatedAt": "2026-11-25T19:34:38.663Z",
  "regions": {
   "ISTANBUL": "İstanbul",
   "ANKARA": "Ankara",
@@ -9,8 +9,8 @@
  },
  "sources": {
   "events": "Biletix",
-  "movies": "yok",
-  "series": "yok"
+  "movies": "yok (eski)",
+  "series": "yok (eski)"
  },
  "movies": [],
  "series": [],
@@ -275,17 +275,6 @@
       "meta": "Konser · Pop"
      },
      {
-      "id": "event:5HO63",
-      "kind": "event",
-      "title": "Başar Keklik",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5HO16basar-26su.avif",
-      "venue": "The Keep",
-      "city": "Çanakkale",
-      "when": "2026-11-25T18:45:00Z",
-      "url": "https://www.biletix.com/etkinlik/5HO63/TURKIYE/tr",
-      "meta": "Konser · Pop"
-     },
-     {
       "id": "event:5TX77",
       "kind": "event",
       "title": "Serdar Ortaç",
@@ -349,6 +338,17 @@
       "city": "Kocaeli",
       "when": "2026-12-04T18:00:00Z",
       "url": "https://www.biletix.com/etkinlik/5S577/TURKIYE/tr",
+      "meta": "Konser · Pop"
+     },
+     {
+      "id": "event:5HO64",
+      "kind": "event",
+      "title": "Başar Keklik",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5HO16basar-26su.avif",
+      "venue": "Hayal Kahvesi Bandırma",
+      "city": "Balıkesir",
+      "when": "2026-11-26T18:45:00Z",
+      "url": "https://www.biletix.com/etkinlik/5HO64/TURKIYE/tr",
       "meta": "Konser · Pop"
      },
      {
@@ -645,17 +645,6 @@
       "meta": "Konser · Alternatif"
      },
      {
-      "id": "event:5PP37",
-      "kind": "event",
-      "title": "Çağan Şengül",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5PP37-csengul-1920.avif",
-      "venue": "Hayal Kahvesi Aqua Florya",
-      "city": "İstanbul",
-      "when": "2026-11-25T19:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5PP37/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
       "id": "event:5ADM8",
       "kind": "event",
       "title": "Gabbro Dream Theatre",
@@ -708,6 +697,17 @@
       "city": "İstanbul",
       "when": "2026-11-28T18:00:00Z",
       "url": "https://www.biletix.com/etkinlik/5EP66/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:5POL0",
+      "kind": "event",
+      "title": "Babylon Picks: Al-Qasar feat. BaBa ZuLa",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5POL0-babazula-1920.avif",
+      "venue": "Babylon",
+      "city": "İstanbul",
+      "when": "2026-11-28T18:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5POL0/TURKIYE/tr",
       "meta": "Konser · Alternatif"
      }
     ]
@@ -2654,17 +2654,6 @@
     "name": "Pop",
     "items": [
      {
-      "id": "event:5BDGR",
-      "kind": "event",
-      "title": "90lar Türkçe Pop Partisi",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/2K724-gorsel.jpg",
-      "venue": "IF Performance Hall Tepe Prime",
-      "city": "Ankara",
-      "when": "2026-11-27T18:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5BDGR/TURKIYE/tr",
-      "meta": "Konser · Pop"
-     },
-     {
       "id": "event:5HKF2",
       "kind": "event",
       "title": "DJ Hakan Küfündür'le 90'lar 2000'ler Türkçe Pop Parti",
@@ -2673,6 +2662,17 @@
       "city": "Ankara",
       "when": "2026-11-27T19:00:00Z",
       "url": "https://www.biletix.com/etkinlik/5HKF2/TURKIYE/tr",
+      "meta": "Konser · Pop"
+     },
+     {
+      "id": "event:5BDGR",
+      "kind": "event",
+      "title": "90lar Türkçe Pop Partisi",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/2K724-gorsel.jpg",
+      "venue": "IF Performance Hall Tepe Prime",
+      "city": "Ankara",
+      "when": "2026-11-27T18:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5BDGR/TURKIYE/tr",
       "meta": "Konser · Pop"
      },
      {
@@ -3113,122 +3113,6 @@
     ]
    },
    {
-    "id": "Alternatif",
-    "name": "Alternatif",
-    "items": [
-     {
-      "id": "event:5BISF",
-      "kind": "event",
-      "title": "İkiye On Kala - Akustik",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/0150_prod_914504_23102025.png",
-      "venue": "Lotus Performans",
-      "city": "Karaman",
-      "when": "2026-12-09T18:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5BISF/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:5HO68",
-      "kind": "event",
-      "title": "Emre Nalbantoğlu",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/emrenlbntoglu5HO55.avif",
-      "venue": "IF Performance Hall",
-      "city": "Ankara",
-      "when": "2026-12-23T18:45:00Z",
-      "url": "https://www.biletix.com/etkinlik/5HO68/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:5HMBQ",
-      "kind": "event",
-      "title": "Nova Norda",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5NQ22-26su.avif",
-      "venue": "SoldOut Ankara",
-      "city": "Ankara",
-      "when": "2026-11-25T19:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5HMBQ/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:5K7D9",
-      "kind": "event",
-      "title": "Od Band",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5K7D9-gorsel-odband.avif",
-      "venue": "IF Performance Hall",
-      "city": "Ankara",
-      "when": "2026-11-29T18:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5K7D9/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:5TRBC",
-      "kind": "event",
-      "title": "İncesaz",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5TRBC-GORSEL.avif",
-      "venue": "Yenimahalle Nazım Hikmet KM",
-      "city": "Ankara",
-      "when": "2026-12-09T17:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5TRBC/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:57RB2",
-      "kind": "event",
-      "title": "Ofest Ankara - Kombine",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
-      "venue": "Milyon Performance Hall Ankara",
-      "city": "Ankara",
-      "when": "2026-12-11T12:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/57RB2/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:57RB3",
-      "kind": "event",
-      "title": "Ofest Ankara - 11 Aralık Cuma",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
-      "venue": "Milyon Performance Hall Ankara",
-      "city": "Ankara",
-      "when": "2026-12-11T12:05:00Z",
-      "url": "https://www.biletix.com/etkinlik/57RB3/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:57RB4",
-      "kind": "event",
-      "title": "Ofest Ankara - 12 Aralık Cumartesi",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
-      "venue": "Milyon Performance Hall Ankara",
-      "city": "Ankara",
-      "when": "2026-12-12T12:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/57RB4/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:57RB5",
-      "kind": "event",
-      "title": "Ofest Ankara - 13 Aralık Pazar",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
-      "venue": "Milyon Performance Hall Ankara",
-      "city": "Ankara",
-      "when": "2026-12-13T12:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/57RB5/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:57RB6",
-      "kind": "event",
-      "title": "Ofest Eskişehir - Kombine",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/57rb7-gorsel.avif",
-      "venue": "Milyon Performance Eskişehir",
-      "city": "Eskişehir",
-      "when": "2026-12-18T12:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/57RB6/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     }
-    ]
-   },
-   {
     "id": "Stand-up",
     "name": "Stand-up",
     "items": [
@@ -3345,6 +3229,122 @@
     ]
    },
    {
+    "id": "Alternatif",
+    "name": "Alternatif",
+    "items": [
+     {
+      "id": "event:5HO68",
+      "kind": "event",
+      "title": "Emre Nalbantoğlu",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/emrenlbntoglu5HO55.avif",
+      "venue": "IF Performance Hall",
+      "city": "Ankara",
+      "when": "2026-12-23T18:45:00Z",
+      "url": "https://www.biletix.com/etkinlik/5HO68/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:5BISF",
+      "kind": "event",
+      "title": "İkiye On Kala - Akustik",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/0150_prod_914504_23102025.png",
+      "venue": "Lotus Performans",
+      "city": "Karaman",
+      "when": "2026-12-09T18:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5BISF/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:5K7D9",
+      "kind": "event",
+      "title": "Od Band",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5K7D9-gorsel-odband.avif",
+      "venue": "IF Performance Hall",
+      "city": "Ankara",
+      "when": "2026-11-29T18:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5K7D9/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:5TRBC",
+      "kind": "event",
+      "title": "İncesaz",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5TRBC-GORSEL.avif",
+      "venue": "Yenimahalle Nazım Hikmet KM",
+      "city": "Ankara",
+      "when": "2026-12-09T17:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5TRBC/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:57RB2",
+      "kind": "event",
+      "title": "Ofest Ankara - Kombine",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
+      "venue": "Milyon Performance Hall Ankara",
+      "city": "Ankara",
+      "when": "2026-12-11T12:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/57RB2/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:57RB3",
+      "kind": "event",
+      "title": "Ofest Ankara - 11 Aralık Cuma",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
+      "venue": "Milyon Performance Hall Ankara",
+      "city": "Ankara",
+      "when": "2026-12-11T12:05:00Z",
+      "url": "https://www.biletix.com/etkinlik/57RB3/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:57RB4",
+      "kind": "event",
+      "title": "Ofest Ankara - 12 Aralık Cumartesi",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
+      "venue": "Milyon Performance Hall Ankara",
+      "city": "Ankara",
+      "when": "2026-12-12T12:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/57RB4/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:57RB5",
+      "kind": "event",
+      "title": "Ofest Ankara - 13 Aralık Pazar",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/57RB4-GORSEL.avif",
+      "venue": "Milyon Performance Hall Ankara",
+      "city": "Ankara",
+      "when": "2026-12-13T12:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/57RB5/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:57RB6",
+      "kind": "event",
+      "title": "Ofest Eskişehir - Kombine",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/57rb7-gorsel.avif",
+      "venue": "Milyon Performance Eskişehir",
+      "city": "Eskişehir",
+      "when": "2026-12-18T12:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/57RB6/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:57RB7",
+      "kind": "event",
+      "title": "Ofest Eskişehir - 18 Aralık Cuma",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/57rb7-gorsel.avif",
+      "venue": "Milyon Performance Eskişehir",
+      "city": "Eskişehir",
+      "when": "2026-12-18T12:05:00Z",
+      "url": "https://www.biletix.com/etkinlik/57RB7/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     }
+    ]
+   },
+   {
     "id": "Rap ve hip-hop",
     "name": "Rap ve hip-hop",
     "items": [
@@ -3434,6 +3434,17 @@
       "city": "Karaman",
       "when": "2026-12-25T18:00:00Z",
       "url": "https://www.biletix.com/etkinlik/5OF5O/TURKIYE/tr",
+      "meta": "Konser · Rap ve hip-hop"
+     },
+     {
+      "id": "event:5OT9C",
+      "kind": "event",
+      "title": "Ahiyan",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/6IHA4-BU27.avif",
+      "venue": "Milyon Performance Hall Ankara",
+      "city": "Ankara",
+      "when": "2026-12-25T19:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5OT9C/TURKIYE/tr",
       "meta": "Konser · Rap ve hip-hop"
      }
     ]
@@ -5601,45 +5612,6 @@
     ]
    },
    {
-    "id": "Alternatif",
-    "name": "Alternatif",
-    "items": [
-     {
-      "id": "event:5UCSM",
-      "kind": "event",
-      "title": "Ceren Gündoğdu Candle Session",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5UCSC-26su.avif",
-      "venue": "Silifke Doğan Cüceloğlu KM",
-      "city": "Mersin",
-      "when": "2026-12-20T17:30:00Z",
-      "url": "https://www.biletix.com/etkinlik/5UCSM/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:5HO79",
-      "kind": "event",
-      "title": "Emre Nalbantoğlu",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/emrenlbntoglu5HO55.avif",
-      "venue": "Beygir Performance Hall",
-      "city": "Isparta",
-      "when": "2026-11-25T18:45:00Z",
-      "url": "https://www.biletix.com/etkinlik/5HO79/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     },
-     {
-      "id": "event:5BHM5",
-      "kind": "event",
-      "title": "Bilal",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5BHM5-BU27.avif",
-      "venue": "The 251 Soul",
-      "city": "Antalya",
-      "when": "2026-12-10T18:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5BHM5/TURKIYE/tr",
-      "meta": "Konser · Alternatif"
-     }
-    ]
-   },
-   {
     "id": "Gösteri",
     "name": "Gösteri",
     "items": [
@@ -5703,6 +5675,34 @@
       "when": "2026-11-30T07:30:00Z",
       "url": "https://www.biletix.com/etkinlik/5WBAP/TURKIYE/tr",
       "meta": "Eğlence merkezi"
+     }
+    ]
+   },
+   {
+    "id": "Alternatif",
+    "name": "Alternatif",
+    "items": [
+     {
+      "id": "event:5UCSM",
+      "kind": "event",
+      "title": "Ceren Gündoğdu Candle Session",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5UCSC-26su.avif",
+      "venue": "Silifke Doğan Cüceloğlu KM",
+      "city": "Mersin",
+      "when": "2026-12-20T17:30:00Z",
+      "url": "https://www.biletix.com/etkinlik/5UCSM/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
+     },
+     {
+      "id": "event:5BHM5",
+      "kind": "event",
+      "title": "Bilal",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5BHM5-BU27.avif",
+      "venue": "The 251 Soul",
+      "city": "Antalya",
+      "when": "2026-12-10T18:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5BHM5/TURKIYE/tr",
+      "meta": "Konser · Alternatif"
      }
     ]
    },
@@ -6288,17 +6288,6 @@
       "meta": "Konser · Rap ve hip-hop"
      },
      {
-      "id": "event:5OF93",
-      "kind": "event",
-      "title": "Venüs",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5OF86-bu26.avif",
-      "venue": "6:45 KK Bolu",
-      "city": "Bolu",
-      "when": "2026-11-25T19:00:00Z",
-      "url": "https://www.biletix.com/etkinlik/5OF93/TURKIYE/tr",
-      "meta": "Konser · Rap ve hip-hop"
-     },
-     {
       "id": "event:5HO58",
       "kind": "event",
       "title": "Yung Ouzo",
@@ -6318,6 +6307,17 @@
       "city": "Bolu",
       "when": "2026-12-19T17:30:00Z",
       "url": "https://www.biletix.com/etkinlik/5SO85/TURKIYE/tr",
+      "meta": "Konser · Rap ve hip-hop"
+     },
+     {
+      "id": "event:5OF2C",
+      "kind": "event",
+      "title": "Venüs",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5OF86-bu26.avif",
+      "venue": "DoubleTree by Hilton Trabzon",
+      "city": "Trabzon",
+      "when": "2026-12-13T17:00:00Z",
+      "url": "https://www.biletix.com/etkinlik/5OF2C/TURKIYE/tr",
       "meta": "Konser · Rap ve hip-hop"
      }
     ]
@@ -6436,6 +6436,178 @@
       "when": "2026-12-20T10:00:00Z",
       "url": "https://www.biletix.com/etkinlik/5KY0K/TURKIYE/tr",
       "meta": "Sirk"
+     }
+    ]
+   }
+  ]
+ },
+ "places": {
+  "ANKARA": [
+   {
+    "id": "yuruyus-parklari",
+    "name": "Yürüyüş parkları",
+    "items": [
+     {
+      "id": "place:ankara-eymir",
+      "kind": "place",
+      "title": "Eymir Gölü",
+      "venue": "Gölbaşı",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg/500px-Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Eymir_G%C3%B6l%C3%BC",
+      "note": "Göl çevresinde yürüyüş ve bisiklet yolu"
+     },
+     {
+      "id": "place:ankara-mogan",
+      "kind": "place",
+      "title": "Mogan Gölü",
+      "venue": "Gölbaşı",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg/500px-G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Mogan_G%C3%B6l%C3%BC",
+      "note": "Göl kıyısı boyunca yürüyüş yolu"
+     },
+     {
+      "id": "place:ankara-dikmen-vadisi",
+      "kind": "place",
+      "title": "Dikmen Vadisi",
+      "venue": "Çankaya",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikmen_Vadisi.jpg/500px-Dikmen_Vadisi.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Dikmen_Vadisi",
+      "note": "Vadi boyunca uzanan yürüyüş parkuru"
+     },
+     {
+      "id": "place:ankara-segmenler",
+      "kind": "place",
+      "title": "Seğmenler Parkı",
+      "venue": "Çankaya",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankara%2C_Turkey_-_panoramio_%2892%29.jpg/500px-Ankara%2C_Turkey_-_panoramio_%2892%29.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Se%C4%9Fmenler_Park%C4%B1",
+      "note": "Kavaklıdere’de yamaca yayılan çimlik park"
+     },
+     {
+      "id": "place:ankara-kugulu",
+      "kind": "place",
+      "title": "Kuğulu Park",
+      "venue": "Çankaya",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ankara_Ku%C4%9Fulu_Park.JPG/500px-Ankara_Ku%C4%9Fulu_Park.JPG",
+      "url": "https://tr.wikipedia.org/wiki/Ku%C4%9Fulu_Park",
+      "note": "Tunalı’nın ucunda göletli küçük park"
+     },
+     {
+      "id": "place:ankara-botanik",
+      "kind": "place",
+      "title": "Botanik Parkı",
+      "venue": "Çankaya",
+      "city": "Ankara"
+     },
+     {
+      "id": "place:ankara-kurtulus",
+      "kind": "place",
+      "title": "Kurtuluş Parkı",
+      "venue": "Çankaya",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg/500px-Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Kurtulu%C5%9F_Park%C4%B1",
+      "note": "Şehrin ortasında ağaçlık yürüyüş yolları"
+     },
+     {
+      "id": "place:ankara-50-yil",
+      "kind": "place",
+      "title": "50. Yıl Parkı",
+      "venue": "Çankaya",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/50._y%C4%B1l_park%C4%B1_-_panoramio.jpg/500px-50._y%C4%B1l_park%C4%B1_-_panoramio.jpg",
+      "url": "https://tr.wikipedia.org/wiki/50._Y%C4%B1l_Park%C4%B1"
+     },
+     {
+      "id": "place:ankara-genclik",
+      "kind": "place",
+      "title": "Gençlik Parkı",
+      "venue": "Altındağ",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg/500px-Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Gen%C3%A7lik_Park%C4%B1",
+      "note": "Ulus’ta havuzlu büyük şehir parkı"
+     },
+     {
+      "id": "place:ankara-baskent-millet-bahcesi",
+      "kind": "place",
+      "title": "Başkent Millet Bahçesi",
+      "venue": "Altındağ",
+      "city": "Ankara"
+     },
+     {
+      "id": "place:ankara-altinpark",
+      "kind": "place",
+      "title": "Altınpark",
+      "venue": "Altındağ",
+      "city": "Ankara",
+      "note": "Göletli, geniş yürüyüş alanı"
+     },
+     {
+      "id": "place:ankara-aoc",
+      "kind": "place",
+      "title": "Atatürk Orman Çiftliği",
+      "venue": "Yenimahalle",
+      "city": "Ankara",
+      "url": "https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Orman_%C3%87iftli%C4%9Fi",
+      "note": "Ağaçlıklı yollar, geniş açık alan"
+     },
+     {
+      "id": "place:ankara-kuzey-yildizi",
+      "kind": "place",
+      "title": "Kuzey Yıldızı Parkı",
+      "venue": "Keçiören",
+      "city": "Ankara"
+     },
+     {
+      "id": "place:ankara-goksu",
+      "kind": "place",
+      "title": "Göksu Parkı",
+      "venue": "Etimesgut",
+      "city": "Ankara",
+      "url": "https://tr.wikipedia.org/wiki/G%C3%B6ksu_Park%C4%B1",
+      "note": "Eryaman’da göl çevresinde yürüyüş"
+     },
+     {
+      "id": "place:ankara-harikalar-diyari",
+      "kind": "place",
+      "title": "Harikalar Diyarı",
+      "venue": "Sincan",
+      "city": "Ankara",
+      "note": "Sincan’da çok geniş bir park"
+     },
+     {
+      "id": "place:ankara-mavi-gol",
+      "kind": "place",
+      "title": "Mavi Göl",
+      "venue": "Mamak",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg/500px-T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg",
+      "url": "https://tr.wikipedia.org/wiki/Bay%C4%B1nd%C4%B1r_Baraj%C4%B1",
+      "note": "Bayındır Barajı kıyısında mesire alanı"
+     },
+     {
+      "id": "place:ankara-karagol",
+      "kind": "place",
+      "title": "Karagöl",
+      "venue": "Çubuk",
+      "city": "Ankara",
+      "note": "Orman içinde küçük bir göl; şehir dışı, günübirlik"
+     },
+     {
+      "id": "place:ankara-soguksu",
+      "kind": "place",
+      "title": "Soğuksu Millî Parkı",
+      "venue": "Kızılcahamam",
+      "city": "Ankara",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/So%C4%9Fuksu_National_Park.jpg/500px-So%C4%9Fuksu_National_Park.jpg",
+      "url": "https://tr.wikipedia.org/wiki/So%C4%9Fuksu_Mill%C3%AE_Park%C4%B1",
+      "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik"
      }
     ]
    }

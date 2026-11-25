@@ -9,7 +9,8 @@
 //              ranked by show weight.
 //
 // The category catalogue needs TMDB for films and series (genre list + discover per genre);
-// events by category come from the same Biletix index, next 30 days.
+// events by category come from the same Biletix index, next 30 days. Places by category
+// are a curated list in data/places.json.
 //
 // A source that fails keeps its previous entries, so one outage never empties the file.
 
@@ -19,6 +20,8 @@ import { fileURLToPath } from 'node:url'
 
 const OUT = resolve(dirname(fileURLToPath(import.meta.url)), '../public/trending.json')
 const CATALOG_OUT = resolve(dirname(fileURLToPath(import.meta.url)), '../public/catalog.json')
+// Hand-picked places by city and category (walking parks and the like); copied into the catalogue as they are.
+const PLACES = resolve(dirname(fileURLToPath(import.meta.url)), '../data/places.json')
 const PER_GROUP = 12
 const PER_GENRE = 10
 const UA = 'Mozilla/5.0 (compatible; what-to-do-trending/1.0)'
@@ -400,6 +403,7 @@ async function main() {
     movies: movieGenres,
     series: seriesGenres,
     events: ev?.genres ?? prevCatalog.events ?? {},
+    places: await readJson(PLACES),
   })
   const evGenres = Object.entries(ev?.genres ?? prevCatalog.events ?? {}).map(([k, v]) => `${k}:${v.length}`).join(' ')
   console.log(`catalog.json ${catChanged ? 'updated' : 'unchanged'} — film genres ${movieGenres.length} · series genres ${seriesGenres.length} · event genres ${evGenres}`)

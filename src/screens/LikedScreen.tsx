@@ -9,14 +9,18 @@ import { loadCatalog } from '../lib/trending'
 import type { Catalog, Genre, Item, TrendEntry } from '../lib/types'
 
 type View = 'liked' | 'week' | 'genres'
-type Shelf = 'movies' | 'series' | 'events'
+type Shelf = 'movies' | 'series' | 'events' | 'places'
 type CatalogState = { status: 'loading' | 'error' } | { status: 'ready'; data: Catalog }
 
 const SHELVES: { id: Shelf; label: string }[] = [
   { id: 'movies', label: 'Film' },
   { id: 'series', label: 'Dizi' },
   { id: 'events', label: 'Etkinlik' },
+  { id: 'places', label: 'Mekan' },
 ]
+
+/** Shelves whose content depends on the chosen city. */
+const LOCAL: Shelf[] = ['events', 'places']
 
 /** This week's picks and the category shelves, a like on every card; and everything liked so far. */
 export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: TrendEntry[] }) {
@@ -48,9 +52,15 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
     else saveTrending(entry)
   }
 
-  const genresOf = (data: Catalog, s: Shelf): Genre[] => (s === 'events' ? data.events[settings.region] ?? [] : data[s]) ?? []
+  const genresOf = (data: Catalog, s: Shelf): Genre[] => {
+    if (s === 'events') return data.events[settings.region] ?? []
+    if (s === 'places') return data.places?.[settings.region] ?? []
+    return data[s] ?? []
+  }
   // Film and series shelves need TMDB; a shelf with nothing in it is not offered.
-  const shelves = catalog.status === 'ready' ? SHELVES.filter((s) => genresOf(catalog.data, s.id).length > 0 || s.id === 'events') : SHELVES
+  // The local ones stay, since another city may have what this one lacks.
+  const shelves = catalog.status === 'ready' ? SHELVES.filter((s) => genresOf(catalog.data, s.id).length > 0 || LOCAL.includes(s.id)) : SHELVES
+  const placeRegions = catalog.status === 'ready' ? Object.keys(catalog.data.places ?? {}).filter((r) => (catalog.data.places?.[r] ?? []).length > 0) : []
   const activeShelf = shelves.some((s) => s.id === shelf) ? shelf : shelves[0]?.id ?? 'events'
   const genres = catalog.status === 'ready' ? genresOf(catalog.data, activeShelf) : []
   const genre = genres.find((g) => g.id === picked[activeShelf]) ?? genres[0]
@@ -136,7 +146,7 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
                 </button>
               ))}
             </div>
-            {activeShelf === 'events' && regionSelect}
+            {LOCAL.includes(activeShelf) && regionSelect}
           </div>
 
           {catalog.status === 'loading' && <LoadingCards />}
@@ -148,7 +158,18 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
           )}
           {catalog.status === 'ready' && genres.length === 0 && (
             <p className="empty">
-              {activeShelf === 'events' ? 'Bu şehir için önümüzdeki 30 günde kategorili etkinlik yok.' : 'Bu tür için kategori verisi henüz gelmedi.'}
+              {activeShelf === 'events' && 'Bu şehir için önümüzdeki 30 günde kategorili etkinlik yok.'}
+              {activeShelf === 'places' && (
+                <>
+                  Bu şehir için mekan listesi henüz yok.{' '}
+                  {placeRegions.map((r) => (
+                    <button key={r} className="link" onClick={() => updateSettings({ region: r })}>
+                      {regions?.[r] ?? r} listesine bakın
+                    </button>
+                  ))}
+                </>
+              )}
+              {!LOCAL.includes(activeShelf) && 'Bu tür için kategori verisi henüz gelmedi.'}
             </p>
           )}
           {catalog.status === 'ready' && genre && (
@@ -172,10 +193,10 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
                 ))}
               </div>
               <p className="foot">
-                {activeShelf === 'events'
-                  ? `Önümüzdeki 30 günün ${genre.name.toLocaleLowerCase('tr')} etkinlikleri, en çok seansı olan önde.`
-                  : `${genre.name} kategorisinde şu an en popüler ${genre.items.length} ${activeShelf === 'movies' ? 'film' : 'dizi'}.`}{' '}
-                Güncellendi: {stamp(catalog.data.updatedAt)}.
+                {activeShelf === 'events' && `Önümüzdeki 30 günün ${genre.name.toLocaleLowerCase('tr')} etkinlikleri, en çok seansı olan önde. Güncellendi: ${stamp(catalog.data.updatedAt)}.`}
+                {activeShelf === 'places' && `${genre.items.length} yer, elle seçilmiş liste. Fotoğraflar Wikipedia’dan.`}
+                {!LOCAL.includes(activeShelf) &&
+                  `${genre.name} kategorisinde şu an en popüler ${genre.items.length} ${activeShelf === 'movies' ? 'film' : 'dizi'}. Güncellendi: ${stamp(catalog.data.updatedAt)}.`}
               </p>
             </>
           )}

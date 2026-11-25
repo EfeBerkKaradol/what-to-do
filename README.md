@@ -41,6 +41,7 @@ Her grupta 12 kayıt tutulur; uygulama her gün bu havuzdan 4 etkinlik, 3 film, 
 Aynı iş `public/catalog.json` dosyasını da yeniler:
 
 - **Film ve dizi:** TMDB'nin tür listesi ve her tür için o an en popüler 10 yapım. `TMDB_API_KEY` yoksa bu iki raf boş kalır ve uygulamada gösterilmez.
+- **Mekan:** elle seçilmiş listeler, `data/places.json` içinde. Şimdilik Ankara'nın yürüyüş parkları (18 yer; adlar ve ilçeler OpenStreetMap'te doğrulandı, fotoğraflar Wikipedia'dan). Yeni şehir ya da kategori eklemek için bu dosyaya yazmak yeterli.
 - **Etkinlik:** Biletix'in alt kategorileri (tiyatro, stand-up, pop, caz, atölye, müze…), önümüzdeki 30 gün, şehir şehir; en çok seansı olan önde.
 
 Anahtar yalnızca GitHub'da durduğu için kategoriler tarayıcıda canlı çekilmez; günde bir kez önceden hazırlanır.
