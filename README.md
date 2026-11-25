@@ -5,7 +5,7 @@
 Açılışta nokta nokta bir alan, üzerinde sol üstten sağ alta durmadan akan büyük piksel ikonlar ve ortada, macOS Dock'u gibi buzlu camdan bir gezinme çubuğu karşılar; bir sayfaya girildiğinde aynı çubuk üste çıkar.
 
 - **Eklediklerim.** Kendi yazdıklarınız. `+` ile önce kategori (aktivite, mekan, film, dizi), sonra ne olduğu.
-- **Kaydettiklerim.** Bölüm bölüm kartlar: revaçtaki filmler, revaçtaki tiyatrolar, kategorileriyle filmler, diziler ve etkinlikler, yürüyüş parkları, yemek mekanları. Kalbe bastıklarınız beğenilenlere eklenir.
+- **Kaydettiklerim.** Bölüm bölüm kartlar: revaçtaki filmler, revaçtaki tiyatrolar, kategorileriyle filmler, diziler ve etkinlikler. Etkinlik kategorilerinin başında yürüyüş parkları, yemek mekanları ve tatlı mekanları durur. Kalbe bastıklarınız beğenilenlere eklenir.
 - **Ne Yapsak.** Önce "Hazır mısın?" ekranı, "Hazırım" deyince:
   1. **Kaydır.** Kaç seçenek arasından karar vereceğinizi siz seçersiniz (5 ile 50 arası). Destenin en çok %60'ı eklediklerinizle beğendiklerinizden, kalanı o haftanın revaçta olanlarından ve kategorilerin en popülerlerinden gelir. Sağa "olur", sola "geç".
   2. **O mu, bu mu?** "Olur" dedikleriniz ikişer ikişer karşınıza çıkar; eleme usulü, sona kalan kazanır.
@@ -41,10 +41,14 @@ Her grupta 12 kayıt tutulur; uygulama her gün bu havuzdan 4 etkinlik, 3 film, 
 Aynı iş `public/catalog.json` dosyasını da yeniler:
 
 - **Film ve dizi:** TMDB'nin tür listesi ve her tür için o an en popüler 10 yapım. `TMDB_API_KEY` yoksa bu iki raf boş kalır ve uygulamada gösterilmez.
-- **Mekan:** elle seçilmiş listeler, `data/places.json` içinde; bölüm (`walk`, `food`) → şehir → kategori. Şimdilik Ankara: 18 yürüyüş parkı (fotoğraflar Wikipedia'dan) ve 26 yemek mekanı. Hepsinin adı ve adresi OpenStreetMap'te doğrulandı; puan ya da popülerlik sıralaması değil. Yeni şehir ya da kategori eklemek için bu dosyaya yazmak yeterli.
+- **Mekan:** elle seçilmiş listeler, `data/places.json` içinde; bölüm (`walk`, `food`, `dessert`) → şehir → grup. Şimdilik Ankara: 18 yürüyüş parkı, 24 yemek mekanı, 12 tatlı mekanı. Hepsinin adı ve adresi OpenStreetMap'te doğrulandı; puan ya da popülerlik sıralaması değil. Yeni şehir ya da kategori eklemek için bu dosyaya yazmak yeterli.
 - **Etkinlik:** Biletix'in alt kategorileri (tiyatro, stand-up, pop, caz, atölye, müze…), önümüzdeki 30 gün, şehir şehir; en çok seansı olan önde.
 
 Anahtar yalnızca GitHub'da durduğu için kategoriler tarayıcıda canlı çekilmez; günde bir kez önceden hazırlanır.
+
+### Görseller
+
+Film ve dizilerde afiş (TMDB), etkinliklerde Biletix görseli, 10 parkta Wikipedia fotoğrafı kullanılır. Kendi görseli olmayan her şey için `public/art/` içindeki temsili görseller devreye girer: yapay zekâyla (Pollinations) üretilmiş, türü anlatan resimler (kebap, balık, baklava, göl kenarı…). Bunlar mekanın kendi fotoğrafı değildir; uygulama bunu kartların altında söyler. Elle eklenen ve görseli olmayan kayıtlar da türüne göre (`activity`, `place`, `movie`, `series`, `event`) aynı klasörden görsel alır.
 
 TMDB kullanmak için (isteğe bağlı, ücretsiz): themoviedb.org'dan bir API anahtarı alın ve depoda **Settings → Secrets and variables → Actions** altına `TMDB_API_KEY` adıyla ekleyin.
 

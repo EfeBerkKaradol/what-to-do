@@ -273,8 +273,8 @@ function BigCard({ item }: { item: Item }) {
   const info = details(item)
   return (
     <>
-      {item.image ? <Cover src={item.image} title={item.title} className="card__img" /> : null}
-      <div className={`card__text${item.image ? ' card__text--over' : ''}`}>
+      <Cover src={item.image} title={item.title} kind={item.kind} className="card__img" />
+      <div className="card__text">
         <span className="pill">{item.kind === 'event' ? item.meta?.split(' · ')[0] || KIND_LABEL.event : KIND_LABEL[item.kind]}</span>
         <h2 className="card__title">{item.title}</h2>
         {info && <p className="card__info">{info}</p>}

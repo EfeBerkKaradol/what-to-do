@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T19:52:23.738Z",
+ "updatedAt": "2026-11-25T20:25:10.298Z",
  "regions": {
   "ISTANBUL": "İstanbul",
   "ANKARA": "Ankara",
@@ -9,8 +9,8 @@
  },
  "sources": {
   "events": "Biletix",
-  "movies": "TMDB",
-  "series": "TMDB"
+  "movies": "TMDB (eski)",
+  "series": "TMDB (eski)"
  },
  "movies": [
   {
@@ -9744,7 +9744,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg/500px-Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg",
        "url": "https://tr.wikipedia.org/wiki/Eymir_G%C3%B6l%C3%BC",
-       "note": "Göl çevresinde yürüyüş ve bisiklet yolu"
+       "note": "Göl çevresinde yürüyüş ve bisiklet yolu",
+       "meta": "Göl kenarı"
       },
       {
        "id": "place:ankara-mogan",
@@ -9754,7 +9755,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg/500px-G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg",
        "url": "https://tr.wikipedia.org/wiki/Mogan_G%C3%B6l%C3%BC",
-       "note": "Göl kıyısı boyunca yürüyüş yolu"
+       "note": "Göl kıyısı boyunca yürüyüş yolu",
+       "meta": "Göl kenarı"
       },
       {
        "id": "place:ankara-mavi-gol",
@@ -9764,7 +9766,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg/500px-T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg",
        "url": "https://tr.wikipedia.org/wiki/Bay%C4%B1nd%C4%B1r_Baraj%C4%B1",
-       "note": "Bayındır Barajı kıyısında mesire alanı"
+       "note": "Bayındır Barajı kıyısında mesire alanı",
+       "meta": "Göl kenarı"
       },
       {
        "id": "place:ankara-goksu",
@@ -9773,7 +9776,10 @@
        "venue": "Etimesgut",
        "city": "Ankara",
        "url": "https://tr.wikipedia.org/wiki/G%C3%B6ksu_Park%C4%B1",
-       "note": "Eryaman’da göl çevresinde yürüyüş"
+       "note": "Eryaman’da göl çevresinde yürüyüş",
+       "meta": "Göl kenarı",
+       "image": "./art/gol.jpg",
+       "illustrated": true
       }
      ]
     },
@@ -9789,7 +9795,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikmen_Vadisi.jpg/500px-Dikmen_Vadisi.jpg",
        "url": "https://tr.wikipedia.org/wiki/Dikmen_Vadisi",
-       "note": "Vadi boyunca uzanan yürüyüş parkuru"
+       "note": "Vadi boyunca uzanan yürüyüş parkuru",
+       "meta": "Şehir içi"
       },
       {
        "id": "place:ankara-segmenler",
@@ -9799,7 +9806,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankara%2C_Turkey_-_panoramio_%2892%29.jpg/500px-Ankara%2C_Turkey_-_panoramio_%2892%29.jpg",
        "url": "https://tr.wikipedia.org/wiki/Se%C4%9Fmenler_Park%C4%B1",
-       "note": "Kavaklıdere’de yamaca yayılan çimlik park"
+       "note": "Kavaklıdere’de yamaca yayılan çimlik park",
+       "meta": "Şehir içi"
       },
       {
        "id": "place:ankara-kugulu",
@@ -9809,14 +9817,18 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ankara_Ku%C4%9Fulu_Park.JPG/500px-Ankara_Ku%C4%9Fulu_Park.JPG",
        "url": "https://tr.wikipedia.org/wiki/Ku%C4%9Fulu_Park",
-       "note": "Tunalı’nın ucunda göletli küçük park"
+       "note": "Tunalı’nın ucunda göletli küçük park",
+       "meta": "Şehir içi"
       },
       {
        "id": "place:ankara-botanik",
        "kind": "place",
        "title": "Botanik Parkı",
        "venue": "Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "meta": "Şehir içi",
+       "image": "./art/park.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-kurtulus",
@@ -9826,7 +9838,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg/500px-Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg",
        "url": "https://tr.wikipedia.org/wiki/Kurtulu%C5%9F_Park%C4%B1",
-       "note": "Şehrin ortasında ağaçlık yürüyüş yolları"
+       "note": "Şehrin ortasında ağaçlık yürüyüş yolları",
+       "meta": "Şehir içi"
       },
       {
        "id": "place:ankara-50-yil",
@@ -9835,7 +9848,8 @@
        "venue": "Çankaya",
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/50._y%C4%B1l_park%C4%B1_-_panoramio.jpg/500px-50._y%C4%B1l_park%C4%B1_-_panoramio.jpg",
-       "url": "https://tr.wikipedia.org/wiki/50._Y%C4%B1l_Park%C4%B1"
+       "url": "https://tr.wikipedia.org/wiki/50._Y%C4%B1l_Park%C4%B1",
+       "meta": "Şehir içi"
       },
       {
        "id": "place:ankara-genclik",
@@ -9845,14 +9859,18 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg/500px-Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg",
        "url": "https://tr.wikipedia.org/wiki/Gen%C3%A7lik_Park%C4%B1",
-       "note": "Ulus’ta havuzlu büyük şehir parkı"
+       "note": "Ulus’ta havuzlu büyük şehir parkı",
+       "meta": "Şehir içi"
       },
       {
        "id": "place:ankara-baskent-millet-bahcesi",
        "kind": "place",
        "title": "Başkent Millet Bahçesi",
        "venue": "Altındağ",
-       "city": "Ankara"
+       "city": "Ankara",
+       "meta": "Şehir içi",
+       "image": "./art/park.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-altinpark",
@@ -9860,7 +9878,10 @@
        "title": "Altınpark",
        "venue": "Altındağ",
        "city": "Ankara",
-       "note": "Göletli, geniş yürüyüş alanı"
+       "note": "Göletli, geniş yürüyüş alanı",
+       "meta": "Şehir içi",
+       "image": "./art/park.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-aoc",
@@ -9869,14 +9890,20 @@
        "venue": "Yenimahalle",
        "city": "Ankara",
        "url": "https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Orman_%C3%87iftli%C4%9Fi",
-       "note": "Ağaçlıklı yollar, geniş açık alan"
+       "note": "Ağaçlıklı yollar, geniş açık alan",
+       "meta": "Şehir içi",
+       "image": "./art/park.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-kuzey-yildizi",
        "kind": "place",
        "title": "Kuzey Yıldızı Parkı",
        "venue": "Keçiören",
-       "city": "Ankara"
+       "city": "Ankara",
+       "meta": "Şehir içi",
+       "image": "./art/park.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-harikalar-diyari",
@@ -9884,7 +9911,10 @@
        "title": "Harikalar Diyarı",
        "venue": "Sincan",
        "city": "Ankara",
-       "note": "Sincan’da çok geniş bir park"
+       "note": "Sincan’da çok geniş bir park",
+       "meta": "Şehir içi",
+       "image": "./art/park.jpg",
+       "illustrated": true
       }
      ]
     },
@@ -9898,7 +9928,10 @@
        "title": "Karagöl",
        "venue": "Çubuk",
        "city": "Ankara",
-       "note": "Orman içinde küçük bir göl; şehir dışı, günübirlik"
+       "note": "Orman içinde küçük bir göl; şehir dışı, günübirlik",
+       "meta": "Şehir dışı",
+       "image": "./art/orman.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-soguksu",
@@ -9908,7 +9941,8 @@
        "city": "Ankara",
        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/So%C4%9Fuksu_National_Park.jpg/500px-So%C4%9Fuksu_National_Park.jpg",
        "url": "https://tr.wikipedia.org/wiki/So%C4%9Fuksu_Mill%C3%AE_Park%C4%B1",
-       "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik"
+       "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik",
+       "meta": "Şehir dışı"
       }
      ]
     }
@@ -9926,7 +9960,9 @@
        "title": "Uludağ Kebapçısı",
        "meta": "Kebap",
        "venue": "Denizciler Caddesi, Altındağ",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kebap.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-yildiz-aspava",
@@ -9934,7 +9970,9 @@
        "title": "Yıldız Aspava",
        "meta": "Döner ve kebap",
        "venue": "Esat Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/doner.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-simsek-aspava",
@@ -9942,7 +9980,9 @@
        "title": "Şimşek Aspava",
        "meta": "Döner ve kebap",
        "venue": "Azerbaycan Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/doner.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-duveroglu",
@@ -9950,7 +9990,9 @@
        "title": "Düveroğlu",
        "meta": "Kebap",
        "venue": "İhsan Doğramacı Bulvarı, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kebap.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-kebap-49",
@@ -9958,7 +10000,9 @@
        "title": "Kebap 49",
        "meta": "Kebap",
        "venue": "Bülten Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kebap.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-tavaci-recep-usta",
@@ -9966,15 +10010,9 @@
        "title": "Tavacı Recep Usta",
        "meta": "Tava ve kebap",
        "venue": "Güzeltepe Mahallesi, Çankaya",
-       "city": "Ankara"
-      },
-      {
-       "id": "place:ankara-zeynel-cilli",
-       "kind": "place",
-       "title": "Zeynel Çilli",
-       "meta": "Et lokantası",
-       "venue": "Üniversiteler, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kebap.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-gunaydin",
@@ -9982,7 +10020,9 @@
        "title": "Günaydın",
        "meta": "Et ve köfte",
        "venue": "Or-An Mahallesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/et.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-nusret",
@@ -9990,7 +10030,9 @@
        "title": "Nusr-Et Steakhouse",
        "meta": "Steakhouse",
        "venue": "Şehit Ömer Haluk Sipahioğlu Sokak, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/et.jpg",
+       "illustrated": true
       }
      ]
     },
@@ -10004,7 +10046,9 @@
        "title": "Göksu Lokantası",
        "meta": "Türk mutfağı",
        "venue": "Tahran Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/lokanta.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-bogazici",
@@ -10012,7 +10056,9 @@
        "title": "Boğaziçi Lokantası",
        "meta": "Türk mutfağı",
        "venue": "Denizciler Caddesi, Altındağ",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/lokanta.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-cicek",
@@ -10020,7 +10066,9 @@
        "title": "Çiçek Lokantası",
        "meta": "Türk mutfağı",
        "venue": "Söğütözü Mahallesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/lokanta.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-cengelhan",
@@ -10028,7 +10076,9 @@
        "title": "Divan Brasserie Çengelhan",
        "meta": "Brasserie",
        "venue": "Gözcü Sokağı, Altındağ",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/restoran.jpg",
+       "illustrated": true
       }
      ]
     },
@@ -10042,7 +10092,9 @@
        "title": "Trilye",
        "meta": "Balık",
        "venue": "Kuleli Sokak, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/balik.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-balikcikoy",
@@ -10050,7 +10102,9 @@
        "title": "Balıkçıköy",
        "meta": "Balık",
        "venue": "Doğan Taşdelen Bulvarı, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/balik.jpg",
+       "illustrated": true
       }
      ]
     },
@@ -10064,7 +10118,9 @@
        "title": "Mezzaluna",
        "meta": "İtalyan",
        "venue": "Turan Emeksiz Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/makarna.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-quick-china",
@@ -10072,7 +10128,9 @@
        "title": "Quick China",
        "meta": "Uzak Doğu",
        "venue": "Çayhane Sokak, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/uzakdogu.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-spice-curry-house",
@@ -10080,7 +10138,9 @@
        "title": "Spice Curry House",
        "meta": "Hint",
        "venue": "Uğur Mumcu Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kori.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-sushico",
@@ -10088,7 +10148,9 @@
        "title": "SushiCo",
        "meta": "Suşi",
        "venue": "S. Saltoğlu Bulvarı, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/susi.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-fige",
@@ -10096,7 +10158,9 @@
        "title": "Fige",
        "meta": "Restoran",
        "venue": "Prof. Dr. Aziz Sancar Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/restoran.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-big-chefs",
@@ -10104,13 +10168,15 @@
        "title": "Big Chefs",
        "meta": "Restoran ve kafe",
        "venue": "Bilkent, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/restoran.jpg",
+       "illustrated": true
       }
      ]
     },
     {
-     "id": "kafe-ve-tatli",
-     "name": "Kafe ve tatlı",
+     "id": "kafe-ve-bar",
+     "name": "Kafe ve bar",
      "items": [
       {
        "id": "place:ankara-cafemiz",
@@ -10118,7 +10184,9 @@
        "title": "Cafemiz",
        "meta": "Kafe",
        "venue": "Arjantin Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kafe.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-leman-kultur",
@@ -10126,15 +10194,9 @@
        "title": "Leman Kültür",
        "meta": "Kafe",
        "venue": "Bestekar Caddesi, Çankaya",
-       "city": "Ankara"
-      },
-      {
-       "id": "place:ankara-liva",
-       "kind": "place",
-       "title": "Liva Pastanesi",
-       "meta": "Pastane",
-       "venue": "Güvenlik Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/kafe.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-kitir",
@@ -10142,7 +10204,9 @@
        "title": "Kıtır",
        "meta": "Atıştırmalık ve bira",
        "venue": "Tunalı Hilmi Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/bar.jpg",
+       "illustrated": true
       },
       {
        "id": "place:ankara-hayyami",
@@ -10150,7 +10214,163 @@
        "title": "Hayyami",
        "meta": "Şarap evi",
        "venue": "Bestekar Caddesi, Çankaya",
-       "city": "Ankara"
+       "city": "Ankara",
+       "image": "./art/sarap.jpg",
+       "illustrated": true
+      }
+     ]
+    }
+   ]
+  },
+  "dessert": {
+   "ANKARA": [
+    {
+     "id": "pastane",
+     "name": "Pastane",
+     "items": [
+      {
+       "id": "place:ankara-liva",
+       "kind": "place",
+       "title": "Liva Pastanesi",
+       "meta": "Pastane",
+       "venue": "Güvenlik Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/pastane.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-elizinn",
+       "kind": "place",
+       "title": "Elizinn",
+       "meta": "Pastane ve kafe",
+       "venue": "Tunalı Hilmi Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/pastane.jpg",
+       "illustrated": true
+      }
+     ]
+    },
+    {
+     "id": "baklava",
+     "name": "Baklava",
+     "items": [
+      {
+       "id": "place:ankara-hacibaba",
+       "kind": "place",
+       "title": "Baklavacı Hacıbaba",
+       "meta": "Baklava",
+       "venue": "Fatih Sultan Mehmet Bulvarı, Yenimahalle",
+       "city": "Ankara",
+       "image": "./art/baklava.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-gulluoglu",
+       "kind": "place",
+       "title": "Güllüoğlu",
+       "meta": "Baklava",
+       "venue": "Hoşdere Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/baklava.jpg",
+       "illustrated": true
+      }
+     ]
+    },
+    {
+     "id": "dondurma",
+     "name": "Dondurma",
+     "items": [
+      {
+       "id": "place:ankara-mado",
+       "kind": "place",
+       "title": "Mado",
+       "meta": "Dondurma ve tatlı",
+       "venue": "Ziya Gökalp Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/dondurma.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-marasli-dogan-usta",
+       "kind": "place",
+       "title": "Maraşlı Doğan Usta",
+       "meta": "Dondurma",
+       "venue": "Dikmen Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/dondurma.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-zeynel-cilli",
+       "kind": "place",
+       "title": "Zeynel Çilli",
+       "meta": "Dondurma ve tatlı",
+       "venue": "Üniversiteler, Çankaya",
+       "city": "Ankara",
+       "image": "./art/dondurma.jpg",
+       "illustrated": true
+      }
+     ]
+    },
+    {
+     "id": "sutlu-tatli",
+     "name": "Sütlü tatlı",
+     "items": [
+      {
+       "id": "place:ankara-ozsut",
+       "kind": "place",
+       "title": "Özsüt",
+       "meta": "Sütlü tatlı",
+       "venue": "Birlik Mahallesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/sutlu-tatli.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-bolulu-hasan-usta",
+       "kind": "place",
+       "title": "Bolulu Hasan Usta",
+       "meta": "Sütlü tatlı",
+       "venue": "Tunalı Hilmi Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/sutlu-tatli.jpg",
+       "illustrated": true
+      }
+     ]
+    },
+    {
+     "id": "waffle-ve-kahve",
+     "name": "Waffle ve kahve",
+     "items": [
+      {
+       "id": "place:ankara-abbas-waffle",
+       "kind": "place",
+       "title": "Abbas Waffle",
+       "meta": "Waffle",
+       "venue": "Bestekar Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/waffle.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-waffles-land",
+       "kind": "place",
+       "title": "Waffle’s Land",
+       "meta": "Waffle",
+       "venue": "Lizbon Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/waffle.jpg",
+       "illustrated": true
+      },
+      {
+       "id": "place:ankara-kahve-dunyasi",
+       "kind": "place",
+       "title": "Kahve Dünyası",
+       "meta": "Kahve ve çikolata",
+       "venue": "İran Caddesi, Çankaya",
+       "city": "Ankara",
+       "image": "./art/kahve.jpg",
+       "illustrated": true
       }
      ]
     }

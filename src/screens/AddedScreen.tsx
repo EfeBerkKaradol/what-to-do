@@ -89,7 +89,7 @@ function ListRow({ item, open, onToggle }: { item: Item; open: boolean; onToggle
   return (
     <li className={`item${open ? ' item--open' : ''}`}>
       <button className="row row--button" aria-expanded={open} onClick={onToggle}>
-        <Cover src={item.image} title={item.title} className="row__media" />
+        <Cover src={item.image} title={item.title} kind={item.kind} className="row__media" />
         <span className="row__text">
           <span className="row__title">{item.title}</span>
           <span className="row__sub">{subline(item)}</span>

@@ -138,7 +138,7 @@ export function AddSheet({ onClose }: { onClose: () => void }) {
                   setMatches([])
                 }}
               >
-                <Cover src={m.image} title={m.title} className="row__media" />
+                <Cover src={m.image} title={m.title} kind={kind} className="row__media" />
                 <span className="row__text">
                   <span className="row__title">{m.title}</span>
                   <span className="row__sub">{m.meta || KIND_LABEL[kind]}</span>
@@ -149,7 +149,7 @@ export function AddSheet({ onClose }: { onClose: () => void }) {
         )}
         {chosen && (
           <div className="row row--picked">
-            <Cover src={chosen.image} title={chosen.title} className="row__media" />
+            <Cover src={chosen.image} title={chosen.title} kind={kind} className="row__media" />
             <div className="row__text">
               <span className="row__title">{chosen.title}</span>
               <span className="row__sub">{chosen.meta || 'Afiş eklendi'}</span>

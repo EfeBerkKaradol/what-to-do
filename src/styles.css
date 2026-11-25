@@ -1589,23 +1589,6 @@ button {
   padding: 12px 14px 14px;
 }
 
-.tile--plain {
-  justify-content: flex-end;
-  min-height: 132px;
-}
-
-.tile--plain .tile__text {
-  padding-top: 56px;
-}
-
-.tile--plain .like {
-  background: var(--raised);
-}
-
-.tile--plain .tile__sub {
-  -webkit-line-clamp: 3;
-}
-
 .tile__title {
   font-size: var(--fs-body);
   line-height: 19px;

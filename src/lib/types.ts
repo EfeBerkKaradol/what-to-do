@@ -6,6 +6,7 @@ export interface Item {
   title: string
   note?: string
   image?: string
+  illustrated?: boolean
   /** Place name or address (places, events). */
   venue?: string
   city?: string
@@ -57,6 +58,8 @@ export interface TrendEntry {
   kind: Kind
   title: string
   image?: string
+  /** The image is a generated stand-in for the kind of place, not a photograph of it. */
+  illustrated?: boolean
   venue?: string
   city?: string
   when?: string
@@ -88,7 +91,7 @@ export interface Catalog {
   movies: Genre[]
   series: Genre[]
   events: Record<string, Genre[]>
-  /** Hand-picked places: section ("walk", "food") → region → categories. */
+  /** Hand-picked places: section ("walk", "food", "dessert") → region → groups. */
   places?: Record<string, Record<string, Genre[]>>
 }
 

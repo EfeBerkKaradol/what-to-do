@@ -22,7 +22,7 @@ export function subline(item: Item | TrendEntry, withKind = true): string {
 export function ItemRow({ item, sub, trailing }: { item: Item | TrendEntry; sub?: string; trailing?: ReactNode }) {
   return (
     <div className="row">
-      <Cover src={item.image} title={item.title} className="row__media" />
+      <Cover src={item.image} title={item.title} kind={item.kind} className="row__media" />
       <div className="row__text">
         <span className="row__title">{item.title}</span>
         <span className="row__sub">{sub ?? subline(item)}</span>

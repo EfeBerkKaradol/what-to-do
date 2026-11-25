@@ -8,7 +8,7 @@ import { liveItems, removeItem, saveTrending, updateSettings, useStore } from '.
 import { loadCatalog } from '../lib/trending'
 import type { Catalog, Genre, Item, TrendEntry } from '../lib/types'
 
-type SectionId = 'liked' | 'trend-movies' | 'trend-theatre' | 'movies' | 'series' | 'events' | 'walk' | 'food'
+type SectionId = 'liked' | 'trend-movies' | 'trend-theatre' | 'movies' | 'series' | 'events'
 type CatalogState = { status: 'loading' | 'error' } | { status: 'ready'; data: Catalog }
 
 const SECTIONS: { id: SectionId; label: string }[] = [
@@ -18,14 +18,18 @@ const SECTIONS: { id: SectionId; label: string }[] = [
   { id: 'movies', label: 'Filmler' },
   { id: 'series', label: 'Diziler' },
   { id: 'events', label: 'Etkinlikler' },
-  { id: 'walk', label: 'Yürüyüş parkları' },
-  { id: 'food', label: 'Yemek mekanları' },
 ]
 
 /** Sections whose content depends on the chosen city. */
-const LOCAL: SectionId[] = ['trend-theatre', 'events', 'walk', 'food']
-const PLACES: SectionId[] = ['walk', 'food']
-const ALL = '__all'
+const LOCAL: SectionId[] = ['trend-theatre', 'events']
+
+// Hand-picked places lead the event categories, in this order.
+const PLACE_SHELVES: { id: string; name: string }[] = [
+  { id: 'walk', name: 'Yürüyüş parkları' },
+  { id: 'food', name: 'Yemek mekanları' },
+  { id: 'dessert', name: 'Tatlı mekanları' },
+]
+const PLACE_PREFIX = 'places:'
 
 /**
  * Everything that can be liked, section by section: what is trending, films and series by
@@ -77,13 +81,13 @@ export function LikedScreen({ trending }: { trending: TrendingState }) {
         return data.movies ?? []
       case 'series':
         return data.series ?? []
-      case 'events':
-        return data.events[region] ?? []
-      case 'walk':
-      case 'food': {
-        const groups = data.places?.[section]?.[region] ?? []
-        // Places are few enough to be seen at once, so the first category is all of them.
-        return groups.length > 1 ? [{ id: ALL, name: 'Tümü', items: groups.flatMap((g) => g.items) }, ...groups] : groups
+      case 'events': {
+        const places = PLACE_SHELVES.map((shelf) => ({
+          id: PLACE_PREFIX + shelf.id,
+          name: shelf.name,
+          items: (data.places?.[shelf.id]?.[region] ?? []).flatMap((g) => g.items),
+        })).filter((g) => g.items.length > 0)
+        return [...places, ...(data.events[region] ?? [])]
       }
       default:
         return []
@@ -93,7 +97,6 @@ export function LikedScreen({ trending }: { trending: TrendingState }) {
   const genre = genres.find((g) => g.id === picked[section]) ?? genres[0]
   const loading = section === 'trend-movies' ? trending.status === 'loading' : usesCatalog && catalog.status === 'loading'
   const failed = section === 'trend-movies' ? trending.status === 'error' : usesCatalog && catalog.status === 'error'
-  const placeRegions = data && PLACES.includes(section) ? Object.keys(data.places?.[section] ?? {}).filter((r) => (data.places?.[section]?.[r] ?? []).length > 0) : []
 
   return (
     <div className="page">
@@ -164,16 +167,6 @@ export function LikedScreen({ trending }: { trending: TrendingState }) {
             <p className="empty">
               {section === 'trend-theatre' && 'Bu şehirde önümüzdeki 30 günde satışta tiyatro oyunu yok.'}
               {section === 'events' && 'Bu şehir için önümüzdeki 30 günde kategorili etkinlik yok.'}
-              {PLACES.includes(section) && (
-                <>
-                  Bu şehir için liste henüz yok.{' '}
-                  {placeRegions.map((r) => (
-                    <button key={r} className="link" onClick={() => updateSettings({ region: r })}>
-                      {regions?.[r] ?? r} listesine bakın
-                    </button>
-                  ))}
-                </>
-              )}
               {(section === 'movies' || section === 'series' || section === 'trend-movies') && 'Bu bölümün verisi henüz gelmedi.'}
             </p>
           )}
@@ -219,12 +212,16 @@ function footnote(section: SectionId, genre: Genre, trending: TrendingState, dat
       return `${genre.name} kategorisinde şu an en popüler ${genre.items.length} film.${updated}`
     case 'series':
       return `${genre.name} kategorisinde şu an en popüler ${genre.items.length} dizi.${updated}`
-    case 'events':
+    case 'events': {
+      if (genre.id.startsWith(PLACE_PREFIX)) {
+        const drawn = genre.items.filter((i) => i.illustrated).length
+        const about = `${genre.items.length} yer, elle seçilmiş liste; puan ya da sıralama değil.`
+        return drawn > 0
+          ? `${about} ${drawn === genre.items.length ? 'Görseller' : `${drawn} görsel`} yapay zekâyla üretildi ve temsilidir, mekanın kendi fotoğrafı değildir.`
+          : about
+      }
       return `Önümüzdeki 30 günün ${genre.name.toLocaleLowerCase('tr')} etkinlikleri, en çok seansı olan önde.${updated}`
-    case 'walk':
-      return `${genre.items.length} yer, elle seçilmiş liste. Fotoğraflar Wikipedia’dan.`
-    case 'food':
-      return `${genre.items.length} yer, elle seçilmiş liste; puan ya da sıralama değil. Gitmeden önce açık olduğunu haritadan kontrol edin.`
+    }
     default:
       return ''
   }
@@ -241,9 +238,8 @@ function LoadingCards() {
 function LikeCard({ item, liked, onToggle }: { item: Item | TrendEntry; liked: boolean; onToggle: () => void }) {
   const done = 'doneAt' in item && item.doneAt
   return (
-    <article className={`tile${item.image ? '' : ' tile--plain'}`}>
-      {/* A place without a photograph is a card of words, not an empty picture frame. */}
-      {item.image && <Cover src={item.image} title={item.title} className="tile__img" />}
+    <article className="tile">
+      <Cover src={item.image} title={item.title} kind={item.kind} className="tile__img" />
       <button
         className={`like${liked ? ' like--on' : ''}`}
         aria-pressed={liked}
