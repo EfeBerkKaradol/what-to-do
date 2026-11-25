@@ -1490,7 +1490,7 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 599px) {
@@ -1506,6 +1506,44 @@ button {
 
 .seg--onground {
   background: var(--surface);
+}
+
+.subbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* One row of categories that scrolls sideways and bleeds to the screen edges. */
+.chiprow {
+  display: flex;
+  gap: 8px;
+  margin: 0 calc(-1 * var(--gutter)) 18px;
+  padding: 0 var(--gutter);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chiprow::-webkit-scrollbar {
+  display: none;
+}
+
+.chiprow .chip {
+  flex: none;
+}
+
+/* A chip that picks one of several, as opposed to one that switches a kind off. */
+.chip--pick {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.chip--pick[aria-checked='true'] {
+  background: var(--text);
+  border-color: var(--text);
+  color: #000000;
 }
 
 .seg__n {

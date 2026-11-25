@@ -70,6 +70,22 @@ export interface Trending {
   series: TrendEntry[]
 }
 
+export interface Genre {
+  id: string
+  name: string
+  items: TrendEntry[]
+}
+
+/** Films, series and events by category; refreshed with the trending file. */
+export interface Catalog {
+  updatedAt: string
+  regions: Record<string, string>
+  sources: Record<string, string>
+  movies: Genre[]
+  series: Genre[]
+  events: Record<string, Genre[]>
+}
+
 export const KIND_LABEL: Record<Kind, string> = {
   activity: 'Aktivite',
   place: 'Mekan',

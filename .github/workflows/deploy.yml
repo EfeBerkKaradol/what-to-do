@@ -2,7 +2,7 @@ name: Yayınla
 
 # Three triggers, one job:
 #  - push to main          → build and publish
-#  - every morning (cron)  → refresh public/trending.json, commit it if it changed, publish
+#  - every morning (cron)  → refresh public/trending.json and catalog.json, commit what changed, publish
 #  - manual run            → same as the morning run
 on:
   push:
@@ -43,10 +43,10 @@ jobs:
       - name: Güncel listeyi depoya yaz
         if: github.event_name != 'push'
         run: |
-          if ! git diff --quiet -- public/trending.json; then
+          if ! git diff --quiet -- public/trending.json public/catalog.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/trending.json
+            git add public/trending.json public/catalog.json
             git commit -m "Revaçta olanlar güncellendi"
             git push
           fi

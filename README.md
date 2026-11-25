@@ -5,7 +5,7 @@
 Açılışta nokta nokta bir alan, üzerinde sol üstten sağ alta durmadan akan büyük piksel ikonlar ve ortada, macOS Dock'u gibi buzlu camdan bir gezinme çubuğu karşılar; bir sayfaya girildiğinde aynı çubuk üste çıkar.
 
 - **Eklediklerim.** Kendi yazdıklarınız. `+` ile önce kategori (aktivite, mekan, film, dizi), sonra ne olduğu.
-- **Kaydettiklerim.** O hafta revaçta olan 10 şey kart kart gelir; kalbe bastıklarınız beğenilenlere eklenir.
+- **Kaydettiklerim.** O hafta revaçta olan 10 şey ve kategori kategori filmler, diziler, etkinlikler kart kart gelir; kalbe bastıklarınız beğenilenlere eklenir.
 - **Ne Yapsak.** Önce "Hazır mısın?" ekranı, "Hazırım" deyince:
   1. **Kaydır.** Eklediklerinizle beğendikleriniz ve o günün revaçta olanları tek destede gelir. Sağa "olur", sola "geç".
   2. **O mu, bu mu?** "Olur" dedikleriniz ikişer ikişer karşınıza çıkar; eleme usulü, sona kalan kazanır.
@@ -35,6 +35,15 @@ Depo ayarlarında **Settings → Pages → Source: GitHub Actions** seçin. Ard�
 | Dizi | TVMaze (son 7 günün yayınları) | `TMDB_API_KEY` tanımlıysa TMDB haftalık trendleri kullanılır. |
 
 Her grupta 12 kayıt tutulur; uygulama her gün bu havuzdan 4 etkinlik, 3 film, 3 dizi seçer. Bir kaynak yanıt vermezse o grubun önceki kayıtları korunur.
+
+### Kategoriler
+
+Aynı iş `public/catalog.json` dosyasını da yeniler:
+
+- **Film ve dizi:** TMDB'nin tür listesi ve her tür için o an en popüler 10 yapım. `TMDB_API_KEY` yoksa bu iki raf boş kalır ve uygulamada gösterilmez.
+- **Etkinlik:** Biletix'in alt kategorileri (tiyatro, stand-up, pop, caz, atölye, müze…), önümüzdeki 30 gün, şehir şehir; en çok seansı olan önde.
+
+Anahtar yalnızca GitHub'da durduğu için kategoriler tarayıcıda canlı çekilmez; günde bir kez önceden hazırlanır.
 
 TMDB kullanmak için (isteğe bağlı, ücretsiz): themoviedb.org'dan bir API anahtarı alın ve depoda **Settings → Secrets and variables → Actions** altına `TMDB_API_KEY` adıyla ekleyin.
 

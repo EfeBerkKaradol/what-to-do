@@ -1,5 +1,5 @@
 import { shuffle } from './tournament'
-import type { Item, Trending, TrendEntry } from './types'
+import type { Catalog, Item, Trending, TrendEntry } from './types'
 
 export const TRENDING_COUNT = 10
 
@@ -7,6 +7,22 @@ export async function loadTrending(): Promise<Trending> {
   const res = await fetch(`./trending.json?d=${new Date().toISOString().slice(0, 13)}`)
   if (!res.ok) throw new Error(`trending ${res.status}`)
   return (await res.json()) as Trending
+}
+
+let catalog: Promise<Catalog> | null = null
+
+/** The category catalogue is a few hundred entries, so it is fetched once and only when asked for. */
+export function loadCatalog(): Promise<Catalog> {
+  catalog ??= fetch(`./catalog.json?d=${new Date().toISOString().slice(0, 13)}`)
+    .then((res) => {
+      if (!res.ok) throw new Error(`catalog ${res.status}`)
+      return res.json() as Promise<Catalog>
+    })
+    .catch((err) => {
+      catalog = null
+      throw err
+    })
+  return catalog
 }
 
 function seeded(seed: number) {

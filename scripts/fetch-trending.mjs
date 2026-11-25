@@ -1,11 +1,15 @@
 #!/usr/bin/env node
-// Collects this week's trending things to do and writes public/trending.json.
+// Collects this week's trending things to do and writes public/trending.json, and a
+// catalogue of films, series and events by category into public/catalog.json.
 //
 // Sources (all free):
 //   - Events:  Biletix public search index (no key). Next 7 days, per region.
 //   - Movies:  TMDB weekly trending when TMDB_API_KEY is set, otherwise the iTunes TR top-movies chart.
 //   - Series:  TMDB weekly trending when TMDB_API_KEY is set, otherwise TVMaze's last-7-days schedule
 //              ranked by show weight.
+//
+// The category catalogue needs TMDB for films and series (genre list + discover per genre);
+// events by category come from the same Biletix index, next 30 days.
 //
 // A source that fails keeps its previous entries, so one outage never empties the file.
 
@@ -14,7 +18,9 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const OUT = resolve(dirname(fileURLToPath(import.meta.url)), '../public/trending.json')
+const CATALOG_OUT = resolve(dirname(fileURLToPath(import.meta.url)), '../public/catalog.json')
 const PER_GROUP = 12
+const PER_GENRE = 10
 const UA = 'Mozilla/5.0 (compatible; what-to-do-trending/1.0)'
 const TMDB_KEY = process.env.TMDB_API_KEY || ''
 
@@ -28,6 +34,42 @@ export const REGIONS = {
 
 const CATEGORY_LABEL = { MUSIC: 'Konser', ART: 'Sahne', FAMILY: 'Aile', SPORT: 'Spor', OTHER: 'Etkinlik' }
 const CATEGORY_ORDER = ['MUSIC', 'ART', 'FAMILY', 'SPORT', 'OTHER']
+
+// Biletix "subcategory$CATEGORY" → the name shown in the app. Keys that are missing here
+// (school trips, merchandise, the catch-all "other" buckets) are left out of the catalogue.
+const EVENT_GENRE = {
+  'tiyatro$ART': 'Tiyatro',
+  'stand_up$ART': 'Stand-up',
+  'musical$ART': 'Müzikal',
+  'musical$FAMILY': 'Müzikal',
+  'bale_dans$ART': 'Bale ve dans',
+  'gosteri$ART': 'Gösteri',
+  'gosteri$FAMILY': 'Gösteri',
+  'sinema$ART': 'Film gösterimi',
+  'tiyatro$FAMILY': 'Çocuk tiyatrosu',
+  'attractioncenter$FAMILY': 'Eğlence merkezi',
+  'sirk$FAMILY': 'Sirk',
+  'pop$MUSIC': 'Pop',
+  'rock$MUSIC': 'Rock',
+  'alternatif$MUSIC': 'Alternatif',
+  'jazz$MUSIC': 'Caz',
+  'klasik$MUSIC': 'Klasik müzik',
+  'rap_hiphop$MUSIC': 'Rap ve hip-hop',
+  'dans_elektronik$MUSIC': 'Elektronik',
+  'turksanat_halkmuzik$MUSIC': 'Türk sanat ve halk müziği',
+  'dunya_muzik$MUSIC': 'Dünya müziği',
+  'heavy_metal$MUSIC': 'Metal',
+  'latin_tango$MUSIC': 'Latin ve tango',
+  'party$MUSIC': 'Parti',
+  'atolye$OTHER': 'Atölye',
+  'muze$OTHER': 'Müze',
+  'sergi$OTHER': 'Sergi',
+  'konferans$OTHER': 'Konferans',
+  'fuar$OTHER': 'Fuar',
+  'basketbol$SPORT': 'Basketbol',
+  'esport$SPORT': 'E-spor',
+  'dovus_spor$SPORT': 'Dövüş sporları',
+}
 
 async function getJson(url, init = {}) {
   const ctrl = new AbortController()
@@ -51,37 +93,45 @@ const dayKey = (d) => d.toISOString().slice(0, 10)
 
 // ---------- Events (Biletix) ----------
 
+const WEEK = 7 * 86400000
+
+/** Every on-sale event of a region in the next 30 days, one entry per title. */
 async function biletixRegion(region) {
   const params = new URLSearchParams()
   params.set('q', '*:*')
-  params.append('fq', 'start:[NOW TO NOW+7DAY]')
+  params.append('fq', 'start:[NOW TO NOW+30DAY]')
   params.append('fq', `region:${region}`)
   params.append('fq', 'status:s01_onsale')
-  params.set('rows', '400')
+  params.set('rows', '2500')
   params.set('sort', 'start asc')
   params.set('wt', 'json')
   params.set('fl', 'id,type,name,start,svenue,city,category,subcategory,image_url')
   const data = await getJson(`https://www.biletix.com/solr/tr/select/?${params}`)
   const docs = data?.response?.docs ?? []
+  const soon = Date.now() + WEEK
 
-  // The index has no popularity field. Number of sessions in the week is the best
-  // available signal: shows that sell get more dates.
+  // The index has no popularity field. Number of sessions is the best available signal:
+  // shows that sell get more dates.
   const byName = new Map()
   for (const d of docs) {
     const title = clean(first(d.name))
     if (!title || !d.start) continue
+    const thisWeek = new Date(d.start).getTime() <= soon
     const key = title.toLocaleLowerCase('tr')
     const prev = byName.get(key)
     if (prev) {
       prev.sessions += 1
+      if (thisWeek) prev.weekSessions += 1
       continue
     }
-    const sub = String(d.subcategory || '').split('$')[0]
     const cat = CATEGORY_LABEL[d.category] ? d.category : 'OTHER'
+    const genre = EVENT_GENRE[d.subcategory]
     const isGroup = d.type === 'group'
     byName.set(key, {
       sessions: 1,
+      weekSessions: thisWeek ? 1 : 0,
       category: cat,
+      genre,
       item: {
         id: `event:${d.id}`,
         kind: 'event',
@@ -93,15 +143,19 @@ async function biletixRegion(region) {
         city: clean(first(d.city)) || REGIONS[region],
         when: d.start,
         url: `https://www.biletix.com/${isGroup ? 'etkinlik-grup' : 'etkinlik'}/${d.id}/TURKIYE/tr`,
-        meta: [CATEGORY_LABEL[cat], sub && sub !== 'other' ? sub : ''].filter(Boolean).join(' · '),
+        meta: genre ? (cat === 'MUSIC' ? `Konser · ${genre}` : genre) : CATEGORY_LABEL[cat],
       },
     })
   }
+  return [...byName.values()]
+}
 
+/** This week's picks for a region, spread over the broad categories. */
+function weeklyPicks(entries) {
   const buckets = new Map(CATEGORY_ORDER.map((c) => [c, []]))
-  for (const e of byName.values()) buckets.get(e.category).push(e)
+  for (const e of entries) if (e.weekSessions > 0) buckets.get(e.category).push(e)
   for (const list of buckets.values()) {
-    list.sort((a, b) => b.sessions - a.sessions || a.item.when.localeCompare(b.item.when))
+    list.sort((a, b) => b.weekSessions - a.weekSessions || a.item.when.localeCompare(b.item.when))
   }
 
   // Round-robin over categories so a week of 100 concerts does not crowd out everything else.
@@ -121,13 +175,38 @@ async function biletixRegion(region) {
   return picked
 }
 
-async function events() {
-  const out = {}
-  for (const region of Object.keys(REGIONS)) {
-    out[region] = await biletixRegion(region)
+/** The next 30 days of a region by kind of event, fullest category first. */
+function eventGenres(entries) {
+  const groups = new Map()
+  for (const e of entries) {
+    if (!e.genre) continue
+    if (!groups.has(e.genre)) groups.set(e.genre, [])
+    groups.get(e.genre).push(e)
   }
-  if (Object.values(out).every((l) => l.length === 0)) throw new Error('Biletix returned no events')
-  return out
+  return [...groups.entries()]
+    .filter(([, list]) => list.length >= 2)
+    .sort((a, b) => b[1].length - a[1].length)
+    .map(([name, list]) => ({
+      id: name,
+      name,
+      items: list
+        .sort((a, b) => b.sessions - a.sessions || a.item.when.localeCompare(b.item.when))
+        .slice(0, PER_GENRE)
+        .map((e) => e.item),
+    }))
+}
+
+/** One Biletix pass feeds both files: { weekly: {region: entries}, genres: {region: genres} }. */
+async function events() {
+  const weekly = {}
+  const genres = {}
+  for (const region of Object.keys(REGIONS)) {
+    const entries = await biletixRegion(region)
+    weekly[region] = weeklyPicks(entries)
+    genres[region] = eventGenres(entries)
+  }
+  if (Object.values(weekly).every((l) => l.length === 0)) throw new Error('Biletix returned no events')
+  return { weekly, genres }
 }
 
 // ---------- Movies ----------
@@ -137,20 +216,51 @@ async function tmdb(path) {
   return getJson(`https://api.themoviedb.org/3${path}${sep}api_key=${TMDB_KEY}&language=tr-TR&region=TR`)
 }
 
+const tmdbMovie = (m, noteLength = 220) => ({
+  id: `movie:tmdb-${m.id}`,
+  kind: 'movie',
+  title: m.title || m.original_title,
+  image: `https://image.tmdb.org/t/p/w500${m.poster_path}`,
+  url: `https://www.themoviedb.org/movie/${m.id}`,
+  meta: [m.release_date?.slice(0, 4), m.vote_average ? `${m.vote_average.toFixed(1)} / 10` : ''].filter(Boolean).join(' · '),
+  note: clean(m.overview).slice(0, noteLength) || undefined,
+})
+
+const tmdbSeries = (s, noteLength = 220) => ({
+  id: `series:tmdb-${s.id}`,
+  kind: 'series',
+  title: s.name || s.original_name,
+  image: `https://image.tmdb.org/t/p/w500${s.poster_path}`,
+  url: `https://www.themoviedb.org/tv/${s.id}`,
+  meta: [s.first_air_date?.slice(0, 4), s.vote_average ? `${s.vote_average.toFixed(1)} / 10` : ''].filter(Boolean).join(' · '),
+  note: clean(s.overview).slice(0, noteLength) || undefined,
+})
+
 async function moviesTmdb() {
   const data = await tmdb('/trending/movie/week')
   return (data.results ?? [])
     .filter((m) => m.poster_path && (m.title || m.original_title))
     .slice(0, PER_GROUP)
-    .map((m) => ({
-      id: `movie:tmdb-${m.id}`,
-      kind: 'movie',
-      title: m.title || m.original_title,
-      image: `https://image.tmdb.org/t/p/w500${m.poster_path}`,
-      url: `https://www.themoviedb.org/movie/${m.id}`,
-      meta: [m.release_date?.slice(0, 4), m.vote_average ? `${m.vote_average.toFixed(1)} / 10` : ''].filter(Boolean).join(' · '),
-      note: clean(m.overview).slice(0, 220) || undefined,
-    }))
+    .map((m) => tmdbMovie(m))
+}
+
+/** TMDB's genre list for films ('movie') or series ('tv'), each with its most popular titles right now. */
+async function tmdbGenres(kind) {
+  const list = await tmdb(`/genre/${kind}/list`)
+  const toEntry = kind === 'movie' ? tmdbMovie : tmdbSeries
+  // A floor on votes keeps out titles that are "popular" for a day and that nobody has seen.
+  const floor = kind === 'movie' ? 50 : 20
+  const out = []
+  for (const g of list.genres ?? []) {
+    const data = await tmdb(`/discover/${kind}?with_genres=${g.id}&sort_by=popularity.desc&include_adult=false&vote_count.gte=${floor}`)
+    const items = (data.results ?? [])
+      .filter((x) => x.poster_path && (x.title || x.name || x.original_title || x.original_name))
+      .slice(0, PER_GENRE)
+      .map((x) => toEntry(x, 160))
+    if (items.length >= 3) out.push({ id: String(g.id), name: g.name, items })
+  }
+  if (out.length === 0) throw new Error(`TMDB returned no ${kind} genres`)
+  return out
 }
 
 async function moviesItunes() {
@@ -177,17 +287,9 @@ async function moviesItunes() {
 async function seriesTmdb() {
   const data = await tmdb('/trending/tv/week')
   return (data.results ?? [])
-    .filter((s) => s.poster_path && (s.name || s.original_name))
+    .filter((x) => x.poster_path && (x.name || x.original_name))
     .slice(0, PER_GROUP)
-    .map((s) => ({
-      id: `series:tmdb-${s.id}`,
-      kind: 'series',
-      title: s.name || s.original_name,
-      image: `https://image.tmdb.org/t/p/w500${s.poster_path}`,
-      url: `https://www.themoviedb.org/tv/${s.id}`,
-      meta: [s.first_air_date?.slice(0, 4), s.vote_average ? `${s.vote_average.toFixed(1)} / 10` : ''].filter(Boolean).join(' · '),
-      note: clean(s.overview).slice(0, 220) || undefined,
-    }))
+    .map((x) => tmdbSeries(x))
 }
 
 async function seriesTvmaze() {
@@ -227,16 +329,30 @@ async function seriesTvmaze() {
 
 // ---------- Run ----------
 
-async function main() {
-  let prev = {}
+async function readJson(path) {
   try {
-    prev = JSON.parse(await readFile(OUT, 'utf8'))
+    return JSON.parse(await readFile(path, 'utf8'))
   } catch {
-    /* first run */
+    return {} // first run
   }
+}
 
-  const sources = {}
-  async function take(name, attempts, fallback) {
+/** Writes the document; the timestamp only moves when the content did, so a quiet day makes no commit. */
+async function writeDoc(path, prev, next) {
+  const { updatedAt: _ignored, ...prevBody } = prev
+  const changed = JSON.stringify(prevBody) !== JSON.stringify(next)
+  const doc = { updatedAt: changed || !prev.updatedAt ? new Date().toISOString() : prev.updatedAt, ...next }
+  await mkdir(dirname(path), { recursive: true })
+  await writeFile(path, JSON.stringify(doc, null, 1) + '\n')
+  return changed
+}
+
+async function main() {
+  const prev = await readJson(OUT)
+  const prevCatalog = await readJson(CATALOG_OUT)
+
+  /** Runs the attempts in order; if all fail, keeps what the previous file had. */
+  async function take(sources, prevSources, name, attempts, fallback) {
     for (const [label, fn] of attempts) {
       try {
         const value = await fn()
@@ -246,33 +362,48 @@ async function main() {
         console.warn(`[${name}] ${label} failed: ${err.message}`)
       }
     }
-    sources[name] = prev.sources?.[name] ? `${String(prev.sources[name]).replace(/ \(eski\)$/, '')} (eski)` : 'yok'
+    sources[name] = prevSources?.[name] ? `${String(prevSources[name]).replace(/ \(eski\)$/, '')} (eski)` : 'yok'
     return fallback
   }
 
-  const ev = await take('events', [['Biletix', events]], prev.events ?? {})
+  // ---- this week's trending ----
+  const sources = {}
+  const ev = await take(sources, prev.sources, 'events', [['Biletix', events]], null)
+  const weekly = ev?.weekly ?? prev.events ?? {}
   const movies = await take(
+    sources,
+    prev.sources,
     'movies',
     [...(TMDB_KEY ? [['TMDB', moviesTmdb]] : []), ['iTunes Türkiye', moviesItunes]],
     prev.movies ?? [],
   )
   const series = await take(
+    sources,
+    prev.sources,
     'series',
     [...(TMDB_KEY ? [['TMDB', seriesTmdb]] : []), ['TVMaze', seriesTvmaze]],
     prev.series ?? [],
   )
-
-  const next = { regions: REGIONS, sources, events: ev, movies, series }
-  const { updatedAt: _ignored, ...prevBody } = prev
-  // Only bump the timestamp when the content changed, so a quiet day makes no commit.
-  const changed = JSON.stringify(prevBody) !== JSON.stringify(next)
-  const doc = { updatedAt: changed || !prev.updatedAt ? new Date().toISOString() : prev.updatedAt, ...next }
-
-  await mkdir(dirname(OUT), { recursive: true })
-  await writeFile(OUT, JSON.stringify(doc, null, 1) + '\n')
-  const counts = Object.entries(ev).map(([k, v]) => `${k}:${v.length}`).join(' ')
+  const changed = await writeDoc(OUT, prev, { regions: REGIONS, sources, events: weekly, movies, series })
+  const counts = Object.entries(weekly).map(([k, v]) => `${k}:${v.length}`).join(' ')
   console.log(`trending.json ${changed ? 'updated' : 'unchanged'} — events ${counts} · movies ${movies.length} · series ${series.length}`)
   console.log('sources:', JSON.stringify(sources))
+
+  // ---- by category ----
+  const catSources = { events: ev ? 'Biletix' : prevCatalog.sources?.events ?? 'yok' }
+  const tmdbOnly = (kind) => (TMDB_KEY ? [['TMDB', () => tmdbGenres(kind)]] : [])
+  const movieGenres = await take(catSources, prevCatalog.sources, 'movies', tmdbOnly('movie'), prevCatalog.movies ?? [])
+  const seriesGenres = await take(catSources, prevCatalog.sources, 'series', tmdbOnly('tv'), prevCatalog.series ?? [])
+  const catChanged = await writeDoc(CATALOG_OUT, prevCatalog, {
+    regions: REGIONS,
+    sources: catSources,
+    movies: movieGenres,
+    series: seriesGenres,
+    events: ev?.genres ?? prevCatalog.events ?? {},
+  })
+  const evGenres = Object.entries(ev?.genres ?? prevCatalog.events ?? {}).map(([k, v]) => `${k}:${v.length}`).join(' ')
+  console.log(`catalog.json ${catChanged ? 'updated' : 'unchanged'} — film genres ${movieGenres.length} · series genres ${seriesGenres.length} · event genres ${evGenres}`)
+  console.log('sources:', JSON.stringify(catSources))
 }
 
 main().catch((err) => {
