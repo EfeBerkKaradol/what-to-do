@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T17:12:00.669Z",
+ "updatedAt": "2026-11-25T14:20:43.331Z",
  "regions": {
   "ISTANBUL": "İstanbul",
   "ANKARA": "Ankara",
@@ -26,25 +26,25 @@
     "meta": "Konser · pop"
    },
    {
-    "id": "event:5R509",
+    "id": "event:5AAK6",
     "kind": "event",
-    "title": "Kürk Mantolu Madonna",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5PY46-kurkmantolu-new26bu.png",
-    "venue": "Taksim İstiklal Sahne",
+    "title": "Bir İdam Mahkumunun Son Günü",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5AAK2biridam-26su.avif",
+    "venue": "Sonsuz Tiyatro",
     "city": "İstanbul",
-    "when": "2026-11-24T17:30:00Z",
-    "url": "https://www.biletix.com/etkinlik/5R509/TURKIYE/tr",
+    "when": "2026-11-25T15:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5AAK6/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
-    "id": "event:5ZU56",
+    "id": "event:5ZU57",
     "kind": "event",
     "title": "Buz Adası Serbest Seans",
     "image": "https://www.biletix.com/static/images/live/event/eventimages/buzadasi-6-11-25su.jpg",
     "venue": "Zeytinburnu Buz Adası Alt Pist",
     "city": "İstanbul",
-    "when": "2026-11-25T08:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5ZU56/TURKIYE/tr",
+    "when": "2026-11-26T08:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ZU57/TURKIYE/tr",
     "meta": "Aile · attractioncenter"
    },
    {
@@ -59,14 +59,14 @@
     "meta": "Spor"
    },
    {
-    "id": "event:5FHE4",
+    "id": "event:5FHE5",
     "kind": "event",
     "title": "İstanbul Tatları Tadım Sineması - Kasım Ayı",
     "image": "https://www.biletix.com/static/images/live/event/eventimages/5BEM1-26su.avif",
     "venue": "İstanbul Tatları",
     "city": "İstanbul",
-    "when": "2026-11-25T07:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5FHE4/TURKIYE/tr",
+    "when": "2026-11-26T07:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5FHE5/TURKIYE/tr",
     "meta": "Etkinlik · atolye"
    },
    {
@@ -81,25 +81,25 @@
     "meta": "Konser · pop"
    },
    {
-    "id": "event:5R523",
+    "id": "event:5BBZD",
     "kind": "event",
-    "title": "Bir İdam Mahkumunun Son Günü",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/4ME92_biridam_2025bu.jpg",
-    "venue": "Taksim İstiklal Sahne",
+    "title": "Kürk Mantolu Madonna",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5EFAE-BU27.avif",
+    "venue": "Bakırköy Butik Sahne",
     "city": "İstanbul",
-    "when": "2026-11-25T13:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5R523/TURKIYE/tr",
+    "when": "2026-11-25T15:40:00Z",
+    "url": "https://www.biletix.com/etkinlik/5BBZD/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
-    "id": "event:5D233",
+    "id": "event:5D234",
     "kind": "event",
     "title": "İstanbul Dolphinarium Yunus Gösterileri",
     "image": "https://www.biletix.com/static/images/live/event/eventimages/5ISG0-dolphinarium3-1920.avif",
     "venue": "İstanbul Dolphinarium",
     "city": "İstanbul",
-    "when": "2026-11-25T11:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5D233/TURKIYE/tr",
+    "when": "2026-11-26T11:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5D234/TURKIYE/tr",
     "meta": "Aile · attractioncenter"
    },
    {
@@ -114,14 +114,14 @@
     "meta": "Spor"
    },
    {
-    "id": "event:5Q635",
+    "id": "event:5Q636",
     "kind": "event",
     "title": "İstanbul Diyalog Müzesi | Karanlık Deneyimi",
     "image": "https://www.biletix.com/static/images/live/event/eventimages/tamamenkaranlik-26su.avif",
     "venue": "İstanbul Diyalog Müzesi",
     "city": "İstanbul",
-    "when": "2026-11-25T07:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5Q635/TURKIYE/tr",
+    "when": "2026-11-26T07:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5Q636/TURKIYE/tr",
     "meta": "Etkinlik · muze"
    },
    {
@@ -136,27 +136,27 @@
     "meta": "Konser · pop"
    },
    {
-    "id": "event:5EFAA",
+    "id": "event:5R514",
     "kind": "event",
-    "title": "Bir Delinin Hatıra Defteri",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/4BB03-normal.png",
-    "venue": "Kadıköy BBS Sahne",
+    "title": "Operadaki Hayalet",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5PX30-opera.avif",
+    "venue": "Taksim İstiklal Sahne",
     "city": "İstanbul",
-    "when": "2026-11-24T17:30:00Z",
-    "url": "https://www.biletix.com/etkinlik/5EFAA/TURKIYE/tr",
+    "when": "2026-11-25T18:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5R514/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    }
   ],
   "ANKARA": [
    {
-    "id": "event:5MY26",
+    "id": "event:5MY28",
     "kind": "event",
     "title": "Karsu",
     "image": "https://www.biletix.com/static/images/live/event/eventimages/5MY11-karsu-bu26.avif",
-    "venue": "Selçuklu Kongre Merkezi Anadolu Shn",
-    "city": "Konya",
-    "when": "2026-11-24T18:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5MY26/TURKIYE/tr",
+    "venue": "Congresium Ankara",
+    "city": "Ankara",
+    "when": "2026-11-26T18:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5MY28/TURKIYE/tr",
     "meta": "Konser · pop"
    },
    {
@@ -294,14 +294,14 @@
     "meta": "Konser · alternatif"
    },
    {
-    "id": "event:5GMOI",
+    "id": "event:5ZM16",
     "kind": "event",
-    "title": "Ruh Salatası",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5GMOE-ruhS2-1920.avif",
-    "venue": "Bostanlı Suat Taşer Tiy.",
+    "title": "Kürkçü Dükkanı",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ZM08-26su.avif",
+    "venue": "Sahne Tozu T. Fehmi İşgören Sah.",
     "city": "İzmir",
-    "when": "2026-11-24T17:30:00Z",
-    "url": "https://www.biletix.com/etkinlik/5GMOI/TURKIYE/tr",
+    "when": "2026-11-25T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5ZM16/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
@@ -349,15 +349,15 @@
     "meta": "Konser · rock"
    },
    {
-    "id": "event:5ZM16",
+    "id": "event:5YD07",
     "kind": "event",
-    "title": "Kürkçü Dükkanı",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5ZM08-26su.avif",
-    "venue": "Sahne Tozu T. Fehmi İşgören Sah.",
+    "title": "Yusuf Bilal Altıntaş - Entel Maganda - Stand Up",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5YD00-BU27.avif",
+    "venue": "Babil Bira Bahçesi",
     "city": "İzmir",
-    "when": "2026-11-25T17:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5ZM16/TURKIYE/tr",
-    "meta": "Sahne · tiyatro"
+    "when": "2026-11-25T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5YD07/TURKIYE/tr",
+    "meta": "Sahne · stand_up"
    },
    {
     "id": "event:5QF9G",
@@ -393,15 +393,15 @@
     "meta": "Konser · rock"
    },
    {
-    "id": "event:5YD07",
+    "id": "event:5KAKF",
     "kind": "event",
-    "title": "Yusuf Bilal Altıntaş - Entel Maganda - Stand Up",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5YD00-BU27.avif",
-    "venue": "Babil Bira Bahçesi",
+    "title": "2012",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5KAKD-26su.avif",
+    "venue": "İzmir Mustafa Necati Kültür Merkezi",
     "city": "İzmir",
-    "when": "2026-11-25T17:30:00Z",
-    "url": "https://www.biletix.com/etkinlik/5YD07/TURKIYE/tr",
-    "meta": "Sahne · stand_up"
+    "when": "2026-11-26T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5KAKF/TURKIYE/tr",
+    "meta": "Sahne · tiyatro"
    },
    {
     "id": "event:57Q9V",
@@ -417,15 +417,15 @@
   ],
   "ANTALYA": [
    {
-    "id": "event:5HYTE",
+    "id": "event:5OF95",
     "kind": "event",
-    "title": "Bülent Ortaçgil",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/bulentortacgil_2025su.jpg",
-    "venue": "6:45 Mersin",
-    "city": "Mersin",
-    "when": "2026-11-26T18:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5HYTE/TURKIYE/tr",
-    "meta": "Konser · alternatif"
+    "title": "Venüs",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5OF86-bu26.avif",
+    "venue": "Holly Stone Alanya",
+    "city": "Antalya",
+    "when": "2026-11-29T19:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5OF95/TURKIYE/tr",
+    "meta": "Konser · rap_hiphop"
    },
    {
     "id": "event:5KZ30",
@@ -461,15 +461,15 @@
     "meta": "Etkinlik · atolye"
    },
    {
-    "id": "event:5ILS4",
+    "id": "event:5HO79",
     "kind": "event",
-    "title": "Uzi",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/5OF80-uzibu26.avif",
-    "venue": "Konyaaltı Belediyesi Nazım Hikmet",
-    "city": "Antalya",
-    "when": "2026-11-25T18:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/5ILS4/TURKIYE/tr",
-    "meta": "Konser · rap_hiphop"
+    "title": "Emre Nalbantoğlu",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/emrenlbntoglu5HO55.avif",
+    "venue": "Beygir Performance Hall",
+    "city": "Isparta",
+    "when": "2026-11-25T18:45:00Z",
+    "url": "https://www.biletix.com/etkinlik/5HO79/TURKIYE/tr",
+    "meta": "Konser · alternatif"
    },
    {
     "id": "event:52739",
@@ -505,15 +505,15 @@
     "meta": "Etkinlik · atolye"
    },
    {
-    "id": "event:5HO79",
+    "id": "event:57PP0",
     "kind": "event",
-    "title": "Emre Nalbantoğlu",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/emrenlbntoglu5HO55.avif",
-    "venue": "Beygir Performance Hall",
-    "city": "Isparta",
-    "when": "2026-11-25T18:45:00Z",
-    "url": "https://www.biletix.com/etkinlik/5HO79/TURKIYE/tr",
-    "meta": "Konser · alternatif"
+    "title": "Açılış Konseri - Anna Malikova - Romantizmin iki yüzü: Chopin & Schumann",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/57PP0-nrml.avif",
+    "venue": "Atatürk KM - Aspendos Salonu",
+    "city": "Antalya",
+    "when": "2026-11-27T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/57PP0/TURKIYE/tr",
+    "meta": "Konser · klasik"
    },
    {
     "id": "event:5D7AH",
@@ -562,14 +562,14 @@
     "meta": "Konser · rock"
    },
    {
-    "id": "event:5KS11",
+    "id": "event:56612",
     "kind": "event",
-    "title": "Şahane Pazar Sahnede",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/51937-yatay.avif",
-    "venue": "Necip Fazıl Kısakürek K.M.",
-    "city": "Erzurum",
-    "when": "2026-11-24T17:30:00Z",
-    "url": "https://www.biletix.com/etkinlik/5KS11/TURKIYE/tr",
+    "title": "Nilgün Belgün ile Aşk ve Komedi",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/nilgunbelgun-12-10-26su-.avif",
+    "venue": "KTÜ AKM Salonu",
+    "city": "Trabzon",
+    "when": "2026-11-27T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/56612/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
@@ -606,14 +606,14 @@
     "meta": "Konser · pop"
    },
    {
-    "id": "event:56612",
+    "id": "event:5PSU5",
     "kind": "event",
-    "title": "Nilgün Belgün ile Aşk ve Komedi",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/nilgunbelgun-12-10-26su-.avif",
-    "venue": "KTÜ AKM Salonu",
-    "city": "Trabzon",
-    "when": "2026-11-27T17:00:00Z",
-    "url": "https://www.biletix.com/etkinlik/56612/TURKIYE/tr",
+    "title": "Lady Macbeth",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/Ladymacbeth-30-9-26-su.avif",
+    "venue": "Mehmet Akif İnan Konferans",
+    "city": "Şanlıurfa",
+    "when": "2026-11-27T17:30:00Z",
+    "url": "https://www.biletix.com/etkinlik/5PSU5/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
@@ -650,14 +650,14 @@
     "meta": "Konser · rap_hiphop"
    },
    {
-    "id": "event:5PSU5",
+    "id": "event:5LWJ3",
     "kind": "event",
-    "title": "Lady Macbeth",
-    "image": "https://www.biletix.com/static/images/live/event/eventimages/Ladymacbeth-30-9-26-su.avif",
-    "venue": "Mehmet Akif İnan Konferans",
-    "city": "Şanlıurfa",
-    "when": "2026-11-27T17:30:00Z",
-    "url": "https://www.biletix.com/etkinlik/5PSU5/TURKIYE/tr",
+    "title": "Karanlıkta Kumpas",
+    "image": "https://www.biletix.com/static/images/live/event/eventimages/5LWH5-BU27.avif",
+    "venue": "Erbaa Ahmet Yenihan Kültür Merkezi",
+    "city": "Tokat",
+    "when": "2026-11-30T17:00:00Z",
+    "url": "https://www.biletix.com/etkinlik/5LWJ3/TURKIYE/tr",
     "meta": "Sahne · tiyatro"
    },
    {
@@ -713,6 +713,24 @@
    "note": "Homeros'un yaklaşık 2700 yıl önce yazdığı Odysseia destanından uyarlanan Christopher Nolan imzalı film Truva Savaşı kazanıldıktan sonra evlerine dönmek üzere yolculuğa çıkan İthaka'nın efsanevi kralı Odysseus ve askerler"
   },
   {
+   "id": "movie:tmdb-1595124",
+   "kind": "movie",
+   "title": "Kardeş Kardeş",
+   "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+   "url": "https://www.themoviedb.org/movie/1595124",
+   "meta": "2026 · 7.2 / 10",
+   "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+  },
+  {
+   "id": "movie:tmdb-969681",
+   "kind": "movie",
+   "title": "Örümcek-Adam: Yepyeni Bir Gün",
+   "image": "https://image.tmdb.org/t/p/w500/9r8kzuHQ4m9vvoyJO3fVH5nj8yC.jpg",
+   "url": "https://www.themoviedb.org/movie/969681",
+   "meta": "2026 · 8.5 / 10",
+   "note": "Artık onu hatırlamayan bir dünyada tam zamanlı olarak Örümcek Adamlık yapmak ve eski arkadaşlarının hayatlarına o olmadan devam ettiklerini görmenin yarattığı baskı, Peter Parker'da kontrol edemeyeceği bir değişimi tetik"
+  },
+  {
    "id": "movie:tmdb-1765072",
    "kind": "movie",
    "title": "Her Şey Ortada",
@@ -727,8 +745,26 @@
    "title": "Sosyal Hesaplaşma",
    "image": "https://image.tmdb.org/t/p/w500/3Kgw9b8EIexIw11qKiA9XhpfFMa.jpg",
    "url": "https://www.themoviedb.org/movie/1281331",
-   "meta": "2026 · 7.0 / 10",
+   "meta": "2026 · 7.1 / 10",
    "note": "Facebook'ta çalışan genç bir mühendis olan Frances Haugen, Wall Street Journal muhabiri Jeff Horwitz'in yardımını alarak sosyal ağın en iyi korunan sırlarını ifşa edecek tehlikeli bir yolculuğa çıkar. (Türkiye gösterimi "
+  },
+  {
+   "id": "movie:tmdb-1538497",
+   "kind": "movie",
+   "title": "Hexe: Sihir Krallığı",
+   "image": "https://image.tmdb.org/t/p/w500/sFiKgO6BixQz3hSw3Gl9dvJA32L.jpg",
+   "url": "https://www.themoviedb.org/movie/1538497",
+   "meta": "2026 · 6.3 / 10",
+   "note": "Düşünmeden hareket eden ve kurallara uymayan Billie, gizli sihirli yeteneklerini keşfeder ve bu yetenekler onu Hexe adı verilen uçsuz bucaksız bir cadı diyarına doğru muhteşem bir yolculuğa çıkarır. Annesi Alice'le birli"
+  },
+  {
+   "id": "movie:tmdb-1551025",
+   "kind": "movie",
+   "title": "Çok Özel Bir Koruma",
+   "image": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+   "url": "https://www.themoviedb.org/movie/1551025",
+   "meta": "2026 · 6.9 / 10",
+   "note": "Profesyonel bir koruma görevlisi, koruduğu ünlü oyuncuyla Montana'daki bir çiftliğe gider. Ancak Noel için sevgili rolü yapan çiftin arasında gerçek bir aşk filizlenecektir."
   },
   {
    "id": "movie:tmdb-1195803",
@@ -740,69 +776,33 @@
    "note": "Deniz kıyısındaki bir köyün dış çeperinde, kötü kokan, bekâr ve sürekli alay konusu olan bir balıkçı kadın yaşar. Bir gün, dar görüşlü ve boğucu komşularından bıkınca, kendine hasır malzemeden bir koca yaptırır. Oldukça "
   },
   {
-   "id": "movie:tmdb-1595124",
+   "id": "movie:tmdb-1170608",
    "kind": "movie",
-   "title": "Kardeş Kardeş",
-   "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
-   "url": "https://www.themoviedb.org/movie/1595124",
-   "meta": "2026 · 7.1 / 10",
-   "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+   "title": "Dune: Çöl Gezegeni - Bölüm Üç",
+   "image": "https://image.tmdb.org/t/p/w500/sfAtwC0GSdcwVnstu62Mv3n0lbh.jpg",
+   "url": "https://www.themoviedb.org/movie/1170608",
+   "meta": "2026",
+   "note": "Artık acımasız bir İmparator olan Paul; eski müttefikler geri dönerken, dehşet verici yeni tehditler belirirken ve ihanet her gölgede pusuya yatarken saltanatının getirdiği sonuçlarla yüzleşmek zorundadır. İmparatorluğun"
   },
   {
-   "id": "movie:tmdb-969681",
+   "id": "movie:tmdb-1458300",
    "kind": "movie",
-   "title": "Örümcek-Adam: Yepyeni Bir Gün",
-   "image": "https://image.tmdb.org/t/p/w500/bVdxrH4BQc3YLT2heDo4g0I9oGa.jpg",
-   "url": "https://www.themoviedb.org/movie/969681",
-   "meta": "2026 · 8.5 / 10",
-   "note": "Artık onu hatırlamayan bir dünyada tam zamanlı olarak Örümcek Adamlık yapmak ve eski arkadaşlarının hayatlarına o olmadan devam ettiklerini görmenin yarattığı baskı, Peter Parker'da kontrol edemeyeceği bir değişimi tetik"
-  },
-  {
-   "id": "movie:tmdb-1538497",
-   "kind": "movie",
-   "title": "Hexe: Sihir Krallığı",
-   "image": "https://image.tmdb.org/t/p/w500/sFiKgO6BixQz3hSw3Gl9dvJA32L.jpg",
-   "url": "https://www.themoviedb.org/movie/1538497",
-   "meta": "2026 · 7.3 / 10",
-   "note": "Düşünmeden hareket eden ve kurallara uymayan Billie, gizli sihirli yeteneklerini keşfeder ve bu yetenekler onu Hexe adı verilen uçsuz bucaksız bir cadı diyarına doğru muhteşem bir yolculuğa çıkarır. Annesi Alice'le birli"
-  },
-  {
-   "id": "movie:tmdb-1611767",
-   "kind": "movie",
-   "title": "Karlar Düşerken Aşk",
-   "image": "https://image.tmdb.org/t/p/w500/i4uiZVLYhlmfvreLOdmR37MBZNk.jpg",
-   "url": "https://www.themoviedb.org/movie/1611767",
-   "meta": "2026 · 6.2 / 10",
-   "note": "Aynı yayınevinde çalışan rakip iki editör olan Ryan Mitchell ve Hannah Hendricks, Noel'de bir kar fırtınası yüzünden mahsur kalır. Kariyerlerini kurtaracak bir anlaşma için New York'a gitmek üzere kiralık bir arabayı pay"
-  },
-  {
-   "id": "movie:tmdb-1131943",
-   "kind": "movie",
-   "title": "Madden",
-   "image": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
-   "url": "https://www.themoviedb.org/movie/1131943",
+   "title": "Savaş Kupası",
+   "image": "https://image.tmdb.org/t/p/w500/unWmUCavw2KLVudh7IXTMhtT8Hz.jpg",
+   "url": "https://www.themoviedb.org/movie/1458300",
    "meta": "2026 · 6.6 / 10",
-   "note": "Amerika'nın sevilen isimlerinden John Madden'ın hayatından esinlenen MADDEN, Al Davis ve Raiders'la kazandığı Super Bowl'dan, Amerikan futbolunun unutulmaz sesi oluşuna ve ünlü Madden NFL oyununu yaratmasına uzanan hikây"
-  },
-  {
-   "id": "movie:tmdb-1551025",
-   "kind": "movie",
-   "title": "Çok Özel Bir Koruma",
-   "image": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
-   "url": "https://www.themoviedb.org/movie/1551025",
-   "meta": "2026 · 6.9 / 10",
-   "note": "Profesyonel bir koruma görevlisi, koruduğu ünlü oyuncuyla Montana'daki bir çiftliğe gider. Ancak Noel için sevgili rolü yapan çiftin arasında gerçek bir aşk filizlenecektir."
+   "note": "Pearl Harbor'ın ardından ABD Deniz Piyadelerine katılan dört üniversite futbol yıldızı, kardeşliğin gücünü ve savaşın bedelini keşfeder."
   }
  ],
  "series": [
   {
-   "id": "series:tmdb-247718",
+   "id": "series:tmdb-171802",
    "kind": "series",
-   "title": "MobLand",
-   "image": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-   "url": "https://www.themoviedb.org/tv/247718",
-   "meta": "2025 · 8.7 / 10",
-   "note": "İki düşman Londra suç ailesi olan Harrigan’lar ve Stevenson’lar arasında, imparatorlukları yıkma ve hayatları mahvetme tehdidi oluşturan öl ya da öldür savaşında güç ele geçirilmeyi bekliyor. Çatışmanın ortasında kalan v"
+   "title": "Blade Runner 2099: Bıçak Sırtı",
+   "image": "https://image.tmdb.org/t/p/w500/lfzZFq5TL9A78eqETEd03E7AvUO.jpg",
+   "url": "https://www.themoviedb.org/tv/171802",
+   "meta": "2026 · 3.8 / 10",
+   "note": "Kaçak durumdayken Blade Runner'a dönüşen Cora, ölmekte olan Replicant Olwen ile iş birliği yaparak, yeniden doğmuş Los Angeles'ta firari birini avlamaya girişir. İkili, kırılgan şehirlerini yok etmekle tehdit eden bir ge"
   },
   {
    "id": "series:tmdb-84773",
@@ -819,8 +819,17 @@
    "title": "The Blue Road",
    "image": "https://image.tmdb.org/t/p/w500/9mmOjx2bWuLd9NnVpC71OUEXBym.jpg",
    "url": "https://www.themoviedb.org/tv/300523",
-   "meta": "2026 · 7.6 / 10",
+   "meta": "2026 · 7.9 / 10",
    "note": "Farklı ülkelerde yaşayan iki dedektif, vahşi cinayetler ve şifreli mesajlarla karşılaşınca iş birliği yapar. Ama ölümcül gerçek, her an tehlike yaratabilecek kadar yakındır."
+  },
+  {
+   "id": "series:tmdb-247718",
+   "kind": "series",
+   "title": "MobLand",
+   "image": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+   "url": "https://www.themoviedb.org/tv/247718",
+   "meta": "2025 · 8.7 / 10",
+   "note": "İki düşman Londra suç ailesi olan Harrigan’lar ve Stevenson’lar arasında, imparatorlukları yıkma ve hayatları mahvetme tehdidi oluşturan öl ya da öldür savaşında güç ele geçirilmeyi bekliyor. Çatışmanın ortasında kalan v"
   },
   {
    "id": "series:tmdb-291507",
@@ -832,12 +841,13 @@
    "note": "Cadılar Bayramı gecesinde bir kabul töreni kâbusa dönünce, kızlardan oluşan bir dans grubu manevi suçluluk duygusunun, şeytani arzuların ve tekinsiz hayallerin içine sürüklenir."
   },
   {
-   "id": "series:tmdb-290826",
+   "id": "series:tmdb-279246",
    "kind": "series",
-   "title": "Dig",
-   "image": "https://image.tmdb.org/t/p/w500/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
-   "url": "https://www.themoviedb.org/tv/290826",
-   "meta": "2026 · 5.7 / 10"
+   "title": "The Remarried Empress",
+   "image": "https://image.tmdb.org/t/p/w500/9mVhSAIZERTDw7dWbbGuJegCDjl.jpg",
+   "url": "https://www.themoviedb.org/tv/279246",
+   "meta": "2026 · 8.7 / 10",
+   "note": "Bir fantastik aşk romanından uyarlanan \"The Remarried Empress\", Doğu İmparatorluğu'nun mükemmel imparatoriçesi olan ve kocasının metresini imparatoriçe yapma niyetini keşfettikten sonra imparatordan boşanan Navier adlı b"
   },
   {
    "id": "series:tmdb-213375",
@@ -863,7 +873,7 @@
    "title": "Kılık Değiştiren Aşk",
    "image": "https://image.tmdb.org/t/p/w500/ekko8NFVeQdW9nBvcE9CAsvNxh0.jpg",
    "url": "https://www.themoviedb.org/tv/303745",
-   "meta": "2026 · 9.0 / 10",
+   "meta": "2026 · 8.9 / 10",
    "note": "Taekang Grubunun veliahdı Yoon Yi-jun, sarsıcı bir cinayetin baş şüphelisidir. Kang Jae-hee, gerçeği ortaya çıkarmak ve Yi-jun'u gözetlemek için erkek kılığında sekreteri olarak yanına sızar. Gerçeğe yaklaştıkça birbirle"
   },
   {
@@ -876,15 +886,6 @@
    "note": "Dexter Morgan komadan uyandığında oğlu Harrison'ın iz bırakmadan kaybolduğunu görür. Oğluna yaşattıklarının ağırlığını anlayan Dexter, onu bulmaya ve her şeyi düzeltmeye kararlı bir şekilde New York'a gider. Ancak bunu s"
   },
   {
-   "id": "series:tmdb-171802",
-   "kind": "series",
-   "title": "Blade Runner 2099: Bıçak Sırtı",
-   "image": "https://image.tmdb.org/t/p/w500/4RDK98jiBn5HLEcRGGfBouciB2W.jpg",
-   "url": "https://www.themoviedb.org/tv/171802",
-   "meta": "2026",
-   "note": "Blade Runner 2049'daki olayların üzerinden elli yıl geçmiş, Los Angeles yeniden ayağa kalkmıştır; fakat bu kez insanlığın eseri olarak değil. Kaçmaktan yorulan ve buna son vermek için son hamlesini yapan kaçak Cora, alac"
-  },
-  {
    "id": "series:tmdb-117488",
    "kind": "series",
    "title": "Yellowjackets",
@@ -894,13 +895,13 @@
    "note": "Dizi, kuzeyin derinliklerinde gerçekleşen bir uçak kazasından kurtulan bir lise kız futbol takımının hikayesini konu ediyor. Lise futbol takımında forma giyen yetenekli oyuncular, korkunç bir uçak kazasından sağ kurtulur"
   },
   {
-   "id": "series:tmdb-308007",
+   "id": "series:tmdb-254630",
    "kind": "series",
-   "title": "The Altruists",
-   "image": "https://image.tmdb.org/t/p/w500/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
-   "url": "https://www.themoviedb.org/tv/308007",
-   "meta": "2026 · 6.2 / 10",
-   "note": "Gerçek bir dolandırıcılık olayından esinlenen bu aşk öyküsünde iyi niyetle yola çıkan iki idealist genç, birbirlerinin kötü yanlarını tetikleyerek milyarlarca dolara sahip oluyor."
+   "title": "12 12 12",
+   "image": "https://image.tmdb.org/t/p/w500/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
+   "url": "https://www.themoviedb.org/tv/254630",
+   "meta": "2026 · 6.3 / 10",
+   "note": "Bir soygunun planlanması 12 ay, uygulanması 12 saat sürer ve bir hırsız 12 gün içinde yakalanmazsa asla yakalanmaz. Bir FBI ajanıyla kariyer suçlusu üç heyecan dolu zaman çizgisi boyunca Avrupa'da ölümcül bir kedi fare o"
   }
  ]
 }
