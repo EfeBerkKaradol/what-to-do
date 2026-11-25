@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { TrendingState } from '../App'
 import { Cover } from '../components/Cover'
+import { detailHref } from '../components/Dock'
 import { IconHeart } from '../components/Icons'
 import { subline } from '../components/ItemRow'
 import { stamp } from '../lib/format'
@@ -31,6 +32,9 @@ const PLACE_SHELVES: { id: string; name: string }[] = [
 ]
 const PLACE_PREFIX = 'places:'
 
+// Where the reader was, so coming back from a detail page lands on the same card.
+const memory: { section?: SectionId; picked: Partial<Record<SectionId, string>>; scrollY: number } = { picked: {}, scrollY: 0 }
+
 /**
  * Everything that can be liked, section by section: what is trending, films and series by
  * genre, events by kind, and hand-picked places. Likes go into the next deck.
@@ -39,8 +43,8 @@ export function LikedScreen({ trending }: { trending: TrendingState }) {
   const { doc, settings } = useStore()
   const liked = useMemo(() => liveItems(doc).filter((i) => i.ref), [doc])
   const byRef = useMemo(() => new Map(liked.map((i) => [i.ref as string, i])), [liked])
-  const [section, setSection] = useState<SectionId>(liked.length > 0 ? 'liked' : 'trend-movies')
-  const [picked, setPicked] = useState<Partial<Record<SectionId, string>>>({})
+  const [section, setSection] = useState<SectionId>(memory.section ?? (liked.length > 0 ? 'liked' : 'trend-movies'))
+  const [picked, setPicked] = useState<Partial<Record<SectionId, string>>>(memory.picked)
   const [catalog, setCatalog] = useState<CatalogState>({ status: 'loading' })
   const [attempt, setAttempt] = useState(0)
 
@@ -54,6 +58,11 @@ export function LikedScreen({ trending }: { trending: TrendingState }) {
       alive = false
     }
   }, [attempt])
+
+  useEffect(() => {
+    memory.section = section
+    memory.picked = picked
+  }, [section, picked])
 
   const toggle = (entry: TrendEntry) => {
     const existing = byRef.get(entry.id)
@@ -95,6 +104,14 @@ export function LikedScreen({ trending }: { trending: TrendingState }) {
   }, [section, data, trending, region])
 
   const genre = genres.find((g) => g.id === picked[section]) ?? genres[0]
+
+  // Back from a detail page: once the cards are there again, return to where the reader was.
+  const ready = section === 'liked' || Boolean(genre)
+  useEffect(() => {
+    if (!ready || memory.scrollY === 0) return
+    window.scrollTo(0, memory.scrollY)
+    memory.scrollY = 0
+  }, [ready])
   const loading = section === 'trend-movies' ? trending.status === 'loading' : usesCatalog && catalog.status === 'loading'
   const failed = section === 'trend-movies' ? trending.status === 'error' : usesCatalog && catalog.status === 'error'
 
@@ -239,7 +256,19 @@ function LikeCard({ item, liked, onToggle }: { item: Item | TrendEntry; liked: b
   const done = 'doneAt' in item && item.doneAt
   return (
     <article className="tile">
-      <Cover src={item.image} title={item.title} kind={item.kind} className="tile__img" />
+      <a
+        className="tile__link"
+        href={detailHref(('ref' in item && item.ref) || item.id)}
+        onClick={() => {
+          memory.scrollY = window.scrollY
+        }}
+      >
+        <Cover src={item.image} title={item.title} kind={item.kind} className="tile__img" />
+        <div className="tile__text">
+          <h2 className="tile__title">{item.title}</h2>
+          <p className="tile__sub">{done ? 'Yapıldı · ' : ''}{subline(item)}</p>
+        </div>
+      </a>
       <button
         className={`like${liked ? ' like--on' : ''}`}
         aria-pressed={liked}
@@ -248,10 +277,6 @@ function LikeCard({ item, liked, onToggle }: { item: Item | TrendEntry; liked: b
       >
         <IconHeart filled={liked} />
       </button>
-      <div className="tile__text">
-        <h2 className="tile__title">{item.title}</h2>
-        <p className="tile__sub">{done ? 'Yapıldı · ' : ''}{subline(item)}</p>
-      </div>
     </article>
   )
 }

@@ -6,6 +6,7 @@ Açılışta nokta nokta bir alan, üzerinde sol üstten sağ alta durmadan akan
 
 - **Eklediklerim.** Kendi yazdıklarınız. `+` ile önce kategori (aktivite, mekan, film, dizi), sonra ne olduğu.
 - **Kaydettiklerim.** Bölüm bölüm kartlar: revaçtaki filmler, revaçtaki tiyatrolar, kategorileriyle filmler, diziler ve etkinlikler. Etkinlik kategorilerinin başında yürüyüş parkları, yemek mekanları ve tatlı mekanları durur. Kalbe bastıklarınız beğenilenlere eklenir.
+- **Detay sayfası.** Kaydettiklerim'deki her kart tıklanır; açılan sayfada görsel, açıklama (TMDB özeti, Biletix tanıtımı ya da Wikipedia özeti), tarih, yer, harita ve kaynak bağlantıları ile beğen butonu bulunur.
 - **Ne Yapsak.** Önce "Hazır mısın?" ekranı, "Hazırım" deyince:
   1. **Kaydır.** Kaç seçenek arasından karar vereceğinizi siz seçersiniz (5 ile 50 arası). Destenin en çok %60'ı eklediklerinizle beğendiklerinizden, kalanı o haftanın revaçta olanlarından ve kategorilerin en popülerlerinden gelir. Sağa "olur", sola "geç".
   2. **O mu, bu mu?** "Olur" dedikleriniz ikişer ikişer karşınıza çıkar; eleme usulü, sona kalan kazanır.

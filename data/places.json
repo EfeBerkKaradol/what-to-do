@@ -14,7 +14,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg/500px-Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg",
       "url": "https://tr.wikipedia.org/wiki/Eymir_G%C3%B6l%C3%BC",
       "note": "Göl çevresinde yürüyüş ve bisiklet yolu",
-      "meta": "Göl kenarı"
+      "meta": "Göl kenarı",
+      "about": "Eymir Gölü, Ankara il sınırları içinde yer alan bir göldür. Arazisi Orta Doğu Teknik Üniversitesi'ne aittir. ODTÜ Spor Kulübü Kürek ve Yelken Takımları çalışma alanıdır; göl kenarında takımlara ait kayıkhane vardır. Göl kendine has bir fauna ve floraya sahiptir."
      },
      {
       "id": "place:ankara-mogan",
@@ -25,7 +26,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg/500px-G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg",
       "url": "https://tr.wikipedia.org/wiki/Mogan_G%C3%B6l%C3%BC",
       "note": "Göl kıyısı boyunca yürüyüş yolu",
-      "meta": "Göl kenarı"
+      "meta": "Göl kenarı",
+      "about": "Mogan Gölü, Ankara'nın Gölbaşı ilçesinde bulunan bir set gölüdür. Göl ve çevresi, Barselona Sözleşmesi çerçevesinde Türkiye'de ilan edilen 15 özel koruma bölgesinden bir tanesini oluşturan \"Gölbaşı Özel Çevre Koruma Bölgesi\" içinde yer alır. Bulunduğu coğrafyada önemli bir sulak alan ve rekreasyon mekanı olmasının yanı sıra florası ve faunası bakımından da ülkenin önemli doğal yaşam alanlarından bir tanesidir."
      },
      {
       "id": "place:ankara-mavi-gol",
@@ -36,7 +38,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg/500px-T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg",
       "url": "https://tr.wikipedia.org/wiki/Bay%C4%B1nd%C4%B1r_Baraj%C4%B1",
       "note": "Bayındır Barajı kıyısında mesire alanı",
-      "meta": "Göl kenarı"
+      "meta": "Göl kenarı",
+      "about": "Bayındır Barajı, Ankara'da, Bayındır Çayı üzerinde, içme suyu temini amacı ile 1962-1965 yılları arasında inşa edilmiş bir barajdır. Toprak gövde dolgu tipi olan barajın gövde hacmi 553.000 m³, akarsu yatağından yüksekliği 30,00 m'dir. Normal su kotunda göl hacmi 6,97 hm3, normal su kotunda göl alanı 0,71 km²'dir. Yılda 7 hm3 içme ve kullanma suyu sağlamaktadır."
      },
      {
       "id": "place:ankara-goksu",
@@ -48,7 +51,8 @@
       "note": "Eryaman’da göl çevresinde yürüyüş",
       "meta": "Göl kenarı",
       "image": "./art/gol.jpg",
-      "illustrated": true
+      "illustrated": true,
+      "about": "Göksu Parkı, Ankara'nın Etimesgut ilçesinde bulunan bir şehir parkıdır. Susuz Göleti ve çevresinde yürütülen rekreasyon çalışmaları sonucunda oluşturulan park, sınırları içerisinde yer aldığı Göksu Mahallesi'ne de ismini vermiştir. Toplam kullanım alanı 550.000 m² olan parkın 127.189 m²'si göletten oluşmaktadır."
      }
     ]
    },
@@ -65,7 +69,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikmen_Vadisi.jpg/500px-Dikmen_Vadisi.jpg",
       "url": "https://tr.wikipedia.org/wiki/Dikmen_Vadisi",
       "note": "Vadi boyunca uzanan yürüyüş parkuru",
-      "meta": "Şehir içi"
+      "meta": "Şehir içi",
+      "about": "Dikmen Vadisi; adını Ankara'nın Çankaya ilçesine bağlı bir semt olan Dikmen'den alan bir vadidir. Yıllar boyunca kaçak ve gecekondu tipi yapılaşmaya maruz kalan vadide bir süre önce Dikmen Vadisi Kentsel Dönüşüm ve Gelişim Projesi adı altında bir yenileme ve yeniden kazandırma çalışmaları başlatılmış; etaplar halinde bu yapılar yıkılarak vadi ve çevresi yeniden düzenlenmiştir. Günümüzde Ankara Büyükşehir Belediyesi'ne bağlı bir park olarak hizmet veren vadide spor ve yürüyüş alanları, kafeler, süs havuzları ve çocuk oyun sahaları bulunmaktadır."
      },
      {
       "id": "place:ankara-segmenler",
@@ -87,7 +92,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ankara_Ku%C4%9Fulu_Park.JPG/500px-Ankara_Ku%C4%9Fulu_Park.JPG",
       "url": "https://tr.wikipedia.org/wiki/Ku%C4%9Fulu_Park",
       "note": "Tunalı’nın ucunda göletli küçük park",
-      "meta": "Şehir içi"
+      "meta": "Şehir içi",
+      "about": "Kuğulu Park, Ankara şehrinin Kavaklıdere mahallesinde bulunan, mahallenin simgesi olmuş parktır."
      },
      {
       "id": "place:ankara-botanik",
@@ -108,7 +114,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg/500px-Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg",
       "url": "https://tr.wikipedia.org/wiki/Kurtulu%C5%9F_Park%C4%B1",
       "note": "Şehrin ortasında ağaçlık yürüyüş yolları",
-      "meta": "Şehir içi"
+      "meta": "Şehir içi",
+      "about": "Kurtuluş Parkı, Ankara'nın merkezinde, Cumhuriyet döneminin ilk yeşil alanlarından birisi olarak kent halkına 1930'lardan itibaren hizmet veren bir alandır."
      },
      {
       "id": "place:ankara-50-yil",
@@ -129,7 +136,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg/500px-Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg",
       "url": "https://tr.wikipedia.org/wiki/Gen%C3%A7lik_Park%C4%B1",
       "note": "Ulus’ta havuzlu büyük şehir parkı",
-      "meta": "Şehir içi"
+      "meta": "Şehir içi",
+      "about": "Gençlik Parkı Ankara'nın tarihi parklarından biridir."
      },
      {
       "id": "place:ankara-baskent-millet-bahcesi",
@@ -162,7 +170,8 @@
       "note": "Ağaçlıklı yollar, geniş açık alan",
       "meta": "Şehir içi",
       "image": "./art/park.jpg",
-      "illustrated": true
+      "illustrated": true,
+      "about": "Atatürk Orman Çiftliği, 1925 yılında Ankara'nın batısında Yenimahalle'de bulunan, Gazi Mustafa Kemal Atatürk tarafından parça parça ve farklı bireylerden satın alınan arazi üstünde onun talimatı ile kurulan ve Türk tarımına öncülük eden çiftliktir."
      },
      {
       "id": "place:ankara-kuzey-yildizi",
@@ -211,7 +220,8 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/So%C4%9Fuksu_National_Park.jpg/500px-So%C4%9Fuksu_National_Park.jpg",
       "url": "https://tr.wikipedia.org/wiki/So%C4%9Fuksu_Mill%C3%AE_Park%C4%B1",
       "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik",
-      "meta": "Şehir dışı"
+      "meta": "Şehir dışı",
+      "about": "Soğuksu Millî Parkı, Ankara'nın Kızılcahamam ilçesinde yer alan ve 19 Şubat 1959'da kurulan bir millî parktır. Ankara şehir merkezine 80 kilometre uzaklıktadır. Parkın volkanik bölge olmasından dolayı, çevresindeki sıcak ve soğuk su kaynakları kaplıca olarak değerlendirilmektedir. Parkın yüksekliği 1.030-1.800 m (3.380-5.910 ft) arasında değişmektedir. Arhut Tepesi 1.789 m (5.869 ft) ve Tolubelen Tepesi 1.776 m (5.827 ft) ile parkın en yüksek zirveleridir."
      }
     ]
    }

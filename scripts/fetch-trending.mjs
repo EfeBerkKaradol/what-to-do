@@ -91,12 +91,50 @@ async function getJson(url, init = {}) {
 }
 
 const first = (v) => (Array.isArray(v) ? v[0] : v)
-const clean = (s) => String(s ?? '').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim()
+const ENTITIES = { amp: '&', nbsp: ' ', quot: '"', apos: "'", lt: '<', gt: '>', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', hellip: '…', ndash: '–', mdash: '—',
+  ccedil: 'ç', Ccedil: 'Ç', uuml: 'ü', Uuml: 'Ü', ouml: 'ö', Ouml: 'Ö', acirc: 'â', icirc: 'î', ucirc: 'û' }
+
+/** HTML or plain text → one clean line of text. */
+const clean = (s) =>
+  String(s ?? '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&([a-z]+);/gi, (m, name) => ENTITIES[name] ?? ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+/** Cuts text to a length at the end of a sentence where it can, otherwise at a word, with an ellipsis. */
+function brief(text, max) {
+  const t = clean(text)
+  if (t.length <= max) return t
+  const cut = t.slice(0, max)
+  const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '))
+  if (stop > max * 0.5) return cut.slice(0, stop + 1)
+  return cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:–-]$/, '') + '…'
+}
+
+const NOTE = 160
+const ABOUT = 700
+
+/** The short line for cards and the longer text for the detail page (left out when it adds nothing). */
+function describe(text) {
+  const about = brief(text, ABOUT)
+  const note = brief(text, NOTE)
+  return { note: note || undefined, about: about.length > note.length ? about : undefined }
+}
 const dayKey = (d) => d.toISOString().slice(0, 10)
 
 // ---------- Events (Biletix) ----------
 
 const WEEK = 7 * 86400000
+
+/** Biletix descriptions are HTML and usually open by repeating the title; that repeat is dropped. */
+function describeEvent(description, title) {
+  let text = clean(first(description))
+  if (text.toLocaleLowerCase('tr').startsWith(title.toLocaleLowerCase('tr'))) text = text.slice(title.length).replace(/^[\s.,:;!–-]+/, '')
+  return text.length >= 40 ? describe(text) : {}
+}
 
 /** Every on-sale event of a region in the next 30 days, one entry per title. */
 async function biletixRegion(region) {
@@ -108,7 +146,7 @@ async function biletixRegion(region) {
   params.set('rows', '2500')
   params.set('sort', 'start asc')
   params.set('wt', 'json')
-  params.set('fl', 'id,type,name,start,svenue,city,category,subcategory,image_url')
+  params.set('fl', 'id,type,name,start,svenue,city,category,subcategory,image_url,description')
   const data = await getJson(`https://www.biletix.com/solr/tr/select/?${params}`)
   const docs = data?.response?.docs ?? []
   const soon = Date.now() + WEEK
@@ -147,6 +185,7 @@ async function biletixRegion(region) {
         when: d.start,
         url: `https://www.biletix.com/${isGroup ? 'etkinlik-grup' : 'etkinlik'}/${d.id}/TURKIYE/tr`,
         meta: genre ? (cat === 'MUSIC' ? `Konser · ${genre}` : genre) : CATEGORY_LABEL[cat],
+        ...describeEvent(d.description, title),
       },
     })
   }
@@ -219,24 +258,24 @@ async function tmdb(path) {
   return getJson(`https://api.themoviedb.org/3${path}${sep}api_key=${TMDB_KEY}&language=tr-TR&region=TR`)
 }
 
-const tmdbMovie = (m, noteLength = 220) => ({
+const tmdbMovie = (m) => ({
   id: `movie:tmdb-${m.id}`,
   kind: 'movie',
   title: m.title || m.original_title,
   image: `https://image.tmdb.org/t/p/w500${m.poster_path}`,
   url: `https://www.themoviedb.org/movie/${m.id}`,
   meta: [m.release_date?.slice(0, 4), m.vote_average ? `${m.vote_average.toFixed(1)} / 10` : ''].filter(Boolean).join(' · '),
-  note: clean(m.overview).slice(0, noteLength) || undefined,
+  ...describe(m.overview),
 })
 
-const tmdbSeries = (s, noteLength = 220) => ({
+const tmdbSeries = (s) => ({
   id: `series:tmdb-${s.id}`,
   kind: 'series',
   title: s.name || s.original_name,
   image: `https://image.tmdb.org/t/p/w500${s.poster_path}`,
   url: `https://www.themoviedb.org/tv/${s.id}`,
   meta: [s.first_air_date?.slice(0, 4), s.vote_average ? `${s.vote_average.toFixed(1)} / 10` : ''].filter(Boolean).join(' · '),
-  note: clean(s.overview).slice(0, noteLength) || undefined,
+  ...describe(s.overview),
 })
 
 async function moviesTmdb() {
@@ -259,7 +298,7 @@ async function tmdbGenres(kind) {
     const items = (data.results ?? [])
       .filter((x) => x.poster_path && (x.title || x.name || x.original_title || x.original_name))
       .slice(0, PER_GENRE)
-      .map((x) => toEntry(x, 160))
+      .map((x) => toEntry(x))
     if (items.length >= 3) out.push({ id: String(g.id), name: g.name, items })
   }
   if (out.length === 0) throw new Error(`TMDB returned no ${kind} genres`)
@@ -280,7 +319,7 @@ async function moviesItunes() {
       image: art ? art.replace(/\/\d+x\d+bb\.(png|jpg)$/, '/600x900bb.jpg') : undefined,
       url: e.id?.label?.split('?')[0],
       meta: [year, genre].filter(Boolean).join(' · '),
-      note: clean(e.summary?.label).slice(0, 220) || undefined,
+      ...describe(e.summary?.label),
     }
   })
 }
@@ -326,7 +365,7 @@ async function seriesTvmaze() {
       image: s.image.original.replace('http://', 'https://'),
       url: s.url,
       meta: [s.webChannel?.name ?? s.network?.name, s.genres?.[0]].filter(Boolean).join(' · '),
-      note: clean(s.summary).slice(0, 220) || undefined,
+      ...describe(s.summary),
     }))
 }
 

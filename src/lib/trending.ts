@@ -76,6 +76,22 @@ export function catalogPicks(c: Catalog, region: string, perGenre = 2): TrendEnt
   return interleave(shelves.map((genres) => interleave(genres.map((g) => g.items.slice(0, perGenre)))))
 }
 
+/** Looks an entry up by id in everything that was fetched; the copy with the fuller description wins. */
+export function findEntry(id: string, t: Trending | null, c: Catalog | null): TrendEntry | undefined {
+  const lists: TrendEntry[][] = []
+  if (t) lists.push(t.movies ?? [], t.series ?? [], ...Object.values(t.events ?? {}))
+  if (c) {
+    const genres = [...(c.movies ?? []), ...(c.series ?? []), ...Object.values(c.events ?? {}).flat(), ...Object.values(c.places ?? {}).flatMap((byRegion) => Object.values(byRegion).flat())]
+    lists.push(...genres.map((g) => g.items))
+  }
+  let found: TrendEntry | undefined
+  for (const list of lists) {
+    const hit = list.find((e) => e.id === id)
+    if (hit && (!found || (hit.about && !found.about))) found = hit
+  }
+  return found
+}
+
 export function trendToItem(e: TrendEntry): Item {
   return { ...e, source: 'trending', createdAt: 0, updatedAt: 0 }
 }

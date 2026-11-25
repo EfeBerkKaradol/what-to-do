@@ -1,8 +1,13 @@
 import { IconHeart, IconHome, IconPen, IconSettings, IconToday } from './Icons'
 
-export type Route = 'home' | 'added' | 'liked' | 'settings'
+export type Route = 'home' | 'added' | 'liked' | 'settings' | 'detail'
 
-export const ROUTES: Record<Route, string> = {
+/** The detail page is opened from a card; its address carries the entry's id after this prefix. */
+export const DETAIL_PREFIX = '#/detay/'
+
+export const detailHref = (id: string) => DETAIL_PREFIX + encodeURIComponent(id)
+
+export const ROUTES: Record<Exclude<Route, 'detail'>, string> = {
   home: '#/',
   added: '#/eklediklerim',
   liked: '#/kaydettiklerim',
@@ -33,7 +38,7 @@ export function Dock({ route, onPlay }: { route: Route; onPlay: () => void }) {
           <span className="dock__tile"><IconPen /></span>
           <span className="dock__label">Eklediklerim</span>
         </a>
-        <a className="dock__item" href={ROUTES.liked} aria-current={route === 'liked' ? 'page' : undefined}>
+        <a className="dock__item" href={ROUTES.liked} aria-current={route === 'liked' || route === 'detail' ? 'page' : undefined}>
           <span className="dock__tile"><IconHeart /></span>
           <span className="dock__label">Kaydettiklerim</span>
         </a>

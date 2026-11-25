@@ -134,7 +134,8 @@ export function addItem(input: NewItem): Item {
 export function saveTrending(entry: TrendEntry): Item {
   const existing = state.doc.items.find((i) => i.ref === entry.id && !i.deleted)
   if (existing) return existing
-  const { id, ...rest } = entry
+  // The long description stays in the catalogue; the shared list has little room.
+  const { id, about: _about, ...rest } = entry
   return addItem({ ...rest, ref: id })
 }
 

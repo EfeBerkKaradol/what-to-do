@@ -5,6 +5,8 @@ export interface Item {
   kind: Kind
   title: string
   note?: string
+  /** Fuller description; present on catalogue entries, never stored in the shared list. */
+  about?: string
   image?: string
   illustrated?: boolean
   /** Place name or address (places, events). */
@@ -65,7 +67,10 @@ export interface TrendEntry {
   when?: string
   url?: string
   meta?: string
+  /** One or two lines for cards. */
   note?: string
+  /** The fuller description for the detail page; not copied into the shared list. */
+  about?: string
 }
 
 export interface Trending {

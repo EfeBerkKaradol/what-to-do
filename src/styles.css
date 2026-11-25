@@ -1573,6 +1573,23 @@ button {
   background: var(--surface);
 }
 
+.tile__link {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: inherit;
+  border-radius: inherit;
+}
+
+.tile__link:hover .tile__title {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.tile__link:focus-visible {
+  outline-offset: -2px;
+}
+
 .tile--loading {
   aspect-ratio: 4 / 6;
 }
@@ -1680,5 +1697,153 @@ button {
 @media (prefers-reduced-motion: reduce) {
   .canvas {
     animation: none;
+  }
+}
+
+/* ---------- Detail page ---------- */
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 44px;
+  margin: -8px 0 6px -6px;
+  padding-right: 10px;
+  color: var(--muted);
+  border-radius: 999px;
+}
+
+.back:hover {
+  color: var(--text);
+}
+
+.detail {
+  display: grid;
+  gap: 20px;
+}
+
+.detail__figure {
+  margin: 0;
+}
+
+.detail__figure figcaption {
+  margin-top: 8px;
+  color: var(--faint);
+  font-size: var(--fs-small);
+}
+
+.detail__img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-height: min(460px, 52vh);
+  border-radius: var(--radius-card);
+  font-size: 64px;
+}
+
+.detail--loading .detail__img {
+  background: var(--surface);
+}
+
+.detail__body {
+  display: grid;
+  gap: 22px;
+  align-content: start;
+  min-width: 0;
+}
+
+.detail__head {
+  display: grid;
+  gap: 8px;
+}
+
+.detail__head h1 {
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+}
+
+.detail__when {
+  color: var(--muted);
+}
+
+.detail__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail__actions .btn {
+  height: 44px;
+  padding: 0 18px;
+}
+
+.detail__like svg {
+  width: 18px;
+  height: 18px;
+}
+
+.detail__like--on svg {
+  color: var(--accent);
+}
+
+.detail__section {
+  display: grid;
+  gap: 8px;
+}
+
+.detail__section p {
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 62ch;
+}
+
+.detail__section p.foot {
+  margin: 0;
+  font-size: var(--fs-small);
+  line-height: 18px;
+}
+
+.detail__lead {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.detail__none {
+  color: var(--muted);
+}
+
+.facts {
+  margin: 0;
+}
+
+.facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: 11px 0;
+}
+
+.facts > div + div {
+  border-top: 1px solid var(--rule);
+}
+
+.facts dt {
+  color: var(--faint);
+}
+
+.facts dd {
+  margin: 0;
+  text-align: right;
+}
+
+@media (min-width: 720px) {
+  .detail {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+  }
+
+  .detail__img {
+    max-height: none;
   }
 }
