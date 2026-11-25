@@ -8,34 +8,39 @@ import { liveItems, removeItem, saveTrending, updateSettings, useStore } from '.
 import { loadCatalog } from '../lib/trending'
 import type { Catalog, Genre, Item, TrendEntry } from '../lib/types'
 
-type View = 'liked' | 'week' | 'genres'
-type Shelf = 'movies' | 'series' | 'events' | 'places'
+type SectionId = 'liked' | 'trend-movies' | 'trend-theatre' | 'movies' | 'series' | 'events' | 'walk' | 'food'
 type CatalogState = { status: 'loading' | 'error' } | { status: 'ready'; data: Catalog }
 
-const SHELVES: { id: Shelf; label: string }[] = [
-  { id: 'movies', label: 'Film' },
-  { id: 'series', label: 'Dizi' },
-  { id: 'events', label: 'Etkinlik' },
-  { id: 'places', label: 'Mekan' },
+const SECTIONS: { id: SectionId; label: string }[] = [
+  { id: 'liked', label: 'Beğendiklerim' },
+  { id: 'trend-movies', label: 'Revaçtaki filmler' },
+  { id: 'trend-theatre', label: 'Revaçtaki tiyatrolar' },
+  { id: 'movies', label: 'Filmler' },
+  { id: 'series', label: 'Diziler' },
+  { id: 'events', label: 'Etkinlikler' },
+  { id: 'walk', label: 'Yürüyüş parkları' },
+  { id: 'food', label: 'Yemek mekanları' },
 ]
 
-/** Shelves whose content depends on the chosen city. */
-const LOCAL: Shelf[] = ['events', 'places']
+/** Sections whose content depends on the chosen city. */
+const LOCAL: SectionId[] = ['trend-theatre', 'events', 'walk', 'food']
+const PLACES: SectionId[] = ['walk', 'food']
+const ALL = '__all'
 
-/** This week's picks and the category shelves, a like on every card; and everything liked so far. */
-export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: TrendEntry[] }) {
+/**
+ * Everything that can be liked, section by section: what is trending, films and series by
+ * genre, events by kind, and hand-picked places. Likes go into the next deck.
+ */
+export function LikedScreen({ trending }: { trending: TrendingState }) {
   const { doc, settings } = useStore()
   const liked = useMemo(() => liveItems(doc).filter((i) => i.ref), [doc])
   const byRef = useMemo(() => new Map(liked.map((i) => [i.ref as string, i])), [liked])
-  const [view, setView] = useState<View>(liked.length > 0 ? 'liked' : 'week')
+  const [section, setSection] = useState<SectionId>(liked.length > 0 ? 'liked' : 'trend-movies')
+  const [picked, setPicked] = useState<Partial<Record<SectionId, string>>>({})
   const [catalog, setCatalog] = useState<CatalogState>({ status: 'loading' })
   const [attempt, setAttempt] = useState(0)
-  const [shelf, setShelf] = useState<Shelf>('movies')
-  const [picked, setPicked] = useState<Partial<Record<Shelf, string>>>({})
 
-  // Fetched the first time the category view is opened; `attempt` moves on a retry.
   useEffect(() => {
-    if (view !== 'genres') return
     let alive = true
     setCatalog((prev) => (prev.status === 'ready' ? prev : { status: 'loading' }))
     loadCatalog()
@@ -44,7 +49,7 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
     return () => {
       alive = false
     }
-  }, [view, attempt])
+  }, [attempt])
 
   const toggle = (entry: TrendEntry) => {
     const existing = byRef.get(entry.id)
@@ -52,29 +57,43 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
     else saveTrending(entry)
   }
 
-  const genresOf = (data: Catalog, s: Shelf): Genre[] => {
-    if (s === 'events') return data.events[settings.region] ?? []
-    if (s === 'places') return data.places?.[settings.region] ?? []
-    return data[s] ?? []
-  }
-  // Film and series shelves need TMDB; a shelf with nothing in it is not offered.
-  // The local ones stay, since another city may have what this one lacks.
-  const shelves = catalog.status === 'ready' ? SHELVES.filter((s) => genresOf(catalog.data, s.id).length > 0 || LOCAL.includes(s.id)) : SHELVES
-  const placeRegions = catalog.status === 'ready' ? Object.keys(catalog.data.places ?? {}).filter((r) => (catalog.data.places?.[r] ?? []).length > 0) : []
-  const activeShelf = shelves.some((s) => s.id === shelf) ? shelf : shelves[0]?.id ?? 'events'
-  const genres = catalog.status === 'ready' ? genresOf(catalog.data, activeShelf) : []
-  const genre = genres.find((g) => g.id === picked[activeShelf]) ?? genres[0]
-  const regions = trending.status === 'ready' ? trending.data.regions : catalog.status === 'ready' ? catalog.data.regions : null
-  const regionSelect = regions && (
-    <label className="select select--quiet">
-      <span className="sr">Etkinlik şehri</span>
-      <select value={settings.region} onChange={(e) => updateSettings({ region: e.target.value })}>
-        {Object.entries(regions).map(([id, name]) => (
-          <option key={id} value={id}>{name}</option>
-        ))}
-      </select>
-    </label>
-  )
+  const region = settings.region
+  const data = catalog.status === 'ready' ? catalog.data : null
+  const regions = trending.status === 'ready' ? trending.data.regions : data?.regions ?? null
+  const usesCatalog = section !== 'liked' && section !== 'trend-movies'
+
+  // The categories of the open section; a section without categories has one unnamed group.
+  const genres: Genre[] = useMemo(() => {
+    if (section === 'trend-movies') {
+      return trending.status === 'ready' ? [{ id: 'week', name: '', items: trending.data.movies ?? [] }] : []
+    }
+    if (!data) return []
+    switch (section) {
+      case 'trend-theatre': {
+        const theatre = (data.events[region] ?? []).find((g) => g.name === 'Tiyatro')
+        return theatre ? [{ ...theatre, name: '' }] : []
+      }
+      case 'movies':
+        return data.movies ?? []
+      case 'series':
+        return data.series ?? []
+      case 'events':
+        return data.events[region] ?? []
+      case 'walk':
+      case 'food': {
+        const groups = data.places?.[section]?.[region] ?? []
+        // Places are few enough to be seen at once, so the first category is all of them.
+        return groups.length > 1 ? [{ id: ALL, name: 'Tümü', items: groups.flatMap((g) => g.items) }, ...groups] : groups
+      }
+      default:
+        return []
+    }
+  }, [section, data, trending, region])
+
+  const genre = genres.find((g) => g.id === picked[section]) ?? genres[0]
+  const loading = section === 'trend-movies' ? trending.status === 'loading' : usesCatalog && catalog.status === 'loading'
+  const failed = section === 'trend-movies' ? trending.status === 'error' : usesCatalog && catalog.status === 'error'
+  const placeRegions = data && PLACES.includes(section) ? Object.keys(data.places?.[section] ?? {}).filter((r) => (data.places?.[section]?.[r] ?? []).length > 0) : []
 
   return (
     <div className="page">
@@ -83,31 +102,46 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
           <h1>Kaydettiklerim</h1>
           <p className="title__sub">
             {liked.length === 0
-              ? 'Beğendiğiniz etkinlik, film ve diziler burada birikir.'
+              ? 'Kalbe bastıklarınız burada birikir ve desteye girer.'
               : `${liked.length} beğeni, hepsi bir sonraki destede.`}
           </p>
         </div>
+        {regions && LOCAL.includes(section) && (
+          <label className="select select--quiet">
+            <span className="sr">Şehir</span>
+            <select value={region} onChange={(e) => updateSettings({ region: e.target.value })}>
+              {Object.entries(regions).map(([id, name]) => (
+                <option key={id} value={id}>{name}</option>
+              ))}
+            </select>
+          </label>
+        )}
       </header>
 
-      <div className="toolbar">
-        <div className="seg seg--fit seg--onground" role="radiogroup" aria-label="Görünüm">
-          <button role="radio" aria-checked={view === 'liked'} className="seg__opt" onClick={() => setView('liked')}>
-            Beğendiklerim <span className="num seg__n">{liked.length}</span>
+      <div className="tabs" role="tablist" aria-label="Bölüm">
+        {SECTIONS.map((s) => (
+          <button
+            key={s.id}
+            role="tab"
+            aria-selected={section === s.id}
+            className="tab"
+            onClick={(e) => {
+              setSection(s.id)
+              // The row scrolls sideways; keep the chosen section in view.
+              e.currentTarget.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+            }}
+          >
+            {s.label}
+            {s.id === 'liked' && <span className="num tab__n"> {liked.length}</span>}
           </button>
-          <button role="radio" aria-checked={view === 'week'} className="seg__opt" onClick={() => setView('week')}>
-            Revaçta <span className="num seg__n">{ten.length}</span>
-          </button>
-          <button role="radio" aria-checked={view === 'genres'} className="seg__opt" onClick={() => setView('genres')}>
-            Kategoriler
-          </button>
-        </div>
+        ))}
       </div>
 
-      {view === 'liked' &&
+      {section === 'liked' &&
         (liked.length === 0 ? (
           <p className="empty">
             Henüz beğendiğiniz bir şey yok.{' '}
-            <button className="link" onClick={() => setView('week')}>Bu hafta revaçta olanlara bakın</button>
+            <button className="link" onClick={() => setSection('trend-movies')}>Revaçtaki filmlere bakın</button>
           </p>
         ) : (
           <div className="cards">
@@ -117,51 +151,22 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
           </div>
         ))}
 
-      {view === 'week' && (
+      {section !== 'liked' && (
         <>
-          {regionSelect && <div className="subbar">{regionSelect}</div>}
-          {trending.status === 'loading' && <LoadingCards />}
-          {trending.status === 'error' && <p className="empty">Revaçta olanlar şu an yüklenemedi.</p>}
-          {trending.status === 'ready' && ten.length === 0 && <p className="empty">Bu şehir için bu hafta kayıtlı etkinlik yok.</p>}
-          {trending.status === 'ready' && ten.length > 0 && (
-            <>
-              <div className="cards">
-                {ten.map((entry) => (
-                  <LikeCard key={entry.id} item={entry} liked={byRef.has(entry.id)} onToggle={() => toggle(entry)} />
-                ))}
-              </div>
-              <p className="foot">Güncellendi: {stamp(trending.data.updatedAt)}. Her gün haftanın havuzundan on tanesi gelir.</p>
-            </>
-          )}
-        </>
-      )}
-
-      {view === 'genres' && (
-        <>
-          <div className="subbar">
-            <div className="seg seg--fit seg--onground" role="radiogroup" aria-label="Tür">
-              {shelves.map((s) => (
-                <button key={s.id} role="radio" aria-checked={activeShelf === s.id} className="seg__opt" onClick={() => setShelf(s.id)}>
-                  {s.label}
-                </button>
-              ))}
-            </div>
-            {LOCAL.includes(activeShelf) && regionSelect}
-          </div>
-
-          {catalog.status === 'loading' && <LoadingCards />}
-          {catalog.status === 'error' && (
+          {loading && <LoadingCards />}
+          {failed && (
             <p className="empty">
-              Kategoriler şu an yüklenemedi.{' '}
-              <button className="link" onClick={() => setAttempt(attempt + 1)}>Yeniden dene</button>
+              Liste şu an yüklenemedi.{' '}
+              {usesCatalog && <button className="link" onClick={() => setAttempt(attempt + 1)}>Yeniden dene</button>}
             </p>
           )}
-          {catalog.status === 'ready' && genres.length === 0 && (
+          {!loading && !failed && !genre && (
             <p className="empty">
-              {activeShelf === 'events' && 'Bu şehir için önümüzdeki 30 günde kategorili etkinlik yok.'}
-              {activeShelf === 'places' && (
+              {section === 'trend-theatre' && 'Bu şehirde önümüzdeki 30 günde satışta tiyatro oyunu yok.'}
+              {section === 'events' && 'Bu şehir için önümüzdeki 30 günde kategorili etkinlik yok.'}
+              {PLACES.includes(section) && (
                 <>
-                  Bu şehir için mekan listesi henüz yok.{' '}
+                  Bu şehir için liste henüz yok.{' '}
                   {placeRegions.map((r) => (
                     <button key={r} className="link" onClick={() => updateSettings({ region: r })}>
                       {regions?.[r] ?? r} listesine bakın
@@ -169,41 +174,60 @@ export function LikedScreen({ trending, ten }: { trending: TrendingState; ten: T
                   ))}
                 </>
               )}
-              {!LOCAL.includes(activeShelf) && 'Bu tür için kategori verisi henüz gelmedi.'}
+              {(section === 'movies' || section === 'series' || section === 'trend-movies') && 'Bu bölümün verisi henüz gelmedi.'}
             </p>
           )}
-          {catalog.status === 'ready' && genre && (
+          {!loading && !failed && genre && (
             <>
-              <div className="chiprow" role="radiogroup" aria-label="Kategori">
-                {genres.map((g) => (
-                  <button
-                    key={g.id}
-                    role="radio"
-                    aria-checked={g.id === genre.id}
-                    className="chip chip--pick"
-                    onClick={() => setPicked({ ...picked, [activeShelf]: g.id })}
-                  >
-                    {g.name}
-                  </button>
-                ))}
-              </div>
+              {genres.length > 1 && (
+                <div className="chiprow" role="radiogroup" aria-label="Kategori">
+                  {genres.map((g) => (
+                    <button
+                      key={g.id}
+                      role="radio"
+                      aria-checked={g.id === genre.id}
+                      className="chip chip--pick"
+                      onClick={() => setPicked({ ...picked, [section]: g.id })}
+                    >
+                      {g.name}
+                    </button>
+                  ))}
+                </div>
+              )}
               <div className="cards">
                 {genre.items.map((entry) => (
                   <LikeCard key={entry.id} item={entry} liked={byRef.has(entry.id)} onToggle={() => toggle(entry)} />
                 ))}
               </div>
-              <p className="foot">
-                {activeShelf === 'events' && `Önümüzdeki 30 günün ${genre.name.toLocaleLowerCase('tr')} etkinlikleri, en çok seansı olan önde. Güncellendi: ${stamp(catalog.data.updatedAt)}.`}
-                {activeShelf === 'places' && `${genre.items.length} yer, elle seçilmiş liste. Fotoğraflar Wikipedia’dan.`}
-                {!LOCAL.includes(activeShelf) &&
-                  `${genre.name} kategorisinde şu an en popüler ${genre.items.length} ${activeShelf === 'movies' ? 'film' : 'dizi'}. Güncellendi: ${stamp(catalog.data.updatedAt)}.`}
-              </p>
+              <p className="foot">{footnote(section, genre, trending, data)}</p>
             </>
           )}
         </>
       )}
     </div>
   )
+}
+
+function footnote(section: SectionId, genre: Genre, trending: TrendingState, data: Catalog | null): string {
+  const updated = data ? ` Güncellendi: ${stamp(data.updatedAt)}.` : ''
+  switch (section) {
+    case 'trend-movies':
+      return `Bu haftanın en çok ilgi gören ${genre.items.length} filmi.${trending.status === 'ready' ? ` Güncellendi: ${stamp(trending.data.updatedAt)}.` : ''}`
+    case 'trend-theatre':
+      return `Önümüzdeki 30 günün oyunları, en çok seansı olan önde.${updated}`
+    case 'movies':
+      return `${genre.name} kategorisinde şu an en popüler ${genre.items.length} film.${updated}`
+    case 'series':
+      return `${genre.name} kategorisinde şu an en popüler ${genre.items.length} dizi.${updated}`
+    case 'events':
+      return `Önümüzdeki 30 günün ${genre.name.toLocaleLowerCase('tr')} etkinlikleri, en çok seansı olan önde.${updated}`
+    case 'walk':
+      return `${genre.items.length} yer, elle seçilmiş liste. Fotoğraflar Wikipedia’dan.`
+    case 'food':
+      return `${genre.items.length} yer, elle seçilmiş liste; puan ya da sıralama değil. Gitmeden önce açık olduğunu haritadan kontrol edin.`
+    default:
+      return ''
+  }
 }
 
 function LoadingCards() {
@@ -217,8 +241,9 @@ function LoadingCards() {
 function LikeCard({ item, liked, onToggle }: { item: Item | TrendEntry; liked: boolean; onToggle: () => void }) {
   const done = 'doneAt' in item && item.doneAt
   return (
-    <article className="tile">
-      <Cover src={item.image} title={item.title} className="tile__img" />
+    <article className={`tile${item.image ? '' : ' tile--plain'}`}>
+      {/* A place without a photograph is a card of words, not an empty picture frame. */}
+      {item.image && <Cover src={item.image} title={item.title} className="tile__img" />}
       <button
         className={`like${liked ? ' like--on' : ''}`}
         aria-pressed={liked}

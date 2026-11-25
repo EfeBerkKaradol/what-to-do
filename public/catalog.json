@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T19:34:38.663Z",
+ "updatedAt": "2026-11-25T19:52:23.738Z",
  "regions": {
   "ISTANBUL": "İstanbul",
   "ANKARA": "Ankara",
@@ -9,11 +9,3299 @@
  },
  "sources": {
   "events": "Biletix",
-  "movies": "yok (eski)",
-  "series": "yok (eski)"
+  "movies": "TMDB",
+  "series": "TMDB"
  },
- "movies": [],
- "series": [],
+ "movies": [
+  {
+   "id": "28",
+   "name": "Aksiyon",
+   "items": [
+    {
+     "id": "movie:tmdb-1726",
+     "kind": "movie",
+     "title": "Demir Adam",
+     "image": "https://image.tmdb.org/t/p/w500/9qjZeIZ52CWgmZuEuVuBPaypChy.jpg",
+     "url": "https://www.themoviedb.org/movie/1726",
+     "meta": "2008 · 7.7 / 10",
+     "note": "Milyarder bir sanayici ve dâhi bir mucit olan Tony Stark kaçırılır ve yıkıcı bir silah inşa etmeye zorlanır. Zekâsını ve yaratıcılığını kullanarak bunun yerine "
+    },
+    {
+     "id": "movie:tmdb-801688",
+     "kind": "movie",
+     "title": "Kalki 2898-AD",
+     "image": "https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg",
+     "url": "https://www.themoviedb.org/movie/801688",
+     "meta": "2024 · 6.4 / 10",
+     "note": "Bhairava, memleketinin baskıcı sınırlarından ve bir ödül avcısının tehlikeli hayatından bıkmış, Kompleks'te daha rahat bir yaşam özlemi çekmektedir. Yeni bir ha"
+    },
+    {
+     "id": "movie:tmdb-1368337",
+     "kind": "movie",
+     "title": "Odyssey",
+     "image": "https://image.tmdb.org/t/p/w500/edC4JzDHJUoQddhbHlBNSU3RHPR.jpg",
+     "url": "https://www.themoviedb.org/movie/1368337",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Homeros'un yaklaşık 2700 yıl önce yazdığı Odysseia destanından uyarlanan Christopher Nolan imzalı film Truva Savaşı kazanıldıktan sonra evlerine dönmek üzere yo"
+    },
+    {
+     "id": "movie:tmdb-1300968",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Hasatta Gündoğumu",
+     "image": "https://image.tmdb.org/t/p/w500/6C1nypUUUUUdX4XTCG2LdZXXo4Y.jpg",
+     "url": "https://www.themoviedb.org/movie/1300968",
+     "meta": "2026 · 7.8 / 10",
+     "note": "Açlık Oyunları olaylarından 24 yıl öncesine, 50. Açlık Oyunları ya da diğer adıyla İkinci Çeyrek Kıyamet'in kura çekimi için Panem dünyasına geri dönün."
+    },
+    {
+     "id": "movie:tmdb-969681",
+     "kind": "movie",
+     "title": "Örümcek-Adam: Yepyeni Bir Gün",
+     "image": "https://image.tmdb.org/t/p/w500/9r8kzuHQ4m9vvoyJO3fVH5nj8yC.jpg",
+     "url": "https://www.themoviedb.org/movie/969681",
+     "meta": "2026 · 8.5 / 10",
+     "note": "Artık onu hatırlamayan bir dünyada tam zamanlı olarak Örümcek Adamlık yapmak ve eski arkadaşlarının hayatlarına o olmadan devam ettiklerini görmenin yarattığı b"
+    },
+    {
+     "id": "movie:tmdb-1058424",
+     "kind": "movie",
+     "title": "Umut",
+     "image": "https://image.tmdb.org/t/p/w500/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
+     "url": "https://www.themoviedb.org/movie/1058424",
+     "meta": "2026 · 6.9 / 10",
+     "note": "Güney Kore’nin gözden ırak sahil kasabası Hope Harbor’da, polis şefi Bum-seok ve memur Sung-ae, kasabayı kaosa sürükleyen gizemli bir yaratığı bulmakla görevlen"
+    },
+    {
+     "id": "movie:tmdb-1507696",
+     "kind": "movie",
+     "title": "Kıyamet Z: Yeni Dünya",
+     "image": "https://image.tmdb.org/t/p/w500/pS2R3DEiucuizVkKP80qzdO97TE.jpg",
+     "url": "https://www.themoviedb.org/movie/1507696",
+     "meta": "2026 · 6.2 / 10",
+     "note": "TSJ virüsü salgınının ardından Kanarya Adaları Avrupa'nın son sığınağı hâline gelmiştir. Erzak bulmak için Madrid'e giden bir ekibe Roberto da şüpheli amaçlarla"
+    },
+    {
+     "id": "movie:tmdb-1616687",
+     "kind": "movie",
+     "title": "Asla Teslim Olma",
+     "image": "https://image.tmdb.org/t/p/w500/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+     "url": "https://www.themoviedb.org/movie/1616687",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Gözlerden ırak evi tehlikeli bir çetenin baskınına uğrayan vicdan azabı içindeki eski bir asker ile onun iyi tanımadığı torunlarının hayatta kalmak için birlik "
+    },
+    {
+     "id": "movie:tmdb-656908",
+     "kind": "movie",
+     "title": "Ramayana: Efsanenin Doğuşu",
+     "image": "https://image.tmdb.org/t/p/w500/gDiqnP9G9lO3ciafEMVEjvzAXKN.jpg",
+     "url": "https://www.themoviedb.org/movie/656908",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Kadim bir destandan uyarlanan yapım, evlilikleri ve hemen ardından gelen sürgünleriyle efsanevi bir serüvene adım atan genç bir prens ile prensesin hikâyesini m"
+    },
+    {
+     "id": "movie:tmdb-1294189",
+     "kind": "movie",
+     "title": "Firavun Faresi",
+     "image": "https://image.tmdb.org/t/p/w500/l80bthReoL08m8oU74R4ZMxgnGZ.jpg",
+     "url": "https://www.themoviedb.org/movie/1294189",
+     "meta": "2026 · 6.6 / 10",
+     "note": "Kaybedecek hiçbir şeyi olmayan, haksız yere suçlanan bir savaş kahramanı, eski Özel Kuvvetler taburundaki askerlerin yardımıyla, güvenli bir şekilde kaçmasını d"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "name": "Macera",
+   "items": [
+    {
+     "id": "movie:tmdb-1726",
+     "kind": "movie",
+     "title": "Demir Adam",
+     "image": "https://image.tmdb.org/t/p/w500/9qjZeIZ52CWgmZuEuVuBPaypChy.jpg",
+     "url": "https://www.themoviedb.org/movie/1726",
+     "meta": "2008 · 7.7 / 10",
+     "note": "Milyarder bir sanayici ve dâhi bir mucit olan Tony Stark kaçırılır ve yıkıcı bir silah inşa etmeye zorlanır. Zekâsını ve yaratıcılığını kullanarak bunun yerine "
+    },
+    {
+     "id": "movie:tmdb-1368337",
+     "kind": "movie",
+     "title": "Odyssey",
+     "image": "https://image.tmdb.org/t/p/w500/edC4JzDHJUoQddhbHlBNSU3RHPR.jpg",
+     "url": "https://www.themoviedb.org/movie/1368337",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Homeros'un yaklaşık 2700 yıl önce yazdığı Odysseia destanından uyarlanan Christopher Nolan imzalı film Truva Savaşı kazanıldıktan sonra evlerine dönmek üzere yo"
+    },
+    {
+     "id": "movie:tmdb-1300968",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Hasatta Gündoğumu",
+     "image": "https://image.tmdb.org/t/p/w500/6C1nypUUUUUdX4XTCG2LdZXXo4Y.jpg",
+     "url": "https://www.themoviedb.org/movie/1300968",
+     "meta": "2026 · 7.8 / 10",
+     "note": "Açlık Oyunları olaylarından 24 yıl öncesine, 50. Açlık Oyunları ya da diğer adıyla İkinci Çeyrek Kıyamet'in kura çekimi için Panem dünyasına geri dönün."
+    },
+    {
+     "id": "movie:tmdb-1263337",
+     "kind": "movie",
+     "title": "Vahşinin Kalbi",
+     "image": "https://image.tmdb.org/t/p/w500/iA37n5BKKNaEKUpqfmvI352fKJn.jpg",
+     "url": "https://www.themoviedb.org/movie/1263337",
+     "meta": "2026 · 7.9 / 10",
+     "note": "Özel Kuvvetler subayı James Belmont, içinde bulunduğu uçağın Alaska'nın zorlu coğrafyasına düşmesi sonucu hayatta kalmayı başarır. Yanında sadece eğitimli savaş"
+    },
+    {
+     "id": "movie:tmdb-969681",
+     "kind": "movie",
+     "title": "Örümcek-Adam: Yepyeni Bir Gün",
+     "image": "https://image.tmdb.org/t/p/w500/9r8kzuHQ4m9vvoyJO3fVH5nj8yC.jpg",
+     "url": "https://www.themoviedb.org/movie/969681",
+     "meta": "2026 · 8.5 / 10",
+     "note": "Artık onu hatırlamayan bir dünyada tam zamanlı olarak Örümcek Adamlık yapmak ve eski arkadaşlarının hayatlarına o olmadan devam ettiklerini görmenin yarattığı b"
+    },
+    {
+     "id": "movie:tmdb-1423191",
+     "kind": "movie",
+     "title": "Ölümcül Deney",
+     "image": "https://image.tmdb.org/t/p/w500/yXs3qdcTxteZnZZH78xvm7Q6iK2.jpg",
+     "url": "https://www.themoviedb.org/movie/1423191",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Uzak bir hastaneye paket götürmekle görevlendirilen talihsiz bir kurye, vardığında kendini aniden bir salgının tam ortasında bulur. Hayatta kalabilmek için muta"
+    },
+    {
+     "id": "movie:tmdb-1244523",
+     "kind": "movie",
+     "title": "Amazonda Dehşet",
+     "image": "https://image.tmdb.org/t/p/w500/tENVMxKvOkslv8kagVNdIEQ13RT.jpg",
+     "url": "https://www.themoviedb.org/movie/1244523",
+     "meta": "2026 · 6.0 / 10",
+     "note": "Amazon'un derinliklerinde bir tıbbi görev büyük bir tehlikeye dönüşür; kadim dev avcı Boiúna uyanır ve bölgesini tekrar ele geçirir. Doğanın katı kurallarının g"
+    },
+    {
+     "id": "movie:tmdb-1595124",
+     "kind": "movie",
+     "title": "Kardeş Kardeş",
+     "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+     "url": "https://www.themoviedb.org/movie/1595124",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+    },
+    {
+     "id": "movie:tmdb-656908",
+     "kind": "movie",
+     "title": "Ramayana: Efsanenin Doğuşu",
+     "image": "https://image.tmdb.org/t/p/w500/gDiqnP9G9lO3ciafEMVEjvzAXKN.jpg",
+     "url": "https://www.themoviedb.org/movie/656908",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Kadim bir destandan uyarlanan yapım, evlilikleri ve hemen ardından gelen sürgünleriyle efsanevi bir serüvene adım atan genç bir prens ile prensesin hikâyesini m"
+    },
+    {
+     "id": "movie:tmdb-101299",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Ateşi Yakalamak",
+     "image": "https://image.tmdb.org/t/p/w500/5BJDcOEX4WgSTWlxBb4K2t4lf41.jpg",
+     "url": "https://www.themoviedb.org/movie/101299",
+     "meta": "2013 · 7.4 / 10",
+     "note": "Ateşi Yakalamak, Katniss Everdeen'in diğer haraç Peete Mellark'la 74. Açlık Oyunları'nı kazandıktan sonra sağ salim evine geri dönüşünden başlıyor. Kazanmak iki"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "name": "Animasyon",
+   "items": [
+    {
+     "id": "movie:tmdb-1595124",
+     "kind": "movie",
+     "title": "Kardeş Kardeş",
+     "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+     "url": "https://www.themoviedb.org/movie/1595124",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+    },
+    {
+     "id": "movie:tmdb-1084244",
+     "kind": "movie",
+     "title": "Oyuncak Hikayesi 5",
+     "image": "https://image.tmdb.org/t/p/w500/4LHyUPK4obqICeCt4rjhpQDOhJt.jpg",
+     "url": "https://www.themoviedb.org/movie/1084244",
+     "meta": "2026 · 8.2 / 10",
+     "note": "Bonnie'nin hediye olarak aldığı bir Lilypad tablete takıntılı hale gelmesiyle birlikte, Buzz, Woody, Jessie ve diğer oyuncaklar için işler iyice karmaşıklaşır; "
+    },
+    {
+     "id": "movie:tmdb-14836",
+     "kind": "movie",
+     "title": "Koralin ve Gizli Dünya",
+     "image": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+     "url": "https://www.themoviedb.org/movie/14836",
+     "meta": "2009 · 8.0 / 10",
+     "note": "Coraline eski bir eve taşındığında canı çok sıkılır ve ailesi tarafından da ihmal edilir. Bir gün dar bir geçide uzanan gizli bir kapı bulur ve geçitten geçmeye"
+    },
+    {
+     "id": "movie:tmdb-1465063",
+     "kind": "movie",
+     "title": "Unutulmuş Ada",
+     "image": "https://image.tmdb.org/t/p/w500/uYYe3C57nsqw3bA84tSR58g4EFx.jpg",
+     "url": "https://www.themoviedb.org/movie/1465063",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Lise mezuniyetlerinin ardından farklı hayatlara savrulmak üzere olan iki kadim dost olan Jo ve Raissa, son gecelerini kutlarken kendilerini gizemli bir portalın"
+    },
+    {
+     "id": "movie:tmdb-791523",
+     "kind": "movie",
+     "title": "Vahşi Orman",
+     "image": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
+     "url": "https://www.themoviedb.org/movie/791523",
+     "meta": "2027 · 8.5 / 10",
+     "note": "Coraline'i yaratan ellerden... Prue McKeel, küçük erkek kardeşi bir karga sürüsü tarafından kaçırıldıktan sonra Oregon'un hemen ötesindeki gizli ve büyülü vahşi"
+    },
+    {
+     "id": "movie:tmdb-1204680",
+     "kind": "movie",
+     "title": "Coyote Acme'ye Karşı",
+     "image": "https://image.tmdb.org/t/p/w500/tiS1RDaTrPftGZ0yGNaUW5DLuir.jpg",
+     "url": "https://www.themoviedb.org/movie/1204680",
+     "meta": "2026 · 8.2 / 10",
+     "note": "Wile E. Coyote, Road Runner'ı yakalama girişimleri sırasında kullandığı ve sürekli bozularak kendisine zarar veren ürünler nedeniyle Acme Corporation şirketine "
+    },
+    {
+     "id": "movie:tmdb-980431",
+     "kind": "movie",
+     "title": "Avatar Aang: Son Havabükücü",
+     "image": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+     "url": "https://www.themoviedb.org/movie/980431",
+     "meta": "2026 · 9.0 / 10",
+     "note": "Dünyanın son Hava Bükücüsü Avatar Aang, kültürünü yok olmaktan kurtarabilecek kadim bir gücün varlığını öğrenir. Arkadaşlarının yardımıyla, bu güç yanlış ellere"
+    },
+    {
+     "id": "movie:tmdb-1315772",
+     "kind": "movie",
+     "title": "Minyonlar ve Canavarlar",
+     "image": "https://image.tmdb.org/t/p/w500/hNXw1I4GmLCbSdbnduoR7SVY8Jv.jpg",
+     "url": "https://www.themoviedb.org/movie/1315772",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Bu film, minyonların Hollywood'u nasıl fethettiği, film yıldızı olup her şeylerini kaybettikleri, dünyaya canavar saldıktan sonra yarattıkları kaostan dünyayı k"
+    },
+    {
+     "id": "movie:tmdb-129",
+     "kind": "movie",
+     "title": "Ruhların Kaçışı",
+     "image": "https://image.tmdb.org/t/p/w500/xvOEOMCzfV8qXkd1n1btZ8q4Psd.jpg",
+     "url": "https://www.themoviedb.org/movie/129",
+     "meta": "2004 · 8.5 / 10",
+     "note": "Film, küçük Chihiro ve ailesinin yeni bir kasabaya taşınmalarıyla açılır. Yolculuk esnasında yolda gördükleri bir tünele dikkat eden aile, tünelin içerisinden g"
+    },
+    {
+     "id": "movie:tmdb-354912",
+     "kind": "movie",
+     "title": "Coco",
+     "image": "https://image.tmdb.org/t/p/w500/f9Ro5x36UTDdHFrhnHeXqlhBVRF.jpg",
+     "url": "https://www.themoviedb.org/movie/354912",
+     "meta": "2018 · 8.2 / 10",
+     "note": "Miguel, ailesinin nesiller boyu süren yasağına rağmen idolü Ernesto de la Cruz gibi başarılı bir müzisyen olmanın hayalini kuruyordur. Çaresizce yeteneğini kanı"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "name": "Komedi",
+   "items": [
+    {
+     "id": "movie:tmdb-1551025",
+     "kind": "movie",
+     "title": "Çok Özel Bir Koruma",
+     "image": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+     "url": "https://www.themoviedb.org/movie/1551025",
+     "meta": "2026 · 6.9 / 10",
+     "note": "Profesyonel bir koruma görevlisi, koruduğu ünlü oyuncuyla Montana'daki bir çiftliğe gider. Ancak Noel için sevgili rolü yapan çiftin arasında gerçek bir aşk fil"
+    },
+    {
+     "id": "movie:tmdb-1595124",
+     "kind": "movie",
+     "title": "Kardeş Kardeş",
+     "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+     "url": "https://www.themoviedb.org/movie/1595124",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+    },
+    {
+     "id": "movie:tmdb-1567605",
+     "kind": "movie",
+     "title": "Ebenezer: Bir Noel Şarkısı",
+     "image": "https://image.tmdb.org/t/p/w500/vUEIcdHPXJ0JTkKqaxpoHKmx4mI.jpg",
+     "url": "https://www.themoviedb.org/movie/1567605",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Noel’den ve çevresindeki insanlardan uzak duran cimri Ebenezer Scrooge, Noel arifesinde hayatını değiştirecek doğaüstü ziyaretçilerle karşılaşır. Ölen iş ortağı"
+    },
+    {
+     "id": "movie:tmdb-1514026",
+     "kind": "movie",
+     "title": "Buddy",
+     "image": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+     "url": "https://www.themoviedb.org/movie/1514026",
+     "meta": "2026 · 6.8 / 10",
+     "note": "Hatırladınız mı Buddy'yi? O klasik çocuk televizyon programının, salonunuza neşe ve hayat dersleri taşıyan, canlı turuncu renkli tek boynuzlu atı ve başrol oyun"
+    },
+    {
+     "id": "movie:tmdb-1131943",
+     "kind": "movie",
+     "title": "Madden",
+     "image": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
+     "url": "https://www.themoviedb.org/movie/1131943",
+     "meta": "2026 · 6.5 / 10",
+     "note": "Amerika'nın sevilen isimlerinden John Madden'ın hayatından esinlenen MADDEN, Al Davis ve Raiders'la kazandığı Super Bowl'dan, Amerikan futbolunun unutulmaz sesi"
+    },
+    {
+     "id": "movie:tmdb-771",
+     "kind": "movie",
+     "title": "Evde Tek Başına",
+     "image": "https://image.tmdb.org/t/p/w500/eW5LQO6pyd3WyFUvyeL5WAffZmL.jpg",
+     "url": "https://www.themoviedb.org/movie/771",
+     "meta": "1990 · 7.5 / 10",
+     "note": "Sekiz yaşındaki Kevin McCallister evin reisi olur, hem de bir gecede! Ailesi noel tatiline gidince yanlışlıkla evde unutulan Kevin, evi yılbaşı için süslemekle "
+    },
+    {
+     "id": "movie:tmdb-1084244",
+     "kind": "movie",
+     "title": "Oyuncak Hikayesi 5",
+     "image": "https://image.tmdb.org/t/p/w500/4LHyUPK4obqICeCt4rjhpQDOhJt.jpg",
+     "url": "https://www.themoviedb.org/movie/1084244",
+     "meta": "2026 · 8.2 / 10",
+     "note": "Bonnie'nin hediye olarak aldığı bir Lilypad tablete takıntılı hale gelmesiyle birlikte, Buzz, Woody, Jessie ve diğer oyuncaklar için işler iyice karmaşıklaşır; "
+    },
+    {
+     "id": "movie:tmdb-26817",
+     "kind": "movie",
+     "title": "Sex and the Single Girl",
+     "image": "https://image.tmdb.org/t/p/w500/eGGj9foBY4jonHskGq7ysgf2ESR.jpg",
+     "url": "https://www.themoviedb.org/movie/26817",
+     "meta": "1964 · 6.5 / 10"
+    },
+    {
+     "id": "movie:tmdb-1195803",
+     "kind": "movie",
+     "title": "İdeal Koca",
+     "image": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+     "url": "https://www.themoviedb.org/movie/1195803",
+     "meta": "2026 · 7.4 / 10",
+     "note": "Deniz kıyısındaki bir köyün dış çeperinde, kötü kokan, bekâr ve sürekli alay konusu olan bir balıkçı kadın yaşar. Bir gün, dar görüşlü ve boğucu komşularından b"
+    },
+    {
+     "id": "movie:tmdb-1465063",
+     "kind": "movie",
+     "title": "Unutulmuş Ada",
+     "image": "https://image.tmdb.org/t/p/w500/uYYe3C57nsqw3bA84tSR58g4EFx.jpg",
+     "url": "https://www.themoviedb.org/movie/1465063",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Lise mezuniyetlerinin ardından farklı hayatlara savrulmak üzere olan iki kadim dost olan Jo ve Raissa, son gecelerini kutlarken kendilerini gizemli bir portalın"
+    }
+   ]
+  },
+  {
+   "id": "80",
+   "name": "Suç",
+   "items": [
+    {
+     "id": "movie:tmdb-1616687",
+     "kind": "movie",
+     "title": "Asla Teslim Olma",
+     "image": "https://image.tmdb.org/t/p/w500/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+     "url": "https://www.themoviedb.org/movie/1616687",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Gözlerden ırak evi tehlikeli bir çetenin baskınına uğrayan vicdan azabı içindeki eski bir asker ile onun iyi tanımadığı torunlarının hayatta kalmak için birlik "
+    },
+    {
+     "id": "movie:tmdb-509467",
+     "kind": "movie",
+     "title": "사라진 밤",
+     "image": "https://image.tmdb.org/t/p/w500/umtfX1P3bzgl9fOSQL64DRY6juT.jpg",
+     "url": "https://www.themoviedb.org/movie/509467",
+     "meta": "2018 · 7.4 / 10"
+    },
+    {
+     "id": "movie:tmdb-1419406",
+     "kind": "movie",
+     "title": "Gölge Avı",
+     "image": "https://image.tmdb.org/t/p/w500/o25Tk1FYQi2BLk0OEAvx2h69QvB.jpg",
+     "url": "https://www.themoviedb.org/movie/1419406",
+     "meta": "2025 · 8.4 / 10",
+     "note": "Emekli bir gözetleme uzmanı olan Wong Tak-Chung (Jackie Chan), Makao polisi tarafından, yüksek teknoloji kullanan tehlikeli bir suç çetesini yakalamak üzere gör"
+    },
+    {
+     "id": "movie:tmdb-27205",
+     "kind": "movie",
+     "title": "Başlangıç",
+     "image": "https://image.tmdb.org/t/p/w500/xn0Kcg4e6p0mLxVS3nAWhNmW2Ni.jpg",
+     "url": "https://www.themoviedb.org/movie/27205",
+     "meta": "2010 · 8.4 / 10",
+     "note": "Hedeflerinin bilinçaltına sızarak kurumsal casusluk yapan yetenekli bir hırsız olan Cobb'a, imkansız olduğu düşünülen bir görev karşılığında eski hayatını geri "
+    },
+    {
+     "id": "movie:tmdb-278",
+     "kind": "movie",
+     "title": "Esaretin Bedeli",
+     "image": "https://image.tmdb.org/t/p/w500/bAEV6D3M4tRVGBZca69BMYtxxFv.jpg",
+     "url": "https://www.themoviedb.org/movie/278",
+     "meta": "1995 · 8.7 / 10",
+     "note": "Genç ve başarılı bir banker olan Andy Dufresne, karısını ve onun sevgilisini öldürmek suçundan ömür boyu hapse mahkum edilir ve Shawshank hapishanesine gönderil"
+    },
+    {
+     "id": "movie:tmdb-432836",
+     "kind": "movie",
+     "title": "Bir Katilin Anıları",
+     "image": "https://image.tmdb.org/t/p/w500/eyP0BWOCtD1RPwD92Agr9jxz8fX.jpg",
+     "url": "https://www.themoviedb.org/movie/432836",
+     "meta": "2017 · 7.4 / 10",
+     "note": "Byeong-Soo eski bir seri katildir. Şimdi ise Alzheimer hastasıdır. Kurbanlarından birinden aldığı Eun-Hee'yi kızı gibi büyütmüştür. Bir gün, Eun-Hee'nin erkek a"
+    },
+    {
+     "id": "movie:tmdb-238",
+     "kind": "movie",
+     "title": "Baba",
+     "image": "https://image.tmdb.org/t/p/w500/vseIVRdN4xasYwStQIi6SI7DcEu.jpg",
+     "url": "https://www.themoviedb.org/movie/238",
+     "meta": "1973 · 8.7 / 10",
+     "note": "Mario Puzo'nun çok satan kitabından Puzo ve yönetmen Francis Ford Coppola tarafından sinemaya uyarlanan eser, 40'lar ve 50'lerin Amerika'sında, bir İtalyan mafy"
+    },
+    {
+     "id": "movie:tmdb-155",
+     "kind": "movie",
+     "title": "Kara Şövalye",
+     "image": "https://image.tmdb.org/t/p/w500/7IPCEr7ifdH5CtU97QG7XgAAtOp.jpg",
+     "url": "https://www.themoviedb.org/movie/155",
+     "meta": "2008 · 8.5 / 10",
+     "note": "Batman, Teğmen Jim Gordon ve Bölge Savcısı Harvey Dent’in yardımlarıyla, şehir sokaklarını sarmış olan suç örgütlerinden geriye kalanları temizlemeye girişir. B"
+    },
+    {
+     "id": "movie:tmdb-1437511",
+     "kind": "movie",
+     "title": "Bir Banka Nasıl Soyulur",
+     "image": "https://image.tmdb.org/t/p/w500/weIxIAPibAFqBoqYmJWMNowPQM1.jpg",
+     "url": "https://www.themoviedb.org/movie/1437511",
+     "meta": "2026 · 6.5 / 10",
+     "note": "Sosyal medyayı ustalıkla kullanan bir grup banka soyguncusu, gerçekleştirdikleri planlı soygunları internet üzerinden canlı yayınlamaya başlar. Ancak giderek ar"
+    },
+    {
+     "id": "movie:tmdb-1571955",
+     "kind": "movie",
+     "title": "Çarpışma Anı",
+     "image": "https://image.tmdb.org/t/p/w500/sMPIiaOoyTr5o6s602KIVMJX3P2.jpg",
+     "url": "https://www.themoviedb.org/movie/1571955",
+     "meta": "2026 · 6.3 / 10",
+     "note": "Ekonomik krizin ortasında gelişen bu hikâyede bir grup soyguncu, Madrid'deki bir bankaya baskın yaptığında öngörülemeyen bir dizi olayı tetikler. İlk başta sıra"
+    }
+   ]
+  },
+  {
+   "id": "99",
+   "name": "Belgesel",
+   "items": [
+    {
+     "id": "movie:tmdb-1765072",
+     "kind": "movie",
+     "title": "Her Şey Ortada",
+     "image": "https://image.tmdb.org/t/p/w500/lsgXMiAd3r5rtCjzS09Aao8jXNJ.jpg",
+     "url": "https://www.themoviedb.org/movie/1765072",
+     "meta": "2026 · 8.7 / 10",
+     "note": "Hapishaneye gönderilmesine otuz dört gün kala, kötü şöhretli Theranos'un kurucusu Elizabeth Holmes, şüpheci bir film ekibini her hareketini belgelemeye davet ed"
+    },
+    {
+     "id": "movie:tmdb-1612018",
+     "kind": "movie",
+     "title": "Jackass: Sonuncusu ve En İyisi",
+     "image": "https://image.tmdb.org/t/p/w500/tfgccePxnswMqhmtxafliLlcCVR.jpg",
+     "url": "https://www.themoviedb.org/movie/1612018",
+     "meta": "2026 · 7.3 / 10",
+     "note": "Jackass ekibinin, serinin sonunu işaret eden son tehlikeli gösteri ve şaka serisini gerçekleştirmesini konu alıyor."
+    },
+    {
+     "id": "movie:tmdb-899082",
+     "kind": "movie",
+     "title": "Harry Potter 20. Yıldönümü: Hogwarts'a Dönüş",
+     "image": "https://image.tmdb.org/t/p/w500/jntLBq0MLR3hrwKaTQswxACRPMs.jpg",
+     "url": "https://www.themoviedb.org/movie/899082",
+     "meta": "2022 · 7.3 / 10",
+     "note": "Daniel Radcliffe, Emma Watson ve Rupert Grint de olmak üzere tüm \"Harry Potter\" filmlerindan oyuncular, ilk filmin 20. yıldönümünü kutluyor! Pek çok röportajı i"
+    },
+    {
+     "id": "movie:tmdb-1516391",
+     "kind": "movie",
+     "title": "Örtbas: Savaşın Çirkin Gerçekleri",
+     "image": "https://image.tmdb.org/t/p/w500/3kVAkwPrNNw3kxe2yJVatj86QKo.jpg",
+     "url": "https://www.themoviedb.org/movie/1516391",
+     "meta": "2025 · 7.2 / 10",
+     "note": "Güçlülerin gizli tutmak istediği hikâyeleri ortaya çıkarmaya adanmış bir kariyer... My Lai'dan Ebu Gureyb'e, gazeteci Seymour Hersh'ün çalışmalarına derinlemesi"
+    },
+    {
+     "id": "movie:tmdb-1755291",
+     "kind": "movie",
+     "title": "NAZA",
+     "image": "https://image.tmdb.org/t/p/w500/cbxiZ1l21KUATu2KKQQ8J8fJhpe.jpg",
+     "url": "https://www.themoviedb.org/movie/1755291",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Tel Aviv çatılarından gece çekilen belgesel, İsrail’in Gazze’deki askeri operasyonları sonucunda yaşanan sivil kayıpları ve Filistinlilerin hedef alınarak öldür"
+    },
+    {
+     "id": "movie:tmdb-1022256",
+     "kind": "movie",
+     "title": "Selena Gomez: My Mind & Me",
+     "image": "https://image.tmdb.org/t/p/w500/oMpsswJv8x4vnOnIKqs4xJs2Kn3.jpg",
+     "url": "https://www.themoviedb.org/movie/1022256",
+     "meta": "2022 · 8.4 / 10",
+     "note": "Spot ışıklarında yıllar geçirdikten sonra Selena Gomez akılalmaz bir yıldız statüsüne ulaştı. Ancak yeni bir zirveye yaklaşırken beklenmedik bir durum tarafında"
+    },
+    {
+     "id": "movie:tmdb-396194",
+     "kind": "movie",
+     "title": "Ennio",
+     "image": "https://image.tmdb.org/t/p/w500/4nVy5CpU94O1bfBFXsDx67x2C4a.jpg",
+     "url": "https://www.themoviedb.org/movie/396194",
+     "meta": "2022 · 8.3 / 10",
+     "note": "Ennio, yirminci yüzyılın en etkili ve üretken müzisyenleri arasında yer alan ve 500'den fazla film müziğine imza atan iki Oscar ödüllü besteci Ennio Morricone'n"
+    },
+    {
+     "id": "movie:tmdb-656690",
+     "kind": "movie",
+     "title": "Sosyal İkilem",
+     "image": "https://image.tmdb.org/t/p/w500/yIhCI0JJNJ2cz4DtWaxZgVNrr58.jpg",
+     "url": "https://www.themoviedb.org/movie/656690",
+     "meta": "2020 · 7.5 / 10",
+     "note": "Bu belgesel dramada, sosyal ağların insanlar üzerindeki tehlikeli etkileri, kendi yaratımları konusunda uyarılarda bulunan teknoloji uzmanlarının eşliğinde ele "
+    },
+    {
+     "id": "movie:tmdb-664280",
+     "kind": "movie",
+     "title": "David Attenborough: Gezegenimizden Bir Yaşam",
+     "image": "https://image.tmdb.org/t/p/w500/tklQQGpS6nd7P6mlVsWBeQB4K4J.jpg",
+     "url": "https://www.themoviedb.org/movie/664280",
+     "meta": "2020 · 8.4 / 10",
+     "note": "Bir belgesel yayıncısı, tabiat alanlarının kaybının yasını tutmak ve gelecek için bir vizyon sunmak üzere kendi hayatını ve Dünya'nın evrimsel tarihini anlatıyo"
+    },
+    {
+     "id": "movie:tmdb-24128",
+     "kind": "movie",
+     "title": "Stop Making Sense",
+     "image": "https://image.tmdb.org/t/p/w500/mRa1g477WrlltUzuxh6t27OXtdX.jpg",
+     "url": "https://www.themoviedb.org/movie/24128",
+     "meta": "1984 · 8.3 / 10"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "name": "Dram",
+   "items": [
+    {
+     "id": "movie:tmdb-801688",
+     "kind": "movie",
+     "title": "Kalki 2898-AD",
+     "image": "https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg",
+     "url": "https://www.themoviedb.org/movie/801688",
+     "meta": "2024 · 6.4 / 10",
+     "note": "Bhairava, memleketinin baskıcı sınırlarından ve bir ödül avcısının tehlikeli hayatından bıkmış, Kompleks'te daha rahat bir yaşam özlemi çekmektedir. Yeni bir ha"
+    },
+    {
+     "id": "movie:tmdb-1813355",
+     "kind": "movie",
+     "title": "A Story of Derry",
+     "image": "https://image.tmdb.org/t/p/w500/4PtzGcegF5Po1NmDAW9IklyvAUh.jpg",
+     "url": "https://www.themoviedb.org/movie/1813355",
+     "meta": "2026 · 6.6 / 10",
+     "note": "Pennywise'dan yüzlerce yıl önce, üç genç kız kimseye haber vermeden Batı Ormanı'na gider ve orada korkunç bir kadim ruhla karşılaşırlar."
+    },
+    {
+     "id": "movie:tmdb-1422041",
+     "kind": "movie",
+     "title": "La bola negra",
+     "image": "https://image.tmdb.org/t/p/w500/t1azKLExwUxKj6v6m2L535evuRa.jpg",
+     "url": "https://www.themoviedb.org/movie/1422041",
+     "meta": "2026 · 7.9 / 10"
+    },
+    {
+     "id": "movie:tmdb-1281331",
+     "kind": "movie",
+     "title": "Sosyal Hesaplaşma",
+     "image": "https://image.tmdb.org/t/p/w500/3Kgw9b8EIexIw11qKiA9XhpfFMa.jpg",
+     "url": "https://www.themoviedb.org/movie/1281331",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Facebook'ta çalışan genç bir mühendis olan Frances Haugen, Wall Street Journal muhabiri Jeff Horwitz'in yardımını alarak sosyal ağın en iyi korunan sırlarını if"
+    },
+    {
+     "id": "movie:tmdb-27",
+     "kind": "movie",
+     "title": "9 Songs",
+     "image": "https://image.tmdb.org/t/p/w500/91O7z0vo7MiNWd5xD2BoivwbQsb.jpg",
+     "url": "https://www.themoviedb.org/movie/27",
+     "meta": "2004 · 5.5 / 10",
+     "note": "Biri İngiliz biri Amerikalı iki sevgilinin 1 sene boyunca yaşadıkları müzik ve cinsellik ile dolu yoğun ilişkileri."
+    },
+    {
+     "id": "movie:tmdb-1131943",
+     "kind": "movie",
+     "title": "Madden",
+     "image": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
+     "url": "https://www.themoviedb.org/movie/1131943",
+     "meta": "2026 · 6.5 / 10",
+     "note": "Amerika'nın sevilen isimlerinden John Madden'ın hayatından esinlenen MADDEN, Al Davis ve Raiders'la kazandığı Super Bowl'dan, Amerikan futbolunun unutulmaz sesi"
+    },
+    {
+     "id": "movie:tmdb-157336",
+     "kind": "movie",
+     "title": "Yıldızlararası",
+     "image": "https://image.tmdb.org/t/p/w500/xbiycuc84TrieEWwkkuH2hoEa9S.jpg",
+     "url": "https://www.themoviedb.org/movie/157336",
+     "meta": "2014 · 8.5 / 10",
+     "note": "Dünya'nın kuraklık ve kıtlıkla yok oluşun eşiğine geldiği bir gelecekte, insanlığın hayatta kalabilmesi için yeni bir yuva bulması şarttır. Keşfedilen gizemli b"
+    },
+    {
+     "id": "movie:tmdb-1286656",
+     "kind": "movie",
+     "title": "Ben, Rocky",
+     "image": "https://image.tmdb.org/t/p/w500/sPID7NqwpNdSAEMhazCvidxxeNo.jpg",
+     "url": "https://www.themoviedb.org/movie/1286656",
+     "meta": "2026 · 8.3 / 10",
+     "note": "Oyunculuk sektöründe var olma mücadelesi veren ve fiziksel özellikleri nedeniyle başrol için uygun görülmeyen Sylvester Stallone, kendi kariyerini şekillendirme"
+    },
+    {
+     "id": "movie:tmdb-1419406",
+     "kind": "movie",
+     "title": "Gölge Avı",
+     "image": "https://image.tmdb.org/t/p/w500/o25Tk1FYQi2BLk0OEAvx2h69QvB.jpg",
+     "url": "https://www.themoviedb.org/movie/1419406",
+     "meta": "2025 · 8.4 / 10",
+     "note": "Emekli bir gözetleme uzmanı olan Wong Tak-Chung (Jackie Chan), Makao polisi tarafından, yüksek teknoloji kullanan tehlikeli bir suç çetesini yakalamak üzere gör"
+    },
+    {
+     "id": "movie:tmdb-278",
+     "kind": "movie",
+     "title": "Esaretin Bedeli",
+     "image": "https://image.tmdb.org/t/p/w500/bAEV6D3M4tRVGBZca69BMYtxxFv.jpg",
+     "url": "https://www.themoviedb.org/movie/278",
+     "meta": "1995 · 8.7 / 10",
+     "note": "Genç ve başarılı bir banker olan Andy Dufresne, karısını ve onun sevgilisini öldürmek suçundan ömür boyu hapse mahkum edilir ve Shawshank hapishanesine gönderil"
+    }
+   ]
+  },
+  {
+   "id": "10751",
+   "name": "Aile",
+   "items": [
+    {
+     "id": "movie:tmdb-1595124",
+     "kind": "movie",
+     "title": "Kardeş Kardeş",
+     "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+     "url": "https://www.themoviedb.org/movie/1595124",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+    },
+    {
+     "id": "movie:tmdb-771",
+     "kind": "movie",
+     "title": "Evde Tek Başına",
+     "image": "https://image.tmdb.org/t/p/w500/eW5LQO6pyd3WyFUvyeL5WAffZmL.jpg",
+     "url": "https://www.themoviedb.org/movie/771",
+     "meta": "1990 · 7.5 / 10",
+     "note": "Sekiz yaşındaki Kevin McCallister evin reisi olur, hem de bir gecede! Ailesi noel tatiline gidince yanlışlıkla evde unutulan Kevin, evi yılbaşı için süslemekle "
+    },
+    {
+     "id": "movie:tmdb-1084244",
+     "kind": "movie",
+     "title": "Oyuncak Hikayesi 5",
+     "image": "https://image.tmdb.org/t/p/w500/4LHyUPK4obqICeCt4rjhpQDOhJt.jpg",
+     "url": "https://www.themoviedb.org/movie/1084244",
+     "meta": "2026 · 8.2 / 10",
+     "note": "Bonnie'nin hediye olarak aldığı bir Lilypad tablete takıntılı hale gelmesiyle birlikte, Buzz, Woody, Jessie ve diğer oyuncaklar için işler iyice karmaşıklaşır; "
+    },
+    {
+     "id": "movie:tmdb-14836",
+     "kind": "movie",
+     "title": "Koralin ve Gizli Dünya",
+     "image": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+     "url": "https://www.themoviedb.org/movie/14836",
+     "meta": "2009 · 8.0 / 10",
+     "note": "Coraline eski bir eve taşındığında canı çok sıkılır ve ailesi tarafından da ihmal edilir. Bir gün dar bir geçide uzanan gizli bir kapı bulur ve geçitten geçmeye"
+    },
+    {
+     "id": "movie:tmdb-1465063",
+     "kind": "movie",
+     "title": "Unutulmuş Ada",
+     "image": "https://image.tmdb.org/t/p/w500/uYYe3C57nsqw3bA84tSR58g4EFx.jpg",
+     "url": "https://www.themoviedb.org/movie/1465063",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Lise mezuniyetlerinin ardından farklı hayatlara savrulmak üzere olan iki kadim dost olan Jo ve Raissa, son gecelerini kutlarken kendilerini gizemli bir portalın"
+    },
+    {
+     "id": "movie:tmdb-1204680",
+     "kind": "movie",
+     "title": "Coyote Acme'ye Karşı",
+     "image": "https://image.tmdb.org/t/p/w500/tiS1RDaTrPftGZ0yGNaUW5DLuir.jpg",
+     "url": "https://www.themoviedb.org/movie/1204680",
+     "meta": "2026 · 8.2 / 10",
+     "note": "Wile E. Coyote, Road Runner'ı yakalama girişimleri sırasında kullandığı ve sürekli bozularak kendisine zarar veren ürünler nedeniyle Acme Corporation şirketine "
+    },
+    {
+     "id": "movie:tmdb-1108427",
+     "kind": "movie",
+     "title": "Moana",
+     "image": "https://image.tmdb.org/t/p/w500/AddecwRjKUqiRaztmZwxgCz6eHr.jpg",
+     "url": "https://www.themoviedb.org/movie/1108427",
+     "meta": "2026 · 7.4 / 10",
+     "note": "Genç Moana, Okyanus'un çağrısına kulak verir ve halkına refahı geri getirmek için çıktığı unutulmaz bir yolculukta, kötü şöhretli yarı tanrı Maui ile birlikte i"
+    },
+    {
+     "id": "movie:tmdb-1315772",
+     "kind": "movie",
+     "title": "Minyonlar ve Canavarlar",
+     "image": "https://image.tmdb.org/t/p/w500/hNXw1I4GmLCbSdbnduoR7SVY8Jv.jpg",
+     "url": "https://www.themoviedb.org/movie/1315772",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Bu film, minyonların Hollywood'u nasıl fethettiği, film yıldızı olup her şeylerini kaybettikleri, dünyaya canavar saldıktan sonra yarattıkları kaostan dünyayı k"
+    },
+    {
+     "id": "movie:tmdb-129",
+     "kind": "movie",
+     "title": "Ruhların Kaçışı",
+     "image": "https://image.tmdb.org/t/p/w500/xvOEOMCzfV8qXkd1n1btZ8q4Psd.jpg",
+     "url": "https://www.themoviedb.org/movie/129",
+     "meta": "2004 · 8.5 / 10",
+     "note": "Film, küçük Chihiro ve ailesinin yeni bir kasabaya taşınmalarıyla açılır. Yolculuk esnasında yolda gördükleri bir tünele dikkat eden aile, tünelin içerisinden g"
+    },
+    {
+     "id": "movie:tmdb-354912",
+     "kind": "movie",
+     "title": "Coco",
+     "image": "https://image.tmdb.org/t/p/w500/f9Ro5x36UTDdHFrhnHeXqlhBVRF.jpg",
+     "url": "https://www.themoviedb.org/movie/354912",
+     "meta": "2018 · 8.2 / 10",
+     "note": "Miguel, ailesinin nesiller boyu süren yasağına rağmen idolü Ernesto de la Cruz gibi başarılı bir müzisyen olmanın hayalini kuruyordur. Çaresizce yeteneğini kanı"
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "name": "Fantastik",
+   "items": [
+    {
+     "id": "movie:tmdb-801688",
+     "kind": "movie",
+     "title": "Kalki 2898-AD",
+     "image": "https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg",
+     "url": "https://www.themoviedb.org/movie/801688",
+     "meta": "2024 · 6.4 / 10",
+     "note": "Bhairava, memleketinin baskıcı sınırlarından ve bir ödül avcısının tehlikeli hayatından bıkmış, Kompleks'te daha rahat bir yaşam özlemi çekmektedir. Yeni bir ha"
+    },
+    {
+     "id": "movie:tmdb-1368337",
+     "kind": "movie",
+     "title": "Odyssey",
+     "image": "https://image.tmdb.org/t/p/w500/edC4JzDHJUoQddhbHlBNSU3RHPR.jpg",
+     "url": "https://www.themoviedb.org/movie/1368337",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Homeros'un yaklaşık 2700 yıl önce yazdığı Odysseia destanından uyarlanan Christopher Nolan imzalı film Truva Savaşı kazanıldıktan sonra evlerine dönmek üzere yo"
+    },
+    {
+     "id": "movie:tmdb-1595124",
+     "kind": "movie",
+     "title": "Kardeş Kardeş",
+     "image": "https://image.tmdb.org/t/p/w500/7cTsuRX6GPWe3ZrhelqrNxN6hjj.jpg",
+     "url": "https://www.themoviedb.org/movie/1595124",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Bu eğlenceli ve sıra dışı aksiyon komedisinde Külkedisi'nin \"kötü\" üvey kardeşi Lilith, Peri Anne'nin asasını çalar ve bildiğimiz masalı kökten değiştirir."
+    },
+    {
+     "id": "movie:tmdb-656908",
+     "kind": "movie",
+     "title": "Ramayana: Efsanenin Doğuşu",
+     "image": "https://image.tmdb.org/t/p/w500/gDiqnP9G9lO3ciafEMVEjvzAXKN.jpg",
+     "url": "https://www.themoviedb.org/movie/656908",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Kadim bir destandan uyarlanan yapım, evlilikleri ve hemen ardından gelen sürgünleriyle efsanevi bir serüvene adım atan genç bir prens ile prensesin hikâyesini m"
+    },
+    {
+     "id": "movie:tmdb-1567605",
+     "kind": "movie",
+     "title": "Ebenezer: Bir Noel Şarkısı",
+     "image": "https://image.tmdb.org/t/p/w500/vUEIcdHPXJ0JTkKqaxpoHKmx4mI.jpg",
+     "url": "https://www.themoviedb.org/movie/1567605",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Noel’den ve çevresindeki insanlardan uzak duran cimri Ebenezer Scrooge, Noel arifesinde hayatını değiştirecek doğaüstü ziyaretçilerle karşılaşır. Ölen iş ortağı"
+    },
+    {
+     "id": "movie:tmdb-1514026",
+     "kind": "movie",
+     "title": "Buddy",
+     "image": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+     "url": "https://www.themoviedb.org/movie/1514026",
+     "meta": "2026 · 6.8 / 10",
+     "note": "Hatırladınız mı Buddy'yi? O klasik çocuk televizyon programının, salonunuza neşe ve hayat dersleri taşıyan, canlı turuncu renkli tek boynuzlu atı ve başrol oyun"
+    },
+    {
+     "id": "movie:tmdb-14836",
+     "kind": "movie",
+     "title": "Koralin ve Gizli Dünya",
+     "image": "https://image.tmdb.org/t/p/w500/4jeFXQYytChdZYE9JYO7Un87IlW.jpg",
+     "url": "https://www.themoviedb.org/movie/14836",
+     "meta": "2009 · 8.0 / 10",
+     "note": "Coraline eski bir eve taşındığında canı çok sıkılır ve ailesi tarafından da ihmal edilir. Bir gün dar bir geçide uzanan gizli bir kapı bulur ve geçitten geçmeye"
+    },
+    {
+     "id": "movie:tmdb-1195803",
+     "kind": "movie",
+     "title": "İdeal Koca",
+     "image": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+     "url": "https://www.themoviedb.org/movie/1195803",
+     "meta": "2026 · 7.4 / 10",
+     "note": "Deniz kıyısındaki bir köyün dış çeperinde, kötü kokan, bekâr ve sürekli alay konusu olan bir balıkçı kadın yaşar. Bir gün, dar görüşlü ve boğucu komşularından b"
+    },
+    {
+     "id": "movie:tmdb-1465063",
+     "kind": "movie",
+     "title": "Unutulmuş Ada",
+     "image": "https://image.tmdb.org/t/p/w500/uYYe3C57nsqw3bA84tSR58g4EFx.jpg",
+     "url": "https://www.themoviedb.org/movie/1465063",
+     "meta": "2026 · 8.0 / 10",
+     "note": "Lise mezuniyetlerinin ardından farklı hayatlara savrulmak üzere olan iki kadim dost olan Jo ve Raissa, son gecelerini kutlarken kendilerini gizemli bir portalın"
+    },
+    {
+     "id": "movie:tmdb-791523",
+     "kind": "movie",
+     "title": "Vahşi Orman",
+     "image": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
+     "url": "https://www.themoviedb.org/movie/791523",
+     "meta": "2027 · 8.5 / 10",
+     "note": "Coraline'i yaratan ellerden... Prue McKeel, küçük erkek kardeşi bir karga sürüsü tarafından kaçırıldıktan sonra Oregon'un hemen ötesindeki gizli ve büyülü vahşi"
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "name": "Tarih",
+   "items": [
+    {
+     "id": "movie:tmdb-1131943",
+     "kind": "movie",
+     "title": "Madden",
+     "image": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
+     "url": "https://www.themoviedb.org/movie/1131943",
+     "meta": "2026 · 6.5 / 10",
+     "note": "Amerika'nın sevilen isimlerinden John Madden'ın hayatından esinlenen MADDEN, Al Davis ve Raiders'la kazandığı Super Bowl'dan, Amerikan futbolunun unutulmaz sesi"
+    },
+    {
+     "id": "movie:tmdb-1286656",
+     "kind": "movie",
+     "title": "Ben, Rocky",
+     "image": "https://image.tmdb.org/t/p/w500/sPID7NqwpNdSAEMhazCvidxxeNo.jpg",
+     "url": "https://www.themoviedb.org/movie/1286656",
+     "meta": "2026 · 8.3 / 10",
+     "note": "Oyunculuk sektöründe var olma mücadelesi veren ve fiziksel özellikleri nedeniyle başrol için uygun görülmeyen Sylvester Stallone, kendi kariyerini şekillendirme"
+    },
+    {
+     "id": "movie:tmdb-872585",
+     "kind": "movie",
+     "title": "Oppenheimer",
+     "image": "https://image.tmdb.org/t/p/w500/mmZi0tyPFfbcCqEsJIPxVldCPOL.jpg",
+     "url": "https://www.themoviedb.org/movie/872585",
+     "meta": "2023 · 8.0 / 10",
+     "note": "İkinci Dünya Savaşı sırasında atom bombasının geliştirilmesine liderlik eden Amerikalı fizikçi J. Robert Oppenheimer'ın hikayesi. Manhattan Projesi'nin başına g"
+    },
+    {
+     "id": "movie:tmdb-424",
+     "kind": "movie",
+     "title": "Schindler'ın Listesi",
+     "image": "https://image.tmdb.org/t/p/w500/2mOH8EqumIaepdP94e0cy4Xnyg7.jpg",
+     "url": "https://www.themoviedb.org/movie/424",
+     "meta": "1994 · 8.6 / 10",
+     "note": "Tüm zamanların tarihsel açıdan en önemli filmlerinden biri olan Steven Spielberg'in Schindler'ın Listesi, cesaret ve inanç dersleriyle nesiller boyu ilham verme"
+    },
+    {
+     "id": "movie:tmdb-324786",
+     "kind": "movie",
+     "title": "Savaş Vadisi",
+     "image": "https://image.tmdb.org/t/p/w500/2Sy0anrKQ13GKgX78EXnGGpYUtz.jpg",
+     "url": "https://www.themoviedb.org/movie/324786",
+     "meta": "2016 · 8.2 / 10",
+     "note": "Amerika Birleşik Devletleri'nin 2. Dünya Savaşı'na girmesinin ardından Desmond T. Doss da birçok Amerikalı gibi orduya katılmaya gönüllü olur. Ancak dindar bir "
+    },
+    {
+     "id": "movie:tmdb-857",
+     "kind": "movie",
+     "title": "Er Ryan'ı Kurtarmak",
+     "image": "https://image.tmdb.org/t/p/w500/b9QqS5Hz1CqT16ZxwxJqwzCfIgr.jpg",
+     "url": "https://www.themoviedb.org/movie/857",
+     "meta": "1998 · 8.2 / 10",
+     "note": "Dört çocuk annesi bir kadın, İkinci Dünya Savaşı’nda kaybettiği üç oğlunun ardından fazlasıyla yaralanmıştır. Şimdi tek dileği hayatta kalan tek oğlunun savaşta"
+    },
+    {
+     "id": "movie:tmdb-205596",
+     "kind": "movie",
+     "title": "Enigma",
+     "image": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
+     "url": "https://www.themoviedb.org/movie/205596",
+     "meta": "2015 · 8.0 / 10",
+     "note": "1952 kışında İngiliz yetkililer bir soygun ihbarını araştırmak üzere Alan Turing’in evine girerler. Ahlâksız davranış suçlamasıyla Turing’i gözaltına alırlar. Y"
+    },
+    {
+     "id": "movie:tmdb-1495",
+     "kind": "movie",
+     "title": "Cennet'in Krallığı",
+     "image": "https://image.tmdb.org/t/p/w500/8eZs5SiPj5KDII4DTorXmBcrzE7.jpg",
+     "url": "https://www.themoviedb.org/movie/1495",
+     "meta": "2005 · 7.1 / 10",
+     "note": "Gladyatör'ün yönetmeni Ridley Scott'tan cesaret, tutku ve macera dolu, destansı bir yolculuğa hazır olun. Ortaçağ Kudüs'ünün entrika ve şaşaasının ortasında Orl"
+    },
+    {
+     "id": "movie:tmdb-977942",
+     "kind": "movie",
+     "title": "The Uprising",
+     "image": "https://image.tmdb.org/t/p/w500/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+     "url": "https://www.themoviedb.org/movie/977942",
+     "meta": "2026 · 7.7 / 10",
+     "note": "14. yüzyıl İngiltere'sinde savaş ve veba kasıp kavururken, mütevazı bir köylü isyan başlatır ve adalet ve hayatta kalma için umutsuz bir mücadelede kralın gücün"
+    },
+    {
+     "id": "movie:tmdb-490132",
+     "kind": "movie",
+     "title": "Yeşil Rehber",
+     "image": "https://image.tmdb.org/t/p/w500/vEzS2VOhdpBIANoEYBHRvcaeBXD.jpg",
+     "url": "https://www.themoviedb.org/movie/490132",
+     "meta": "2018 · 8.2 / 10",
+     "note": "1962 yılında geçen, gerçek bir hikâyeden esinlenen film, ırkçılığın Amerika Birleşik Devletleri'nin güneyinde hâlâ çok yaygın olduğu bir dönemde, Afro-Amerikalı"
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "name": "Korku",
+   "items": [
+    {
+     "id": "movie:tmdb-1423191",
+     "kind": "movie",
+     "title": "Ölümcül Deney",
+     "image": "https://image.tmdb.org/t/p/w500/yXs3qdcTxteZnZZH78xvm7Q6iK2.jpg",
+     "url": "https://www.themoviedb.org/movie/1423191",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Uzak bir hastaneye paket götürmekle görevlendirilen talihsiz bir kurye, vardığında kendini aniden bir salgının tam ortasında bulur. Hayatta kalabilmek için muta"
+    },
+    {
+     "id": "movie:tmdb-1400837",
+     "kind": "movie",
+     "title": "Diğer Anne",
+     "image": "https://image.tmdb.org/t/p/w500/a0373Ae8HxzB7vVawkvJe9rn4vN.jpg",
+     "url": "https://www.themoviedb.org/movie/1400837",
+     "meta": "2026 · 6.5 / 10",
+     "note": "Bela adlı küçük bir kız, evinde annesine tekinsiz derecede benzeyen kötücül bir varlıkla bağ kurar. Zamanla tüm aileyi hedef almaya başlayan bu tehditkâr güç, k"
+    },
+    {
+     "id": "movie:tmdb-1507696",
+     "kind": "movie",
+     "title": "Kıyamet Z: Yeni Dünya",
+     "image": "https://image.tmdb.org/t/p/w500/pS2R3DEiucuizVkKP80qzdO97TE.jpg",
+     "url": "https://www.themoviedb.org/movie/1507696",
+     "meta": "2026 · 6.2 / 10",
+     "note": "TSJ virüsü salgınının ardından Kanarya Adaları Avrupa'nın son sığınağı hâline gelmiştir. Erzak bulmak için Madrid'e giden bir ekibe Roberto da şüpheli amaçlarla"
+    },
+    {
+     "id": "movie:tmdb-1244523",
+     "kind": "movie",
+     "title": "Amazonda Dehşet",
+     "image": "https://image.tmdb.org/t/p/w500/tENVMxKvOkslv8kagVNdIEQ13RT.jpg",
+     "url": "https://www.themoviedb.org/movie/1244523",
+     "meta": "2026 · 6.0 / 10",
+     "note": "Amazon'un derinliklerinde bir tıbbi görev büyük bir tehlikeye dönüşür; kadim dev avcı Boiúna uyanır ve bölgesini tekrar ele geçirir. Doğanın katı kurallarının g"
+    },
+    {
+     "id": "movie:tmdb-1813355",
+     "kind": "movie",
+     "title": "A Story of Derry",
+     "image": "https://image.tmdb.org/t/p/w500/4PtzGcegF5Po1NmDAW9IklyvAUh.jpg",
+     "url": "https://www.themoviedb.org/movie/1813355",
+     "meta": "2026 · 6.6 / 10",
+     "note": "Pennywise'dan yüzlerce yıl önce, üç genç kız kimseye haber vermeden Batı Ormanı'na gider ve orada korkunç bir kadim ruhla karşılaşırlar."
+    },
+    {
+     "id": "movie:tmdb-1381071",
+     "kind": "movie",
+     "title": "Godzilla Minus Zero",
+     "image": "https://image.tmdb.org/t/p/w500/zpcoFlZwyLnBt7bb5wmvGDCdg06.jpg",
+     "url": "https://www.themoviedb.org/movie/1381071",
+     "meta": "2026 · 7.7 / 10",
+     "note": "1949 yılı... Godzilla Minus One’ın kaotik olaylarından iki yıl sonra, Shikishima ailesi için yepyeni bir yıkım kapıda."
+    },
+    {
+     "id": "movie:tmdb-1514026",
+     "kind": "movie",
+     "title": "Buddy",
+     "image": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+     "url": "https://www.themoviedb.org/movie/1514026",
+     "meta": "2026 · 6.8 / 10",
+     "note": "Hatırladınız mı Buddy'yi? O klasik çocuk televizyon programının, salonunuza neşe ve hayat dersleri taşıyan, canlı turuncu renkli tek boynuzlu atı ve başrol oyun"
+    },
+    {
+     "id": "movie:tmdb-1339713",
+     "kind": "movie",
+     "title": "Saplantı",
+     "image": "https://image.tmdb.org/t/p/w500/nriiXc6VbD6qWBj7INOElJbX8mp.jpg",
+     "url": "https://www.themoviedb.org/movie/1339713",
+     "meta": "2026 · 8.2 / 10",
+     "note": "​Hoşlandığı kızın kalbini kazanmak için gizemli \"Tek Dilek Söğüdü\"nü (One Wish Willow) kıran umutsuz bir romantik, tam da dilediği şeye kavuşur; ancak çok geçme"
+    },
+    {
+     "id": "movie:tmdb-1375646",
+     "kind": "movie",
+     "title": "Koloni",
+     "image": "https://image.tmdb.org/t/p/w500/fbUEOKlP2qWSANg63mOhXwxorlN.jpg",
+     "url": "https://www.themoviedb.org/movie/1375646",
+     "meta": "2026 · 8.2 / 10",
+     "note": "Biyoteknoloji profesörü Se-jeong, bir biyoteknoloji konferansına katılır; ancak hızla mutasyona uğrayan bir virüsün ortaya çıkmasıyla etkinlik kısa sürede felak"
+    },
+    {
+     "id": "movie:tmdb-1291595",
+     "kind": "movie",
+     "title": "Ruhlar Bölgesi: Aramızdalar",
+     "image": "https://image.tmdb.org/t/p/w500/iq3bhJULAxVsgW3WtVFguwbsXrZ.jpg",
+     "url": "https://www.themoviedb.org/movie/1291595",
+     "meta": "2026 · 7.6 / 10",
+     "note": "Çocukluğunun geçtiği evde kızını büyüten genç bir anne olan Gemma, \"Öte\" olarak bilinen karanlık boyuta geçebildiğini fark eder. Ancak bu tekinsiz alemdeki varl"
+    }
+   ]
+  },
+  {
+   "id": "10402",
+   "name": "Müzik",
+   "items": [
+    {
+     "id": "movie:tmdb-27",
+     "kind": "movie",
+     "title": "9 Songs",
+     "image": "https://image.tmdb.org/t/p/w500/91O7z0vo7MiNWd5xD2BoivwbQsb.jpg",
+     "url": "https://www.themoviedb.org/movie/27",
+     "meta": "2004 · 5.5 / 10",
+     "note": "Biri İngiliz biri Amerikalı iki sevgilinin 1 sene boyunca yaşadıkları müzik ve cinsellik ile dolu yoğun ilişkileri."
+    },
+    {
+     "id": "movie:tmdb-354912",
+     "kind": "movie",
+     "title": "Coco",
+     "image": "https://image.tmdb.org/t/p/w500/f9Ro5x36UTDdHFrhnHeXqlhBVRF.jpg",
+     "url": "https://www.themoviedb.org/movie/354912",
+     "meta": "2018 · 8.2 / 10",
+     "note": "Miguel, ailesinin nesiller boyu süren yasağına rağmen idolü Ernesto de la Cruz gibi başarılı bir müzisyen olmanın hayalini kuruyordur. Çaresizce yeteneğini kanı"
+    },
+    {
+     "id": "movie:tmdb-244786",
+     "kind": "movie",
+     "title": "Whiplash",
+     "image": "https://image.tmdb.org/t/p/w500/q3Ev5vIC3fklycV9kfpVIdbRe14.jpg",
+     "url": "https://www.themoviedb.org/movie/244786",
+     "meta": "2014 · 8.4 / 10",
+     "note": "Bir tarafta öğrencilerinin korkulu rüyası, jazz öğretmeni Terrence Fletcher, diğer tarafta \\\"en iyi\\\" olmayı kafaya koymuş, aşırı hırslı genç öğrencisi Andrew N"
+    },
+    {
+     "id": "movie:tmdb-936075",
+     "kind": "movie",
+     "title": "Michael",
+     "image": "https://image.tmdb.org/t/p/w500/Awq135QNhuvZ99VyNZgSlnKxFW2.jpg",
+     "url": "https://www.themoviedb.org/movie/936075",
+     "meta": "2026 · 8.6 / 10",
+     "note": "Michael Jackson'a gerçek hayattaki yeğeni Jaafar Jackson'ın hayat verdiği filmde, onu tüm zamanların en büyük şovmeni haline getiren en ikonik performansları da"
+    },
+    {
+     "id": "movie:tmdb-803796",
+     "kind": "movie",
+     "title": "K-Pop: İblis Avcıları",
+     "image": "https://image.tmdb.org/t/p/w500/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+     "url": "https://www.themoviedb.org/movie/803796",
+     "meta": "2025 · 8.0 / 10",
+     "note": "K-pop süperstarları Rumi, Mira ve Zoey, stadyumlarda kapalı gişe konserler vermedikleri zamanlarda hayranlarını doğaüstü bir tehditten korumak için gizli güçler"
+    },
+    {
+     "id": "movie:tmdb-508442",
+     "kind": "movie",
+     "title": "Soul",
+     "image": "https://image.tmdb.org/t/p/w500/nEnPHSZlr0zOqW1LVyFrkvbyhpr.jpg",
+     "url": "https://www.themoviedb.org/movie/508442",
+     "meta": "2020 · 8.1 / 10",
+     "note": "Küçük bir yanlış adım, şehrin en iyi caz kulübünde çalmak üzere hayatının şansını yakalayan ortaokul müzik öğretmeni Joe Gardner'nı New York sokaklarından, yeni"
+    },
+    {
+     "id": "movie:tmdb-335797",
+     "kind": "movie",
+     "title": "Şarkını Söyle",
+     "image": "https://image.tmdb.org/t/p/w500/c5sJ6tHCWO3KeRl9Ht48WtKev8U.jpg",
+     "url": "https://www.themoviedb.org/movie/335797",
+     "meta": "2016 · 7.1 / 10",
+     "note": "Bizimkine benzeyen ama tamamen hayvanların yaşadığı bir dünyada geçen Şarkını Söyle filminde, Buster Moon zor dönemler geçiren, bir zamanlar çok başarılı olan b"
+    },
+    {
+     "id": "movie:tmdb-1340206",
+     "kind": "movie",
+     "title": "Tuner",
+     "image": "https://image.tmdb.org/t/p/w500/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
+     "url": "https://www.themoviedb.org/movie/1340206",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Piyanoları akort etme konusunda titiz bir yeteneğe sahip olan yetenekli bir piyano akortçusunun, beklenmedik bir şekilde kasa hırsızlığı konusunda da yetenekli "
+    },
+    {
+     "id": "movie:tmdb-776503",
+     "kind": "movie",
+     "title": "CODA",
+     "image": "https://image.tmdb.org/t/p/w500/BzVjmm8l23rPsijLiNLUzuQtyd.jpg",
+     "url": "https://www.themoviedb.org/movie/776503",
+     "meta": "2021 · 7.9 / 10",
+     "note": "En İyi Film ve En İyi Yardımcı Erkek Oyuncu dâhil üç Oscar ödüllü CODA'da sağır yetişkinlerin çocuğu olan Ruby'nin hikâyesi anlatılıyor. Yaşadığı evde kulağı du"
+    },
+    {
+     "id": "movie:tmdb-332562",
+     "kind": "movie",
+     "title": "Bir Yıldız Doğuyor",
+     "image": "https://image.tmdb.org/t/p/w500/6zfP2NnRpYHZYPxfMdNskyBclzx.jpg",
+     "url": "https://www.themoviedb.org/movie/332562",
+     "meta": "2018 · 7.5 / 10",
+     "note": "Jackson Maine, son zamanlarında kariyerinde düşüş gösteren yetenekli bir müzisyendir. Bir gün, henüz keşfedilmemiş genç bir yetenek olan Ally ile tanışır ve iki"
+    }
+   ]
+  },
+  {
+   "id": "9648",
+   "name": "Gizem",
+   "items": [
+    {
+     "id": "movie:tmdb-1058424",
+     "kind": "movie",
+     "title": "Umut",
+     "image": "https://image.tmdb.org/t/p/w500/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
+     "url": "https://www.themoviedb.org/movie/1058424",
+     "meta": "2026 · 6.9 / 10",
+     "note": "Güney Kore’nin gözden ırak sahil kasabası Hope Harbor’da, polis şefi Bum-seok ve memur Sung-ae, kasabayı kaosa sürükleyen gizemli bir yaratığı bulmakla görevlen"
+    },
+    {
+     "id": "movie:tmdb-1813355",
+     "kind": "movie",
+     "title": "A Story of Derry",
+     "image": "https://image.tmdb.org/t/p/w500/4PtzGcegF5Po1NmDAW9IklyvAUh.jpg",
+     "url": "https://www.themoviedb.org/movie/1813355",
+     "meta": "2026 · 6.6 / 10",
+     "note": "Pennywise'dan yüzlerce yıl önce, üç genç kız kimseye haber vermeden Batı Ormanı'na gider ve orada korkunç bir kadim ruhla karşılaşırlar."
+    },
+    {
+     "id": "movie:tmdb-509467",
+     "kind": "movie",
+     "title": "사라진 밤",
+     "image": "https://image.tmdb.org/t/p/w500/umtfX1P3bzgl9fOSQL64DRY6juT.jpg",
+     "url": "https://www.themoviedb.org/movie/509467",
+     "meta": "2018 · 7.4 / 10"
+    },
+    {
+     "id": "movie:tmdb-1283515",
+     "kind": "movie",
+     "title": "Verity: Gerçeğin Diğer Kıyısı",
+     "image": "https://image.tmdb.org/t/p/w500/yKLBWj6KXJNgRQtzZ9aCgSxyYEC.jpg",
+     "url": "https://www.themoviedb.org/movie/1283515",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Jeremy Crawford, geçirdiği bir kaza sonucu romanlarını tamamlayamadan vefat eden çok satan yazarı olan eşi Verity'nin romanlarını tamamlaması amacıyla Lowen Ash"
+    },
+    {
+     "id": "movie:tmdb-1101383",
+     "kind": "movie",
+     "title": "Oak Caddesi'nin Sonu",
+     "image": "https://image.tmdb.org/t/p/w500/fqrxqGU4UQqYLumLLx7W0ewGl77.jpg",
+     "url": "https://www.themoviedb.org/movie/1101383",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Gizemli bir kozmik olay Oak Caddesi’ni sıradan banliyö yaşamından koparıp tamamen bilinmeyen bir yere taşıdıktan sonra Platt ailesi, hayatta kalabilmelerinin te"
+    },
+    {
+     "id": "movie:tmdb-1543469",
+     "kind": "movie",
+     "title": "Heartland",
+     "image": "https://image.tmdb.org/t/p/w500/zhxlzxBlO1sWB1rPn7RmAoeQ2na.jpg",
+     "url": "https://www.themoviedb.org/movie/1543469",
+     "meta": "2026 · 6.2 / 10",
+     "note": "Cesur bir genç kız olan Amy, büyükbabasıyla at çiftliklerini kaybetme tehlikesiyle karşılaşınca annesinin ani ölümünü geride bırakmak zorunda kalır."
+    },
+    {
+     "id": "movie:tmdb-432836",
+     "kind": "movie",
+     "title": "Bir Katilin Anıları",
+     "image": "https://image.tmdb.org/t/p/w500/eyP0BWOCtD1RPwD92Agr9jxz8fX.jpg",
+     "url": "https://www.themoviedb.org/movie/432836",
+     "meta": "2017 · 7.4 / 10",
+     "note": "Byeong-Soo eski bir seri katildir. Şimdi ise Alzheimer hastasıdır. Kurbanlarından birinden aldığı Eun-Hee'yi kızı gibi büyütmüştür. Bir gün, Eun-Hee'nin erkek a"
+    },
+    {
+     "id": "movie:tmdb-1083381",
+     "kind": "movie",
+     "title": "Backrooms",
+     "image": "https://image.tmdb.org/t/p/w500/pR7HAA2STN78NN7egkrp9DsKI7c.jpg",
+     "url": "https://www.themoviedb.org/movie/1083381",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Bir mobilya mağazasının alt katının duvarında tuhaf bir geçit bulunur."
+    },
+    {
+     "id": "movie:tmdb-1232569",
+     "kind": "movie",
+     "title": "Pinokyo: Kanlı Masal",
+     "image": "https://image.tmdb.org/t/p/w500/mIiKQtiyM6pMb9COlUzmL3Pi7oT.jpg",
+     "url": "https://www.themoviedb.org/movie/1232569",
+     "meta": "2026 · 6.3 / 10",
+     "note": "Genç bir çocuk olan James, büyükbabası Geppetto'yu ziyarete gider. Geppetto, ona en iyi arkadaşı olması için görünüşte sihirli bir tahta kukla olan Pinokyo'yu t"
+    },
+    {
+     "id": "movie:tmdb-414906",
+     "kind": "movie",
+     "title": "The Batman",
+     "image": "https://image.tmdb.org/t/p/w500/3B19RaHTSpyNEcjWtsAPqgJsQ0h.jpg",
+     "url": "https://www.themoviedb.org/movie/414906",
+     "meta": "2022 · 7.7 / 10",
+     "note": "Suçla mücadelesinin ikinci yılında Batman, Gotham Şehri'nde kendi ailesiyle de bağlantılı olan yozlaşmış bir ağı araştırırken, şehri hedef alan sadist katil Rid"
+    }
+   ]
+  },
+  {
+   "id": "10749",
+   "name": "Romantik",
+   "items": [
+    {
+     "id": "movie:tmdb-1551025",
+     "kind": "movie",
+     "title": "Çok Özel Bir Koruma",
+     "image": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+     "url": "https://www.themoviedb.org/movie/1551025",
+     "meta": "2026 · 6.9 / 10",
+     "note": "Profesyonel bir koruma görevlisi, koruduğu ünlü oyuncuyla Montana'daki bir çiftliğe gider. Ancak Noel için sevgili rolü yapan çiftin arasında gerçek bir aşk fil"
+    },
+    {
+     "id": "movie:tmdb-27",
+     "kind": "movie",
+     "title": "9 Songs",
+     "image": "https://image.tmdb.org/t/p/w500/91O7z0vo7MiNWd5xD2BoivwbQsb.jpg",
+     "url": "https://www.themoviedb.org/movie/27",
+     "meta": "2004 · 5.5 / 10",
+     "note": "Biri İngiliz biri Amerikalı iki sevgilinin 1 sene boyunca yaşadıkları müzik ve cinsellik ile dolu yoğun ilişkileri."
+    },
+    {
+     "id": "movie:tmdb-1596275",
+     "kind": "movie",
+     "title": "Sürüş - Yalancılar",
+     "image": "https://image.tmdb.org/t/p/w500/wkIk82YOiFSay7qdFjihSE99CLy.jpg",
+     "url": "https://www.themoviedb.org/movie/1596275",
+     "meta": "2026 · 7.6 / 10",
+     "note": "Genç bir yarış arabası teknisyeni, yarış dünyasının skandallarıyla ünlü pilotuyla nişanlı numarası yapar. Görünürde amaç pilotun itibarını kurtarmaktır ama aslı"
+    },
+    {
+     "id": "movie:tmdb-26817",
+     "kind": "movie",
+     "title": "Sex and the Single Girl",
+     "image": "https://image.tmdb.org/t/p/w500/eGGj9foBY4jonHskGq7ysgf2ESR.jpg",
+     "url": "https://www.themoviedb.org/movie/26817",
+     "meta": "1964 · 6.5 / 10"
+    },
+    {
+     "id": "movie:tmdb-1195803",
+     "kind": "movie",
+     "title": "İdeal Koca",
+     "image": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+     "url": "https://www.themoviedb.org/movie/1195803",
+     "meta": "2026 · 7.4 / 10",
+     "note": "Deniz kıyısındaki bir köyün dış çeperinde, kötü kokan, bekâr ve sürekli alay konusu olan bir balıkçı kadın yaşar. Bir gün, dar görüşlü ve boğucu komşularından b"
+    },
+    {
+     "id": "movie:tmdb-597",
+     "kind": "movie",
+     "title": "Titanik",
+     "image": "https://image.tmdb.org/t/p/w500/hEntfzxB8yUXIxqZY929dELjLsi.jpg",
+     "url": "https://www.themoviedb.org/movie/597",
+     "meta": "1998 · 7.9 / 10",
+     "note": "Teknolojinin son sürat ilerlediği bir dönemde, insanlar üstesinden gelemeyecekleri hiçbir sorun olamayacağına inanmaya başlamışlardır. 'Titanic' adlı dev transa"
+    },
+    {
+     "id": "movie:tmdb-1218925",
+     "kind": "movie",
+     "title": "Chainsaw Man - The Movie: Reze Arc",
+     "image": "https://image.tmdb.org/t/p/w500/dUbacBfy6M0EBLPssQhJFhtHxIU.jpg",
+     "url": "https://www.themoviedb.org/movie/1218925",
+     "meta": "2025 · 8.5 / 10",
+     "note": "İblisler, avcılar ve gizli düşmanlar arasında süren acımasız bir savaşta, Reze adında gizemli bir kız Denji'nin dünyasına adım atar ve Denji, hayatta kalmanın k"
+    },
+    {
+     "id": "movie:tmdb-1523145",
+     "kind": "movie",
+     "title": "Kalbin Kırılacak",
+     "image": "https://image.tmdb.org/t/p/w500/iGpMm603GUKH2SiXB2S5m4sZ17t.jpg",
+     "url": "https://www.themoviedb.org/movie/1523145",
+     "meta": "2026 · 7.8 / 10",
+     "note": "Lise öğrencisi Polina, yeni okulunda maruz kaldığı zorbalıktan kurtulur ve baş zorbası Bars ile bir anlaşma yapar: Bars, onun erkek arkadaşıymış gibi davranıp o"
+    },
+    {
+     "id": "movie:tmdb-13",
+     "kind": "movie",
+     "title": "Forrest Gump",
+     "image": "https://image.tmdb.org/t/p/w500/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
+     "url": "https://www.themoviedb.org/movie/13",
+     "meta": "1994 · 8.5 / 10",
+     "note": "Forrest Gump, düşük IQ’su olmasına rağmen, Amerikan tarihinin en önemli olaylarının tam ortasında yer alan biridir. Alabama'da büyüyen Forrest, koşma yeteneği s"
+    },
+    {
+     "id": "movie:tmdb-1503762",
+     "kind": "movie",
+     "title": "Aşk ve Yaşam",
+     "image": "https://image.tmdb.org/t/p/w500/iJliiWkqzr8sFJ7FHyJI5SeZXcr.jpg",
+     "url": "https://www.themoviedb.org/movie/1503762",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Babalarının ölümünün ardından aile servetinden mahrum kalan Elinor ve Marianne Dashwood, anneleri ve küçük kız kardeşleriyle birlikte daha mütevazı bir yaşam sü"
+    }
+   ]
+  },
+  {
+   "id": "878",
+   "name": "Bilim-Kurgu",
+   "items": [
+    {
+     "id": "movie:tmdb-1726",
+     "kind": "movie",
+     "title": "Demir Adam",
+     "image": "https://image.tmdb.org/t/p/w500/9qjZeIZ52CWgmZuEuVuBPaypChy.jpg",
+     "url": "https://www.themoviedb.org/movie/1726",
+     "meta": "2008 · 7.7 / 10",
+     "note": "Milyarder bir sanayici ve dâhi bir mucit olan Tony Stark kaçırılır ve yıkıcı bir silah inşa etmeye zorlanır. Zekâsını ve yaratıcılığını kullanarak bunun yerine "
+    },
+    {
+     "id": "movie:tmdb-1300968",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Hasatta Gündoğumu",
+     "image": "https://image.tmdb.org/t/p/w500/6C1nypUUUUUdX4XTCG2LdZXXo4Y.jpg",
+     "url": "https://www.themoviedb.org/movie/1300968",
+     "meta": "2026 · 7.8 / 10",
+     "note": "Açlık Oyunları olaylarından 24 yıl öncesine, 50. Açlık Oyunları ya da diğer adıyla İkinci Çeyrek Kıyamet'in kura çekimi için Panem dünyasına geri dönün."
+    },
+    {
+     "id": "movie:tmdb-969681",
+     "kind": "movie",
+     "title": "Örümcek-Adam: Yepyeni Bir Gün",
+     "image": "https://image.tmdb.org/t/p/w500/9r8kzuHQ4m9vvoyJO3fVH5nj8yC.jpg",
+     "url": "https://www.themoviedb.org/movie/969681",
+     "meta": "2026 · 8.5 / 10",
+     "note": "Artık onu hatırlamayan bir dünyada tam zamanlı olarak Örümcek Adamlık yapmak ve eski arkadaşlarının hayatlarına o olmadan devam ettiklerini görmenin yarattığı b"
+    },
+    {
+     "id": "movie:tmdb-1423191",
+     "kind": "movie",
+     "title": "Ölümcül Deney",
+     "image": "https://image.tmdb.org/t/p/w500/yXs3qdcTxteZnZZH78xvm7Q6iK2.jpg",
+     "url": "https://www.themoviedb.org/movie/1423191",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Uzak bir hastaneye paket götürmekle görevlendirilen talihsiz bir kurye, vardığında kendini aniden bir salgının tam ortasında bulur. Hayatta kalabilmek için muta"
+    },
+    {
+     "id": "movie:tmdb-1058424",
+     "kind": "movie",
+     "title": "Umut",
+     "image": "https://image.tmdb.org/t/p/w500/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg",
+     "url": "https://www.themoviedb.org/movie/1058424",
+     "meta": "2026 · 6.9 / 10",
+     "note": "Güney Kore’nin gözden ırak sahil kasabası Hope Harbor’da, polis şefi Bum-seok ve memur Sung-ae, kasabayı kaosa sürükleyen gizemli bir yaratığı bulmakla görevlen"
+    },
+    {
+     "id": "movie:tmdb-801688",
+     "kind": "movie",
+     "title": "Kalki 2898-AD",
+     "image": "https://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg",
+     "url": "https://www.themoviedb.org/movie/801688",
+     "meta": "2024 · 6.4 / 10",
+     "note": "Bhairava, memleketinin baskıcı sınırlarından ve bir ödül avcısının tehlikeli hayatından bıkmış, Kompleks'te daha rahat bir yaşam özlemi çekmektedir. Yeni bir ha"
+    },
+    {
+     "id": "movie:tmdb-1381071",
+     "kind": "movie",
+     "title": "Godzilla Minus Zero",
+     "image": "https://image.tmdb.org/t/p/w500/zpcoFlZwyLnBt7bb5wmvGDCdg06.jpg",
+     "url": "https://www.themoviedb.org/movie/1381071",
+     "meta": "2026 · 7.7 / 10",
+     "note": "1949 yılı... Godzilla Minus One’ın kaotik olaylarından iki yıl sonra, Shikishima ailesi için yepyeni bir yıkım kapıda."
+    },
+    {
+     "id": "movie:tmdb-101299",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Ateşi Yakalamak",
+     "image": "https://image.tmdb.org/t/p/w500/5BJDcOEX4WgSTWlxBb4K2t4lf41.jpg",
+     "url": "https://www.themoviedb.org/movie/101299",
+     "meta": "2013 · 7.4 / 10",
+     "note": "Ateşi Yakalamak, Katniss Everdeen'in diğer haraç Peete Mellark'la 74. Açlık Oyunları'nı kazandıktan sonra sağ salim evine geri dönüşünden başlıyor. Kazanmak iki"
+    },
+    {
+     "id": "movie:tmdb-695721",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Kuşların ve Yılanların Şarkısı",
+     "image": "https://image.tmdb.org/t/p/w500/fpCw9qWv7EWkpLcNoSBxlIin8ZG.jpg",
+     "url": "https://www.themoviedb.org/movie/695721",
+     "meta": "2023 · 7.0 / 10",
+     "note": "Capitol'de gözden düşen ve solmakta olan bir soyun son umudu olan Coriolanus Snow, 10. Açlık Oyunları için mentor olarak seçildiğinde hayatı değişir. Snow, yoks"
+    },
+    {
+     "id": "movie:tmdb-131631",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Alaycı Kuş Bölüm 1",
+     "image": "https://image.tmdb.org/t/p/w500/7aTwGE1JyUIuXIoxVJYf5pVzX2A.jpg",
+     "url": "https://www.themoviedb.org/movie/131631",
+     "meta": "2014 · 6.8 / 10",
+     "note": "Katniss Everdeen, oyunları sonsuza dek tarihe gömdükten sonra 13. Bölge'ye çekilmiştir. Başkan Coin'in yönetici vasıfları ve güvendiği arkadaşlarının tavsiyeler"
+    }
+   ]
+  },
+  {
+   "id": "10770",
+   "name": "TV film",
+   "items": [
+    {
+     "id": "movie:tmdb-1506560",
+     "kind": "movie",
+     "title": "Clash of the Thundermans",
+     "image": "https://image.tmdb.org/t/p/w500/16oqRrWVzQm6qdGfBxvziZ2UiMT.jpg",
+     "url": "https://www.themoviedb.org/movie/1506560",
+     "meta": "2026 · 6.6 / 10"
+    },
+    {
+     "id": "movie:tmdb-1318621",
+     "kind": "movie",
+     "title": "Yeni Nesil: Kötülerin Harikalar Diyarı",
+     "image": "https://image.tmdb.org/t/p/w500/9UsGxtXU6erxVqQHs4vhTSc8fqN.jpg",
+     "url": "https://www.themoviedb.org/movie/1318621",
+     "meta": "2026 · 7.5 / 10",
+     "note": "Bir kötü karakter Kupa Kraliçesi'ni tuzağa düşürdüğünde, Kızıl ve Chloe; onu ve tüm Harikalar Diyarı'nı kurtarmak için beklenmedik müttefiklerden oluşan bir eki"
+    },
+    {
+     "id": "movie:tmdb-12536",
+     "kind": "movie",
+     "title": "Evde Tek Başına 4",
+     "image": "https://image.tmdb.org/t/p/w500/8koEfsOsg8Me80gQnEM9RxinS7V.jpg",
+     "url": "https://www.themoviedb.org/movie/12536",
+     "meta": "2002 · 4.5 / 10",
+     "note": "Kevin McCallister'ın ailesi ayrılmıştır. Annesiyle yaşayan Kevin, Noel'i babasının zengin kız arkadaşı Natalie'nin malikanesinde geçirmeye karar vermiştir. Aynı"
+    },
+    {
+     "id": "movie:tmdb-801335",
+     "kind": "movie",
+     "title": "Bodrumdaki Kız",
+     "image": "https://image.tmdb.org/t/p/w500/tPP9n6r5QrIKPnshnJqE7klptj2.jpg",
+     "url": "https://www.themoviedb.org/movie/801335",
+     "meta": "2021 · 7.6 / 10",
+     "note": "Sara için 18. yaş günü demek özgürlük ve hep hayalini kurduğu ülke turu demektir. Kız kardeşi ve annesi ile odasında bu hayaliyle ilgili sohbet eden Sara’nın he"
+    },
+    {
+     "id": "movie:tmdb-839",
+     "kind": "movie",
+     "title": "Düello",
+     "image": "https://image.tmdb.org/t/p/w500/bfzM5LVzINHBP6XuJBxYeQ6pZ7y.jpg",
+     "url": "https://www.themoviedb.org/movie/839",
+     "meta": "1971 · 7.4 / 10",
+     "note": "Richard Mateson'un aynı adlı hikayesinden aynı yıl uyarlanan film, otoyol boyunca bir tır tarafından taciz edilen orta yaşlı iş adamının (Dennis Waever'in canla"
+    },
+    {
+     "id": "movie:tmdb-79218",
+     "kind": "movie",
+     "title": "Buz Devri: Yeni Yıl Macerası",
+     "image": "https://image.tmdb.org/t/p/w500/mebPcv4F04VXEvgY1LLhE5ZBBCu.jpg",
+     "url": "https://www.themoviedb.org/movie/79218",
+     "meta": "2011 · 6.5 / 10",
+     "note": "Haberi duydunuz mu? En sevdiğiniz kahramanlar tüm aileniz için yepyeni bir macera ile geri dönüyor! Sid, kazayla Manny’nin yadigar Yeniyıl taşını kırar ve Noel "
+    },
+    {
+     "id": "movie:tmdb-115290",
+     "kind": "movie",
+     "title": "Mavi Göl: Uyanış",
+     "image": "https://image.tmdb.org/t/p/w500/qOerFW0YQ6WetqWD8DSSSnCXjGV.jpg",
+     "url": "https://www.themoviedb.org/movie/115290",
+     "meta": "2012 · 6.4 / 10",
+     "note": "İlki 1980 yapımı olan ve Pasifik'de meydana gelen bir gemi kazası sonrası ıssız bir adada büyümek zorunda kalan çocukların hikayesinin anlatıldığı Mavi Göl seri"
+    },
+    {
+     "id": "movie:tmdb-25405",
+     "kind": "movie",
+     "title": "Taking Chance",
+     "image": "https://image.tmdb.org/t/p/w500/2gPpwshMJHiaIcbL2K234zPGvK1.jpg",
+     "url": "https://www.themoviedb.org/movie/25405",
+     "meta": "2009 · 7.2 / 10"
+    },
+    {
+     "id": "movie:tmdb-1149167",
+     "kind": "movie",
+     "title": "High Rollers",
+     "image": "https://image.tmdb.org/t/p/w500/hHowAaChDjwueySmwVbsjHmpWa.jpg",
+     "url": "https://www.themoviedb.org/movie/1149167",
+     "meta": "2025 · 6.6 / 10",
+     "note": "Usta hırsız Mason suçlunun hayalini yaşıyor; çalıntı para denizinde yüzerken mürettebatı ve hayatının aşkı Decker ile adadan adaya seyahat ediyor. Ancak düşmanı"
+    },
+    {
+     "id": "movie:tmdb-877703",
+     "kind": "movie",
+     "title": "Teen Wolf: The Movie",
+     "image": "https://image.tmdb.org/t/p/w500/wAkpPm3wcHRqZl8XjUI3Y2chYq2.jpg",
+     "url": "https://www.themoviedb.org/movie/877703",
+     "meta": "2023 · 7.4 / 10",
+     "note": "Teen Wolf: The Movie’de ise sakin geçen yılların ardından Beacon Hills’te, dolunayla birlikte yeni bir kötülük yükselir. Bu kötülükle savaşmak için Banshees, We"
+    }
+   ]
+  },
+  {
+   "id": "53",
+   "name": "Gerilim",
+   "items": [
+    {
+     "id": "movie:tmdb-1263337",
+     "kind": "movie",
+     "title": "Vahşinin Kalbi",
+     "image": "https://image.tmdb.org/t/p/w500/iA37n5BKKNaEKUpqfmvI352fKJn.jpg",
+     "url": "https://www.themoviedb.org/movie/1263337",
+     "meta": "2026 · 7.9 / 10",
+     "note": "Özel Kuvvetler subayı James Belmont, içinde bulunduğu uçağın Alaska'nın zorlu coğrafyasına düşmesi sonucu hayatta kalmayı başarır. Yanında sadece eğitimli savaş"
+    },
+    {
+     "id": "movie:tmdb-1507696",
+     "kind": "movie",
+     "title": "Kıyamet Z: Yeni Dünya",
+     "image": "https://image.tmdb.org/t/p/w500/pS2R3DEiucuizVkKP80qzdO97TE.jpg",
+     "url": "https://www.themoviedb.org/movie/1507696",
+     "meta": "2026 · 6.2 / 10",
+     "note": "TSJ virüsü salgınının ardından Kanarya Adaları Avrupa'nın son sığınağı hâline gelmiştir. Erzak bulmak için Madrid'e giden bir ekibe Roberto da şüpheli amaçlarla"
+    },
+    {
+     "id": "movie:tmdb-1616687",
+     "kind": "movie",
+     "title": "Asla Teslim Olma",
+     "image": "https://image.tmdb.org/t/p/w500/9wypfSz5OyWnew6mt5hviGw6WhM.jpg",
+     "url": "https://www.themoviedb.org/movie/1616687",
+     "meta": "2026 · 7.0 / 10",
+     "note": "Gözlerden ırak evi tehlikeli bir çetenin baskınına uğrayan vicdan azabı içindeki eski bir asker ile onun iyi tanımadığı torunlarının hayatta kalmak için birlik "
+    },
+    {
+     "id": "movie:tmdb-1244523",
+     "kind": "movie",
+     "title": "Amazonda Dehşet",
+     "image": "https://image.tmdb.org/t/p/w500/tENVMxKvOkslv8kagVNdIEQ13RT.jpg",
+     "url": "https://www.themoviedb.org/movie/1244523",
+     "meta": "2026 · 6.0 / 10",
+     "note": "Amazon'un derinliklerinde bir tıbbi görev büyük bir tehlikeye dönüşür; kadim dev avcı Boiúna uyanır ve bölgesini tekrar ele geçirir. Doğanın katı kurallarının g"
+    },
+    {
+     "id": "movie:tmdb-1294189",
+     "kind": "movie",
+     "title": "Firavun Faresi",
+     "image": "https://image.tmdb.org/t/p/w500/l80bthReoL08m8oU74R4ZMxgnGZ.jpg",
+     "url": "https://www.themoviedb.org/movie/1294189",
+     "meta": "2026 · 6.6 / 10",
+     "note": "Kaybedecek hiçbir şeyi olmayan, haksız yere suçlanan bir savaş kahramanı, eski Özel Kuvvetler taburundaki askerlerin yardımıyla, güvenli bir şekilde kaçmasını d"
+    },
+    {
+     "id": "movie:tmdb-1101412",
+     "kind": "movie",
+     "title": "Fall 2: Ölümcül Tırmanış",
+     "image": "https://image.tmdb.org/t/p/w500/zP0U2J7eyrbRhgmDWa0xcWTqvqR.jpg",
+     "url": "https://www.themoviedb.org/movie/1101412",
+     "meta": "2026 · 7.2 / 10",
+     "note": "Tayland'ın sarp Kwan Dağı'nda tırmanırken yüzlerce metre yükseklikte mahsur kalan iki dağcı, baş döndürücü bir boşluğun ortasında ölüm kalım savaşı verir. Çares"
+    },
+    {
+     "id": "movie:tmdb-1228834",
+     "kind": "movie",
+     "title": "The Fix",
+     "image": "https://image.tmdb.org/t/p/w500/jlP8XDjZN89GrpM3je5Uf8Grqx8.jpg",
+     "url": "https://www.themoviedb.org/movie/1228834",
+     "meta": "2026 · 5.8 / 10"
+    },
+    {
+     "id": "movie:tmdb-509467",
+     "kind": "movie",
+     "title": "사라진 밤",
+     "image": "https://image.tmdb.org/t/p/w500/umtfX1P3bzgl9fOSQL64DRY6juT.jpg",
+     "url": "https://www.themoviedb.org/movie/509467",
+     "meta": "2018 · 7.4 / 10"
+    },
+    {
+     "id": "movie:tmdb-1288445",
+     "kind": "movie",
+     "title": "İsyan",
+     "image": "https://image.tmdb.org/t/p/w500/2iUs37uU9kKMxme1S08JlJ7RqJw.jpg",
+     "url": "https://www.themoviedb.org/movie/1288445",
+     "meta": "2026 · 7.6 / 10",
+     "note": "Ünlü iş adamı Tibu'nun ölümünden sorumlu tutulduktan sonra kaçak duruma düşen eski polis Cole Reed, Tibu'nun gerçek katillerini bulmak ve adını temize çıkarmak "
+    },
+    {
+     "id": "movie:tmdb-131631",
+     "kind": "movie",
+     "title": "Açlık Oyunları: Alaycı Kuş Bölüm 1",
+     "image": "https://image.tmdb.org/t/p/w500/7aTwGE1JyUIuXIoxVJYf5pVzX2A.jpg",
+     "url": "https://www.themoviedb.org/movie/131631",
+     "meta": "2014 · 6.8 / 10",
+     "note": "Katniss Everdeen, oyunları sonsuza dek tarihe gömdükten sonra 13. Bölge'ye çekilmiştir. Başkan Coin'in yönetici vasıfları ve güvendiği arkadaşlarının tavsiyeler"
+    }
+   ]
+  },
+  {
+   "id": "10752",
+   "name": "Savaş",
+   "items": [
+    {
+     "id": "movie:tmdb-1422041",
+     "kind": "movie",
+     "title": "La bola negra",
+     "image": "https://image.tmdb.org/t/p/w500/t1azKLExwUxKj6v6m2L535evuRa.jpg",
+     "url": "https://www.themoviedb.org/movie/1422041",
+     "meta": "2026 · 7.9 / 10"
+    },
+    {
+     "id": "movie:tmdb-872585",
+     "kind": "movie",
+     "title": "Oppenheimer",
+     "image": "https://image.tmdb.org/t/p/w500/mmZi0tyPFfbcCqEsJIPxVldCPOL.jpg",
+     "url": "https://www.themoviedb.org/movie/872585",
+     "meta": "2023 · 8.0 / 10",
+     "note": "İkinci Dünya Savaşı sırasında atom bombasının geliştirilmesine liderlik eden Amerikalı fizikçi J. Robert Oppenheimer'ın hikayesi. Manhattan Projesi'nin başına g"
+    },
+    {
+     "id": "movie:tmdb-1657630",
+     "kind": "movie",
+     "title": "El despertar",
+     "image": "https://image.tmdb.org/t/p/w500/w3YJx1PPPC6aiVKusxfc9QA0uYS.jpg",
+     "url": "https://www.themoviedb.org/movie/1657630",
+     "meta": "2026 · 6.5 / 10"
+    },
+    {
+     "id": "movie:tmdb-424",
+     "kind": "movie",
+     "title": "Schindler'ın Listesi",
+     "image": "https://image.tmdb.org/t/p/w500/2mOH8EqumIaepdP94e0cy4Xnyg7.jpg",
+     "url": "https://www.themoviedb.org/movie/424",
+     "meta": "1994 · 8.6 / 10",
+     "note": "Tüm zamanların tarihsel açıdan en önemli filmlerinden biri olan Steven Spielberg'in Schindler'ın Listesi, cesaret ve inanç dersleriyle nesiller boyu ilham verme"
+    },
+    {
+     "id": "movie:tmdb-1594914",
+     "kind": "movie",
+     "title": "Lucky Strike",
+     "image": "https://image.tmdb.org/t/p/w500/kzRAd7mj39ZY3FGNrDdZjqx56tn.jpg",
+     "url": "https://www.themoviedb.org/movie/1594914",
+     "meta": "2026 · 6.3 / 10"
+    },
+    {
+     "id": "movie:tmdb-228150",
+     "kind": "movie",
+     "title": "Fury",
+     "image": "https://image.tmdb.org/t/p/w500/ewShBTdF0fVPPK1XaItrE0sZHby.jpg",
+     "url": "https://www.themoviedb.org/movie/228150",
+     "meta": "2014 · 7.5 / 10",
+     "note": "Fury, 1945 yılının Nisan ayında, İkinci Dünya Savaşı'nın son günlerinde geçiyor ve Komutan Wardaddy, topçu Boyd Swan, yükleyici Grady Travis, şoför Trini Garci"
+    },
+    {
+     "id": "movie:tmdb-324786",
+     "kind": "movie",
+     "title": "Savaş Vadisi",
+     "image": "https://image.tmdb.org/t/p/w500/2Sy0anrKQ13GKgX78EXnGGpYUtz.jpg",
+     "url": "https://www.themoviedb.org/movie/324786",
+     "meta": "2016 · 8.2 / 10",
+     "note": "Amerika Birleşik Devletleri'nin 2. Dünya Savaşı'na girmesinin ardından Desmond T. Doss da birçok Amerikalı gibi orduya katılmaya gönüllü olur. Ancak dindar bir "
+    },
+    {
+     "id": "movie:tmdb-16869",
+     "kind": "movie",
+     "title": "Soysuzlar Çetesi",
+     "image": "https://image.tmdb.org/t/p/w500/w3M2SpS71EBl3oXmUGHet2rCm71.jpg",
+     "url": "https://www.themoviedb.org/movie/16869",
+     "meta": "2009 · 8.2 / 10",
+     "note": "Inglourious Basterds, Shosanna Dreyfus 'un ailesinin Nazi Yüzbaşısı Hans Landa 'un elinde idam edilmesi sırasında, Alman işgalindeki Fransa'da başlar. Shosanna "
+    },
+    {
+     "id": "movie:tmdb-423",
+     "kind": "movie",
+     "title": "Piyanist",
+     "image": "https://image.tmdb.org/t/p/w500/8gdOy6vd1lK2KyakZroETXyB4re.jpg",
+     "url": "https://www.themoviedb.org/movie/423",
+     "meta": "2003 · 8.4 / 10",
+     "note": "Wladyslaw Szpilman, Polonyalı başarılı bir piyanisttir. İkinci Dünya Savaşı'nda Almanların Polonya'yı işgal etmesiyle hayatı kâbusa döner. Musevi olduğu halde ş"
+    },
+    {
+     "id": "movie:tmdb-857",
+     "kind": "movie",
+     "title": "Er Ryan'ı Kurtarmak",
+     "image": "https://image.tmdb.org/t/p/w500/b9QqS5Hz1CqT16ZxwxJqwzCfIgr.jpg",
+     "url": "https://www.themoviedb.org/movie/857",
+     "meta": "1998 · 8.2 / 10",
+     "note": "Dört çocuk annesi bir kadın, İkinci Dünya Savaşı’nda kaybettiği üç oğlunun ardından fazlasıyla yaralanmıştır. Şimdi tek dileği hayatta kalan tek oğlunun savaşta"
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "name": "Vahşi Batı",
+   "items": [
+    {
+     "id": "movie:tmdb-68718",
+     "kind": "movie",
+     "title": "Zincirsiz",
+     "image": "https://image.tmdb.org/t/p/w500/wjN6Cg2Ow7eP1HotskuDyVQQiKb.jpg",
+     "url": "https://www.themoviedb.org/movie/68718",
+     "meta": "2013 · 8.2 / 10",
+     "note": "Amerikan İç Savaşı’ndan iki yıl önce geçen hikâye, eski bir köle olan Django’nun Alman ödül avcısı Dr. King Schultz ile yollarının kesişmesini konu alıyor. Schu"
+    },
+    {
+     "id": "movie:tmdb-429",
+     "kind": "movie",
+     "title": "İyi, Kötü ve Çirkin",
+     "image": "https://image.tmdb.org/t/p/w500/c7xlVD3VVn5skrhvy03NbNx5FhR.jpg",
+     "url": "https://www.themoviedb.org/movie/429",
+     "meta": "1969 · 8.5 / 10",
+     "note": "Ortak bir hedefe doğru değişik nedenlerle yol almakta olan üç silah arkadaşı aslında kader açısından yolları kesişmiş insanlardır. İsimleri İyi, Kötü ve Çirkin "
+    },
+    {
+     "id": "movie:tmdb-6977",
+     "kind": "movie",
+     "title": "İhtiyarlara Yer Yok",
+     "image": "https://image.tmdb.org/t/p/w500/20SlBJZS0Hfjt4WeT6GTCMu7lzq.jpg",
+     "url": "https://www.themoviedb.org/movie/6977",
+     "meta": "2008 · 7.9 / 10",
+     "note": "Kötü giden bir uyuşturucu işi ve bir çanta dolusu para masum bir avcının, emektar bir şerifin ve acımasız bir kiralık katilin yolunu ıssız Batı Teksas çölünde k"
+    },
+    {
+     "id": "movie:tmdb-281957",
+     "kind": "movie",
+     "title": "Diriliş",
+     "image": "https://image.tmdb.org/t/p/w500/vpNOjiOZ9dSmj8COISLCQhWENnL.jpg",
+     "url": "https://www.themoviedb.org/movie/281957",
+     "meta": "2016 · 7.5 / 10",
+     "note": "Hugh Glass kürkleri için hayvanları avlayan bir kuruluş için çalışan deneyimli bir tuzakçıdır. Fakat avlandıkları bölgelerde kendilerinden başka hem yerli Kızıl"
+    },
+    {
+     "id": "movie:tmdb-9023",
+     "kind": "movie",
+     "title": "Özgür Ruh",
+     "image": "https://image.tmdb.org/t/p/w500/hUgUFZY5h07PUWP0izzZFRvFmyg.jpg",
+     "url": "https://www.themoviedb.org/movie/9023",
+     "meta": "2002 · 7.7 / 10",
+     "note": "Spirit adlı vahşi bir atın Vahşi Batı'ya yaptığı yolculuğun heyecan yüklü öyküsü... Spirit orada Rain adlı çok güzel renkli bir kısrak ile karşılaşır ve aşık ol"
+    },
+    {
+     "id": "movie:tmdb-1411773",
+     "kind": "movie",
+     "title": "The Last Stand of Ellen Cole",
+     "image": "https://image.tmdb.org/t/p/w500/oq1pGVQ2t3Cy4v7sA4LRhNjtZuJ.jpg",
+     "url": "https://www.themoviedb.org/movie/1411773",
+     "meta": "2024 · 8.1 / 10",
+     "note": "Kötü niyetli bir müteahhit, yeni projesinin önünde engel teşkil eden hırçın bir kiracıyı evden çıkarmak için aşırı önlemlere başvurduğunda, bu görünüşte zararsı"
+    },
+    {
+     "id": "movie:tmdb-273248",
+     "kind": "movie",
+     "title": "The Hateful Eight",
+     "image": "https://image.tmdb.org/t/p/w500/7eIfWfqoptIV3R4OMW5JeEeEGzV.jpg",
+     "url": "https://www.themoviedb.org/movie/273248",
+     "meta": "2016 · 7.8 / 10",
+     "note": "İç Savaş'tan birkaç sene sonra... Bir posta arabası, kış soğuğu yaşayan Wyoming'den geçer. Yolcular, cellat John Ruth ve yakaladığı kaçak Daisy Domergue, Domerg"
+    },
+    {
+     "id": "movie:tmdb-335",
+     "kind": "movie",
+     "title": "Batıda Kan Var",
+     "image": "https://image.tmdb.org/t/p/w500/ma98KeWxVhlecM8QttQdcPqWljz.jpg",
+     "url": "https://www.themoviedb.org/movie/335",
+     "meta": "1972 · 8.3 / 10",
+     "note": "Kanun dışı işler yapan ve acımasız biri olan Frank ve adamları yaşadıkları bölgede süren demiryolu projesi ile ilgili cinayet işlerler. Öldürdükleri Brett McBai"
+    },
+    {
+     "id": "movie:tmdb-44896",
+     "kind": "movie",
+     "title": "Rango",
+     "image": "https://image.tmdb.org/t/p/w500/8kf4fFEclrleWKEq7uAhvfkhxfM.jpg",
+     "url": "https://www.themoviedb.org/movie/44896",
+     "meta": "2011 · 6.9 / 10",
+     "note": "Film, kötü ve tatsız şeylerden hep korunmuş, sıradan bir evcil hayvan hayatı yaşayan bukalemun Rango'nun, büyük bir kimlik bunalımı yaşarken başından geçen komi"
+    },
+    {
+     "id": "movie:tmdb-581",
+     "kind": "movie",
+     "title": "Kurtlarla Dans",
+     "image": "https://image.tmdb.org/t/p/w500/hw0ZEHAaTqTxSXGVwUFX7uvanSA.jpg",
+     "url": "https://www.themoviedb.org/movie/581",
+     "meta": "1991 · 7.8 / 10",
+     "note": "Lt. John Dunbar, İç Savaş boyunca Birlik ordularını tesadüfen zafere götüren bir kahramandır. Doğu sınırında bir görev ister ancak oranın terk edilmiş olduğunu "
+    }
+   ]
+  }
+ ],
+ "series": [
+  {
+   "id": "10759",
+   "name": "Aksiyon & Macera",
+   "items": [
+    {
+     "id": "series:tmdb-32573",
+     "kind": "series",
+     "title": "Strike Back",
+     "image": "https://image.tmdb.org/t/p/w500/c0ItaC2Grf4WVJ06G87BjNn9pRs.jpg",
+     "url": "https://www.themoviedb.org/tv/32573",
+     "meta": "2010 · 7.4 / 10",
+     "note": "Strike Back uluslararası bir terörist örgütü durdurmak için İngiliz ordusuyla birlikte çalışan karizmatik eski bir Amerikan Özel Kuvvetleri ajanının hikayesini "
+    },
+    {
+     "id": "series:tmdb-84773",
+     "kind": "series",
+     "title": "Yüzüklerin Efendisi: Güç Yüzükleri",
+     "image": "https://image.tmdb.org/t/p/w500/7daMA65eFTxcTg58E0YoCMyAj63.jpg",
+     "url": "https://www.themoviedb.org/tv/84773",
+     "meta": "2022 · 7.2 / 10",
+     "note": "Göreceli bir barış döneminden başlayarak, Orta Dünya'ya geri dönen kötülükle yüzleşen bir dizi karakteri izleyeceğiz. Dumanlı Dağlar'ın en karanlık derinlikleri"
+    },
+    {
+     "id": "series:tmdb-1411",
+     "kind": "series",
+     "title": "Person of Interest",
+     "image": "https://image.tmdb.org/t/p/w500/f8aIvYk5h7Z8EP3dinCmVgQFYow.jpg",
+     "url": "https://www.themoviedb.org/tv/1411",
+     "meta": "2011 · 8.1 / 10",
+     "note": "Kameralar her yerde! İzliyorlar, dinliyorlar, kaydediyorlar. Sizin hakkınızda her şeyi biliyorlar! Peki siz onlar hakkında ne biliyorsunuz? Gizemli bir iş adamı"
+    },
+    {
+     "id": "series:tmdb-57243",
+     "kind": "series",
+     "title": "Doctor Who",
+     "image": "https://image.tmdb.org/t/p/w500/lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg",
+     "url": "https://www.themoviedb.org/tv/57243",
+     "meta": "2005 · 7.6 / 10",
+     "note": "Bu Doktor bambaşka bir doktor. Adı, karakteri, tavırları her şeyiyle bir muamma. Rose Tyler adında bir kadın, kendisini Doktor diye adlandıran gizemli bir yaban"
+    },
+    {
+     "id": "series:tmdb-4386",
+     "kind": "series",
+     "title": "Sahil Güvenlik",
+     "image": "https://image.tmdb.org/t/p/w500/34t8WxHn1OcIVpcTxmjYmjX9tE4.jpg",
+     "url": "https://www.themoviedb.org/tv/4386",
+     "meta": "1989 · 6.0 / 10",
+     "note": "Birbirinden güzel kızlar, inanılmaz bir heyecan ve dünyanın başka hiçbir yerinde görülemeyecek eşsiz bir manzara... Dizi, rüya gibi plajlarda yaşanan akla hayal"
+    },
+    {
+     "id": "series:tmdb-60572",
+     "kind": "series",
+     "title": "Pokemon",
+     "image": "https://image.tmdb.org/t/p/w500/bkWFmFy5eeNUwWju7OIFsE8FTw6.jpg",
+     "url": "https://www.themoviedb.org/tv/60572",
+     "meta": "1997 · 8.0 / 10",
+     "note": "Ash Ketchum'un aklında tek bir şey var: Dünyanın en iyi Pokémon eğitmeni olmak! Pokémon'lar, insanlar tarafından yakalanabilen küçük, hayvansı yaratıklardır. Po"
+    },
+    {
+     "id": "series:tmdb-33880",
+     "kind": "series",
+     "title": "Avatar: Korra Efsanesi",
+     "image": "https://image.tmdb.org/t/p/w500/dZgYvSfuh1YHDrJuILlVQ5oA2hF.jpg",
+     "url": "https://www.themoviedb.org/tv/33880",
+     "meta": "2012 · 8.2 / 10",
+     "note": "Sürekli olarak geleneğe meydan okuyan ve geleneğe meydan okuyan güçlü, asi, inatçı, genç bir kadın olan Avatar Korra, tamamen gerçek bir Avatar olma arayışı içi"
+    },
+    {
+     "id": "series:tmdb-2560",
+     "kind": "series",
+     "title": "UFO",
+     "image": "https://image.tmdb.org/t/p/w500/yJMF2BlJ3M7rXRQQpv91WInBtXO.jpg",
+     "url": "https://www.themoviedb.org/tv/2560",
+     "meta": "1970 · 7.6 / 10"
+    },
+    {
+     "id": "series:tmdb-3291",
+     "kind": "series",
+     "title": "Manimal",
+     "image": "https://image.tmdb.org/t/p/w500/deTedoQduoqW9Kduktf9eVfiY3V.jpg",
+     "url": "https://www.themoviedb.org/tv/3291",
+     "meta": "1983 · 7.4 / 10"
+    },
+    {
+     "id": "series:tmdb-65733",
+     "kind": "series",
+     "title": "Doraemon",
+     "image": "https://image.tmdb.org/t/p/w500/9YqdMXlPTQGLIG67vqZdsPdPC4T.jpg",
+     "url": "https://www.themoviedb.org/tv/65733",
+     "meta": "2005 · 8.1 / 10",
+     "note": "Robot kedi Doraemon, kaderi trajik bir geleceğe sahip olmak olan tembel ve uyumsuz bir çocuk olan 10 yaşındaki Nobita'yı korumak için 22. yüzyıldan geçmişe gönd"
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "name": "Animasyon",
+   "items": [
+    {
+     "id": "series:tmdb-1434",
+     "kind": "series",
+     "title": "Family Guy",
+     "image": "https://image.tmdb.org/t/p/w500/ad75MS8xP2EmkYXy4101ljmpIfn.jpg",
+     "url": "https://www.themoviedb.org/tv/1434",
+     "meta": "1999 · 7.4 / 10",
+     "note": "2000 yılından bu yana komedi ve animasyon dallarında Emmy adaylıklarının ve ödüllerinin gediklisi olan çizgi dizi Family Guy,sıra dışı Griffin ailesinin absürd "
+    },
+    {
+     "id": "series:tmdb-1877",
+     "kind": "series",
+     "title": "Fineas ve Förb",
+     "image": "https://image.tmdb.org/t/p/w500/j61o7i0IDA67xZ8oxFfMQlPidKk.jpg",
+     "url": "https://www.themoviedb.org/tv/1877",
+     "meta": "2007 · 7.9 / 10",
+     "note": "Yaz tatilindeki iki iyi kalpli üvey kardeş, her gün onları ispiyonlamaya çalışan kontrolcü kız kardeşleri Candace'ı rahatsız eden büyük bir yeni projeye girişir"
+    },
+    {
+     "id": "series:tmdb-456",
+     "kind": "series",
+     "title": "Simpsonlar",
+     "image": "https://image.tmdb.org/t/p/w500/ip1dqKRHD5kP1g3Q4cJxIrz1vVr.jpg",
+     "url": "https://www.themoviedb.org/tv/456",
+     "meta": "1989 · 8.0 / 10",
+     "note": "Bu animasyon komedi dizisi, Springfield'de diziye adını veren aileye odaklanmaktadır. Baba Homer, tipik bir aile babası değildir. Nükleer santralde çalışarak ai"
+    },
+    {
+     "id": "series:tmdb-60572",
+     "kind": "series",
+     "title": "Pokemon",
+     "image": "https://image.tmdb.org/t/p/w500/bkWFmFy5eeNUwWju7OIFsE8FTw6.jpg",
+     "url": "https://www.themoviedb.org/tv/60572",
+     "meta": "1997 · 8.0 / 10",
+     "note": "Ash Ketchum'un aklında tek bir şey var: Dünyanın en iyi Pokémon eğitmeni olmak! Pokémon'lar, insanlar tarafından yakalanabilen küçük, hayvansı yaratıklardır. Po"
+    },
+    {
+     "id": "series:tmdb-33880",
+     "kind": "series",
+     "title": "Avatar: Korra Efsanesi",
+     "image": "https://image.tmdb.org/t/p/w500/dZgYvSfuh1YHDrJuILlVQ5oA2hF.jpg",
+     "url": "https://www.themoviedb.org/tv/33880",
+     "meta": "2012 · 8.2 / 10",
+     "note": "Sürekli olarak geleneğe meydan okuyan ve geleneğe meydan okuyan güçlü, asi, inatçı, genç bir kadın olan Avatar Korra, tamamen gerçek bir Avatar olma arayışı içi"
+    },
+    {
+     "id": "series:tmdb-65733",
+     "kind": "series",
+     "title": "Doraemon",
+     "image": "https://image.tmdb.org/t/p/w500/9YqdMXlPTQGLIG67vqZdsPdPC4T.jpg",
+     "url": "https://www.themoviedb.org/tv/65733",
+     "meta": "2005 · 8.1 / 10",
+     "note": "Robot kedi Doraemon, kaderi trajik bir geleceğe sahip olmak olan tembel ve uyumsuz bir çocuk olan 10 yaşındaki Nobita'yı korumak için 22. yüzyıldan geçmişe gönd"
+    },
+    {
+     "id": "series:tmdb-37854",
+     "kind": "series",
+     "title": "One Piece",
+     "image": "https://image.tmdb.org/t/p/w500/8f33Q5AuM2G5ZqFeusbIqDjr3cI.jpg",
+     "url": "https://www.themoviedb.org/tv/37854",
+     "meta": "1999 · 8.8 / 10",
+     "note": "Korsanlar Kralı Gold Roger, bu dünyadaki herşeyi elde eder ve idam edilirken, tüm servetinin Grand Line'da olduğunu, onu arayıp bulmaları gerektiğini söyler. Bu"
+    },
+    {
+     "id": "series:tmdb-57775",
+     "kind": "series",
+     "title": "ちびまる子ちゃん",
+     "image": "https://image.tmdb.org/t/p/w500/auruoMM9a9c4diotHvI5v7dKFbF.jpg",
+     "url": "https://www.themoviedb.org/tv/57775",
+     "meta": "1990 · 7.7 / 10"
+    },
+    {
+     "id": "series:tmdb-387",
+     "kind": "series",
+     "title": "SüngerBob KarePantalon",
+     "image": "https://image.tmdb.org/t/p/w500/uLp6c03Cb9e2KrYSfn4QIi0lXXx.jpg",
+     "url": "https://www.themoviedb.org/tv/387",
+     "meta": "1999 · 7.7 / 10",
+     "note": "SüngerBob KareŞort veya SüngerBob Karepantolon, Nickelodeon kanalı için deniz biyolojisi eğitimcisi ve animatör Stephen Hillenburg tarafından yaratılmış bir Ame"
+    },
+    {
+     "id": "series:tmdb-1433",
+     "kind": "series",
+     "title": "American Dad!",
+     "image": "https://image.tmdb.org/t/p/w500/eb9sH2am9IUSQ8GhXTNAVoujk8W.jpg",
+     "url": "https://www.themoviedb.org/tv/1433",
+     "meta": "2005 · 7.0 / 10",
+     "note": "Dizi, CIA Ajanı Stan Smith ve pek sıradan olmayan ailesinin maceralarını anlatmaktadır. Bu aile; baba Stan, eskiden alkolik ve uyuşturucu bağımlısı olan anne Fr"
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "name": "Komedi",
+   "items": [
+    {
+     "id": "series:tmdb-4620",
+     "kind": "series",
+     "title": "Eureka",
+     "image": "https://image.tmdb.org/t/p/w500/f2l5hUk63hPqYTucnFy2HmElFV0.jpg",
+     "url": "https://www.themoviedb.org/tv/4620",
+     "meta": "2006 · 7.7 / 10",
+     "note": "2. dünya savaşı sonrası bilimin amacı dünyayı güvenli tutmak olmuştur.Sonraları Albert Einstein'ın liderliğinde bir ekip Amerika da kuzey pasifik civarlarında b"
+    },
+    {
+     "id": "series:tmdb-1420",
+     "kind": "series",
+     "title": "New Girl",
+     "image": "https://image.tmdb.org/t/p/w500/8oCqMlKKomCArVtyOjRzMN6g40Z.jpg",
+     "url": "https://www.themoviedb.org/tv/1420",
+     "meta": "2011 · 7.4 / 10",
+     "note": "Bir anda şarkı söylemeye başlaması ile ünlü sıradışı öğretmen Jess erkek arkadaşını başka bir kadınla yakalar ve kendine kalacak yer aramaya başlar... Daha önce"
+    },
+    {
+     "id": "series:tmdb-76331",
+     "kind": "series",
+     "title": "Succession",
+     "image": "https://image.tmdb.org/t/p/w500/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg",
+     "url": "https://www.themoviedb.org/tv/76331",
+     "meta": "2018 · 8.3 / 10",
+     "note": "New York’ta yaşayan, dünyanın en büyük medya şirketlerinden birini yöneten Logan Roy ve dört çocuğunun hikayesi para, güç, siyaset ve aile değerleri ekseninde e"
+    },
+    {
+     "id": "series:tmdb-1434",
+     "kind": "series",
+     "title": "Family Guy",
+     "image": "https://image.tmdb.org/t/p/w500/ad75MS8xP2EmkYXy4101ljmpIfn.jpg",
+     "url": "https://www.themoviedb.org/tv/1434",
+     "meta": "1999 · 7.4 / 10",
+     "note": "2000 yılından bu yana komedi ve animasyon dallarında Emmy adaylıklarının ve ödüllerinin gediklisi olan çizgi dizi Family Guy,sıra dışı Griffin ailesinin absürd "
+    },
+    {
+     "id": "series:tmdb-2691",
+     "kind": "series",
+     "title": "Two and a Half Men",
+     "image": "https://image.tmdb.org/t/p/w500/xgfjxyV3g1S68opzuvG6G87muDp.jpg",
+     "url": "https://www.themoviedb.org/tv/2691",
+     "meta": "2003 · 7.4 / 10",
+     "note": "Malibu sahilinde yaşayan çapkın ve bekar Charlie Harper reklam filmlerine şarkı sözü yazar. Söylediğine bakılırsa, başarılıdır da (iddiasına göre Teenage Mutant"
+    },
+    {
+     "id": "series:tmdb-18347",
+     "kind": "series",
+     "title": "Community",
+     "image": "https://image.tmdb.org/t/p/w500/3KUjDt8XY7w2Ku70UE0SECmv1zP.jpg",
+     "url": "https://www.themoviedb.org/tv/18347",
+     "meta": "2009 · 8.0 / 10",
+     "note": "Jeff Winger, hukuk diplomasının sahte olduğu ortaya çıkınca üniversiteye döner ve dışlanmış kişilerden oluşan bir çalışma grubu kurar."
+    },
+    {
+     "id": "series:tmdb-1877",
+     "kind": "series",
+     "title": "Fineas ve Förb",
+     "image": "https://image.tmdb.org/t/p/w500/j61o7i0IDA67xZ8oxFfMQlPidKk.jpg",
+     "url": "https://www.themoviedb.org/tv/1877",
+     "meta": "2007 · 7.9 / 10",
+     "note": "Yaz tatilindeki iki iyi kalpli üvey kardeş, her gün onları ispiyonlamaya çalışan kontrolcü kız kardeşleri Candace'ı rahatsız eden büyük bir yeni projeye girişir"
+    },
+    {
+     "id": "series:tmdb-83631",
+     "kind": "series",
+     "title": "What We Do in the Shadows",
+     "image": "https://image.tmdb.org/t/p/w500/wa3ZQE9kLnqwN3vQ0NNjg1NPsCa.jpg",
+     "url": "https://www.themoviedb.org/tv/83631",
+     "meta": "2019 · 8.0 / 10",
+     "note": "Staten Island'da yüzlerce ve yüzlerce yıldır birlikte \"yaşayan\" üç vampirin günlük (veya daha doğrusu gece) hayatlarına belgesel tarzında bir bakış."
+    },
+    {
+     "id": "series:tmdb-1100",
+     "kind": "series",
+     "title": "How I Met Your Mother",
+     "image": "https://image.tmdb.org/t/p/w500/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg",
+     "url": "https://www.themoviedb.org/tv/1100",
+     "meta": "2005 · 8.1 / 10",
+     "note": "Ted çocuklarına yıllar önce anneleriyle nasıl tanıştığını anlatırken Ted'in ruh ikizi için destansı arayışı büyük ölçüde geriye dönüşlerle gösteriliyor."
+    },
+    {
+     "id": "series:tmdb-1400",
+     "kind": "series",
+     "title": "Seinfeld",
+     "image": "https://image.tmdb.org/t/p/w500/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg",
+     "url": "https://www.themoviedb.org/tv/1400",
+     "meta": "1989 · 8.2 / 10",
+     "note": "Seinfeld, dokuz sezon boyunca yayınlanan toplam 169 bölümle televizyon tarihinin en çarpıcı devrimlerinden birini gerçekleştirdi. Yayınlandığı ülkelerde televiz"
+    }
+   ]
+  },
+  {
+   "id": "80",
+   "name": "Suç",
+   "items": [
+    {
+     "id": "series:tmdb-46923",
+     "kind": "series",
+     "title": "Shetland",
+     "image": "https://image.tmdb.org/t/p/w500/rKnxmir8m5I3RdSTdZr3jaQaCZi.jpg",
+     "url": "https://www.themoviedb.org/tv/46923",
+     "meta": "2013 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-1438",
+     "kind": "series",
+     "title": "The Wire",
+     "image": "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
+     "url": "https://www.themoviedb.org/tv/1438",
+     "meta": "2002 · 8.6 / 10",
+     "note": "Baltimore sokaklarında geçen dizi; uyuşturucu ticareti, liman işçileri, siyaset, eğitim sistemi ve medyanın iç içe geçtiği katmanlı bir şehir portresi çizer. Da"
+    },
+    {
+     "id": "series:tmdb-95480",
+     "kind": "series",
+     "title": "Slow Horses",
+     "image": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+     "url": "https://www.themoviedb.org/tv/95480",
+     "meta": "2022 · 8.1 / 10",
+     "note": "Bu zekice yazılmış casus hikâyesinde, İngiltere'yi uğursuz güçlerden korumak için casusluk dünyasının kandırmacaları arasında gezinen işlevsiz bir MI5 ajanları "
+    },
+    {
+     "id": "series:tmdb-5920",
+     "kind": "series",
+     "title": "The Mentalist",
+     "image": "https://image.tmdb.org/t/p/w500/k0kMdO52LpC5JWgd0uWEH7gqcCe.jpg",
+     "url": "https://www.themoviedb.org/tv/5920",
+     "meta": "2008 · 8.4 / 10",
+     "note": "Patrick Jane isimli bir medyum, sirkte çalışan ve gözlem güçlerini kullanarak insanlar hakkında birtakım fikirler edinip bu fikirleri onlara medyum gibi satan b"
+    },
+    {
+     "id": "series:tmdb-41727",
+     "kind": "series",
+     "title": "Banshee",
+     "image": "https://image.tmdb.org/t/p/w500/mY71w5LhXquIQ3Fy4OJar3Ykaam.jpg",
+     "url": "https://www.themoviedb.org/tv/41727",
+     "meta": "2013 · 8.0 / 10",
+     "note": "Bir zamanlar ülkenin en ünlüleri arasında yer alan bir mücevher hırsızı (Anthony Starr) hapishaneden yeni çıkmıştır. Yeraltı dünyasından bir arkadaşının yardımı"
+    },
+    {
+     "id": "series:tmdb-2734",
+     "kind": "series",
+     "title": "Law & Order: Special Victims Unit",
+     "image": "https://image.tmdb.org/t/p/w500/imaKy0BLfX1iPzj9ZvbOD0D09m6.jpg",
+     "url": "https://www.themoviedb.org/tv/2734",
+     "meta": "1999 · 8.0 / 10",
+     "note": "New York yeraltı dünyasının karanlık yüzünü araştıran bir özel suçlar birimi. New York Polis Departmanı'nda cinsel suçlar konusunda uzman dedektiflerden oluşan "
+    },
+    {
+     "id": "series:tmdb-1411",
+     "kind": "series",
+     "title": "Person of Interest",
+     "image": "https://image.tmdb.org/t/p/w500/f8aIvYk5h7Z8EP3dinCmVgQFYow.jpg",
+     "url": "https://www.themoviedb.org/tv/1411",
+     "meta": "2011 · 8.1 / 10",
+     "note": "Kameralar her yerde! İzliyorlar, dinliyorlar, kaydediyorlar. Sizin hakkınızda her şeyi biliyorlar! Peki siz onlar hakkında ne biliyorsunuz? Gizemli bir iş adamı"
+    },
+    {
+     "id": "series:tmdb-247718",
+     "kind": "series",
+     "title": "MobLand",
+     "image": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+     "url": "https://www.themoviedb.org/tv/247718",
+     "meta": "2025 · 8.7 / 10",
+     "note": "İki düşman Londra suç ailesi olan Harrigan’lar ve Stevenson’lar arasında, imparatorlukları yıkma ve hayatları mahvetme tehdidi oluşturan öl ya da öldür savaşınd"
+    },
+    {
+     "id": "series:tmdb-231100",
+     "kind": "series",
+     "title": "Hudutsuz Sevda",
+     "image": "https://image.tmdb.org/t/p/w500/1BQSLOIvjnBzrxkXjX9R0JfHTWI.jpg",
+     "url": "https://www.themoviedb.org/tv/231100",
+     "meta": "2023 · 8.1 / 10",
+     "note": "Küçük bir çocukken kan davası nedeniyle babasını kaybedip İstanbul’a sürülen Halil İbrahim (Deniz Can Aktaş), 20 yıl sonra memleketi Karadeniz’e yakışıklı, güçl"
+    },
+    {
+     "id": "series:tmdb-4386",
+     "kind": "series",
+     "title": "Sahil Güvenlik",
+     "image": "https://image.tmdb.org/t/p/w500/34t8WxHn1OcIVpcTxmjYmjX9tE4.jpg",
+     "url": "https://www.themoviedb.org/tv/4386",
+     "meta": "1989 · 6.0 / 10",
+     "note": "Birbirinden güzel kızlar, inanılmaz bir heyecan ve dünyanın başka hiçbir yerinde görülemeyecek eşsiz bir manzara... Dizi, rüya gibi plajlarda yaşanan akla hayal"
+    }
+   ]
+  },
+  {
+   "id": "99",
+   "name": "Belgesel",
+   "items": [
+    {
+     "id": "series:tmdb-3562",
+     "kind": "series",
+     "title": "NOVA",
+     "image": "https://image.tmdb.org/t/p/w500/giUBXYnDAaJgNqA6iE3BMVE2EHp.jpg",
+     "url": "https://www.themoviedb.org/tv/3562",
+     "meta": "1974 · 7.1 / 10"
+    },
+    {
+     "id": "series:tmdb-10029",
+     "kind": "series",
+     "title": "Great Performances",
+     "image": "https://image.tmdb.org/t/p/w500/1RD6s6KEbX36Cb99pAoWmU8gkwh.jpg",
+     "url": "https://www.themoviedb.org/tv/10029",
+     "meta": "1971 · 6.0 / 10"
+    },
+    {
+     "id": "series:tmdb-90",
+     "kind": "series",
+     "title": "Uçak Kazası Raporu",
+     "image": "https://image.tmdb.org/t/p/w500/sdAYaadnaOVEYM4Jg3mrsgdUhFf.jpg",
+     "url": "https://www.themoviedb.org/tv/90",
+     "meta": "2003 · 8.2 / 10",
+     "note": "Sürükleyici bir belgesel dizisi olan Air Crash Investigation, yakın zamanda yaşanan büyük uçak ve helikopter kazalarını araştırarak nasıl ve neden olduklarını o"
+    },
+    {
+     "id": "series:tmdb-1966",
+     "kind": "series",
+     "title": "Horizon",
+     "image": "https://image.tmdb.org/t/p/w500/uX8pic7asQBdnwMB9QjPvTsn1Dw.jpg",
+     "url": "https://www.themoviedb.org/tv/1966",
+     "meta": "1964 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-4384",
+     "kind": "series",
+     "title": "Frontline",
+     "image": "https://image.tmdb.org/t/p/w500/9hlfC6LHVRJ2ekIWYG8FTttIYmQ.jpg",
+     "url": "https://www.themoviedb.org/tv/4384",
+     "meta": "1983 · 6.5 / 10"
+    },
+    {
+     "id": "series:tmdb-14951",
+     "kind": "series",
+     "title": "Nature",
+     "image": "https://image.tmdb.org/t/p/w500/dmsnC5rDVGeBvjCUGPXhvoGw5Qx.jpg",
+     "url": "https://www.themoviedb.org/tv/14951",
+     "meta": "1982 · 7.9 / 10"
+    },
+    {
+     "id": "series:tmdb-2394",
+     "kind": "series",
+     "title": "This Old House",
+     "image": "https://image.tmdb.org/t/p/w500/eKLaK1pivbX2z9aLev8IG2I9WG.jpg",
+     "url": "https://www.themoviedb.org/tv/2394",
+     "meta": "1979 · 5.7 / 10"
+    },
+    {
+     "id": "series:tmdb-4086",
+     "kind": "series",
+     "title": "Yolda Ne Yiyoruz",
+     "image": "https://image.tmdb.org/t/p/w500/fPpDR6kw8bA0iZ8a0dUbexVVzn3.jpg",
+     "url": "https://www.themoviedb.org/tv/4086",
+     "meta": "2007 · 6.8 / 10",
+     "note": "Yeni lezzetlerin peşindeki Guy Fieri, Amerika'nın dört bir yanını dolaşarak yol üzerindeki restoranlarda ağız sulandıran tatların izini sürüyor."
+    },
+    {
+     "id": "series:tmdb-1428",
+     "kind": "series",
+     "title": "MythBusters",
+     "image": "https://image.tmdb.org/t/p/w500/eQsxq2EZjSlUlafxwUdfGS6TXhu.jpg",
+     "url": "https://www.themoviedb.org/tv/1428",
+     "meta": "2003 · 7.8 / 10",
+     "note": "MythBusters, Avustralyalı Beyond Tomorrow Productions tarafından ABD'de Discovery Channel için üretilen bir televizyon programıdır. Program, daha sonra birkaç u"
+    },
+    {
+     "id": "series:tmdb-32608",
+     "kind": "series",
+     "title": "Antik Uzaylılar",
+     "image": "https://image.tmdb.org/t/p/w500/6X2hftdC8y78SKMSgfzeUItqaVq.jpg",
+     "url": "https://www.themoviedb.org/tv/32608",
+     "meta": "2010 · 7.1 / 10",
+     "note": "Antik Uzaylılar, antik çağlardan beri insanlarla uzaylıların temas halinde olduğu iddialarını sorgulayan, bu alanda yapılmış en kapsamlı belgesel. Bir History C"
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "name": "Dram",
+   "items": [
+    {
+     "id": "series:tmdb-42009",
+     "kind": "series",
+     "title": "Black Mirror",
+     "image": "https://image.tmdb.org/t/p/w500/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg",
+     "url": "https://www.themoviedb.org/tv/42009",
+     "meta": "2011 · 8.3 / 10",
+     "note": "İnsanlığın en kötü özelliklerini, en büyük buluşlarını ve çok daha fazlasını gözler önüne seren bu akılalmaz antoloji dizisinde çarpık öykülerin ardı arkası kes"
+    },
+    {
+     "id": "series:tmdb-32573",
+     "kind": "series",
+     "title": "Strike Back",
+     "image": "https://image.tmdb.org/t/p/w500/c0ItaC2Grf4WVJ06G87BjNn9pRs.jpg",
+     "url": "https://www.themoviedb.org/tv/32573",
+     "meta": "2010 · 7.4 / 10",
+     "note": "Strike Back uluslararası bir terörist örgütü durdurmak için İngiliz ordusuyla birlikte çalışan karizmatik eski bir Amerikan Özel Kuvvetleri ajanının hikayesini "
+    },
+    {
+     "id": "series:tmdb-4620",
+     "kind": "series",
+     "title": "Eureka",
+     "image": "https://image.tmdb.org/t/p/w500/f2l5hUk63hPqYTucnFy2HmElFV0.jpg",
+     "url": "https://www.themoviedb.org/tv/4620",
+     "meta": "2006 · 7.7 / 10",
+     "note": "2. dünya savaşı sonrası bilimin amacı dünyayı güvenli tutmak olmuştur.Sonraları Albert Einstein'ın liderliğinde bir ekip Amerika da kuzey pasifik civarlarında b"
+    },
+    {
+     "id": "series:tmdb-46923",
+     "kind": "series",
+     "title": "Shetland",
+     "image": "https://image.tmdb.org/t/p/w500/rKnxmir8m5I3RdSTdZr3jaQaCZi.jpg",
+     "url": "https://www.themoviedb.org/tv/46923",
+     "meta": "2013 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-76331",
+     "kind": "series",
+     "title": "Succession",
+     "image": "https://image.tmdb.org/t/p/w500/z0XiwdrCQ9yVIr4O0pxzaAYRxdW.jpg",
+     "url": "https://www.themoviedb.org/tv/76331",
+     "meta": "2018 · 8.3 / 10",
+     "note": "New York’ta yaşayan, dünyanın en büyük medya şirketlerinden birini yöneten Logan Roy ve dört çocuğunun hikayesi para, güç, siyaset ve aile değerleri ekseninde e"
+    },
+    {
+     "id": "series:tmdb-1438",
+     "kind": "series",
+     "title": "The Wire",
+     "image": "https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg",
+     "url": "https://www.themoviedb.org/tv/1438",
+     "meta": "2002 · 8.6 / 10",
+     "note": "Baltimore sokaklarında geçen dizi; uyuşturucu ticareti, liman işçileri, siyaset, eğitim sistemi ve medyanın iç içe geçtiği katmanlı bir şehir portresi çizer. Da"
+    },
+    {
+     "id": "series:tmdb-95480",
+     "kind": "series",
+     "title": "Slow Horses",
+     "image": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+     "url": "https://www.themoviedb.org/tv/95480",
+     "meta": "2022 · 8.1 / 10",
+     "note": "Bu zekice yazılmış casus hikâyesinde, İngiltere'yi uğursuz güçlerden korumak için casusluk dünyasının kandırmacaları arasında gezinen işlevsiz bir MI5 ajanları "
+    },
+    {
+     "id": "series:tmdb-1622",
+     "kind": "series",
+     "title": "Supernatural",
+     "image": "https://image.tmdb.org/t/p/w500/b6XvpFijtZg2f23J8xbMZe0RyIi.jpg",
+     "url": "https://www.themoviedb.org/tv/1622",
+     "meta": "2005 · 8.3 / 10",
+     "note": "Evlerinin yandığı şüpheli bir yangında, annelerinin ölümünden sonra, Sam ve Dean Winchester yaşları büyüdükçe babaları ile yollarda bir hayat yaşamaya başlarlar"
+    },
+    {
+     "id": "series:tmdb-5920",
+     "kind": "series",
+     "title": "The Mentalist",
+     "image": "https://image.tmdb.org/t/p/w500/k0kMdO52LpC5JWgd0uWEH7gqcCe.jpg",
+     "url": "https://www.themoviedb.org/tv/5920",
+     "meta": "2008 · 8.4 / 10",
+     "note": "Patrick Jane isimli bir medyum, sirkte çalışan ve gözlem güçlerini kullanarak insanlar hakkında birtakım fikirler edinip bu fikirleri onlara medyum gibi satan b"
+    },
+    {
+     "id": "series:tmdb-41727",
+     "kind": "series",
+     "title": "Banshee",
+     "image": "https://image.tmdb.org/t/p/w500/mY71w5LhXquIQ3Fy4OJar3Ykaam.jpg",
+     "url": "https://www.themoviedb.org/tv/41727",
+     "meta": "2013 · 8.0 / 10",
+     "note": "Bir zamanlar ülkenin en ünlüleri arasında yer alan bir mücevher hırsızı (Anthony Starr) hapishaneden yeni çıkmıştır. Yeraltı dünyasından bir arkadaşının yardımı"
+    }
+   ]
+  },
+  {
+   "id": "10751",
+   "name": "Aile",
+   "items": [
+    {
+     "id": "series:tmdb-1877",
+     "kind": "series",
+     "title": "Fineas ve Förb",
+     "image": "https://image.tmdb.org/t/p/w500/j61o7i0IDA67xZ8oxFfMQlPidKk.jpg",
+     "url": "https://www.themoviedb.org/tv/1877",
+     "meta": "2007 · 7.9 / 10",
+     "note": "Yaz tatilindeki iki iyi kalpli üvey kardeş, her gün onları ispiyonlamaya çalışan kontrolcü kız kardeşleri Candace'ı rahatsız eden büyük bir yeni projeye girişir"
+    },
+    {
+     "id": "series:tmdb-65733",
+     "kind": "series",
+     "title": "Doraemon",
+     "image": "https://image.tmdb.org/t/p/w500/9YqdMXlPTQGLIG67vqZdsPdPC4T.jpg",
+     "url": "https://www.themoviedb.org/tv/65733",
+     "meta": "2005 · 8.1 / 10",
+     "note": "Robot kedi Doraemon, kaderi trajik bir geleceğe sahip olmak olan tembel ve uyumsuz bir çocuk olan 10 yaşındaki Nobita'yı korumak için 22. yüzyıldan geçmişe gönd"
+    },
+    {
+     "id": "series:tmdb-387",
+     "kind": "series",
+     "title": "SüngerBob KarePantalon",
+     "image": "https://image.tmdb.org/t/p/w500/uLp6c03Cb9e2KrYSfn4QIi0lXXx.jpg",
+     "url": "https://www.themoviedb.org/tv/387",
+     "meta": "1999 · 7.7 / 10",
+     "note": "SüngerBob KareŞort veya SüngerBob Karepantolon, Nickelodeon kanalı için deniz biyolojisi eğitimcisi ve animatör Stephen Hillenburg tarafından yaratılmış bir Ame"
+    },
+    {
+     "id": "series:tmdb-34860",
+     "kind": "series",
+     "title": "忍たま乱太郎",
+     "image": "https://image.tmdb.org/t/p/w500/fzNiSp0HhCthOTYu9IYWlPPa7fU.jpg",
+     "url": "https://www.themoviedb.org/tv/34860",
+     "meta": "1993 · 6.9 / 10"
+    },
+    {
+     "id": "series:tmdb-45140",
+     "kind": "series",
+     "title": "Teen Titans Go!",
+     "image": "https://image.tmdb.org/t/p/w500/kPKAigYUlWRpnfo4Ptiwlz4FWXU.jpg",
+     "url": "https://www.themoviedb.org/tv/45140",
+     "meta": "2013 · 6.4 / 10",
+     "note": "Süper kahraman ev arkadaşları Robin, Starfire, Raven, Beast Boy ve Cyborg didişmekten ve rekabet etmekten vakit bulduklarında Jump City'yi kötülerden korur."
+    },
+    {
+     "id": "series:tmdb-2912",
+     "kind": "series",
+     "title": "Jeopardy!",
+     "image": "https://image.tmdb.org/t/p/w500/11rWvQOEZBouD7wet0sWHwu7NDs.jpg",
+     "url": "https://www.themoviedb.org/tv/2912",
+     "meta": "1984 · 6.9 / 10"
+    },
+    {
+     "id": "series:tmdb-2153",
+     "kind": "series",
+     "title": "Arthur",
+     "image": "https://image.tmdb.org/t/p/w500/nYN8okmcsmhd4bGVcqifZ5OCumB.jpg",
+     "url": "https://www.themoviedb.org/tv/2153",
+     "meta": "1996 · 7.0 / 10",
+     "note": "Arthur, kurgusal bir şehir olan Elwood şehrinde yaşayan, gözlüklü ve sekiz yaşındaki insansı yer domuzu (aardvark) Arthur Read ile ailesi ve okul arkadaşlarının"
+    },
+    {
+     "id": "series:tmdb-85077",
+     "kind": "series",
+     "title": "The Chosen",
+     "image": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+     "url": "https://www.themoviedb.org/tv/85077",
+     "meta": "2019 · 8.9 / 10"
+    },
+    {
+     "id": "series:tmdb-50821",
+     "kind": "series",
+     "title": "Barátok közt",
+     "image": "https://image.tmdb.org/t/p/w500/mT6VFzwGPddwGjWGxzNOy4JVL8.jpg",
+     "url": "https://www.themoviedb.org/tv/50821",
+     "meta": "1998 · 3.8 / 10"
+    },
+    {
+     "id": "series:tmdb-57911",
+     "kind": "series",
+     "title": "ドラえもん",
+     "image": "https://image.tmdb.org/t/p/w500/a8LwHrfrBRn2nEN9THo1tlpKiDN.jpg",
+     "url": "https://www.themoviedb.org/tv/57911",
+     "meta": "1979 · 7.7 / 10"
+    }
+   ]
+  },
+  {
+   "id": "10762",
+   "name": "Çocuklar",
+   "items": [
+    {
+     "id": "series:tmdb-65733",
+     "kind": "series",
+     "title": "Doraemon",
+     "image": "https://image.tmdb.org/t/p/w500/9YqdMXlPTQGLIG67vqZdsPdPC4T.jpg",
+     "url": "https://www.themoviedb.org/tv/65733",
+     "meta": "2005 · 8.1 / 10",
+     "note": "Robot kedi Doraemon, kaderi trajik bir geleceğe sahip olmak olan tembel ve uyumsuz bir çocuk olan 10 yaşındaki Nobita'yı korumak için 22. yüzyıldan geçmişe gönd"
+    },
+    {
+     "id": "series:tmdb-34860",
+     "kind": "series",
+     "title": "忍たま乱太郎",
+     "image": "https://image.tmdb.org/t/p/w500/fzNiSp0HhCthOTYu9IYWlPPa7fU.jpg",
+     "url": "https://www.themoviedb.org/tv/34860",
+     "meta": "1993 · 6.9 / 10"
+    },
+    {
+     "id": "series:tmdb-65334",
+     "kind": "series",
+     "title": "Mucize: Uğur Böceği ile Kara Kedi",
+     "image": "https://image.tmdb.org/t/p/w500/mwAJcSPtuRddU8AeL9lup5jE0Bn.jpg",
+     "url": "https://www.themoviedb.org/tv/65334",
+     "meta": "2015 · 8.1 / 10",
+     "note": "Paris tehlikeyle karşılaştığında Marinette, Uğur Böceği'ne dönüşür. Ancak okul aşkı Adrien'ın da şehir kurtarıcı bir süper kahraman olan Kara Kedi olduğundan ha"
+    },
+    {
+     "id": "series:tmdb-2153",
+     "kind": "series",
+     "title": "Arthur",
+     "image": "https://image.tmdb.org/t/p/w500/nYN8okmcsmhd4bGVcqifZ5OCumB.jpg",
+     "url": "https://www.themoviedb.org/tv/2153",
+     "meta": "1996 · 7.0 / 10",
+     "note": "Arthur, kurgusal bir şehir olan Elwood şehrinde yaşayan, gözlüklü ve sekiz yaşındaki insansı yer domuzu (aardvark) Arthur Read ile ailesi ve okul arkadaşlarının"
+    },
+    {
+     "id": "series:tmdb-502",
+     "kind": "series",
+     "title": "Susam Sokağı",
+     "image": "https://image.tmdb.org/t/p/w500/14k9BfZ2p4rQBMeJ5crKTfUZVwD.jpg",
+     "url": "https://www.themoviedb.org/tv/502",
+     "meta": "1969 · 7.1 / 10",
+     "note": "Susam Sokağı, bir çocuk programı olan \"Sesame Street\"'in Türkçe uyarlamasıdır. Susam Sokağı programı Türkiye'de 1980'lı yılların sonunda ve 1990'lı yılların baş"
+    },
+    {
+     "id": "series:tmdb-57911",
+     "kind": "series",
+     "title": "ドラえもん",
+     "image": "https://image.tmdb.org/t/p/w500/a8LwHrfrBRn2nEN9THo1tlpKiDN.jpg",
+     "url": "https://www.themoviedb.org/tv/57911",
+     "meta": "1979 · 7.7 / 10"
+    },
+    {
+     "id": "series:tmdb-12225",
+     "kind": "series",
+     "title": "Peppa Pig",
+     "image": "https://image.tmdb.org/t/p/w500/iwKVo3HlsyVNXCzFEkd0xHz3kGi.jpg",
+     "url": "https://www.themoviedb.org/tv/12225",
+     "meta": "2004 · 6.5 / 10"
+    },
+    {
+     "id": "series:tmdb-57532",
+     "kind": "series",
+     "title": "PAW Patrol",
+     "image": "https://image.tmdb.org/t/p/w500/8HXkgUBO5OF8ZK9XbY69RM4S5rv.jpg",
+     "url": "https://www.themoviedb.org/tv/57532",
+     "meta": "2013 · 7.0 / 10",
+     "note": "Ana karakter, yaşının ötesinde yaramaz, huzursuz ve zeki 10 yaşındaki bir çocuk olan Zeke Ryder'dır. Hobileri, nasıl başa çıkacağını bildiği teknoloji ve elektr"
+    },
+    {
+     "id": "series:tmdb-38693",
+     "kind": "series",
+     "title": "Ninjago: Spinjitzu'nun Ustaları",
+     "image": "https://image.tmdb.org/t/p/w500/wz6ZqlyndVpdRayZi1gbYHWcqFi.jpg",
+     "url": "https://www.themoviedb.org/tv/38693",
+     "meta": "2012 · 8.0 / 10",
+     "note": "Kai, Jay, Cole ve Zane, yer altı da bulunan Ninjago ülkesini korumak için temel güçlerinde ve Spinjitzu silahlarında ustalaşmalıdır."
+    },
+    {
+     "id": "series:tmdb-3022",
+     "kind": "series",
+     "title": "Rugrats",
+     "image": "https://image.tmdb.org/t/p/w500/wmsINbZuEBLNP2Z26Xffx5NHJpW.jpg",
+     "url": "https://www.themoviedb.org/tv/3022",
+     "meta": "1991 · 7.6 / 10",
+     "note": "Ülkemizde de gösterilmiş olan, Tommy Pickles, Chuckie Finster, Phill & Lil Deville ismindeki bebeklerin hikayelerinin anlatıldığı muhteşem bir çizgi film. Tommy"
+    }
+   ]
+  },
+  {
+   "id": "9648",
+   "name": "Gizem",
+   "items": [
+    {
+     "id": "series:tmdb-42009",
+     "kind": "series",
+     "title": "Black Mirror",
+     "image": "https://image.tmdb.org/t/p/w500/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg",
+     "url": "https://www.themoviedb.org/tv/42009",
+     "meta": "2011 · 8.3 / 10",
+     "note": "İnsanlığın en kötü özelliklerini, en büyük buluşlarını ve çok daha fazlasını gözler önüne seren bu akılalmaz antoloji dizisinde çarpık öykülerin ardı arkası kes"
+    },
+    {
+     "id": "series:tmdb-46923",
+     "kind": "series",
+     "title": "Shetland",
+     "image": "https://image.tmdb.org/t/p/w500/rKnxmir8m5I3RdSTdZr3jaQaCZi.jpg",
+     "url": "https://www.themoviedb.org/tv/46923",
+     "meta": "2013 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-95480",
+     "kind": "series",
+     "title": "Slow Horses",
+     "image": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+     "url": "https://www.themoviedb.org/tv/95480",
+     "meta": "2022 · 8.1 / 10",
+     "note": "Bu zekice yazılmış casus hikâyesinde, İngiltere'yi uğursuz güçlerden korumak için casusluk dünyasının kandırmacaları arasında gezinen işlevsiz bir MI5 ajanları "
+    },
+    {
+     "id": "series:tmdb-1622",
+     "kind": "series",
+     "title": "Supernatural",
+     "image": "https://image.tmdb.org/t/p/w500/b6XvpFijtZg2f23J8xbMZe0RyIi.jpg",
+     "url": "https://www.themoviedb.org/tv/1622",
+     "meta": "2005 · 8.3 / 10",
+     "note": "Evlerinin yandığı şüpheli bir yangında, annelerinin ölümünden sonra, Sam ve Dean Winchester yaşları büyüdükçe babaları ile yollarda bir hayat yaşamaya başlarlar"
+    },
+    {
+     "id": "series:tmdb-5920",
+     "kind": "series",
+     "title": "The Mentalist",
+     "image": "https://image.tmdb.org/t/p/w500/k0kMdO52LpC5JWgd0uWEH7gqcCe.jpg",
+     "url": "https://www.themoviedb.org/tv/5920",
+     "meta": "2008 · 8.4 / 10",
+     "note": "Patrick Jane isimli bir medyum, sirkte çalışan ve gözlem güçlerini kullanarak insanlar hakkında birtakım fikirler edinip bu fikirleri onlara medyum gibi satan b"
+    },
+    {
+     "id": "series:tmdb-1413",
+     "kind": "series",
+     "title": "American Horror Story",
+     "image": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+     "url": "https://www.themoviedb.org/tv/1413",
+     "meta": "2011 · 8.1 / 10",
+     "note": "Cinayet dolu geçmişi olan bir ev, bir akıl hastanesi, bir cadı meclisi, bir ucube gösterisi, bir otel, Roanoke'de bir çiftlik evi, bir tarikat, kıyamet ve bir y"
+    },
+    {
+     "id": "series:tmdb-2734",
+     "kind": "series",
+     "title": "Law & Order: Special Victims Unit",
+     "image": "https://image.tmdb.org/t/p/w500/imaKy0BLfX1iPzj9ZvbOD0D09m6.jpg",
+     "url": "https://www.themoviedb.org/tv/2734",
+     "meta": "1999 · 8.0 / 10",
+     "note": "New York yeraltı dünyasının karanlık yüzünü araştıran bir özel suçlar birimi. New York Polis Departmanı'nda cinsel suçlar konusunda uzman dedektiflerden oluşan "
+    },
+    {
+     "id": "series:tmdb-1411",
+     "kind": "series",
+     "title": "Person of Interest",
+     "image": "https://image.tmdb.org/t/p/w500/f8aIvYk5h7Z8EP3dinCmVgQFYow.jpg",
+     "url": "https://www.themoviedb.org/tv/1411",
+     "meta": "2011 · 8.1 / 10",
+     "note": "Kameralar her yerde! İzliyorlar, dinliyorlar, kaydediyorlar. Sizin hakkınızda her şeyi biliyorlar! Peki siz onlar hakkında ne biliyorsunuz? Gizemli bir iş adamı"
+    },
+    {
+     "id": "series:tmdb-4057",
+     "kind": "series",
+     "title": "Criminal Minds",
+     "image": "https://image.tmdb.org/t/p/w500/hWSb4UnIjlTvnvrP98NbFSO60HA.jpg",
+     "url": "https://www.themoviedb.org/tv/4057",
+     "meta": "2005 · 8.3 / 10",
+     "note": "Dizinin temel esprisi, \"bir suçluyu yakalamak istiyorsanız onun gibi düşünün\" sözünde yatıyor. Quantico'daki Davranış Analizi Ünitesi'nde çalışan ajanlar, suçlu"
+    },
+    {
+     "id": "series:tmdb-4177",
+     "kind": "series",
+     "title": "Perry Mason",
+     "image": "https://image.tmdb.org/t/p/w500/sK6JvgNFP1ClT4aF4nPAZiDpAdk.jpg",
+     "url": "https://www.themoviedb.org/tv/4177",
+     "meta": "1957 · 7.7 / 10"
+    }
+   ]
+  },
+  {
+   "id": "10763",
+   "name": "Haber",
+   "items": [
+    {
+     "id": "series:tmdb-2224",
+     "kind": "series",
+     "title": "The Daily Show",
+     "image": "https://image.tmdb.org/t/p/w500/ixcfyK7it6FjRM36Te4OdblAq4X.jpg",
+     "url": "https://www.themoviedb.org/tv/2224",
+     "meta": "1996 · 6.4 / 10",
+     "note": "En önemli haberleri mizahi bir şekilde ele alan bir komedi haber programı."
+    },
+    {
+     "id": "series:tmdb-94722",
+     "kind": "series",
+     "title": "Tagesschau",
+     "image": "https://image.tmdb.org/t/p/w500/7dFZJ2ZJJdcmkp05B9NWlqTJ5tq.jpg",
+     "url": "https://www.themoviedb.org/tv/94722",
+     "meta": "1952 · 6.8 / 10"
+    },
+    {
+     "id": "series:tmdb-32415",
+     "kind": "series",
+     "title": "Conan",
+     "image": "https://image.tmdb.org/t/p/w500/oQxrvUhP3ycwnlxIrIMQ9Z3kleq.jpg",
+     "url": "https://www.themoviedb.org/tv/32415",
+     "meta": "2010 · 7.2 / 10"
+    },
+    {
+     "id": "series:tmdb-1667",
+     "kind": "series",
+     "title": "Saturday Night Live",
+     "image": "https://image.tmdb.org/t/p/w500/s1cZBqbMwAF3w8S3Yo0j5nr2Yuo.jpg",
+     "url": "https://www.themoviedb.org/tv/1667",
+     "meta": "1975 · 6.9 / 10"
+    },
+    {
+     "id": "series:tmdb-224",
+     "kind": "series",
+     "title": "Match of the Day",
+     "image": "https://image.tmdb.org/t/p/w500/tVFCu0jE9m5QHmHM4rzEFGs1kUI.jpg",
+     "url": "https://www.themoviedb.org/tv/224",
+     "meta": "1964 · 7.6 / 10"
+    },
+    {
+     "id": "series:tmdb-4385",
+     "kind": "series",
+     "title": "The Colbert Report",
+     "image": "https://image.tmdb.org/t/p/w500/pn2CVXjOlR8kY5MgOTJjZ71IM0Q.jpg",
+     "url": "https://www.themoviedb.org/tv/4385",
+     "meta": "2005 · 7.0 / 10",
+     "note": "Colbert Raporu, Pazartesi ile Perşembe günleri Komedi Merkezi'nde yayınlanan Amerikan hicivli bir gece televizyon programı. Jon Stewart ile The Daily Show'un es"
+    },
+    {
+     "id": "series:tmdb-93449",
+     "kind": "series",
+     "title": "The Tamron Hall Show",
+     "image": "https://image.tmdb.org/t/p/w500/5KQ9UvKcT3dtJqu06Vxc20k7JeA.jpg",
+     "url": "https://www.themoviedb.org/tv/93449",
+     "meta": "2019 · 4.7 / 10"
+    },
+    {
+     "id": "series:tmdb-4026",
+     "kind": "series",
+     "title": "CBS News Sunday Morning",
+     "image": "https://image.tmdb.org/t/p/w500/gwZg0jXns5LNo8wUosZOThmOCRl.jpg",
+     "url": "https://www.themoviedb.org/tv/4026",
+     "meta": "1979 · 6.7 / 10"
+    },
+    {
+     "id": "series:tmdb-797",
+     "kind": "series",
+     "title": "Have I Got News for You",
+     "image": "https://image.tmdb.org/t/p/w500/gYrG6F8OXBa8C0Lfx10XaZsHKaw.jpg",
+     "url": "https://www.themoviedb.org/tv/797",
+     "meta": "1990 · 7.1 / 10"
+    },
+    {
+     "id": "series:tmdb-651",
+     "kind": "series",
+     "title": "60 Minutes",
+     "image": "https://image.tmdb.org/t/p/w500/d0wn9btLfygVREA4Fp6Y6HdzqYF.jpg",
+     "url": "https://www.themoviedb.org/tv/651",
+     "meta": "1968 · 6.6 / 10"
+    }
+   ]
+  },
+  {
+   "id": "10764",
+   "name": "Gerçeklik",
+   "items": [
+    {
+     "id": "series:tmdb-37678",
+     "kind": "series",
+     "title": "The Voice",
+     "image": "https://image.tmdb.org/t/p/w500/7ah1WExcMkzbq7sARCTmcC23tBr.jpg",
+     "url": "https://www.themoviedb.org/tv/37678",
+     "meta": "2011 · 5.9 / 10"
+    },
+    {
+     "id": "series:tmdb-33238",
+     "kind": "series",
+     "title": "런닝맨",
+     "image": "https://image.tmdb.org/t/p/w500/15SMnscZqd7HZ0bzruatOcKUlOV.jpg",
+     "url": "https://www.themoviedb.org/tv/33238",
+     "meta": "2010 · 8.2 / 10"
+    },
+    {
+     "id": "series:tmdb-4656",
+     "kind": "series",
+     "title": "WWE Raw",
+     "image": "https://image.tmdb.org/t/p/w500/fstEe6RsyNyPUnMwNcL20iNl0nE.jpg",
+     "url": "https://www.themoviedb.org/tv/4656",
+     "meta": "1993 · 6.7 / 10",
+     "note": "WWE Raw, Pazartesi geceleri, WWE'nin hazırladığı, ABD'de USA Network kanalında yayınlanan profesyonel güreş programıdır."
+    },
+    {
+     "id": "series:tmdb-5092",
+     "kind": "series",
+     "title": "무한도전",
+     "image": "https://image.tmdb.org/t/p/w500/fpXfEfcZu5uDTOKqjwXSGgrL4iY.jpg",
+     "url": "https://www.themoviedb.org/tv/5092",
+     "meta": "2005 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-1636",
+     "kind": "series",
+     "title": "Top of the Pops",
+     "image": "https://image.tmdb.org/t/p/w500/zRbkCnOYmz6dogqEaAN3COSovll.jpg",
+     "url": "https://www.themoviedb.org/tv/1636",
+     "meta": "1964 · 6.5 / 10"
+    },
+    {
+     "id": "series:tmdb-2912",
+     "kind": "series",
+     "title": "Jeopardy!",
+     "image": "https://image.tmdb.org/t/p/w500/11rWvQOEZBouD7wet0sWHwu7NDs.jpg",
+     "url": "https://www.themoviedb.org/tv/2912",
+     "meta": "1984 · 6.9 / 10"
+    },
+    {
+     "id": "series:tmdb-70672",
+     "kind": "series",
+     "title": "아는 형님",
+     "image": "https://image.tmdb.org/t/p/w500/zak7mqMxJGnnWplSdbjDtV7bg2Y.jpg",
+     "url": "https://www.themoviedb.org/tv/70672",
+     "meta": "2015 · 7.3 / 10"
+    },
+    {
+     "id": "series:tmdb-40605",
+     "kind": "series",
+     "title": "Die Harald Schmidt Show",
+     "image": "https://image.tmdb.org/t/p/w500/lQcE1AzjDP5zJRUW76PMRn7ai9W.jpg",
+     "url": "https://www.themoviedb.org/tv/40605",
+     "meta": "1995 · 7.4 / 10"
+    },
+    {
+     "id": "series:tmdb-30801",
+     "kind": "series",
+     "title": "1박 2일",
+     "image": "https://image.tmdb.org/t/p/w500/44CeavkZLqW9Z7SkOffxLNJtAv9.jpg",
+     "url": "https://www.themoviedb.org/tv/30801",
+     "meta": "2007 · 6.7 / 10"
+    },
+    {
+     "id": "series:tmdb-8514",
+     "kind": "series",
+     "title": "RuPaul's Drag Race",
+     "image": "https://image.tmdb.org/t/p/w500/ySs9xkTfPgQCUNB2ctOzcMWP14n.jpg",
+     "url": "https://www.themoviedb.org/tv/8514",
+     "meta": "2009 · 7.4 / 10",
+     "note": "Tüm drag annelerinin annesi RuPaul'un sunduğu Emmy ödüllü programda Kraliçeler 100.000 dolarlık para ödülü ve Amerika'nın Yeni Drag Süperstarı unvanı için yarış"
+    }
+   ]
+  },
+  {
+   "id": "10765",
+   "name": "Bilim Kurgu & Fantazi",
+   "items": [
+    {
+     "id": "series:tmdb-42009",
+     "kind": "series",
+     "title": "Black Mirror",
+     "image": "https://image.tmdb.org/t/p/w500/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg",
+     "url": "https://www.themoviedb.org/tv/42009",
+     "meta": "2011 · 8.3 / 10",
+     "note": "İnsanlığın en kötü özelliklerini, en büyük buluşlarını ve çok daha fazlasını gözler önüne seren bu akılalmaz antoloji dizisinde çarpık öykülerin ardı arkası kes"
+    },
+    {
+     "id": "series:tmdb-4620",
+     "kind": "series",
+     "title": "Eureka",
+     "image": "https://image.tmdb.org/t/p/w500/f2l5hUk63hPqYTucnFy2HmElFV0.jpg",
+     "url": "https://www.themoviedb.org/tv/4620",
+     "meta": "2006 · 7.7 / 10",
+     "note": "2. dünya savaşı sonrası bilimin amacı dünyayı güvenli tutmak olmuştur.Sonraları Albert Einstein'ın liderliğinde bir ekip Amerika da kuzey pasifik civarlarında b"
+    },
+    {
+     "id": "series:tmdb-1622",
+     "kind": "series",
+     "title": "Supernatural",
+     "image": "https://image.tmdb.org/t/p/w500/b6XvpFijtZg2f23J8xbMZe0RyIi.jpg",
+     "url": "https://www.themoviedb.org/tv/1622",
+     "meta": "2005 · 8.3 / 10",
+     "note": "Evlerinin yandığı şüpheli bir yangında, annelerinin ölümünden sonra, Sam ve Dean Winchester yaşları büyüdükçe babaları ile yollarda bir hayat yaşamaya başlarlar"
+    },
+    {
+     "id": "series:tmdb-1413",
+     "kind": "series",
+     "title": "American Horror Story",
+     "image": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+     "url": "https://www.themoviedb.org/tv/1413",
+     "meta": "2011 · 8.1 / 10",
+     "note": "Cinayet dolu geçmişi olan bir ev, bir akıl hastanesi, bir cadı meclisi, bir ucube gösterisi, bir otel, Roanoke'de bir çiftlik evi, bir tarikat, kıyamet ve bir y"
+    },
+    {
+     "id": "series:tmdb-84773",
+     "kind": "series",
+     "title": "Yüzüklerin Efendisi: Güç Yüzükleri",
+     "image": "https://image.tmdb.org/t/p/w500/7daMA65eFTxcTg58E0YoCMyAj63.jpg",
+     "url": "https://www.themoviedb.org/tv/84773",
+     "meta": "2022 · 7.2 / 10",
+     "note": "Göreceli bir barış döneminden başlayarak, Orta Dünya'ya geri dönen kötülükle yüzleşen bir dizi karakteri izleyeceğiz. Dumanlı Dağlar'ın en karanlık derinlikleri"
+    },
+    {
+     "id": "series:tmdb-1877",
+     "kind": "series",
+     "title": "Fineas ve Förb",
+     "image": "https://image.tmdb.org/t/p/w500/j61o7i0IDA67xZ8oxFfMQlPidKk.jpg",
+     "url": "https://www.themoviedb.org/tv/1877",
+     "meta": "2007 · 7.9 / 10",
+     "note": "Yaz tatilindeki iki iyi kalpli üvey kardeş, her gün onları ispiyonlamaya çalışan kontrolcü kız kardeşleri Candace'ı rahatsız eden büyük bir yeni projeye girişir"
+    },
+    {
+     "id": "series:tmdb-1411",
+     "kind": "series",
+     "title": "Person of Interest",
+     "image": "https://image.tmdb.org/t/p/w500/f8aIvYk5h7Z8EP3dinCmVgQFYow.jpg",
+     "url": "https://www.themoviedb.org/tv/1411",
+     "meta": "2011 · 8.1 / 10",
+     "note": "Kameralar her yerde! İzliyorlar, dinliyorlar, kaydediyorlar. Sizin hakkınızda her şeyi biliyorlar! Peki siz onlar hakkında ne biliyorsunuz? Gizemli bir iş adamı"
+    },
+    {
+     "id": "series:tmdb-83631",
+     "kind": "series",
+     "title": "What We Do in the Shadows",
+     "image": "https://image.tmdb.org/t/p/w500/wa3ZQE9kLnqwN3vQ0NNjg1NPsCa.jpg",
+     "url": "https://www.themoviedb.org/tv/83631",
+     "meta": "2019 · 8.0 / 10",
+     "note": "Staten Island'da yüzlerce ve yüzlerce yıldır birlikte \"yaşayan\" üç vampirin günlük (veya daha doğrusu gece) hayatlarına belgesel tarzında bir bakış."
+    },
+    {
+     "id": "series:tmdb-57243",
+     "kind": "series",
+     "title": "Doctor Who",
+     "image": "https://image.tmdb.org/t/p/w500/lHfmc6d8pOVFrD0eOKPiDbjeucG.jpg",
+     "url": "https://www.themoviedb.org/tv/57243",
+     "meta": "2005 · 7.6 / 10",
+     "note": "Bu Doktor bambaşka bir doktor. Adı, karakteri, tavırları her şeyiyle bir muamma. Rose Tyler adında bir kadın, kendisini Doktor diye adlandıran gizemli bir yaban"
+    },
+    {
+     "id": "series:tmdb-60735",
+     "kind": "series",
+     "title": "The Flash",
+     "image": "https://image.tmdb.org/t/p/w500/yZevl2vHQgmosfwUdVNzviIfaWS.jpg",
+     "url": "https://www.themoviedb.org/tv/60735",
+     "meta": "2014 · 7.7 / 10",
+     "note": "Geçmişinde büyük bir trajedi yaşamış Barry Allen, Central City Polis Birimi’nde çalışan ve suçluların arkalarında bıraktıkları ipuçlarını toplayan bir adli labo"
+    }
+   ]
+  },
+  {
+   "id": "10766",
+   "name": "Pembe Dizi",
+   "items": [
+    {
+     "id": "series:tmdb-231100",
+     "kind": "series",
+     "title": "Hudutsuz Sevda",
+     "image": "https://image.tmdb.org/t/p/w500/1BQSLOIvjnBzrxkXjX9R0JfHTWI.jpg",
+     "url": "https://www.themoviedb.org/tv/231100",
+     "meta": "2023 · 8.1 / 10",
+     "note": "Küçük bir çocukken kan davası nedeniyle babasını kaybedip İstanbul’a sürülen Halil İbrahim (Deniz Can Aktaş), 20 yıl sonra memleketi Karadeniz’e yakışıklı, güçl"
+    },
+    {
+     "id": "series:tmdb-11890",
+     "kind": "series",
+     "title": "Goede Tijden, Slechte Tijden",
+     "image": "https://image.tmdb.org/t/p/w500/p1oXgtJ0q0wAcEp3tHA5DpiynxL.jpg",
+     "url": "https://www.themoviedb.org/tv/11890",
+     "meta": "1990 · 5.2 / 10"
+    },
+    {
+     "id": "series:tmdb-45789",
+     "kind": "series",
+     "title": "Sturm der Liebe",
+     "image": "https://image.tmdb.org/t/p/w500/jfFNydakwvbeACEwSd2Gh8UWtba.jpg",
+     "url": "https://www.themoviedb.org/tv/45789",
+     "meta": "2005 · 6.0 / 10"
+    },
+    {
+     "id": "series:tmdb-14424",
+     "kind": "series",
+     "title": "Malhação",
+     "image": "https://image.tmdb.org/t/p/w500/bF24r2FxsjzgkJcrbBU8RC9JVoU.jpg",
+     "url": "https://www.themoviedb.org/tv/14424",
+     "meta": "1995 · 6.2 / 10"
+    },
+    {
+     "id": "series:tmdb-291",
+     "kind": "series",
+     "title": "Coronation Street",
+     "image": "https://image.tmdb.org/t/p/w500/5x1HXqYqPyYw7oc7Isu1lvVmwRP.jpg",
+     "url": "https://www.themoviedb.org/tv/291",
+     "meta": "1960 · 5.3 / 10"
+    },
+    {
+     "id": "series:tmdb-206559",
+     "kind": "series",
+     "title": "Binnelanders",
+     "image": "https://image.tmdb.org/t/p/w500/3bzECfllho8PphdYujLUIuhncJD.jpg",
+     "url": "https://www.themoviedb.org/tv/206559",
+     "meta": "2005 · 5.5 / 10"
+    },
+    {
+     "id": "series:tmdb-1871",
+     "kind": "series",
+     "title": "EastEnders",
+     "image": "https://image.tmdb.org/t/p/w500/ETFWCToRFx45vNAsNexh31ufSE.jpg",
+     "url": "https://www.themoviedb.org/tv/1871",
+     "meta": "1985 · 4.4 / 10"
+    },
+    {
+     "id": "series:tmdb-13945",
+     "kind": "series",
+     "title": "Gute Zeiten, schlechte Zeiten",
+     "image": "https://image.tmdb.org/t/p/w500/qujVFLAlBnPU9mZElV4NZgL8iXT.jpg",
+     "url": "https://www.themoviedb.org/tv/13945",
+     "meta": "1992 · 5.4 / 10"
+    },
+    {
+     "id": "series:tmdb-81329",
+     "kind": "series",
+     "title": "Un si grand soleil",
+     "image": "https://image.tmdb.org/t/p/w500/dhEN7hDJ3TR86JK36VyySEoPFok.jpg",
+     "url": "https://www.themoviedb.org/tv/81329",
+     "meta": "2018 · 6.5 / 10"
+    },
+    {
+     "id": "series:tmdb-2883",
+     "kind": "series",
+     "title": "Dark Shadows",
+     "image": "https://image.tmdb.org/t/p/w500/eRtnI7qTJIiPUmlY3J8TTM3jlT7.jpg",
+     "url": "https://www.themoviedb.org/tv/2883",
+     "meta": "1966 · 7.3 / 10",
+     "note": "1966'dan 71'e beş yıl ekranda kalan Dark Shadows filmi, aynı isimli Tim Burton filmine ilham kaynağı olmuştur.. Gotik bir vampir hikayesinin anlatıldığı dizide,"
+    }
+   ]
+  },
+  {
+   "id": "10767",
+   "name": "Talk",
+   "items": [
+    {
+     "id": "series:tmdb-22980",
+     "kind": "series",
+     "title": "Watch What Happens Live with Andy Cohen",
+     "image": "https://image.tmdb.org/t/p/w500/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+     "url": "https://www.themoviedb.org/tv/22980",
+     "meta": "2009 · 4.9 / 10"
+    },
+    {
+     "id": "series:tmdb-59941",
+     "kind": "series",
+     "title": "The Tonight Show Starring Jimmy Fallon",
+     "image": "https://image.tmdb.org/t/p/w500/1N4o5PmmqhlVDrcdJ2RlCFWbLGX.jpg",
+     "url": "https://www.themoviedb.org/tv/59941",
+     "meta": "2014 · 5.8 / 10"
+    },
+    {
+     "id": "series:tmdb-2261",
+     "kind": "series",
+     "title": "The Tonight Show Starring Johnny Carson",
+     "image": "https://image.tmdb.org/t/p/w500/uSvET5YUvHNDIeoCpErrbSmasFb.jpg",
+     "url": "https://www.themoviedb.org/tv/2261",
+     "meta": "1962 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-61818",
+     "kind": "series",
+     "title": "Late Night with Seth Meyers",
+     "image": "https://image.tmdb.org/t/p/w500/hZYQjSo7mHZ06w52mzfN8izFTwZ.jpg",
+     "url": "https://www.themoviedb.org/tv/61818",
+     "meta": "2014 · 5.1 / 10"
+    },
+    {
+     "id": "series:tmdb-498",
+     "kind": "series",
+     "title": "David Letterman ile Geç Gösteri",
+     "image": "https://image.tmdb.org/t/p/w500/fTBC5EpsgKmli9VQcJMtqQ08Qj4.jpg",
+     "url": "https://www.themoviedb.org/tv/498",
+     "meta": "1993 · 6.4 / 10",
+     "note": "ABD’nin en çok izlenen talk show ustalarından David Letterman; sinema, televizyon, tiyatro, müzik, politika ve spor dünyasının zirvedeki isimlerini ağırladığı ü"
+    },
+    {
+     "id": "series:tmdb-63770",
+     "kind": "series",
+     "title": "The Late Show with Stephen Colbert",
+     "image": "https://image.tmdb.org/t/p/w500/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg",
+     "url": "https://www.themoviedb.org/tv/63770",
+     "meta": "2015 · 6.1 / 10",
+     "note": "Doğaçlama oyuncusu ve komedyen Stephen Colbert, uzun zamandır beklenen televizyona dönüşünü yaparken \"The Colbert Report\" karakterini geride bırakıyor. New York"
+    },
+    {
+     "id": "series:tmdb-32415",
+     "kind": "series",
+     "title": "Conan",
+     "image": "https://image.tmdb.org/t/p/w500/oQxrvUhP3ycwnlxIrIMQ9Z3kleq.jpg",
+     "url": "https://www.themoviedb.org/tv/32415",
+     "meta": "2010 · 7.2 / 10"
+    },
+    {
+     "id": "series:tmdb-82873",
+     "kind": "series",
+     "title": "The Kelly Clarkson Show",
+     "image": "https://image.tmdb.org/t/p/w500/sBix25bie9UQFzbarN51DpFO5ky.jpg",
+     "url": "https://www.themoviedb.org/tv/82873",
+     "meta": "2019 · 6.2 / 10"
+    },
+    {
+     "id": "series:tmdb-2221",
+     "kind": "series",
+     "title": "The View",
+     "image": "https://image.tmdb.org/t/p/w500/pEUNIxCMh2jFjUj7u09f4O5CcR4.jpg",
+     "url": "https://www.themoviedb.org/tv/2221",
+     "meta": "1997 · 4.2 / 10",
+     "note": "ABC Daytime'ın şu anda Whoopi Goldberg, Joy Behar, Sunny Hostin, Meghan McCain ve Abby Huntsman'ın günün en heyecan verici olaylarını tartıştığı sabah sohbeti. "
+    },
+    {
+     "id": "series:tmdb-14981",
+     "kind": "series",
+     "title": "The Late Late Show with Craig Ferguson",
+     "image": "https://image.tmdb.org/t/p/w500/gGC7zSDgG0FY0MbM1pjfhTCWQBI.jpg",
+     "url": "https://www.themoviedb.org/tv/14981",
+     "meta": "2005 · 6.8 / 10"
+    }
+   ]
+  },
+  {
+   "id": "10768",
+   "name": "Savaş & Politik",
+   "items": [
+    {
+     "id": "series:tmdb-113962",
+     "kind": "series",
+     "title": "Lioness",
+     "image": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+     "url": "https://www.themoviedb.org/tv/113962",
+     "meta": "2023 · 8.3 / 10",
+     "note": "Sert mizaçlı fakat tutkulu bir genç deniz piyadesi olan Cruz Manuelos, bir terör örgütünü içeriden çökertmeye yardımcı olmak amacıyla CIA'in Lioness Operasyon E"
+    },
+    {
+     "id": "series:tmdb-44217",
+     "kind": "series",
+     "title": "Vikingler",
+     "image": "https://image.tmdb.org/t/p/w500/qkCh6cFSHikSIFTWUQyJ2qJzqsy.jpg",
+     "url": "https://www.themoviedb.org/tv/44217",
+     "meta": "2013 · 8.1 / 10",
+     "note": "Viking kahramanı Ragnar Lothbrok’un, ileriyi göremeyen, yetersiz bir lidere meydan okuyarak Norse sınırlarını nasıl genişlettiğini seyrettiğimiz gerçekçi bir dr"
+    },
+    {
+     "id": "series:tmdb-918",
+     "kind": "series",
+     "title": "M*A*S*H",
+     "image": "https://image.tmdb.org/t/p/w500/6rhuM3oMoEWKxAdrm7IyM8oq8cC.jpg",
+     "url": "https://www.themoviedb.org/tv/918",
+     "meta": "1972 · 8.0 / 10"
+    },
+    {
+     "id": "series:tmdb-1407",
+     "kind": "series",
+     "title": "Homeland",
+     "image": "https://image.tmdb.org/t/p/w500/6GAvS2e6VIRsms9FpVt33PsCoEW.jpg",
+     "url": "https://www.themoviedb.org/tv/1407",
+     "meta": "2011 · 7.6 / 10",
+     "note": "Irak'ta öldürüldüğü tahmin edilen bir Amerikan askeri, kaybolduktan 8 yıl sonra geri döner. Ancak eve dönüş sevinci sona erdikten sonra, onun gerçekten bir Amer"
+    },
+    {
+     "id": "series:tmdb-95603",
+     "kind": "series",
+     "title": "Kuruluş: Osman",
+     "image": "https://image.tmdb.org/t/p/w500/rQUhcrcvWoPHjxRc6hzlD2enmRK.jpg",
+     "url": "https://www.themoviedb.org/tv/95603",
+     "meta": "2019 · 8.0 / 10",
+     "note": "Dizi, Ertuğrul Gazi'nin oğlu ve Osmanlı İmparatorluğu'nun kurucusu Osman Bey'in hayatına odaklanacak."
+    },
+    {
+     "id": "series:tmdb-71789",
+     "kind": "series",
+     "title": "SEAL Team",
+     "image": "https://image.tmdb.org/t/p/w500/6iSnec83UEMgLOXAtGYwaVNHLjR.jpg",
+     "url": "https://www.themoviedb.org/tv/71789",
+     "meta": "2017 · 8.0 / 10",
+     "note": "\"Başarısızlık\" ülkenin en seçkin ve özel operasyon güçleri Navy SEAL takımı için bir seçenek değildir. Bu aksiyon dolu yeni dizide, serin kanlı ve korkusuz sava"
+    },
+    {
+     "id": "series:tmdb-61378",
+     "kind": "series",
+     "title": "Madam Secretary",
+     "image": "https://image.tmdb.org/t/p/w500/6Nl1ablo4DNTLb4ZH7Mycz81AEt.jpg",
+     "url": "https://www.themoviedb.org/tv/61378",
+     "meta": "2014 · 7.0 / 10"
+    },
+    {
+     "id": "series:tmdb-732",
+     "kind": "series",
+     "title": "L.A. Law",
+     "image": "https://image.tmdb.org/t/p/w500/hs1TBk6KlPBlnb7ybpqgK6IzcCx.jpg",
+     "url": "https://www.themoviedb.org/tv/732",
+     "meta": "1986 · 7.0 / 10"
+    },
+    {
+     "id": "series:tmdb-63333",
+     "kind": "series",
+     "title": "The Last Kingdom",
+     "image": "https://image.tmdb.org/t/p/w500/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg",
+     "url": "https://www.themoviedb.org/tv/63333",
+     "meta": "2015 · 8.3 / 10",
+     "note": "Dizi, Vikingler tarafından büyütülen, sonrasında kralları Büyük Alfred ile oğlu Edward için kalkan duvarları ve kan, intikam içerisinde Alfred'in İngiltere diye"
+    },
+    {
+     "id": "series:tmdb-126308",
+     "kind": "series",
+     "title": "Shōgun",
+     "image": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+     "url": "https://www.themoviedb.org/tv/126308",
+     "meta": "2024 · 8.4 / 10",
+     "note": "Japonya'da 1600 yılında geçen hikayede Lord Yoshii Toranaga, yakınlardaki bir balıkçı köyünde gizemli bir Avrupa gemisi karaya oturduğunda, Naipler Konseyi'ndek"
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "name": "Vahşi Batı",
+   "items": [
+    {
+     "id": "series:tmdb-1018",
+     "kind": "series",
+     "title": "Bonanza",
+     "image": "https://image.tmdb.org/t/p/w500/wQ1iVrG871anxkEUwWTRdPRi0j1.jpg",
+     "url": "https://www.themoviedb.org/tv/1018",
+     "meta": "1959 · 7.5 / 10"
+    },
+    {
+     "id": "series:tmdb-73586",
+     "kind": "series",
+     "title": "Yellowstone",
+     "image": "https://image.tmdb.org/t/p/w500/peNC0eyc3TQJa6x4TdKcBPNP4t0.jpg",
+     "url": "https://www.themoviedb.org/tv/73586",
+     "meta": "2018 · 8.3 / 10",
+     "note": "Dizi, Amerika'nın Montana eyaletindeki en büyük çiftliği kontrolünde bulunduran, John Dutton'un liderliğindeki Dutton ailesinin şiddet dolu dünyasını izliyor. B"
+    },
+    {
+     "id": "series:tmdb-63247",
+     "kind": "series",
+     "title": "Westworld",
+     "image": "https://image.tmdb.org/t/p/w500/8MfgyFHf7XEboZJPZXCIDqqiz6e.jpg",
+     "url": "https://www.themoviedb.org/tv/63247",
+     "meta": "2016 · 8.0 / 10",
+     "note": "İki konuk ileri teknolojinin kullanıldığı bir eğlence parkında Vahşi Batı macerasına çıkar. Parktaki insanlar robottur ve park Roma, Vahşi Batı ve Ortaçağ dönem"
+    },
+    {
+     "id": "series:tmdb-1781",
+     "kind": "series",
+     "title": "Küçük Ev",
+     "image": "https://image.tmdb.org/t/p/w500/eVpvlqKZfEVsBOttNFTUyfPoA6K.jpg",
+     "url": "https://www.themoviedb.org/tv/1781",
+     "meta": "1974 · 8.0 / 10",
+     "note": "Bonanza'daki Küçük Co Michael Landon büyüyüp Ingalls ailesinin babası olmuştu. Küçük Ev 19. yüzyılda Minnesota'da dağbaşında ilkel bir kasabada yaşayan Laura In"
+    },
+    {
+     "id": "series:tmdb-10980",
+     "kind": "series",
+     "title": "Have Gun, Will Travel",
+     "image": "https://image.tmdb.org/t/p/w500/6aJRq7FGs2axLOdZNJ2G4IOQtMx.jpg",
+     "url": "https://www.themoviedb.org/tv/10980",
+     "meta": "1957 · 7.3 / 10"
+    },
+    {
+     "id": "series:tmdb-6081",
+     "kind": "series",
+     "title": "Wagon Train",
+     "image": "https://image.tmdb.org/t/p/w500/csC6kMTKWmOcy9nKZEgdwd7Frb9.jpg",
+     "url": "https://www.themoviedb.org/tv/6081",
+     "meta": "1957 · 6.6 / 10"
+    },
+    {
+     "id": "series:tmdb-4324",
+     "kind": "series",
+     "title": "Dr. Quinn, Medicine Woman",
+     "image": "https://image.tmdb.org/t/p/w500/rF32uo83bzezkEUQ8VGarbCJi32.jpg",
+     "url": "https://www.themoviedb.org/tv/4324",
+     "meta": "1993 · 7.6 / 10"
+    },
+    {
+     "id": "series:tmdb-13859",
+     "kind": "series",
+     "title": "The Rifleman",
+     "image": "https://image.tmdb.org/t/p/w500/tYf5Sc83chWG2nBlo5xKdpBBwlI.jpg",
+     "url": "https://www.themoviedb.org/tv/13859",
+     "meta": "1958 · 7.1 / 10"
+    },
+    {
+     "id": "series:tmdb-953",
+     "kind": "series",
+     "title": "Maverick",
+     "image": "https://image.tmdb.org/t/p/w500/psVbZjMHt9f9X7EIks9IQdCMZke.jpg",
+     "url": "https://www.themoviedb.org/tv/953",
+     "meta": "1957 · 7.1 / 10"
+    },
+    {
+     "id": "series:tmdb-61865",
+     "kind": "series",
+     "title": "Kalp Çağrısı",
+     "image": "https://image.tmdb.org/t/p/w500/3d8XxE3qDLzeewtaC4DGamI6Ofa.jpg",
+     "url": "https://www.themoviedb.org/tv/61865",
+     "meta": "2014 · 8.2 / 10",
+     "note": "1900'lerin başında şehirdeki sosyetik hayatını geride bırakıp batıya giden bir kadın, Kanada'nın küçük bir maden kasabasında öğretmenlik yapmaya başlar."
+    }
+   ]
+  }
+ ],
  "events": {
   "ISTANBUL": [
    {
@@ -2221,8 +5509,8 @@
      {
       "id": "event:5PGC2",
       "kind": "event",
-      "title": "2026 PUBG MOBILE DÜNYA ŞAMPİYONASI GÜN 2",
-      "image": "https://www.biletix.com/static/images/live/event/eventimages/5PGC2-251126su.avif",
+      "title": "2026 PUBG MOBILE DÜNYA ŞAMPİYONASI GÜN 2 - Lvbel C5",
+      "image": "https://www.biletix.com/static/images/live/event/eventimages/5PGC2_19201080gncl_25112026.avif",
       "venue": "Basketbol Gelişim Merkezi",
       "city": "İstanbul",
       "when": "2026-12-12T09:00:00Z",
@@ -6442,175 +9730,431 @@
   ]
  },
  "places": {
-  "ANKARA": [
-   {
-    "id": "yuruyus-parklari",
-    "name": "Yürüyüş parkları",
-    "items": [
-     {
-      "id": "place:ankara-eymir",
-      "kind": "place",
-      "title": "Eymir Gölü",
-      "venue": "Gölbaşı",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg/500px-Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Eymir_G%C3%B6l%C3%BC",
-      "note": "Göl çevresinde yürüyüş ve bisiklet yolu"
-     },
-     {
-      "id": "place:ankara-mogan",
-      "kind": "place",
-      "title": "Mogan Gölü",
-      "venue": "Gölbaşı",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg/500px-G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Mogan_G%C3%B6l%C3%BC",
-      "note": "Göl kıyısı boyunca yürüyüş yolu"
-     },
-     {
-      "id": "place:ankara-dikmen-vadisi",
-      "kind": "place",
-      "title": "Dikmen Vadisi",
-      "venue": "Çankaya",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikmen_Vadisi.jpg/500px-Dikmen_Vadisi.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Dikmen_Vadisi",
-      "note": "Vadi boyunca uzanan yürüyüş parkuru"
-     },
-     {
-      "id": "place:ankara-segmenler",
-      "kind": "place",
-      "title": "Seğmenler Parkı",
-      "venue": "Çankaya",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankara%2C_Turkey_-_panoramio_%2892%29.jpg/500px-Ankara%2C_Turkey_-_panoramio_%2892%29.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Se%C4%9Fmenler_Park%C4%B1",
-      "note": "Kavaklıdere’de yamaca yayılan çimlik park"
-     },
-     {
-      "id": "place:ankara-kugulu",
-      "kind": "place",
-      "title": "Kuğulu Park",
-      "venue": "Çankaya",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ankara_Ku%C4%9Fulu_Park.JPG/500px-Ankara_Ku%C4%9Fulu_Park.JPG",
-      "url": "https://tr.wikipedia.org/wiki/Ku%C4%9Fulu_Park",
-      "note": "Tunalı’nın ucunda göletli küçük park"
-     },
-     {
-      "id": "place:ankara-botanik",
-      "kind": "place",
-      "title": "Botanik Parkı",
-      "venue": "Çankaya",
-      "city": "Ankara"
-     },
-     {
-      "id": "place:ankara-kurtulus",
-      "kind": "place",
-      "title": "Kurtuluş Parkı",
-      "venue": "Çankaya",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg/500px-Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Kurtulu%C5%9F_Park%C4%B1",
-      "note": "Şehrin ortasında ağaçlık yürüyüş yolları"
-     },
-     {
-      "id": "place:ankara-50-yil",
-      "kind": "place",
-      "title": "50. Yıl Parkı",
-      "venue": "Çankaya",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/50._y%C4%B1l_park%C4%B1_-_panoramio.jpg/500px-50._y%C4%B1l_park%C4%B1_-_panoramio.jpg",
-      "url": "https://tr.wikipedia.org/wiki/50._Y%C4%B1l_Park%C4%B1"
-     },
-     {
-      "id": "place:ankara-genclik",
-      "kind": "place",
-      "title": "Gençlik Parkı",
-      "venue": "Altındağ",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg/500px-Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Gen%C3%A7lik_Park%C4%B1",
-      "note": "Ulus’ta havuzlu büyük şehir parkı"
-     },
-     {
-      "id": "place:ankara-baskent-millet-bahcesi",
-      "kind": "place",
-      "title": "Başkent Millet Bahçesi",
-      "venue": "Altındağ",
-      "city": "Ankara"
-     },
-     {
-      "id": "place:ankara-altinpark",
-      "kind": "place",
-      "title": "Altınpark",
-      "venue": "Altındağ",
-      "city": "Ankara",
-      "note": "Göletli, geniş yürüyüş alanı"
-     },
-     {
-      "id": "place:ankara-aoc",
-      "kind": "place",
-      "title": "Atatürk Orman Çiftliği",
-      "venue": "Yenimahalle",
-      "city": "Ankara",
-      "url": "https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Orman_%C3%87iftli%C4%9Fi",
-      "note": "Ağaçlıklı yollar, geniş açık alan"
-     },
-     {
-      "id": "place:ankara-kuzey-yildizi",
-      "kind": "place",
-      "title": "Kuzey Yıldızı Parkı",
-      "venue": "Keçiören",
-      "city": "Ankara"
-     },
-     {
-      "id": "place:ankara-goksu",
-      "kind": "place",
-      "title": "Göksu Parkı",
-      "venue": "Etimesgut",
-      "city": "Ankara",
-      "url": "https://tr.wikipedia.org/wiki/G%C3%B6ksu_Park%C4%B1",
-      "note": "Eryaman’da göl çevresinde yürüyüş"
-     },
-     {
-      "id": "place:ankara-harikalar-diyari",
-      "kind": "place",
-      "title": "Harikalar Diyarı",
-      "venue": "Sincan",
-      "city": "Ankara",
-      "note": "Sincan’da çok geniş bir park"
-     },
-     {
-      "id": "place:ankara-mavi-gol",
-      "kind": "place",
-      "title": "Mavi Göl",
-      "venue": "Mamak",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg/500px-T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg",
-      "url": "https://tr.wikipedia.org/wiki/Bay%C4%B1nd%C4%B1r_Baraj%C4%B1",
-      "note": "Bayındır Barajı kıyısında mesire alanı"
-     },
-     {
-      "id": "place:ankara-karagol",
-      "kind": "place",
-      "title": "Karagöl",
-      "venue": "Çubuk",
-      "city": "Ankara",
-      "note": "Orman içinde küçük bir göl; şehir dışı, günübirlik"
-     },
-     {
-      "id": "place:ankara-soguksu",
-      "kind": "place",
-      "title": "Soğuksu Millî Parkı",
-      "venue": "Kızılcahamam",
-      "city": "Ankara",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/So%C4%9Fuksu_National_Park.jpg/500px-So%C4%9Fuksu_National_Park.jpg",
-      "url": "https://tr.wikipedia.org/wiki/So%C4%9Fuksu_Mill%C3%AE_Park%C4%B1",
-      "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik"
-     }
-    ]
-   }
-  ]
+  "walk": {
+   "ANKARA": [
+    {
+     "id": "gol-kenari",
+     "name": "Göl kenarı",
+     "items": [
+      {
+       "id": "place:ankara-eymir",
+       "kind": "place",
+       "title": "Eymir Gölü",
+       "venue": "Gölbaşı",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg/500px-Eymir_G%C3%B6l%C3%BC_%28Lake_Eymir%29_03.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Eymir_G%C3%B6l%C3%BC",
+       "note": "Göl çevresinde yürüyüş ve bisiklet yolu"
+      },
+      {
+       "id": "place:ankara-mogan",
+       "kind": "place",
+       "title": "Mogan Gölü",
+       "venue": "Gölbaşı",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg/500px-G%C3%B6lba%C5%9F%C4%B1_lake_next_to_Ankara%2C_Turkey.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Mogan_G%C3%B6l%C3%BC",
+       "note": "Göl kıyısı boyunca yürüyüş yolu"
+      },
+      {
+       "id": "place:ankara-mavi-gol",
+       "kind": "place",
+       "title": "Mavi Göl",
+       "venue": "Mamak",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg/500px-T%C3%BCrkiye_Ankara_Mavi_G%C3%B6l_02.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Bay%C4%B1nd%C4%B1r_Baraj%C4%B1",
+       "note": "Bayındır Barajı kıyısında mesire alanı"
+      },
+      {
+       "id": "place:ankara-goksu",
+       "kind": "place",
+       "title": "Göksu Parkı",
+       "venue": "Etimesgut",
+       "city": "Ankara",
+       "url": "https://tr.wikipedia.org/wiki/G%C3%B6ksu_Park%C4%B1",
+       "note": "Eryaman’da göl çevresinde yürüyüş"
+      }
+     ]
+    },
+    {
+     "id": "sehir-ici",
+     "name": "Şehir içi",
+     "items": [
+      {
+       "id": "place:ankara-dikmen-vadisi",
+       "kind": "place",
+       "title": "Dikmen Vadisi",
+       "venue": "Çankaya",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikmen_Vadisi.jpg/500px-Dikmen_Vadisi.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Dikmen_Vadisi",
+       "note": "Vadi boyunca uzanan yürüyüş parkuru"
+      },
+      {
+       "id": "place:ankara-segmenler",
+       "kind": "place",
+       "title": "Seğmenler Parkı",
+       "venue": "Çankaya",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankara%2C_Turkey_-_panoramio_%2892%29.jpg/500px-Ankara%2C_Turkey_-_panoramio_%2892%29.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Se%C4%9Fmenler_Park%C4%B1",
+       "note": "Kavaklıdere’de yamaca yayılan çimlik park"
+      },
+      {
+       "id": "place:ankara-kugulu",
+       "kind": "place",
+       "title": "Kuğulu Park",
+       "venue": "Çankaya",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ankara_Ku%C4%9Fulu_Park.JPG/500px-Ankara_Ku%C4%9Fulu_Park.JPG",
+       "url": "https://tr.wikipedia.org/wiki/Ku%C4%9Fulu_Park",
+       "note": "Tunalı’nın ucunda göletli küçük park"
+      },
+      {
+       "id": "place:ankara-botanik",
+       "kind": "place",
+       "title": "Botanik Parkı",
+       "venue": "Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-kurtulus",
+       "kind": "place",
+       "title": "Kurtuluş Parkı",
+       "venue": "Çankaya",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg/500px-Kurtulu%C5%9F_Park%C4%B1_-_panoramio_%282%29.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Kurtulu%C5%9F_Park%C4%B1",
+       "note": "Şehrin ortasında ağaçlık yürüyüş yolları"
+      },
+      {
+       "id": "place:ankara-50-yil",
+       "kind": "place",
+       "title": "50. Yıl Parkı",
+       "venue": "Çankaya",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/50._y%C4%B1l_park%C4%B1_-_panoramio.jpg/500px-50._y%C4%B1l_park%C4%B1_-_panoramio.jpg",
+       "url": "https://tr.wikipedia.org/wiki/50._Y%C4%B1l_Park%C4%B1"
+      },
+      {
+       "id": "place:ankara-genclik",
+       "kind": "place",
+       "title": "Gençlik Parkı",
+       "venue": "Altındağ",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg/500px-Ankara_asv2021-10_img57_Gen%C3%A7lik_Park.jpg",
+       "url": "https://tr.wikipedia.org/wiki/Gen%C3%A7lik_Park%C4%B1",
+       "note": "Ulus’ta havuzlu büyük şehir parkı"
+      },
+      {
+       "id": "place:ankara-baskent-millet-bahcesi",
+       "kind": "place",
+       "title": "Başkent Millet Bahçesi",
+       "venue": "Altındağ",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-altinpark",
+       "kind": "place",
+       "title": "Altınpark",
+       "venue": "Altındağ",
+       "city": "Ankara",
+       "note": "Göletli, geniş yürüyüş alanı"
+      },
+      {
+       "id": "place:ankara-aoc",
+       "kind": "place",
+       "title": "Atatürk Orman Çiftliği",
+       "venue": "Yenimahalle",
+       "city": "Ankara",
+       "url": "https://tr.wikipedia.org/wiki/Atat%C3%BCrk_Orman_%C3%87iftli%C4%9Fi",
+       "note": "Ağaçlıklı yollar, geniş açık alan"
+      },
+      {
+       "id": "place:ankara-kuzey-yildizi",
+       "kind": "place",
+       "title": "Kuzey Yıldızı Parkı",
+       "venue": "Keçiören",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-harikalar-diyari",
+       "kind": "place",
+       "title": "Harikalar Diyarı",
+       "venue": "Sincan",
+       "city": "Ankara",
+       "note": "Sincan’da çok geniş bir park"
+      }
+     ]
+    },
+    {
+     "id": "sehir-disi",
+     "name": "Şehir dışı",
+     "items": [
+      {
+       "id": "place:ankara-karagol",
+       "kind": "place",
+       "title": "Karagöl",
+       "venue": "Çubuk",
+       "city": "Ankara",
+       "note": "Orman içinde küçük bir göl; şehir dışı, günübirlik"
+      },
+      {
+       "id": "place:ankara-soguksu",
+       "kind": "place",
+       "title": "Soğuksu Millî Parkı",
+       "venue": "Kızılcahamam",
+       "city": "Ankara",
+       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/So%C4%9Fuksu_National_Park.jpg/500px-So%C4%9Fuksu_National_Park.jpg",
+       "url": "https://tr.wikipedia.org/wiki/So%C4%9Fuksu_Mill%C3%AE_Park%C4%B1",
+       "note": "Orman içi yürüyüş parkurları; şehir dışı, günübirlik"
+      }
+     ]
+    }
+   ]
+  },
+  "food": {
+   "ANKARA": [
+    {
+     "id": "kebap-ve-et",
+     "name": "Kebap ve et",
+     "items": [
+      {
+       "id": "place:ankara-uludag",
+       "kind": "place",
+       "title": "Uludağ Kebapçısı",
+       "meta": "Kebap",
+       "venue": "Denizciler Caddesi, Altındağ",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-yildiz-aspava",
+       "kind": "place",
+       "title": "Yıldız Aspava",
+       "meta": "Döner ve kebap",
+       "venue": "Esat Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-simsek-aspava",
+       "kind": "place",
+       "title": "Şimşek Aspava",
+       "meta": "Döner ve kebap",
+       "venue": "Azerbaycan Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-duveroglu",
+       "kind": "place",
+       "title": "Düveroğlu",
+       "meta": "Kebap",
+       "venue": "İhsan Doğramacı Bulvarı, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-kebap-49",
+       "kind": "place",
+       "title": "Kebap 49",
+       "meta": "Kebap",
+       "venue": "Bülten Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-tavaci-recep-usta",
+       "kind": "place",
+       "title": "Tavacı Recep Usta",
+       "meta": "Tava ve kebap",
+       "venue": "Güzeltepe Mahallesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-zeynel-cilli",
+       "kind": "place",
+       "title": "Zeynel Çilli",
+       "meta": "Et lokantası",
+       "venue": "Üniversiteler, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-gunaydin",
+       "kind": "place",
+       "title": "Günaydın",
+       "meta": "Et ve köfte",
+       "venue": "Or-An Mahallesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-nusret",
+       "kind": "place",
+       "title": "Nusr-Et Steakhouse",
+       "meta": "Steakhouse",
+       "venue": "Şehit Ömer Haluk Sipahioğlu Sokak, Çankaya",
+       "city": "Ankara"
+      }
+     ]
+    },
+    {
+     "id": "lokanta",
+     "name": "Lokanta",
+     "items": [
+      {
+       "id": "place:ankara-goksu-lokantasi",
+       "kind": "place",
+       "title": "Göksu Lokantası",
+       "meta": "Türk mutfağı",
+       "venue": "Tahran Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-bogazici",
+       "kind": "place",
+       "title": "Boğaziçi Lokantası",
+       "meta": "Türk mutfağı",
+       "venue": "Denizciler Caddesi, Altındağ",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-cicek",
+       "kind": "place",
+       "title": "Çiçek Lokantası",
+       "meta": "Türk mutfağı",
+       "venue": "Söğütözü Mahallesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-cengelhan",
+       "kind": "place",
+       "title": "Divan Brasserie Çengelhan",
+       "meta": "Brasserie",
+       "venue": "Gözcü Sokağı, Altındağ",
+       "city": "Ankara"
+      }
+     ]
+    },
+    {
+     "id": "balik",
+     "name": "Balık",
+     "items": [
+      {
+       "id": "place:ankara-trilye",
+       "kind": "place",
+       "title": "Trilye",
+       "meta": "Balık",
+       "venue": "Kuleli Sokak, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-balikcikoy",
+       "kind": "place",
+       "title": "Balıkçıköy",
+       "meta": "Balık",
+       "venue": "Doğan Taşdelen Bulvarı, Çankaya",
+       "city": "Ankara"
+      }
+     ]
+    },
+    {
+     "id": "dunya-mutfagi",
+     "name": "Dünya mutfağı",
+     "items": [
+      {
+       "id": "place:ankara-mezzaluna",
+       "kind": "place",
+       "title": "Mezzaluna",
+       "meta": "İtalyan",
+       "venue": "Turan Emeksiz Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-quick-china",
+       "kind": "place",
+       "title": "Quick China",
+       "meta": "Uzak Doğu",
+       "venue": "Çayhane Sokak, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-spice-curry-house",
+       "kind": "place",
+       "title": "Spice Curry House",
+       "meta": "Hint",
+       "venue": "Uğur Mumcu Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-sushico",
+       "kind": "place",
+       "title": "SushiCo",
+       "meta": "Suşi",
+       "venue": "S. Saltoğlu Bulvarı, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-fige",
+       "kind": "place",
+       "title": "Fige",
+       "meta": "Restoran",
+       "venue": "Prof. Dr. Aziz Sancar Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-big-chefs",
+       "kind": "place",
+       "title": "Big Chefs",
+       "meta": "Restoran ve kafe",
+       "venue": "Bilkent, Çankaya",
+       "city": "Ankara"
+      }
+     ]
+    },
+    {
+     "id": "kafe-ve-tatli",
+     "name": "Kafe ve tatlı",
+     "items": [
+      {
+       "id": "place:ankara-cafemiz",
+       "kind": "place",
+       "title": "Cafemiz",
+       "meta": "Kafe",
+       "venue": "Arjantin Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-leman-kultur",
+       "kind": "place",
+       "title": "Leman Kültür",
+       "meta": "Kafe",
+       "venue": "Bestekar Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-liva",
+       "kind": "place",
+       "title": "Liva Pastanesi",
+       "meta": "Pastane",
+       "venue": "Güvenlik Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-kitir",
+       "kind": "place",
+       "title": "Kıtır",
+       "meta": "Atıştırmalık ve bira",
+       "venue": "Tunalı Hilmi Caddesi, Çankaya",
+       "city": "Ankara"
+      },
+      {
+       "id": "place:ankara-hayyami",
+       "kind": "place",
+       "title": "Hayyami",
+       "meta": "Şarap evi",
+       "venue": "Bestekar Caddesi, Çankaya",
+       "city": "Ankara"
+      }
+     ]
+    }
+   ]
+  }
  }
 }

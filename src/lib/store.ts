@@ -37,9 +37,9 @@ interface State {
 // Only the fields this version knows are taken over; an older build kept a GitHub token here.
 // A stored city counts only if it was picked by hand: earlier builds wrote the old default
 // (İstanbul) to storage on the first sync, without anyone choosing it.
-const { names, me, region, regionChosen, lastSync } = read<Partial<Settings>>(SETTINGS_KEY, {})
+const { names, me, region, regionChosen, lastSync, deckSize } = read<Partial<Settings>>(SETTINGS_KEY, {})
 const storedSettings: Partial<Settings> = JSON.parse(
-  JSON.stringify({ names, me, lastSync, ...(regionChosen ? { region, regionChosen } : {}) }),
+  JSON.stringify({ names, me, lastSync, deckSize, ...(regionChosen ? { region, regionChosen } : {}) }),
 )
 let state: State = {
   doc: normalizeDoc(read<unknown>(DOC_KEY, emptyDoc())),

@@ -3,14 +3,22 @@ import { Cover } from '../components/Cover'
 import { IconClose, IconOut, IconUndo } from '../components/Icons'
 import { ItemRow } from '../components/ItemRow'
 import { eventWhen } from '../lib/format'
-import { patchItem, recordWin, saveTrending, useStore } from '../lib/store'
+import { patchItem, recordWin, saveTrending, updateSettings, useStore } from '../lib/store'
+import { catalogPicks, loadCatalog, trendToItem, weeklyPool } from '../lib/trending'
 import { pick, remaining, shuffle, startBracket, type Bracket } from '../lib/tournament'
-import { KIND_LABEL, type Item, type Kind } from '../lib/types'
+import { KIND_LABEL, type Catalog, type Item, type Kind, type Trending } from '../lib/types'
 import { locate, mapsSearch, nearbyVenues, planFor, type Suggestion } from '../lib/venues'
 
 type Phase = 'ready' | 'swipe' | 'duel' | 'result' | 'none'
 
 const KINDS: Kind[] = ['activity', 'place', 'movie', 'series', 'event']
+
+/** The most options one session offers, and the steps offered below that. */
+const MAX_DECK = 50
+const DECK_STEPS = [5, 10, 20, 30, 40, 50]
+const DEFAULT_DECK = 20
+/** Share of the deck kept for the couple's own entries when there are enough of them. */
+const OWN_SHARE = 0.6
 
 const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
@@ -27,12 +35,23 @@ function details(item: Item): string {
 }
 
 function origin(item: Item): string {
-  if (item.source === 'trending') return 'Bu hafta revaçta'
+  if (item.source === 'trending') return 'Revaçta ve popüler olanlardan'
   if (item.ref) return 'Beğendiklerinizden'
   return item.addedBy ? `Eklediklerinizden · ${item.addedBy} ekledi` : 'Eklediklerinizden'
 }
 
-export function Session({ pool, onClose }: { pool: Item[]; onClose: () => void }) {
+export function Session({
+  mine,
+  trending,
+  region,
+  onClose,
+}: {
+  /** What the couple added or liked and has not done yet. */
+  mine: Item[]
+  trending: Trending | null
+  region: string
+  onClose: () => void
+}) {
   const [phase, setPhase] = useState<Phase>('ready')
   const [deck, setDeck] = useState<Item[]>([])
   const [decisions, setDecisions] = useState<boolean[]>([])
@@ -117,7 +136,7 @@ export function Session({ pool, onClose }: { pool: Item[]; onClose: () => void }
       </header>
       <div className="track" aria-hidden><span style={{ transform: `scaleX(${phase === 'ready' ? 0 : progress})` }} /></div>
 
-      {phase === 'ready' && <ReadyStage pool={pool} onBegin={begin} onClose={onClose} />}
+      {phase === 'ready' && <ReadyStage mine={mine} trending={trending} region={region} onBegin={begin} onClose={onClose} />}
 
       {phase === 'swipe' && index < deck.length && (
         <SwipeStage key={deck[index].id} item={deck[index]} next={deck[index + 1]} onDecide={decide} />
@@ -141,11 +160,53 @@ export function Session({ pool, onClose }: { pool: Item[]; onClose: () => void }
   )
 }
 
-function ReadyStage({ pool, onBegin, onClose }: { pool: Item[]; onBegin: (deck: Item[]) => void; onClose: () => void }) {
+function ReadyStage({
+  mine,
+  trending,
+  region,
+  onBegin,
+  onClose,
+}: {
+  mine: Item[]
+  trending: Trending | null
+  region: string
+  onBegin: (deck: Item[]) => void
+  onClose: () => void
+}) {
+  const { settings } = useStore()
   const [off, setOff] = useState<Set<Kind>>(new Set())
-  const deck = pool.filter((i) => !off.has(i.kind))
-  const mine = deck.filter((i) => i.source === 'saved').length
-  const counts = KINDS.map((kind) => ({ kind, n: pool.filter((i) => i.kind === kind).length })).filter((c) => c.n > 0)
+  const [catalog, setCatalog] = useState<Catalog | null>(null)
+
+  // The category shelves top the deck up when the week's trending list is not enough.
+  useEffect(() => {
+    let alive = true
+    loadCatalog().then((c) => alive && setCatalog(c), () => undefined)
+    return () => {
+      alive = false
+    }
+  }, [])
+
+  // Candidates beyond the couple's own, best first: today's ten, the rest of the week's
+  // trending pool, then the top of every category.
+  const extras = useMemo(() => {
+    const taken = new Set(mine.map((i) => i.ref ?? i.id))
+    const list = [...(trending ? weeklyPool(trending, region) : []), ...(catalog ? catalogPicks(catalog, region) : [])]
+    return list.filter((e) => (taken.has(e.id) ? false : (taken.add(e.id), true))).map(trendToItem)
+  }, [mine, trending, catalog, region])
+
+  const own = mine.filter((i) => !off.has(i.kind))
+  const more = extras.filter((i) => !off.has(i.kind))
+  const available = Math.min(MAX_DECK, own.length + more.length)
+  const sizes = DECK_STEPS.filter((n) => n <= available)
+  if (available > 0 && !sizes.includes(available)) sizes.push(available)
+  const wanted = settings.deckSize ?? DEFAULT_DECK
+  const size = sizes.filter((n) => n <= wanted).pop() ?? sizes[0] ?? 0
+
+  // Own entries first, up to their share; trending fills the rest, and whichever side
+  // runs short is made up from the other.
+  const extraCount = Math.min(more.length, size - Math.min(own.length, Math.ceil(size * OWN_SHARE)))
+  const ownCount = Math.min(own.length, size - extraCount)
+  const kinds = KINDS.filter((k) => mine.some((i) => i.kind === k) || extras.some((i) => i.kind === k))
 
   const toggle = (k: Kind) =>
     setOff((prev) => {
@@ -160,24 +221,48 @@ function ReadyStage({ pool, onBegin, onClose }: { pool: Item[]; onBegin: (deck: 
       <div className="ready__text">
         <h1 className="ready__title">Hazır mısınız?</h1>
         <p className="ready__sub">
-          {pool.length === 0
-            ? 'Destede henüz seçenek yok. Önce bir şeyler ekleyin ya da beğenin.'
-            : deck.length === 0
-              ? 'Bütün türler kapalı. En az birini açın.'
-              : `${deck.length} seçenek bekliyor: ${mine} sizden, ${deck.length - mine} bu hafta revaçta. Sağa olur, sola geç; sonra kalanlar ikişer ikişer karşılaşır.`}
+          {size === 0
+            ? kinds.length === 0
+              ? 'Destede henüz seçenek yok. Önce bir şeyler ekleyin ya da beğenin.'
+              : 'Bütün türler kapalı. En az birini açın.'
+            : `${size} seçenek: ${ownCount} sizden, ${extraCount} revaçta ve popüler olanlardan. Sağa olur, sola geç; kalanlar ikişer ikişer karşılaşır.`}
         </p>
       </div>
-      {counts.length > 0 && (
-        <div className="chips chips--center" role="group" aria-label="Desteye girecek türler">
-          {counts.map(({ kind, n }) => (
-            <button key={kind} className="chip" aria-pressed={!off.has(kind)} onClick={() => toggle(kind)}>
-              {KIND_LABEL[kind]} <span className="num chip__n">{n}</span>
-            </button>
-          ))}
+
+      {sizes.length > 1 && (
+        <div className="ready__group">
+          <span className="ready__label" id="deck-size">Kaç seçenek arasından?</span>
+          <div className="chips chips--center" role="radiogroup" aria-labelledby="deck-size">
+            {sizes.map((n) => (
+              <button key={n} role="radio" aria-checked={n === size} className="chip chip--pick num" onClick={() => updateSettings({ deckSize: n })}>
+                {n}
+              </button>
+            ))}
+          </div>
         </div>
       )}
+
+      {kinds.length > 1 && (
+        <div className="ready__group">
+          <span className="ready__label" id="deck-kinds">Neler olsun?</span>
+          <div className="chips chips--center" role="group" aria-labelledby="deck-kinds">
+            {kinds.map((kind) => (
+              <button key={kind} className="chip" aria-pressed={!off.has(kind)} onClick={() => toggle(kind)}>
+                {KIND_LABEL[kind]}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="stack">
-        <button className="btn btn--primary btn--big" disabled={deck.length === 0} onClick={() => onBegin(deck)}>Hazırız</button>
+        <button
+          className="btn btn--primary btn--big"
+          disabled={size === 0}
+          onClick={() => onBegin([...shuffle(own).slice(0, ownCount), ...more.slice(0, extraCount)])}
+        >
+          Hazırız
+        </button>
         <button className="btn btn--text" onClick={onClose}>Şimdi değil</button>
       </div>
     </div>

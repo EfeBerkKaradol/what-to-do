@@ -48,6 +48,8 @@ export interface Settings {
   /** Id of the shared list document that every visitor reads and writes. */
   shared: { bin: string }
   lastSync?: number
+  /** How many options the couple last chose to decide between. */
+  deckSize?: number
 }
 
 export interface TrendEntry {
@@ -86,8 +88,8 @@ export interface Catalog {
   movies: Genre[]
   series: Genre[]
   events: Record<string, Genre[]>
-  /** Hand-picked places by region, e.g. walking parks. */
-  places?: Record<string, Genre[]>
+  /** Hand-picked places: section ("walk", "food") → region → categories. */
+  places?: Record<string, Record<string, Genre[]>>
 }
 
 export const KIND_LABEL: Record<Kind, string> = {

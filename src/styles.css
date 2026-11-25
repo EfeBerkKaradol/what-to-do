@@ -1589,6 +1589,23 @@ button {
   padding: 12px 14px 14px;
 }
 
+.tile--plain {
+  justify-content: flex-end;
+  min-height: 132px;
+}
+
+.tile--plain .tile__text {
+  padding-top: 56px;
+}
+
+.tile--plain .like {
+  background: var(--raised);
+}
+
+.tile--plain .tile__sub {
+  -webkit-line-clamp: 3;
+}
+
 .tile__title {
   font-size: var(--fs-body);
   line-height: 19px;
@@ -1643,7 +1660,7 @@ button {
 /* ---------- Hazır mısınız ---------- */
 
 .ready {
-  gap: 28px;
+  gap: 22px;
 }
 
 .ready__text {
@@ -1657,6 +1674,17 @@ button {
   font-size: clamp(40px, 12vw, 60px);
   line-height: 1;
   letter-spacing: -0.035em;
+}
+
+.ready__group {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.ready__label {
+  color: var(--faint);
+  font-size: 13px;
 }
 
 .ready__sub {

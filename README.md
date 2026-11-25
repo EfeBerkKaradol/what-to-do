@@ -5,9 +5,9 @@
 Açılışta nokta nokta bir alan, üzerinde sol üstten sağ alta durmadan akan büyük piksel ikonlar ve ortada, macOS Dock'u gibi buzlu camdan bir gezinme çubuğu karşılar; bir sayfaya girildiğinde aynı çubuk üste çıkar.
 
 - **Eklediklerim.** Kendi yazdıklarınız. `+` ile önce kategori (aktivite, mekan, film, dizi), sonra ne olduğu.
-- **Kaydettiklerim.** O hafta revaçta olan 10 şey ve kategori kategori filmler, diziler, etkinlikler kart kart gelir; kalbe bastıklarınız beğenilenlere eklenir.
+- **Kaydettiklerim.** Bölüm bölüm kartlar: revaçtaki filmler, revaçtaki tiyatrolar, kategorileriyle filmler, diziler ve etkinlikler, yürüyüş parkları, yemek mekanları. Kalbe bastıklarınız beğenilenlere eklenir.
 - **Ne Yapsak.** Önce "Hazır mısın?" ekranı, "Hazırım" deyince:
-  1. **Kaydır.** Eklediklerinizle beğendikleriniz ve o günün revaçta olanları tek destede gelir. Sağa "olur", sola "geç".
+  1. **Kaydır.** Kaç seçenek arasından karar vereceğinizi siz seçersiniz (5 ile 50 arası). Destenin en çok %60'ı eklediklerinizle beğendiklerinizden, kalanı o haftanın revaçta olanlarından ve kategorilerin en popülerlerinden gelir. Sağa "olur", sola "geç".
   2. **O mu, bu mu?** "Olur" dedikleriniz ikişer ikişer karşınıza çıkar; eleme usulü, sona kalan kazanır.
   3. **Kazanan ve nereye gidileceği.** Etkinlikse mekanı, kayıtlı bir yerse konumu, film ya da aktiviteyse yakındaki uygun mekanlar; hepsi Google Haritalar bağlantısıyla.
 
@@ -41,7 +41,7 @@ Her grupta 12 kayıt tutulur; uygulama her gün bu havuzdan 4 etkinlik, 3 film, 
 Aynı iş `public/catalog.json` dosyasını da yeniler:
 
 - **Film ve dizi:** TMDB'nin tür listesi ve her tür için o an en popüler 10 yapım. `TMDB_API_KEY` yoksa bu iki raf boş kalır ve uygulamada gösterilmez.
-- **Mekan:** elle seçilmiş listeler, `data/places.json` içinde. Şimdilik Ankara'nın yürüyüş parkları (18 yer; adlar ve ilçeler OpenStreetMap'te doğrulandı, fotoğraflar Wikipedia'dan). Yeni şehir ya da kategori eklemek için bu dosyaya yazmak yeterli.
+- **Mekan:** elle seçilmiş listeler, `data/places.json` içinde; bölüm (`walk`, `food`) → şehir → kategori. Şimdilik Ankara: 18 yürüyüş parkı (fotoğraflar Wikipedia'dan) ve 26 yemek mekanı. Hepsinin adı ve adresi OpenStreetMap'te doğrulandı; puan ya da popülerlik sıralaması değil. Yeni şehir ya da kategori eklemek için bu dosyaya yazmak yeterli.
 - **Etkinlik:** Biletix'in alt kategorileri (tiyatro, stand-up, pop, caz, atölye, müze…), önümüzdeki 30 gün, şehir şehir; en çok seansı olan önde.
 
 Anahtar yalnızca GitHub'da durduğu için kategoriler tarayıcıda canlı çekilmez; günde bir kez önceden hazırlanır.
