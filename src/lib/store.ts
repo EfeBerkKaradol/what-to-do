@@ -8,7 +8,7 @@ const SETTINGS_KEY = 'wtd.settings.v1'
 export const DEFAULT_SETTINGS: Settings = {
   names: ['', ''],
   me: 0,
-  region: 'ISTANBUL',
+  region: 'ANKARA',
   shared: { bin: 'aefacfc' },
 }
 
@@ -35,8 +35,12 @@ interface State {
 }
 
 // Only the fields this version knows are taken over; an older build kept a GitHub token here.
-const { names, me, region, lastSync } = read<Partial<Settings>>(SETTINGS_KEY, {})
-const storedSettings: Partial<Settings> = JSON.parse(JSON.stringify({ names, me, region, lastSync }))
+// A stored city counts only if it was picked by hand: earlier builds wrote the old default
+// (İstanbul) to storage on the first sync, without anyone choosing it.
+const { names, me, region, regionChosen, lastSync } = read<Partial<Settings>>(SETTINGS_KEY, {})
+const storedSettings: Partial<Settings> = JSON.parse(
+  JSON.stringify({ names, me, lastSync, ...(regionChosen ? { region, regionChosen } : {}) }),
+)
 let state: State = {
   doc: normalizeDoc(read<unknown>(DOC_KEY, emptyDoc())),
   settings: {
@@ -87,7 +91,7 @@ function editDoc(next: Doc) {
 }
 
 export function updateSettings(patch: Partial<Settings>) {
-  state = { ...state, settings: { ...state.settings, ...patch } }
+  state = { ...state, settings: { ...state.settings, ...patch, ...(patch.region ? { regionChosen: true } : {}) } }
   write(SETTINGS_KEY, state.settings)
   emit()
 }

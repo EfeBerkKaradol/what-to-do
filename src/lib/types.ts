@@ -43,6 +43,8 @@ export interface Settings {
   /** Which of the two names this device belongs to. */
   me: 0 | 1
   region: string
+  /** True once someone picked a city here; until then the default applies, even if it changes. */
+  regionChosen?: boolean
   /** Id of the shared list document that every visitor reads and writes. */
   shared: { bin: string }
   lastSync?: number
