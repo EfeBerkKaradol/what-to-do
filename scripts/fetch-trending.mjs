@@ -253,9 +253,27 @@ async function events() {
 
 // ---------- Movies ----------
 
-async function tmdb(path) {
+async function tmdb(path, language = 'tr-TR') {
   const sep = path.includes('?') ? '&' : '?'
-  return getJson(`https://api.themoviedb.org/3${path}${sep}api_key=${TMDB_KEY}&language=tr-TR&region=TR`)
+  return getJson(`https://api.themoviedb.org/3${path}${sep}api_key=${TMDB_KEY}&language=${language}&region=TR`)
+}
+
+/**
+ * A TMDB list in Turkish. Many titles, series above all, have no Turkish overview;
+ * those borrow the English one so that every entry has something to read.
+ */
+async function tmdbList(path) {
+  const data = await tmdb(path)
+  const results = data.results ?? []
+  if (results.some((r) => !r.overview)) {
+    try {
+      const english = new Map(((await tmdb(path, 'en-US')).results ?? []).map((r) => [r.id, r.overview]))
+      for (const r of results) if (!r.overview) r.overview = english.get(r.id) || ''
+    } catch (err) {
+      console.warn(`[tmdb] English overviews unavailable: ${err.message}`)
+    }
+  }
+  return results
 }
 
 const tmdbMovie = (m) => ({
@@ -279,8 +297,7 @@ const tmdbSeries = (s) => ({
 })
 
 async function moviesTmdb() {
-  const data = await tmdb('/trending/movie/week')
-  return (data.results ?? [])
+  return (await tmdbList('/trending/movie/week'))
     .filter((m) => m.poster_path && (m.title || m.original_title))
     .slice(0, PER_GROUP)
     .map((m) => tmdbMovie(m))
@@ -294,8 +311,8 @@ async function tmdbGenres(kind) {
   const floor = kind === 'movie' ? 50 : 20
   const out = []
   for (const g of list.genres ?? []) {
-    const data = await tmdb(`/discover/${kind}?with_genres=${g.id}&sort_by=popularity.desc&include_adult=false&vote_count.gte=${floor}`)
-    const items = (data.results ?? [])
+    const results = await tmdbList(`/discover/${kind}?with_genres=${g.id}&sort_by=popularity.desc&include_adult=false&vote_count.gte=${floor}`)
+    const items = results
       .filter((x) => x.poster_path && (x.title || x.name || x.original_title || x.original_name))
       .slice(0, PER_GENRE)
       .map((x) => toEntry(x))
@@ -327,8 +344,7 @@ async function moviesItunes() {
 // ---------- Series ----------
 
 async function seriesTmdb() {
-  const data = await tmdb('/trending/tv/week')
-  return (data.results ?? [])
+  return (await tmdbList('/trending/tv/week'))
     .filter((x) => x.poster_path && (x.name || x.original_name))
     .slice(0, PER_GROUP)
     .map((x) => tmdbSeries(x))
